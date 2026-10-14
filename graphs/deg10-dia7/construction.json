@@ -1,0 +1,21 @@
+{
+  "degree": 10,
+  "diameter": 7,
+  "order": 616915,
+  "construction": {
+    "type": "cayley",
+    "group": {
+      "type": "metacyclic",
+      "N": 9491,
+      "M": 65,
+      "r": 86
+    },
+    "connection_set": [
+      "x^7392 y^64",
+      "x^8053 y^11",
+      "x^3256 y^30",
+      "x^7302 y^41",
+      "x^3430 y^9"
+    ]
+  }
+}

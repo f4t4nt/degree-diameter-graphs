@@ -1,0 +1,7 @@
+== deg12-dia8: degree 12, diameter 8, 19144241 vertices
+$ tools/verify/verify_cayley_inv 8 90731 211 61666 3 40068 179 57435 91 27235 15 68856 174 54460 110 23436 99
+G = Z_90731 x|_61666 Z_211 (order 19144241), 6 generators, S u S^-1 has 12 distinct elements: simple 12-regular Cayley graph
+source 0: reached 19144241 of 19144241, eccentricity 8, profile: 1 12 132 1452 15972 174906 1822754 11500618 5628394
+source 7418947: reached 19144241 of 19144241, eccentricity 8, profile: 1 12 132 1452 15972 174906 1822754 11500618 5628394
+source 47779: reached 19144241 of 19144241, eccentricity 8, profile: 1 12 132 1452 15972 174906 1822754 11500618 5628394
+Cayley graph (vertex-transitive): diameter 8 on 19144241 vertices, degree 12: satisfies D = 8

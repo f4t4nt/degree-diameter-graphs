@@ -1,0 +1,58 @@
+{
+  "degree": 3,
+  "diameter": 7,
+  "order": 200,
+  "construction": {
+    "type": "lift",
+    "group": {
+      "type": "metacyclic",
+      "N": 5,
+      "M": 8,
+      "r": 4
+    },
+    "base_vertices": 5,
+    "links": [
+      [
+        0,
+        1,
+        "1"
+      ],
+      [
+        0,
+        2,
+        "1"
+      ],
+      [
+        0,
+        3,
+        "1"
+      ],
+      [
+        1,
+        4,
+        "1"
+      ],
+      [
+        1,
+        2,
+        "y"
+      ]
+    ],
+    "semi_edges": [
+      [
+        2,
+        "y^4"
+      ]
+    ],
+    "loops": [
+      [
+        3,
+        "x y^2"
+      ],
+      [
+        4,
+        "x^2 y^2"
+      ]
+    ]
+  }
+}

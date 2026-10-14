@@ -1,0 +1,6 @@
+== deg14-dia9: degree 14, diameter 9, 709125173 vertices
+Output of the original run of tools/verify/verify_bits_implicit.c (not repeated for this repository):
+$ tools/verify/verify_bits_implicit cay 9 2104229 337 864 1325989 152 2094980 192 914967 111 719227 29 857786 60 1407259 16 1571238 204
+Cay(Z_2104229 x|_864 Z_337, S), |S u S^-1| = 14, n = 709125173
+source identity: eccentricity 9, profile: 1 14 182 2366 30758 399736 5175500 63916754 454063018 185536844
+Cayley graph (vertex-transitive): diameter 9 on 709125173 vertices: satisfies D = 9

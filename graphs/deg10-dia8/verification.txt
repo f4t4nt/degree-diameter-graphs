@@ -1,0 +1,7 @@
+== deg10-dia8: degree 10, diameter 8, 4507500 vertices
+$ tools/verify/verify_cayley_inv 8 45075 100 2 3 35808 14 21603 1 8790 5 43661 78 13901 60
+G = Z_45075 x|_2 Z_100 (order 4507500), 5 generators, S u S^-1 has 10 distinct elements: simple 10-regular Cayley graph
+source 0: reached 4507500 of 4507500, eccentricity 8, profile: 1 10 90 810 7282 64936 544283 2690810 1199278
+source 3202989: reached 4507500 of 4507500, eccentricity 8, profile: 1 10 90 810 7282 64936 544283 2690810 1199278
+source 1537074: reached 4507500 of 4507500, eccentricity 8, profile: 1 10 90 810 7282 64936 544283 2690810 1199278
+Cayley graph (vertex-transitive): diameter 8 on 4507500 vertices, degree 10: satisfies D = 8

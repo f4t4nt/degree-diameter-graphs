@@ -1,0 +1,6 @@
+== deg15-dia10: degree 15, diameter 10, 15810645560 vertices
+Output of the original run of tools/verify/verify_2plane_inv.c (not repeated for this repository):
+$ tools/verify/verify_2plane_inv cay 10 20803481 760 5726682 16555534 620 11877752 102 20283801 421 2712392 488 8353947 95 9367781 688 5818265 505 4330384 380
+Cay(Z_20803481 x|_5726682 Z_760, S), |S u S^-1| = 15, n = 15810645560
+source identity: eccentricity 10, profile: 1 15 210 2940 41159 576212 8064355 112439515 1491892375 10687461534 3510167244
+Cayley graph (vertex-transitive): diameter 10 on 15810645560 vertices: satisfies D = 10

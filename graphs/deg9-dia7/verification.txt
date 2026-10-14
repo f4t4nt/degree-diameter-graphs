@@ -1,0 +1,8 @@
+== deg9-dia7: degree 9, diameter 7, 302082 vertices
+deg9-dia7-n302082.edges.txt.gz lists exactly the edges of the construction in construction.json: True (1359369 edges)
+$ tools/verify/verify_cayley_inv 7 4577 66 174 3 0 33 804 1 3376 6 2519 51 2123 23
+G = Z_4577 x|_174 Z_66 (order 302082), 5 generators, S u S^-1 has 9 distinct elements: simple 9-regular Cayley graph
+source 0: reached 302082 of 302082, eccentricity 7, profile: 1 9 72 576 4588 34605 166510 95721
+source 6567: reached 302082 of 302082, eccentricity 7, profile: 1 9 72 576 4588 34605 166510 95721
+source 283998: reached 302082 of 302082, eccentricity 7, profile: 1 9 72 576 4588 34605 166510 95721
+Cayley graph (vertex-transitive): diameter 7 on 302082 vertices, degree 9: satisfies D = 7

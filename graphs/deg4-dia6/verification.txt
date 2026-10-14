@@ -1,0 +1,12 @@
+== deg4-dia6: degree 4, diameter 6, 760 vertices
+$ tools/verify/verify_bfs /dev/stdin 6 < the edge list
+file: /dev/stdin
+order: 760
+edges: 1520
+min degree: 4
+max degree: 4
+isolated: 0
+duplicate edges: 0
+diameter: 6
+unreachable pairs: 0
+unordered pairs at distance > 6: 0

@@ -1,0 +1,8 @@
+== deg7-dia8: degree 7, diameter 8, 264440 vertices
+deg7-dia8-n264440.edges.txt.gz lists exactly the edges of the construction in construction.json: True (925540 edges)
+$ tools/verify/verify_cayley_inv 8 6611 40 193 3 0 20 1 4 4755 9 2638 6
+G = Z_6611 x|_193 Z_40 (order 264440), 4 generators, S u S^-1 has 7 distinct elements: simple 7-regular Cayley graph
+source 0: reached 264440 of 264440, eccentricity 8, profile: 1 7 42 252 1508 8918 48303 148587 56822
+source 197989: reached 264440 of 264440, eccentricity 8, profile: 1 7 42 252 1508 8918 48303 148587 56822
+source 82654: reached 264440 of 264440, eccentricity 8, profile: 1 7 42 252 1508 8918 48303 148587 56822
+Cayley graph (vertex-transitive): diameter 8 on 264440 vertices, degree 7: satisfies D = 8

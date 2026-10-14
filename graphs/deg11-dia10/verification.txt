@@ -1,0 +1,6 @@
+== deg11-dia10: degree 11, diameter 10, 697280200 vertices
+Output of the original run of tools/verify/verify_bits_inv.c (not repeated for this repository):
+$ tools/verify/verify_bits_inv cay 10 3486401 200 1834706 2446299 10 494688 2 1969958 19 3279112 176 2535892 47 397261 100
+Cay(Z_3486401 x|_1834706 Z_200, S), |S u S^-1| = 11, n = 697280200
+source identity: eccentricity 10, profile: 1 11 110 1100 11000 109990 1098793 10883681 99748755 463397075 122029684
+Cayley graph (vertex-transitive): diameter 10 on 697280200 vertices: satisfies D = 10

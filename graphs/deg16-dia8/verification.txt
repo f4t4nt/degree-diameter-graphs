@@ -1,0 +1,11 @@
+== deg16-dia8: degree 16, diameter 8, 185394793 vertices
+Output of the original run of tools/verify/verify_bits_implicit.c (not repeated for this repository):
+$ tools/verify/verify_bits_implicit cay 8 769273 241 381264 703316 10 718789 97 15241 58 669144 17 442319 21 102905 45 735454 9 553642 74
+Cay(Z_769273 x|_381264 Z_241, S), |S u S^-1| = 16, n = 185394793
+source identity: eccentricity 8, profile: 1 16 240 3600 54000 808330 11713028 108210704 64604874
+Cayley graph (vertex-transitive): diameter 8 on 185394793 vertices: satisfies D = 8
+G = Z_769273 x|_381264 Z_241 (order 185394793), 8 generators, S u S^-1 has 16 distinct elements: simple 16-regular Cayley graph
+source 0: reached 185394793 of 185394793, eccentricity 8, profile: 1 16 240 3600 54000 808330 11713028 108210704 64604874
+source 144615221: reached 185394793 of 185394793, eccentricity 8, profile: 1 16 240 3600 54000 808330 11713028 108210704 64604874
+source 56305337: reached 185394793 of 185394793, eccentricity 8, profile: 1 16 240 3600 54000 808330 11713028 108210704 64604874
+Cayley graph (vertex-transitive): diameter 8 on 185394793 vertices, degree 16: satisfies D = 8

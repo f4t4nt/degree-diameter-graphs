@@ -1,0 +1,7 @@
+== deg9-dia9: degree 9, diameter 9, 13219318 vertices
+$ tools/verify/verify_cayley_inv 9 134891 98 4746 3 48203 49 74247 1 51808 79 121079 27 71015 82
+G = Z_134891 x|_4746 Z_98 (order 13219318), 5 generators, S u S^-1 has 9 distinct elements: simple 9-regular Cayley graph
+source 0: reached 13219318 of 13219318, eccentricity 9, profile: 1 9 72 576 4608 36834 291439 2115424 8212166 2558189
+source 11292251: reached 13219318 of 13219318, eccentricity 9, profile: 1 9 72 576 4608 36834 291439 2115424 8212166 2558189
+source 115644: reached 13219318 of 13219318, eccentricity 9, profile: 1 9 72 576 4608 36834 291439 2115424 8212166 2558189
+Cayley graph (vertex-transitive): diameter 9 on 13219318 vertices, degree 9: satisfies D = 9

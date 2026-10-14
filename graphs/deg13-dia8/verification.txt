@@ -1,0 +1,7 @@
+== deg13-dia8: degree 13, diameter 8, 36275160 vertices
+$ tools/verify/verify_cayley_inv 8 302293 120 7818 3 164125 60 129522 3 47580 27 218857 25 34159 56 366 18 71547 44
+G = Z_302293 x|_7818 Z_120 (order 36275160), 7 generators, S u S^-1 has 13 distinct elements: simple 13-regular Cayley graph
+source 0: reached 36275160 of 36275160, eccentricity 8, profile: 1 13 156 1872 22438 268024 3065494 21607082 11310080
+source 26250909: reached 36275160 of 36275160, eccentricity 8, profile: 1 13 156 1872 22438 268024 3065494 21607082 11310080
+source 24509454: reached 36275160 of 36275160, eccentricity 8, profile: 1 13 156 1872 22438 268024 3065494 21607082 11310080
+Cayley graph (vertex-transitive): diameter 8 on 36275160 vertices, degree 13: satisfies D = 8

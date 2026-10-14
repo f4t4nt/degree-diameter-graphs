@@ -1,0 +1,48 @@
+{
+  "degree": 4,
+  "diameter": 9,
+  "order": 7884,
+  "construction": {
+    "type": "lift",
+    "group": {
+      "type": "metacyclic",
+      "N": 73,
+      "M": 36,
+      "r": 18
+    },
+    "base_vertices": 3,
+    "links": [
+      [
+        0,
+        1,
+        "1"
+      ],
+      [
+        0,
+        2,
+        "1"
+      ],
+      [
+        1,
+        2,
+        "x y^6"
+      ],
+      [
+        0,
+        1,
+        "x^49 y^10"
+      ],
+      [
+        0,
+        1,
+        "x^40 y^14"
+      ]
+    ],
+    "loops": [
+      [
+        2,
+        "y^3"
+      ]
+    ]
+  }
+}

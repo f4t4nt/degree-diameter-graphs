@@ -1,0 +1,7 @@
+== deg10-dia9: degree 10, diameter 9, 34182150 vertices
+$ tools/verify/verify_cayley_inv 9 227881 150 1562 3 123970 23 17860 138 124293 68 220620 19 148855 3
+G = Z_227881 x|_1562 Z_150 (order 34182150), 5 generators, S u S^-1 has 10 distinct elements: simple 10-regular Cayley graph
+source 0: reached 34182150 of 34182150, eccentricity 9, profile: 1 10 90 810 7290 65546 584318 4826893 21595119 7102073
+source 19567239: reached 34182150 of 34182150, eccentricity 9, profile: 1 10 90 810 7290 65546 584318 4826893 21595119 7102073
+source 6985374: reached 34182150 of 34182150, eccentricity 9, profile: 1 10 90 810 7290 65546 584318 4826893 21595119 7102073
+Cayley graph (vertex-transitive): diameter 9 on 34182150 vertices, degree 10: satisfies D = 9

@@ -1,0 +1,6 @@
+== deg15-dia9: degree 15, diameter 9, 1315107690 vertices
+Output of the original run of tools/verify/verify_bits_inv.c (not repeated for this repository):
+$ tools/verify/verify_bits_inv cay 9 3372071 390 832 810691 1 2904441 104 1086462 18 499646 4 2342996 253 3240389 343 399444 359 959706 195
+Cay(Z_3372071 x|_832 Z_390, S), |S u S^-1| = 15, n = 1315107690
+source identity: eccentricity 9, profile: 1 15 210 2940 41160 576113 8038844 107478552 838183797 360786058
+Cayley graph (vertex-transitive): diameter 9 on 1315107690 vertices: satisfies D = 9

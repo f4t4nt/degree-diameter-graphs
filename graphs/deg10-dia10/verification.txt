@@ -1,0 +1,8 @@
+== deg10-dia10: degree 10, diameter 10, 265612889 vertices
+Output of the original run of tools/verify/verify_cayley_implicit.c (not repeated for this repository):
+$ tools/verify/verify_cayley_implicit 10 1111351 239 8147 3 648877 104 1110715 82 841493 123 484351 59 482973 144
+G = Z_1111351 x|_8147 Z_239 (order 265612889), 5 generators, S u S^-1 has 10 distinct elements: simple 10-regular Cayley graph
+source 0: reached 265612889 of 265612889, eccentricity 10, profile: 1 10 90 810 7290 65572 589164 5237876 42654186 173726732 43331158
+source 227262140: reached 265612889 of 265612889, eccentricity 10, profile: 1 10 90 810 7290 65572 589164 5237876 42654186 173726732 43331158
+source 171854413: reached 265612889 of 265612889, eccentricity 10, profile: 1 10 90 810 7290 65572 589164 5237876 42654186 173726732 43331158
+Cayley graph (vertex-transitive): diameter 10 on 265612889 vertices, degree 10: satisfies D = 10

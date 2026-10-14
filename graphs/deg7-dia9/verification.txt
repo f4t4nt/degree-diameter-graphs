@@ -1,0 +1,7 @@
+== deg7-dia9: degree 7, diameter 9, 1332774 vertices
+$ tools/verify/verify_cayley_inv 9 24681 54 788 3 16435 27 7192 33 857 2 4448 16
+G = Z_24681 x|_788 Z_54 (order 1332774), 4 generators, S u S^-1 has 7 distinct elements: simple 7-regular Cayley graph
+source 0: reached 1332774 of 1332774, eccentricity 9, profile: 1 7 42 252 1512 9057 53252 277576 766095 224980
+source 1242309: reached 1332774 of 1332774, eccentricity 9, profile: 1 7 42 252 1512 9057 53252 277576 766095 224980
+source 946926: reached 1332774 of 1332774, eccentricity 9, profile: 1 7 42 252 1512 9057 53252 277576 766095 224980
+Cayley graph (vertex-transitive): diameter 9 on 1332774 vertices, degree 7: satisfies D = 9

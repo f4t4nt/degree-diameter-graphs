@@ -1,0 +1,42 @@
+{
+  "degree": 5,
+  "diameter": 10,
+  "order": 202550,
+  "construction": {
+    "type": "lift",
+    "group": {
+      "type": "metacyclic",
+      "N": 4051,
+      "M": 25,
+      "r": 4
+    },
+    "base_vertices": 2,
+    "loops": [
+      [
+        0,
+        "y^3"
+      ],
+      [
+        1,
+        "x^178 y^8"
+      ]
+    ],
+    "links": [
+      [
+        0,
+        1,
+        "1"
+      ],
+      [
+        0,
+        1,
+        "x y^2"
+      ],
+      [
+        0,
+        1,
+        "x^2122 y^15"
+      ]
+    ]
+  }
+}

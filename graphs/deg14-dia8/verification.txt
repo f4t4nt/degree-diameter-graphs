@@ -1,0 +1,7 @@
+== deg14-dia8: degree 14, diameter 8, 64298753 vertices
+$ tools/verify/verify_cayley_inv 8 185299 347 47110 3 101500 2 120355 7 99761 10 113037 111 146748 25 71617 144 184902 291
+G = Z_185299 x|_47110 Z_347 (order 64298753), 7 generators, S u S^-1 has 14 distinct elements: simple 14-regular Cayley graph
+source 0: reached 64298753 of 64298753, eccentricity 8, profile: 1 14 182 2366 30758 398740 4968764 38374954 20522974
+source 43569138: reached 64298753 of 64298753, eccentricity 8, profile: 1 14 182 2366 30758 398740 4968764 38374954 20522974
+source 9260126: reached 64298753 of 64298753, eccentricity 8, profile: 1 14 182 2366 30758 398740 4968764 38374954 20522974
+Cayley graph (vertex-transitive): diameter 8 on 64298753 vertices, degree 14: satisfies D = 8

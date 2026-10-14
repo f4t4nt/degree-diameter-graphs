@@ -1,0 +1,6 @@
+== deg16-dia10: degree 16, diameter 10, 29899503497 vertices
+Output of the original run of tools/verify/verify_2plane_implicit.c (not repeated for this repository):
+$ tools/verify/verify_2plane_implicit cay 10 24170981 1237 16573517 10866025 532 21248118 539 13248079 918 21841737 1181 1620224 1059 12379694 1095 17981217 470 3158481 1021
+Cay(Z_24170981 x|_16573517 Z_1237, S), |S u S^-1| = 16, n = 29899503497
+source identity: eccentricity 10, profile: 1 16 240 3600 54000 810000 12147466 181613944 2595189754 20227924594 6881759882
+Cayley graph (vertex-transitive): diameter 10 on 29899503497 vertices: satisfies D = 10

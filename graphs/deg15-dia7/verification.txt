@@ -1,0 +1,7 @@
+== deg15-dia7: degree 15, diameter 7, 9758988 vertices
+$ tools/verify/verify_cayley_inv 7 90361 108 1443 3 73139 54 62125 29 25137 47 26271 26 24758 37 18988 31 31 11 14702 70
+G = Z_90361 x|_1443 Z_108 (order 9758988), 8 generators, S u S^-1 has 15 distinct elements: simple 15-regular Cayley graph
+source 0: reached 9758988 of 9758988, eccentricity 7, profile: 1 15 210 2940 41094 557849 5157028 3999851
+source 5403009: reached 9758988 of 9758988, eccentricity 7, profile: 1 15 210 2940 41094 557849 5157028 3999851
+source 3895758: reached 9758988 of 9758988, eccentricity 7, profile: 1 15 210 2940 41094 557849 5157028 3999851
+Cayley graph (vertex-transitive): diameter 7 on 9758988 vertices, degree 15: satisfies D = 7

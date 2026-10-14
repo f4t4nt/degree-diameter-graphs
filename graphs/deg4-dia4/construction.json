@@ -1,0 +1,8 @@
+{
+  "degree": 4,
+  "diameter": 4,
+  "order": 104,
+  "construction": {
+    "type": "edge_list"
+  }
+}

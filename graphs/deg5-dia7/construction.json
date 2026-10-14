@@ -1,0 +1,65 @@
+{
+  "degree": 5,
+  "diameter": 7,
+  "order": 6000,
+  "construction": {
+    "type": "lift",
+    "group": {
+      "type": "kernel_by_cyclic",
+      "p": 5,
+      "B": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "A": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "c_order": 3,
+      "c_power": 2,
+      "z_order": 5,
+      "z_power": 2,
+      "y_order": 8
+    },
+    "base_vertices": 2,
+    "loops": [
+      [
+        0,
+        "y"
+      ],
+      [
+        1,
+        "v(0,2) c z^4 y^4"
+      ]
+    ],
+    "links": [
+      [
+        0,
+        1,
+        "1"
+      ],
+      [
+        0,
+        1,
+        "v(0,1) c z y^4"
+      ],
+      [
+        0,
+        1,
+        "v(1,4) c z^4 y^7"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+== deg5-dia10: degree 5, diameter 10, 202550 vertices
+deg5-dia10-n202550.edges.txt.gz lists exactly the edges of the construction in construction.json: True (506375 edges)
+$ tools/verify/verify_lift2_implicit 10 4051 25 4 1 1 3 0 3 178 8 0 0 1 2 2122 15
+lift over Z_4051 x|_4 Z_25 (|G| = 101275): n = 202550, fibre degrees 5/5, simple
+source 0 (fibre 0): reached 202550 of 202550, eccentricity 10, profile: 1 5 20 80 320 1279 5069 19376 61149 94669 20582
+source 101275 (fibre 1): reached 202550 of 202550, eccentricity 10, profile: 1 5 20 80 320 1279 5073 19396 61217 94639 20520
+source 193439 (fibre 1): reached 202550 of 202550, eccentricity 10, profile: 1 5 20 80 320 1279 5073 19396 61217 94639 20520
+source 126574 (fibre 1): reached 202550 of 202550, eccentricity 10, profile: 1 5 20 80 320 1279 5073 19396 61217 94639 20520
+source 93230 (fibre 0): reached 202550 of 202550, eccentricity 10, profile: 1 5 20 80 320 1279 5069 19376 61149 94669 20582
+source 71560 (fibre 0): reached 202550 of 202550, eccentricity 10, profile: 1 5 20 80 320 1279 5069 19376 61149 94669 20582
+fibre eccentricities 10 and 10; G acts transitively on each fibre by left multiplication, so diameter = 10: satisfies D = 10
