@@ -95,27 +95,29 @@ class KernelByCyclic:
             raise ValueError("the action of y on <c> and <z> must have order dividing |y|")
         self.order = p * p * c_order * z_order * y_order
         self.identity = (0, 0, 0, 0, 0)
-        self.ba = [[_mat_mul(_mat_pow(B, i, p), _mat_pow(A, m, p), p) for m in range(y_order)]
-                   for i in range(c_order)]
+        self.ba = [[_mat_mul(_mat_pow(B, i, p), _mat_pow(A, m, p), p) for m in range(y_order)] for i in range(c_order)]
 
     def mul(self, a, b):
         v1, v2, i1, j1, m1 = a
         w1, w2, i2, j2, m2 = b
         t = self.ba[i1][m1]
         p = self.p
-        return ((v1 + t[0][0] * w1 + t[0][1] * w2) % p,
-                (v2 + t[1][0] * w1 + t[1][1] * w2) % p,
-                (i1 + pow(self.c_power, m1, self.c_order) * i2) % self.c_order,
-                (j1 + pow(self.z_power, m1, self.z_order) * j2) % self.z_order,
-                (m1 + m2) % self.y_order)
+        return (
+            (v1 + t[0][0] * w1 + t[0][1] * w2) % p,
+            (v2 + t[1][0] * w1 + t[1][1] * w2) % p,
+            (i1 + pow(self.c_power, m1, self.c_order) * i2) % self.c_order,
+            (j1 + pow(self.z_power, m1, self.z_order) * j2) % self.z_order,
+            (m1 + m2) % self.y_order,
+        )
 
     def index(self, a):
         v1, v2, i, j, m = a
         return (((self.p * v1 + v2) * self.c_order + i) * self.z_order + j) * self.y_order + m
 
     def elements(self):
-        return itertools.product(range(self.p), range(self.p), range(self.c_order),
-                                 range(self.z_order), range(self.y_order))
+        return itertools.product(
+            range(self.p), range(self.p), range(self.c_order), range(self.z_order), range(self.y_order)
+        )
 
     def generator_power(self, name, k):
         if name == "c":
@@ -157,8 +159,16 @@ def make_group(spec):
     if spec["type"] == "metacyclic":
         return Metacyclic(spec["N"], spec["M"], spec["r"])
     if spec["type"] == "kernel_by_cyclic":
-        return KernelByCyclic(spec["p"], spec["B"], spec["A"], spec["c_order"], spec["c_power"],
-                              spec["z_order"], spec["z_power"], spec["y_order"])
+        return KernelByCyclic(
+            spec["p"],
+            spec["B"],
+            spec["A"],
+            spec["c_order"],
+            spec["c_power"],
+            spec["z_order"],
+            spec["z_power"],
+            spec["y_order"],
+        )
     raise ValueError(f"unknown group type {spec['type']!r}")
 
 
@@ -199,14 +209,26 @@ def sections(spec):
         return out
     if c["type"] == "lift":
         for v, s in c.get("loops", []):
-            out.append((f"loop at base vertex {v}, voltage {s}: ({v}, g) -- ({v}, g {s})",
-                        multiply_edges(group, parse_element(group, s), v, v, False)))
+            out.append(
+                (
+                    f"loop at base vertex {v}, voltage {s}: ({v}, g) -- ({v}, g {s})",
+                    multiply_edges(group, parse_element(group, s), v, v, False),
+                )
+            )
         for v, s in c.get("semi_edges", []):
-            out.append((f"semi-edge at base vertex {v}, voltage {s}: ({v}, g) -- ({v}, g {s}), each pair once",
-                        multiply_edges(group, parse_element(group, s), v, v, True)))
+            out.append(
+                (
+                    f"semi-edge at base vertex {v}, voltage {s}: ({v}, g) -- ({v}, g {s}), each pair once",
+                    multiply_edges(group, parse_element(group, s), v, v, True),
+                )
+            )
         for x, y, s in c.get("links", []):
-            out.append((f"link {x} -> {y}, voltage {s}: ({x}, g) -- ({y}, g {s})",
-                        multiply_edges(group, parse_element(group, s), x, y, False)))
+            out.append(
+                (
+                    f"link {x} -> {y}, voltage {s}: ({x}, g) -- ({y}, g {s})",
+                    multiply_edges(group, parse_element(group, s), x, y, False),
+                )
+            )
         return out
     raise ValueError(f"unknown construction type {c['type']!r}")
 
@@ -253,8 +275,9 @@ def run_verifier(name, args, stdin=None):
     shown = " ".join([f"tools/verify/{name}"] + [str(a) for a in args])
     print(f"$ {shown}" + (" < the edge list" if stdin is not None else ""))
     sys.stdout.flush()
-    proc = subprocess.run([str(compiled(name))] + [str(a) for a in args], input=stdin,
-                          stdout=subprocess.PIPE, text=True)
+    proc = subprocess.run(
+        [str(compiled(name))] + [str(a) for a in args], input=stdin, stdout=subprocess.PIPE, text=True, check=False
+    )
     print(proc.stdout.rstrip())
     return proc.returncode == 0 and "FAIL" not in proc.stdout and "EXCEEDS" not in proc.stdout
 
@@ -308,10 +331,11 @@ def check(cell, max_vertices):
             for u, v in edge_pairs(path):
                 file_edges.add(min(u, v) * n + max(u, v))
                 lines += 1
-            built = set(min(u, v) * n + max(u, v) for _, it in secs for u, v in it)
+            built = {min(u, v) * n + max(u, v) for _, it in secs for u, v in it}
             same = built == file_edges and lines == len(file_edges)
-            print(f"{path.name} lists exactly the edges of the construction in construction.json: {same}"
-                  f" ({lines} edges)")
+            print(
+                f"{path.name} lists exactly the edges of the construction in construction.json: {same} ({lines} edges)"
+            )
             ok = ok and same
         else:
             lines = sum(1 for _ in edge_pairs(path))
@@ -346,8 +370,9 @@ def main():
     c = sub.add_parser("check", help="verify cells with the C verifiers")
     c.add_argument("cells", nargs="*")
     c.add_argument("--all", action="store_true", help="every cell under graphs/")
-    c.add_argument("--max-vertices", type=int, default=10**8,
-                   help="skip implicit BFS runs above this order (default 1e8)")
+    c.add_argument(
+        "--max-vertices", type=int, default=10**8, help="skip implicit BFS runs above this order (default 1e8)"
+    )
     args = parser.parse_args()
     if args.cmd == "edges":
         spec = load(args.cell)
