@@ -6,7 +6,7 @@ A graph with 760 vertices, maximum degree 4 and diameter 6. The Moore bound for 
 
 The incidence graph of the generalized hexagon $`H(3)`$ (364 points and 364 lines; 4-regular, bipartite, girth 12, diameter 6) with 32 flags subdivided: a new vertex is placed on each of 32 point-line incidence edges and joined to that point and that line, and the 32 new vertices carry a 2-regular graph $`F`$ with cycles of lengths 8, 8 and 16.
 
-The 32 flags are the union of two 16-flag orbits of a Sylow 2-subgroup (order 128) of $`\operatorname{Aut}(H(3)) = G_2(3){:}2`$ inside the centraliser of an involution. $`F`$ has no edge between the two orbits, so the graph is two 744-vertex solutions glued together.
+The 32 flags are the union of two 16-flag orbits of a Sylow 2-subgroup (order 128) of $`\mathrm{Aut}(H(3)) = G_2(3){:}2`$ inside the centraliser of an involution. $`F`$ has no edge between the two orbits, so the graph is two 744-vertex solutions glued together.
 
 Vertices 0 to 363 are the points of $`H(3)`$, 364 to 727 its lines and 728 to 759 the 32 new vertices.
 

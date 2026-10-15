@@ -25,7 +25,7 @@ needs only the Python standard library; `check` compiles the verifiers with `cc`
     $`((\mathbb{F}_p^2 \rtimes_B \langle c \rangle) \times \langle z \rangle) \rtimes_A \langle y \rangle`$, with
     elements written `v(a,b) c^i z^j y^m`.
 
-Vertex numbers are group indices: $`g`$ in a Cayley graph, $`v \cdot |G| + \operatorname{index}(g)`$ in a lift.
+Vertex numbers are group indices: $`g`$ in a Cayley graph, $`v \cdot |G| + \mathrm{index}(g)`$ in a lift.
 
 ## Verifiers
 

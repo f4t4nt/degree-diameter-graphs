@@ -16,7 +16,7 @@ B = \begin{pmatrix} 0 & 4 \\ 1 & 4 \end{pmatrix}, \qquad A = \begin{pmatrix} 1 &
 
 $`G`$ is not metacyclic; it has trivial centre and 25 involutions. Its elements are written $`(w, c^i, z^j)\, y^m`$.
 
-Vertex $`3000 v + \operatorname{index}(g)`$ is the pair $`(v, g)`$, where $`g = ((a, b), c^i, z^j)\, y^m`$ has index $`(((5a + b) \cdot 3 + i) \cdot 5 + j) \cdot 8 + m`$, so vertex $`3000 v`$ is $`(v, e)`$.
+Vertex $`3000 v + \mathrm{index}(g)`$ is the pair $`(v, g)`$, where $`g = ((a, b), c^i, z^j)\, y^m`$ has index $`(((5a + b) \cdot 3 + i) \cdot 5 + j) \cdot 8 + m`$, so vertex $`3000 v`$ is $`(v, e)`$.
 
 ## How it was found
 
