@@ -1,4 +1,4 @@
-== deg11-dia8: degree 11, diameter 8, 9739368 vertices
+== deg11/dia8: degree 11, diameter 8, 9739368 vertices
 $ tools/verify/verify_cayley_inv 8 135269 72 8594 3 34553 36 125066 35 6101 58 46480 6 47196 26 113742 19
 G = Z_135269 x|_8594 Z_72 (order 9739368), 6 generators, S u S^-1 has 11 distinct elements: simple 11-regular Cayley graph
 source 0: reached 9739368 of 9739368, eccentricity 8, profile: 1 11 110 1100 10998 109491 1031357 5829021 2757279

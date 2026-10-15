@@ -1,21 +1,16 @@
 # DEGREE 4, DIAMETER 9: 7,884 VERTICES
 # ------------------------------------
-# 7,884 vertices, 15,768 undirected edges, every vertex of degree 4, every pair of vertices within
-# 9 steps of each other.
+# 7,884 vertices, 15,768 undirected edges, every vertex of degree 4, every pair of vertices within 9
+# steps of each other.
 #
-# A regular voltage lift over G = Z_73 x|_18 Z_36 = <x, y | x^73 = y^36 = 1, y x y^-1 = x^18>, of
-# order 2,628. The base graph has vertices 0, 1 and 2, with three parallel links 0 -> 1 (voltages
-# 1, x^49 y^10, x^40 y^14), a link 0 -> 2 (voltage 1), a link 1 -> 2 (voltage x y^6) and a loop at
-# 2 (voltage y^3).
+# Voltage lift over G = Z_73 x|_18 Z_36 = <x, y | x^73 = y^36 = 1, y x y^-1 = x^18> of a 3-vertex base
+# graph (link 0 -> 1 with voltage 1; link 0 -> 2 with voltage 1; link 1 -> 2 with voltage x y^6; link
+# 0 -> 1 with voltage x^49 y^10; link 0 -> 1 with voltage x^40 y^14; loop at 2 with voltage y^3): (u,
+# g) is joined to (v, g a) for every dart u -> v with voltage a.
 #
-# The lift has vertex set {0, 1, 2} x G and joins (u, g) to (v, g a) for every dart u -> v with
-# voltage a; a loop with voltage a joins (v, g) to (v, g a) and (v, g a^-1). G acts on each fibre
-# {v} x G by left multiplication.
+# Vertex 2628 v + i + 73 j is the pair (v, x^i y^j).
 #
-# Vertex 2628 v + i + 73 j is the pair (v, x^i y^j): each run of 2,628 consecutive numbers lies
-# over one base vertex, in order, and vertex 2628 v is (v, identity).
-#
-# One edge "u v" per line, vertices numbered 0..7883.
+# One edge "u v" per line, vertices numbered 0..7883; README.md describes the construction.
 
 # loop at base vertex 2, voltage y^3: (2, g) -- (2, g y^3)
 5256 5475

@@ -1,4 +1,4 @@
-== deg14-dia10: degree 14, diameter 10, 8052187457 vertices
+== deg14/dia10: degree 14, diameter 10, 8052187457 vertices
 Output of the original run of tools/verify/verify_bits_implicit.c (not repeated for this repository):
 $ tools/verify/verify_bits_implicit cay 10 10837399 743 3457 7548685 659 870716 689 375693 280 7060489 88 4756017 500 6242423 171 6945981 558
 Cay(Z_10837399 x|_3457 Z_743, S), |S u S^-1| = 14, n = 8052187457

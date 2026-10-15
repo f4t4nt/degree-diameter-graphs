@@ -1,7 +1,7 @@
-== deg3-dia7: degree 3, diameter 7, 200 vertices
+== deg3/dia7: degree 3, diameter 7, 200 vertices
 deg3-dia7-n200.edges.txt lists exactly the edges of the construction in construction.json: True (300 edges)
-$ tools/verify/verify_bfs graphs/deg3-dia7/deg3-dia7-n200.edges.txt 7
-file: graphs/deg3-dia7/deg3-dia7-n200.edges.txt
+$ tools/verify/verify_bfs graphs/deg3/dia7/deg3-dia7-n200.edges.txt 7
+file: graphs/deg3/dia7/deg3-dia7-n200.edges.txt
 order: 200
 edges: 300
 min degree: 3

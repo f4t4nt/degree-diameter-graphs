@@ -1,20 +1,14 @@
 # DEGREE 7, DIAMETER 6: 12,654 VERTICES
 # -------------------------------------
-# 12,654 vertices, 44,289 undirected edges, every vertex of degree 7, every pair of vertices
-# within 6 steps of each other.
+# 12,654 vertices, 44,289 undirected edges, every vertex of degree 7, every pair of vertices within 6
+# steps of each other.
 #
-# The Cayley graph of G = Z_703 x|_85 Z_18 = <x, y | x^703 = y^18 = 1, y x y^-1 = x^85>, of order
-# 12,654 (703 = 19 x 37), with connection set S = {y^9, x y, x^24 y^5, x^289 y^8}: every g in G is
-# joined to g s and g s^-1 for s in S.
+# Cayley graph of G = Z_703 x|_85 Z_18 = <x, y | x^703 = y^18 = 1, y x y^-1 = x^85>: g is joined to g
+# s and g s^-1 for every s in S = {y^9, x y, x^24 y^5, x^289 y^8}.
 #
-# y^9 is one of the 37 involutions in G, so the degree is 1 + 2 x 3 = 7. The graph is
-# vertex-transitive: G acts on it by left multiplication.
+# Vertex i + 703 j is the group element x^i y^j (0 <= i < 703, 0 <= j < 18).
 #
-# Vertex i + 703 j is the group element x^i y^j (0 <= i < 703, 0 <= j < 18), so vertex 0 is the
-# identity and the 18 runs of 703 consecutive numbers are the cosets of <x>; a generator x^a y^b
-# joins run j to run j + b (mod 18).
-#
-# One edge "u v" per line, vertices numbered 0..12653.
+# One edge "u v" per line, vertices numbered 0..12653; README.md describes the construction.
 
 # involution y^9: g -- g y^9, each pair once
 0 6327

@@ -3,18 +3,12 @@
 # 760 vertices, 1,520 undirected edges, every vertex of degree 4, every pair of vertices within 6
 # steps of each other.
 #
-# The incidence graph of the generalized hexagon H(3) (364 points and 364 lines; 4-regular,
-# bipartite, girth 12, diameter 6) with 32 flags subdivided: a new vertex is placed on each of 32
-# point-line incidence edges and joined to that point and that line, and the 32 new vertices carry
-# a 2-regular graph F with cycles of lengths 8, 8 and 16.
+# The incidence graph of the generalized hexagon H(3) with 32 flags subdivided and a 2-regular graph F
+# on the 32 new vertices.
 #
-# The 32 flags are the union of two 16-flag orbits of a Sylow 2-subgroup (order 128) of Aut(H(3))
-# = G_2(3):2 inside the centraliser of an involution. F has no edge between the two orbits, so the
-# graph is two 744-vertex solutions glued together.
+# Vertices 0..363 are the points of H(3), 364..727 its lines and 728..759 the new vertices.
 #
-# Vertices 0..363 are the points of H(3), 364..727 its lines and 728..759 the 32 new vertices.
-#
-# One edge "u v" per line, vertices numbered 0..759.
+# One edge "u v" per line, vertices numbered 0..759; README.md describes the construction.
 
 # incidences of H(3) that stay edges: point -- line
 0 364

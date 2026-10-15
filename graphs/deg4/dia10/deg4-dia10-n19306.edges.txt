@@ -1,20 +1,16 @@
 # DEGREE 4, DIAMETER 10: 19,306 VERTICES
 # --------------------------------------
-# 19,306 vertices, 38,612 undirected edges, every vertex of degree 4, every pair of vertices
-# within 10 steps of each other.
+# 19,306 vertices, 38,612 undirected edges, every vertex of degree 4, every pair of vertices within 10
+# steps of each other.
 #
-# A regular voltage lift over G = Z_197 x|_16 Z_49 = <x, y | x^197 = y^49 = 1, y x y^-1 = x^16>,
-# of order 9,653. The base graph has vertices 0 and 1, with two parallel links 0 -> 1 (voltages 1,
-# x y^12), a loop at 0 (voltage y) and a loop at 1 (voltage x^176 y^10).
+# Voltage lift over G = Z_197 x|_16 Z_49 = <x, y | x^197 = y^49 = 1, y x y^-1 = x^16> of a 2-vertex
+# base graph (link 0 -> 1 with voltage 1; link 0 -> 1 with voltage x y^12; loop at 0 with voltage y;
+# loop at 1 with voltage x^176 y^10): (u, g) is joined to (v, g a) for every dart u -> v with voltage
+# a.
 #
-# The lift has vertex set {0, 1} x G and joins (u, g) to (v, g a) for every dart u -> v with
-# voltage a; a loop with voltage a joins (v, g) to (v, g a) and (v, g a^-1). G acts on each fibre
-# {v} x G by left multiplication.
+# Vertex 9653 v + i + 197 j is the pair (v, x^i y^j).
 #
-# Vertex 9653 v + i + 197 j is the pair (v, x^i y^j): the first 9,653 vertices lie over base
-# vertex 0 and the other 9,653 over base vertex 1, and vertex 9653 v is (v, identity).
-#
-# One edge "u v" per line, vertices numbered 0..19305.
+# One edge "u v" per line, vertices numbered 0..19305; README.md describes the construction.
 
 # loop at base vertex 0, voltage y: (0, g) -- (0, g y)
 0 197

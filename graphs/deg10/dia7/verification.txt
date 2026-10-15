@@ -1,4 +1,4 @@
-== deg10-dia7: degree 10, diameter 7, 616915 vertices
+== deg10/dia7: degree 10, diameter 7, 616915 vertices
 deg10-dia7-n616915.edges.txt.gz lists exactly the edges of the construction in construction.json: True (3084575 edges)
 $ tools/verify/verify_cayley_inv 7 9491 65 86 3 7392 64 8053 11 3256 30 7302 41 3430 9
 G = Z_9491 x|_86 Z_65 (order 616915), 5 generators, S u S^-1 has 10 distinct elements: simple 10-regular Cayley graph

@@ -1,4 +1,4 @@
-== deg6-dia10: degree 6, diameter 10, 1394189 vertices
+== deg6/dia10: degree 6, diameter 10, 1394189 vertices
 $ tools/verify/verify_cayley_inv 10 32423 43 1693 3 0 2 1 13 4406 18
 G = Z_32423 x|_1693 Z_43 (order 1394189), 3 generators, S u S^-1 has 6 distinct elements: simple 6-regular Cayley graph
 source 0: reached 1394189 of 1394189, eccentricity 10, profile: 1 6 30 150 750 3750 18704 90384 371342 746984 162088

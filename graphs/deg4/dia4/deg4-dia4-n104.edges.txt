@@ -1,17 +1,15 @@
 # DEGREE 4, DIAMETER 4: 104 VERTICES
 # ----------------------------------
-# 104 vertices, 208 undirected edges, every vertex of degree 4, every pair of vertices within 4
-# steps of each other.
+# 104 vertices, 208 undirected edges, every vertex of degree 4, every pair of vertices within 4 steps
+# of each other.
 #
-# Three disjoint copies (blocks A, B and C) of the subdivided complete bipartite graph K_4,4, and
-# 32 connector vertices in 16 matched pairs. In a block, each of the hubs L0..L3 and R0..R3 meets
-# four ports, and port P_xy subdivides the edge L_x R_y. Every port also meets two connectors, and
-# every connector meets its partner and three ports.
+# Three subdivided K_4,4 blocks (hubs L0..L3, R0..R3; port P_xy on the edge L_x R_y) and 32 connectors
+# in 16 matched pairs.
 #
-# Block A is 0..23 (L0..L3 = 0..3, R0..R3 = 4..7, port P_xy = 8 + 4x + y), block B is 24..47 and
-# block C is 48..71 in the same pattern, and connector pair k (0..15) is 72 + 2k and 73 + 2k.
+# Block A is 0..23 (L0..L3 = 0..3, R0..R3 = 4..7, port P_xy = 8 + 4x + y), block B is 24..47 and block
+# C is 48..71 in the same pattern; connector pair k (0..15) is 72 + 2k and 73 + 2k.
 #
-# One edge "u v" per line, vertices numbered 0..103.
+# One edge "u v" per line, vertices numbered 0..103; README.md describes the construction.
 
 # block A (0..23): hub -- port
 0 8

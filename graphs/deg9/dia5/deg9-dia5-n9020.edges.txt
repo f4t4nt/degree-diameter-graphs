@@ -1,20 +1,14 @@
 # DEGREE 9, DIAMETER 5: 9,020 VERTICES
 # ------------------------------------
-# 9,020 vertices, 40,590 undirected edges, every vertex of degree 9, every pair of vertices within
-# 5 steps of each other.
+# 9,020 vertices, 40,590 undirected edges, every vertex of degree 9, every pair of vertices within 5
+# steps of each other.
 #
-# The Cayley graph of G = Z_451 x|_46 Z_20 = <x, y | x^451 = y^20 = 1, y x y^-1 = x^46>, of order
-# 9,020 (451 = 11 x 41), with connection set S = {y^10, x y, x^316 y^6, x^13 y^7, x^426 y^9}:
-# every g in G is joined to g s and g s^-1 for s in S.
+# Cayley graph of G = Z_451 x|_46 Z_20 = <x, y | x^451 = y^20 = 1, y x y^-1 = x^46>: g is joined to g
+# s and g s^-1 for every s in S = {y^10, x y, x^316 y^6, x^13 y^7, x^426 y^9}.
 #
-# y^10 is one of the 41 involutions in G, so the degree is 1 + 2 x 4 = 9. The graph is
-# vertex-transitive: G acts on it by left multiplication.
+# Vertex i + 451 j is the group element x^i y^j (0 <= i < 451, 0 <= j < 20).
 #
-# Vertex i + 451 j is the group element x^i y^j (0 <= i < 451, 0 <= j < 20), so vertex 0 is the
-# identity and the 20 runs of 451 consecutive numbers are the cosets of <x>; a generator x^a y^b
-# joins run j to run j + b (mod 20).
-#
-# One edge "u v" per line, vertices numbered 0..9019.
+# One edge "u v" per line, vertices numbered 0..9019; README.md describes the construction.
 
 # involution y^10: g -- g y^10, each pair once
 0 4510

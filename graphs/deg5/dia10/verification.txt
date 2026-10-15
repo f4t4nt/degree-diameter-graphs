@@ -1,4 +1,4 @@
-== deg5-dia10: degree 5, diameter 10, 202550 vertices
+== deg5/dia10: degree 5, diameter 10, 202550 vertices
 deg5-dia10-n202550.edges.txt.gz lists exactly the edges of the construction in construction.json: True (506375 edges)
 $ tools/verify/verify_lift2_implicit 10 4051 25 4 1 1 3 0 3 178 8 0 0 1 2 2122 15
 lift over Z_4051 x|_4 Z_25 (|G| = 101275): n = 202550, fibre degrees 5/5, simple

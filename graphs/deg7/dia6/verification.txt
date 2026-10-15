@@ -1,7 +1,7 @@
-== deg7-dia6: degree 7, diameter 6, 12654 vertices
+== deg7/dia6: degree 7, diameter 6, 12654 vertices
 deg7-dia6-n12654.edges.txt lists exactly the edges of the construction in construction.json: True (44289 edges)
-$ tools/verify/verify_bfs graphs/deg7-dia6/deg7-dia6-n12654.edges.txt 6
-file: graphs/deg7-dia6/deg7-dia6-n12654.edges.txt
+$ tools/verify/verify_bfs graphs/deg7/dia6/deg7-dia6-n12654.edges.txt 6
+file: graphs/deg7/dia6/deg7-dia6-n12654.edges.txt
 order: 12654
 edges: 44289
 min degree: 7

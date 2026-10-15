@@ -1,4 +1,4 @@
-== deg15-dia8: degree 15, diameter 8, 110115980 vertices
+== deg15/dia8: degree 15, diameter 8, 110115980 vertices
 Output of the original run of tools/verify/verify_bits_inv.c (not repeated for this repository):
 $ tools/verify/verify_bits_inv cay 8 423523 260 8 422256 171 6132 15 168289 242 398805 70 25253 246 329528 8 347373 113 295274 130
 Cay(Z_423523 x|_8 Z_260, S), |S u S^-1| = 15, n = 110115980

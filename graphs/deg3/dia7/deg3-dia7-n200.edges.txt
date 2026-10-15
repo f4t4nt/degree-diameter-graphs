@@ -1,21 +1,17 @@
 # DEGREE 3, DIAMETER 7: 200 VERTICES
 # ----------------------------------
-# 200 vertices, 300 undirected edges, every vertex of degree 3, every pair of vertices within 7
-# steps of each other.
+# 200 vertices, 300 undirected edges, every vertex of degree 3, every pair of vertices within 7 steps
+# of each other.
 #
-# A regular voltage lift over G = Z_5 x|_4 Z_8 = <x, y | x^5 = y^8 = 1, y x y^-1 = x^4>, of order
-# 40. The base graph has vertices 0, 1, 2, 3 and 4, with links 0 -> 1, 0 -> 2, 0 -> 3 and 1 -> 4
-# (voltage 1), a link 1 -> 2 (voltage y), a semi-edge at 2 (voltage y^4, an involution), a loop at
-# 3 (voltage x y^2) and a loop at 4 (voltage x^2 y^2).
+# Voltage lift over G = Z_5 x|_4 Z_8 = <x, y | x^5 = y^8 = 1, y x y^-1 = x^4> of a 5-vertex base graph
+# (link 0 -> 1 with voltage 1; link 0 -> 2 with voltage 1; link 0 -> 3 with voltage 1; link 1 -> 4
+# with voltage 1; link 1 -> 2 with voltage y; semi-edge at 2 with voltage y^4; loop at 3 with voltage
+# x y^2; loop at 4 with voltage x^2 y^2): (u, g) is joined to (v, g a) for every dart u -> v with
+# voltage a.
 #
-# The lift has vertex set {0, 1, 2, 3, 4} x G and joins (u, g) to (v, g a) for every dart u -> v
-# with voltage a; a loop with voltage a joins (v, g) to (v, g a) and (v, g a^-1), and a semi-edge
-# with involution t joins (v, g) to (v, g t). G acts on each fibre {v} x G by left multiplication.
+# Vertex 40 v + i + 5 j is the pair (v, x^i y^j).
 #
-# Vertex 40 v + i + 5 j is the pair (v, x^i y^j): each run of 40 consecutive numbers lies over one
-# base vertex, in order, and vertex 40 v is (v, identity).
-#
-# One edge "u v" per line, vertices numbered 0..199.
+# One edge "u v" per line, vertices numbered 0..199; README.md describes the construction.
 
 # loop at base vertex 3, voltage x y^2: (3, g) -- (3, g x y^2)
 120 131

@@ -1,20 +1,14 @@
 # DEGREE 6, DIAMETER 8: 80,050 VERTICES
 # -------------------------------------
-# 80,050 vertices, 240,150 undirected edges, every vertex of degree 6, every pair of vertices
-# within 8 steps of each other.
+# 80,050 vertices, 240,150 undirected edges, every vertex of degree 6, every pair of vertices within 8
+# steps of each other.
 #
-# The Cayley graph of G = Z_3202 x|_1419 Z_25 = <x, y | x^3202 = y^25 = 1, y x y^-1 = x^1419>, of
-# order 80,050 (3202 = 2 x 1601), with connection set S = {x y, x y^5, x^350 y^11}: every g in G
-# is joined to g s and g s^-1 for s in S.
+# Cayley graph of G = Z_3202 x|_1419 Z_25 = <x, y | x^3202 = y^25 = 1, y x y^-1 = x^1419>: g is joined
+# to g s and g s^-1 for every s in S = {x y, x y^5, x^350 y^11}.
 #
-# S contains no involution (G has one involution), so the degree is 2 x 3 = 6. The graph is
-# vertex-transitive: G acts on it by left multiplication.
+# Vertex i + 3202 j is the group element x^i y^j (0 <= i < 3202, 0 <= j < 25).
 #
-# Vertex i + 3202 j is the group element x^i y^j (0 <= i < 3202, 0 <= j < 25), so vertex 0 is the
-# identity and the 25 runs of 3,202 consecutive numbers are the cosets of <x>; a generator x^a y^b
-# joins run j to run j + b (mod 25).
-#
-# One edge "u v" per line, vertices numbered 0..80049.
+# One edge "u v" per line, vertices numbered 0..80049; README.md describes the construction.
 
 # generator x y: g -- g x y
 0 3203

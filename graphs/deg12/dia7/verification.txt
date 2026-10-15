@@ -1,4 +1,4 @@
-== deg12-dia7: degree 12, diameter 7, 2114927 vertices
+== deg12/dia7: degree 12, diameter 7, 2114927 vertices
 $ tools/verify/verify_cayley_inv 7 19403 109 6308 3 5982 44 1396 55 16241 66 10965 40 12766 46 5379 103
 G = Z_19403 x|_6308 Z_109 (order 2114927), 6 generators, S u S^-1 has 12 distinct elements: simple 12-regular Cayley graph
 source 0: reached 2114927 of 2114927, eccentricity 7, profile: 1 12 132 1452 15940 168012 1160690 768688

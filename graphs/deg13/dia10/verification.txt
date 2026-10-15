@@ -1,4 +1,4 @@
-== deg13-dia10: degree 13, diameter 10, 3789298110 vertices
+== deg13/dia10: degree 13, diameter 10, 3789298110 vertices
 Output of the original run of tools/verify/verify_bits_inv.c (not repeated for this repository):
 $ tools/verify/verify_bits_inv cay 10 9716149 390 514348 4424168 343 5603880 4 9317141 59 2851313 1 373050 31 4695647 146 3145658 195
 Cay(Z_9716149 x|_514348 Z_390, S), |S u S^-1| = 13, n = 3789298110

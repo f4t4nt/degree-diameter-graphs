@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Rebuild and verify the graphs in this repository.
 
-    python3 tools/ddgraph.py edges graphs/deg5-dia8 > out.edges.txt
-    python3 tools/ddgraph.py check graphs/deg5-dia8
+    python3 tools/ddgraph.py edges graphs/deg5/dia8 > out.edges.txt
+    python3 tools/ddgraph.py check graphs/deg5/dia8
     python3 tools/ddgraph.py check --all
 
 `edges` prints the edge list defined by a cell's construction.json: one "u v" per line, vertices
@@ -324,12 +324,17 @@ def implicit_args(spec):
     return None
 
 
+def cell_name(cell):
+    """deg5/dia8 for graphs/deg5/dia8."""
+    return f"{cell.parent.name}/{cell.name}"
+
+
 def check(cell, max_vertices):
     """Verify one cell and return "ok", "FAILED" or "skipped"."""
     cell = pathlib.Path(cell)
     spec = load(cell)
     deg, D, n = spec["degree"], spec["diameter"], spec["order"]
-    print(f"== {cell.name}: degree {deg}, diameter {D}, {n} vertices")
+    print(f"== {cell_name(cell)}: degree {deg}, diameter {D}, {n} vertices")
     ok = True
     path = edge_file(cell)
     if path is not None:
@@ -397,8 +402,14 @@ def main():
             sys.exit("this cell is defined by its edge file, not by a construction")
         write_edges(spec, sys.stdout)
         return
-    cells = sorted((ROOT / "graphs").iterdir()) if args.all else [pathlib.Path(p) for p in args.cells]
-    results = [(cell.name, check(cell, args.max_vertices)) for cell in cells if (cell / "construction.json").exists()]
+    if args.all:
+        found = (p.parent for p in (ROOT / "graphs").glob("deg*/dia*/construction.json"))
+        cells = sorted(found, key=lambda p: (int(p.parent.name[3:]), int(p.name[3:])))
+    else:
+        cells = [pathlib.Path(p) for p in args.cells]
+    results = [
+        (cell_name(cell), check(cell, args.max_vertices)) for cell in cells if (cell / "construction.json").exists()
+    ]
     if len(results) > 1:
         print()
         for name, status in results:

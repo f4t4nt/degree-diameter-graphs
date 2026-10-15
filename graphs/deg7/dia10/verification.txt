@@ -1,4 +1,4 @@
-== deg7-dia10: degree 7, diameter 10, 6641680 vertices
+== deg7/dia10: degree 7, diameter 10, 6641680 vertices
 $ tools/verify/verify_cayley_inv 10 83021 80 4400 3 74603 40 4907 38 21040 3 63695 58
 G = Z_83021 x|_4400 Z_80 (order 6641680), 4 generators, S u S^-1 has 7 distinct elements: simple 7-regular Cayley graph
 source 0: reached 6641680 of 6641680, eccentricity 10, profile: 1 7 42 252 1512 9070 54272 316019 1595212 3851440 813853

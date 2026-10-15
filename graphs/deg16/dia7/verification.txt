@@ -1,4 +1,4 @@
-== deg16-dia7: degree 16, diameter 7, 14995367 vertices
+== deg16/dia7: degree 16, diameter 7, 14995367 vertices
 $ tools/verify/verify_cayley_inv 7 83773 179 72211 3 75326 15 13594 16 26869 58 58304 33 79357 12 79527 69 57754 71 29027 7
 G = Z_83773 x|_72211 Z_179 (order 14995367), 8 generators, S u S^-1 has 16 distinct elements: simple 16-regular Cayley graph
 source 0: reached 14995367 of 14995367, eccentricity 7, profile: 1 16 240 3600 53960 788074 7883022 6266454

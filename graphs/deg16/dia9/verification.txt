@@ -1,4 +1,4 @@
-== deg16-dia9: degree 16, diameter 9, 2343053633 vertices
+== deg16/dia9: degree 16, diameter 9, 2343053633 vertices
 Output of the original run of tools/verify/verify_bits_implicit.c (not repeated for this repository):
 $ tools/verify/verify_bits_implicit cay 9 5060591 463 949 677132 226 3285509 90 3540687 80 40693 78 1582586 22 3137470 103 3113179 174 4144856 377
 Cay(Z_5060591 x|_949 Z_463, S), |S u S^-1| = 16, n = 2343053633

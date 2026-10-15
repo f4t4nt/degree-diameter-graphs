@@ -1,4 +1,4 @@
-== deg13-dia7: degree 13, diameter 7, 3691038 vertices
+== deg13/dia7: degree 13, diameter 7, 3691038 vertices
 $ tools/verify/verify_cayley_inv 7 47321 78 3981 3 46136 39 28946 31 23110 28 30322 32 27810 11 25477 37 46989 12
 G = Z_47321 x|_3981 Z_78 (order 3691038), 7 generators, S u S^-1 has 13 distinct elements: simple 13-regular Cayley graph
 source 0: reached 3691038 of 3691038, eccentricity 7, profile: 1 13 156 1872 22432 259813 2001528 1405223
