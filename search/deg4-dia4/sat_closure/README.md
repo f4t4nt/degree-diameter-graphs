@@ -19,7 +19,7 @@ own wiring, SAT breaking after one port swap) and on negative controls; the stat
   `shapes108_776plus.json` (3,328), `shapes108_772.json.gz` (2,325) and `shapes108_768.json.gz`
   (11,163) is UNSAT, which together with the skeleton completions closes 105 to 108.
   `cube_sat108e.py` is the case-split fallback for the hardest shape; `merge108e.py` merges the
-  verdict batches per shape.
+  verdict files of the batches per shape.
 - Shape enumerations behind those lists: `components107.py` (typed connector components by
   potential), `shapes106.py`, `shapes107.py`, `shapes_fast.py`, `shapes108.py` (units plus gadget
   multisets under the budget rows and the port-lemma matching; `recheck_tight.py` drops the unsound

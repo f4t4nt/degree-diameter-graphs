@@ -40,8 +40,8 @@ gcc -O3 -march=native -o cayley_sa_twoplane cayley_sa_twoplane.c -lm
 ```
 
 A full-size search is the same command with the group of the target cell, `--invol --tmove 10 --xunit` for odd degree, a
-longer `--sa` budget and `--complete 2`; the two-slot completion of a frozen state is `--init <state> --sweep2 600 EF
---J2 2`.
+longer `--sa` budget and `--complete 2`; the two-slot completion of a frozen state (modes E and F) is
+`--init <state> --sweep2 600 EF --J2 2`.
 
 ## Graphs found
 

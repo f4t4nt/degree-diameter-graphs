@@ -8,13 +8,15 @@ conjugacy-class count $`k(G)`$ (the lower the commuting probability $`k(G)/|G|`$
 shape-103 sweep of $`((\mathbb{F}_{25} \rtimes C_3) \times \mathbb{Z}_5) \rtimes C_8`$, the order-3000 group with the
 lowest $`k(G)`$ of its window, gives the [(5,7)](../../graphs/deg5/dia7) graph.
 
+![The shape-103 base graph of the (5,7) lift with its voltages: a loop at each of the two vertices and three parallel links, one trivial](../../graphs/deg5/dia7/base-graph.svg)<br><sub>The shape-103 base of the (5,7) graph: a loop at each of the two base vertices and three parallel links $`0 \to 1`$, one of them trivial, which makes the lift 5-regular on $`2 \cdot 3000 = 6000`$ vertices. The voltages are elements $`(w, c^i, z^j)\, y^m`$ of $`G = ((\mathbb{F}_{25} \rtimes \langle c \rangle) \times \langle z \rangle) \rtimes \langle y \rangle`$, with $`w \in \mathbb{F}_5^2`$ a column vector, $`c`$ of order 3, $`z`$ central of order 5 and $`y`$ of order 8 (the `M: 8` of the spec): the loop at 0 carries $`y`$, the loop at 1 carries $`((0, 2), c, z^4)\, y^4`$, and the two free links carry $`((0, 1), c, z)\, y^4`$ and $`((1, 4), c, z^4)\, y^7`$; the lift joins $`(u, g)`$ to $`(v, g a)`$ for every dart $`u \to v`$ with voltage $`a`$ and a loop acts both ways. In the element index $`k M + m`$ of `table_sweep.c` these are the `--set 1 316 172 1159` of the control below (the loop at 0, the loop at 1, then the two free links).</sub>
+
 Files:
 
 - `gf.py`: builds a group from a JSON block spec (multiplication table of $`K`$, the automorphism $`\alpha`$ of $`y`$)
   into a `.grp` file and reports $`|Z(G)|`$, involutions, element orders; `gf.py info FILE.grp` reads one back.
-- `enum_family.py`, `enum_groups.py`: every block decomposition and automorphism class of a window
+- `enum_family.py`, `enum_groups.py`: every block decomposition and automorphism class of an order window
   $`(\mathrm{LO}, \mathrm{HI}]`$ with the filters of the two families (`--cell cay7`: $`M`$ even, one involution class;
-  `--cell lift`: any $`M`$), as JSONL specs.
+  `--cell lift`: any $`M`$, no involution filter), as JSONL specs.
 - `aut_k.py`: automorphisms of $`K`$ commuting with $`\alpha`$ (units of cyclic blocks, $`\mathrm{GL}`$ centralisers) as
   an `.aut` file that shrinks the sweep; any subgroup of $`\mathrm{Aut}(G)`$ gives a complete reduction.
 - `table_sweep.c`: the sweeper on the full right-multiplication table (groups up to about 20000 elements): `--family
@@ -27,8 +29,8 @@ Files:
 - `make_edges.py`: independent edge-list rebuild of a FOUND set from the `.grp` file's spec.
 
 Element $`(k, m) = k y^m`$ has index $`k M + m`$ ($`k`$ the mixed-radix block index in spec order); a lift vertex
-$`(f, g)`$ has index $`f\,|G| + \mathrm{index}(g)`$. Output lines: `FOUND diam<=D (defect 0) family=.. set=[..]`,
-`NEAR`, `PROGRESS`, `EXHAUSTIVE`.
+$`(f, g)`$ has index $`f\,|G| + \mathrm{index}(g)`$. Output lines of `table_sweep` and `tablefree_sweep`:
+`FOUND diam<=D (defect 0) family=.. set=[..]`, `NEAR`, `PROGRESS`, `EXHAUSTIVE`.
 
 To run it yourself (rebuilds the (5,7) group, re-evaluates the (5,7) lift exactly and brute-force checks the
 completeness of the reduction on a small group; all in seconds):

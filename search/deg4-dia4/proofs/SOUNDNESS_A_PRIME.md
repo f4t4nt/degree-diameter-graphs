@@ -45,8 +45,8 @@ at least four distinct ports; in particular $`f_i(h_1) + f_i(h_2) \ge 4`$ (the i
 the 16 ports $`q`$ of block $`j`$, each connector $`c`$ holding $`x_j(c)`$ ports of block $`j`$ contributes
 $`x_j(c) f_i(c)`$, so $`\sum_q e(q, i) = \sum_c x_j(c) f_i(c) - 64 = \mathrm{row}_{ji} - 64`$, and summing over the
 six ordered block pairs, $`\sum_{(q, i)} e(q, i) = (B(G) - 768)/2 = \Phi + D`$ by the budget identity of
-13.2 ($`B = 768 + 2(\Phi - \Phi_{\min})`$, $`\Phi_{\min} = -D`$). So the total local excess of a member of
-potential $`\Phi`$ is exactly $`\Phi + D`$ (0 at budget 768, 2 at 772), with no choice involved.
+TEMPLATE_CALCULUS.md 13.2 ($`B = 768 + 2(\Phi - \Phi_{\min})`$, $`\Phi_{\min} = -D`$). So the total local excess
+of a member of potential $`\Phi`$ is exactly $`\Phi + D`$ (0 at budget 768, 2 at 772), with no choice involved.
 
 **Fact 3 (exact pairs).** If $`e(q, i) = 0`$ then $`|M_i(q)| = 4`$ while its underlying set has at least four
 elements, so $`M_i(q)`$ has no repeated element and is a perfect matching of $`K_{4,4}(i)`$. Consequently:
@@ -68,11 +68,11 @@ it; see TEMPLATE_CALCULUS.md 13.3).
 
 `matching_excess(gadgets, u, excess)` with excess $`= \Phi + D`$ receives the gadget slots (one entry per
 (connector, block, copy), `shapes107.analyse`), calls a slot *weak* when its connector's carried
-vector differs from 2 in some foreign coordinate, and searches exhaustively for an assignment that
-gives every weak slot a partner: either another gadget slot of the same block on a different
+vector differs from 2 in some foreign coordinate, and searches exhaustively for an assignment
+giving every weak slot a partner: either another gadget slot of the same block on a different
 connector, admissible when $`f_i(h_1) + f_i(h_2) \ge 4`$ for both foreign $`i`$, with cost
 $`\sum_i (f_i(h_1) + f_i(h_2) - 4)`$ and, at every coordinate with sum exactly 4 and both connectors in
-the same gadget, (a') and (b) as stated above; or a unit slot, admissible when both foreign
+the same gadget, (a') and (b) as above; or a unit slot, admissible when both foreign
 coordinates are $`\ge 2`$, with cost $`f_i + f_i' - 4`$, at most $`2u`$ unit slots per block. Each slot is
 used at most once and the costs must sum to at most excess.
 
@@ -90,8 +90,8 @@ $`f_i(h) + 2 \ge 4`$ for both foreign $`i`$, which is the program's condition, a
 per block, so at most $`2u`$ gadget slots per block have unit partners. Finally the true pairs are
 disjoint (each slot is one port incidence), and the sum of the program's costs over the represented
 pairs is a sub-sum of $`\sum_{(q, i)} e(q, i) = \Phi + D`$ (Fact 2), so it is at most excess. Hence the
-true pairing restricted to the weak slots is one of the assignments the exhaustive search examines,
-and the function returns True. QED.
+true pairing restricted to the weak slots is one of the assignments that the exhaustive search examines,
+and the function returns True for this shape. QED.
 
 ## Consequences
 

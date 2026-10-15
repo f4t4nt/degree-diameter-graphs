@@ -41,8 +41,8 @@ gcc -O3 -march=native -o hexagon_sa hexagon_sa.c -lm && ./hexagon_sa H4.edges 10
 ```
 
 Verify any output edge list with the all-pairs BFS verifier in `tools/`. A free search is `./hexagon_sa H4.edges 106 0
-<seed> <seconds>`; the flag set $`S`$ of the (5,6) graph comes from min-conflicts relocation with `--fixF` on an $`F`$
-annealed beforehand.
+<seed> <seconds>`; the flag set $`S`$ of the (5,6) graph comes from the min-conflicts relocation with `--fixF` on a
+cubic $`F`$ annealed beforehand.
 
 ## Graphs found
 

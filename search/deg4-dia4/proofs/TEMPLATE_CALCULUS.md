@@ -7,9 +7,9 @@ or ../sat_closure/ (its outputs land under `runs/` next to the script). Nothing 
 
 A member is a simple graph of maximum degree 4 and diameter 4 containing three vertex-disjoint
 subdivided $`K_{4,4}`$ blocks. Block $`i`$ has hubs $`L_i, R_i`$ (4 + 4), ports $`P_i`$ (16, one per hub pair
-$`(l, r)`$), and the hub edges $`l - p_{lr} - r`$. Hubs are saturated by block edges. Every port has two free
-slots. All remaining vertices are connectors; every non-block edge joins a port to a connector or two
-connectors (no port-port edges; the only relaxation of this assumption is noted in section 7).
+$`(l, r)`$), and the hub edges $`l - p_{lr} - r`$. Hubs are saturated by block edges (degree 4). Every port has
+two free slots for non-block edges. All remaining vertices are connectors; every non-block edge joins a port to a
+connector or two connectors (no port-port edges; the only relaxation of this assumption is noted in section 7).
 
 A connector $`c`$ has port profile $`x(c) = (x_1, x_2, x_3)`$, $`x_j`$ = number of ports of block $`j`$ adjacent
 to $`c`$, and $`4 - |x(c)|`$ connector edges, $`|x| = x_1 + x_2 + x_3`$. Slots: $`\sum_c x_j(c) = 32`$ per block.
@@ -29,13 +29,12 @@ endpoint of every edge of $`K_{4,4}`$); port-port 2 (shared hub) or 4. So every 
 4 using block edges alone, and no connector capacity is spent inside blocks.
 
 Lemma. $`K_{4,4}`$ is the only 4-regular base graph with this property. The hub-port bound needs every
-vertex to be adjacent to or on every edge: for an edge $`uv`$, $`N[u] \cup N[v] = V`$, so
+vertex on or adjacent to every edge: for an edge $`uv`$, $`N[u] \cup N[v] = V`$, so
 $`b \le |N[u]| + |N[v]| - |\{u, v\}| \le 8`$, with equality only if $`N[u]`$ and $`N[v]`$ meet exactly in
 $`\{u, v\}`$, i.e. the graph is triangle-free; a triangle-free 4-regular graph on 8 vertices has 16 edges,
 the Mantel/Turan maximum, hence is $`K_{4,4}`$. Any larger or different base graph has within-block pairs
-at distance $`\ge 5`$ that must be repaired by connector routes, which the budget below does not pay for.
-This is why the architecture of the 104-vertex graphs is forced to use $`K_{4,4}`$ and why larger blocks
-are a worse trade, not a free one.
+at distance $`\ge 5`$ that connector routes must repair, which the budget below does not pay for. So the
+architecture of the 104-vertex graphs must use $`K_{4,4}`$, and larger blocks are a worse trade, not a free one.
 
 ## 3. Path shapes between vertex classes (complete enumerations)
 
@@ -88,7 +87,7 @@ cross-double adjacent to a triple or to a same-block double of the block it miss
 integer variables with: per-block slot sums, degree sums, the total and per-ordered-pair budget rows,
 hub-to-hub coverage (sum over connectors of $`x_i x_j \ge 16`$ per block pair, from the single path shape
 $`a - p - c - q - b`$), and for routers only the hub-to-connector demand (24 hubs, supplied by connector
-edges and 2-paths, with a 2-path consistency relaxation). This is a sound relaxation.
+edges and 2-paths, with a 2-path consistency relaxation). This is a sound relaxation of the family.
 
 Results: maximum $`n`$ is 127 for the family; the relaxation is loose above 105 because it cannot see
 port sharing, port-to-port or connector-to-connector requirements. At $`n = 105`$ the maximum budget is
@@ -145,14 +144,14 @@ of block $`i`$ reaches $`q`$ once for every block-$`i`$ port carried by a connec
 > $`N[\mathrm{holders}(q)]`$ are exactly four distinct ports forming a perfect matching of $`K_{4,4}(i)`$.
 
 A normal pair (two triples, two ports per block) carries exactly its two block-$`i`$ ports when one of
-its members holds $`q`$. `port_lemma.py` applies this to the 84 configurations of section 6: for each one
-it enumerates how the gadget slots can share ports (with a normal connector, or with another gadget
-slot of the same block) and demands count four and pairwise-distinct carried ports for every
+its members holds $`q`$. `port_lemma.py` applies this to the 84 configurations of section 6: for each it
+enumerates how the gadget slots can share ports (with a normal connector or another gadget slot of the
+same block) and demands count four and pairwise-distinct carried ports for every
 gadget-held port and every other block. Result: every path, one-edge and no-edge gadget dies; exactly
 the 21 triangle configurations survive (the three triangle types up to block relabelling). For a
 triangle gadget $`\{x, y, z\}`$ the closed neighbourhood of each member is the whole triangle, so
-$`N[\mathrm{holders}]`$ contributes the triangle's two ports in each block: a triangle is a "virtual pair"
-with the same reach sets as a normal pair.
+$`N[\mathrm{holders}]`$ contributes the triangle's two ports per block: a triangle is a "virtual pair"
+with a normal pair's reach sets.
 
 ## 8. Structure theorem for tight designs
 
@@ -179,8 +178,8 @@ preserve the two hub pairings; it has order 64 and does not contain a single wit
 ($`A_1 \leftrightarrow A_2`$ alone), because every pairing-preserving hub transposition swaps the labels of
 two sides at once ($`l_1 \leftrightarrow l_2`$ swaps within $`A`$ and within $`C`$). Normalising and deduplicating
 with the full automorphism group of the label hierarchy (order 128) instead is wrong: it merges
-non-isomorphic skeletons and drops half of the label patterns (15 skeletons, whose enumerated 104
-realisations miss 26 of classes 0 to 34).
+non-isomorphic skeletons and drops half of the label patterns (15 skeletons, whose enumerated 104-vertex
+realisations miss 26 of the classes 0 to 34).
 
 `unit_designs2.py` enumerates with the true group: block 1 canonical, $`\tau_2`$ up to the true block-1
 stabiliser (order 16384, four orbit representatives), $`\tau_3`$ up to the stabiliser of $`\tau_2`$, every
@@ -293,7 +292,7 @@ would give six mutually orthogonal partitions of the 16 ports into 4-sets, i.e. 
 where at most three exist. So the 120 design fails for exactly one reason: the three orthogonal-array
 bijections between the blocks would have to form a commuting triangle, and orthogonal Latin squares of
 order 4 cannot do that. Every lemma is re-verified computationally for all $`3 \times 6912`$ instances
-(sat_closure/proof120/).
+(scripts in sat_closure/proof120/, see section 6 of PROOF120.md).
 
 ## 11b. Four octahedron blocks at 108 (sat_closure/oct4/)
 
@@ -311,9 +310,10 @@ doubles and makes every port have one heavy and one light holder. Finally, a uni
 and $`k`$ has two block-$`j`$ ports; at each, the light co-holder must carry the unique edge completing the
 unit's block-$`k`$ 2-matching to a perfect matching (an octahedron 2-matching has at most one
 completion), so both light co-holders are the single light holder of that edge, hence the same
-entity, which then holds two block-$`j`$ ports although light entities hold one. **No four-octahedron
-graph on 108 vertices exists.** Typed SAT over the 11 possible connector skeletons confirms: all UNSAT
-(three encodings), encoder validated on a 104 graph's own skeleton (`typed_sat.py validate104`).
+entity, which then holds two block-$`j`$ ports although light entities hold only one. **No four-octahedron
+graph on 108 vertices exists.** Typed SAT over the 11 possible connector skeletons confirms this: all are UNSAT
+(three different encodings), with the encoder validated on a 104-vertex graph's own skeleton
+(`typed_sat.py validate104`).
 
 ## 12. What remains open
 
@@ -392,7 +392,8 @@ Shapes are taken up to the $`S_3`$ of block relabellings, under which the SAT mo
 108 the class-level pipeline `shapes108.py` (gadgets grouped by their multiset of (profile, carried
 vector), disk-backed store) reproduces the sub-family lists 106/$`\Phi \ge -4`$, 107/$`\Phi \ge -7`$ and
 108/$`\Phi \ge -6`$ of the per-gadget pipeline (`shapes106.py`, `shapes107.py`, `shapes_fast.py`) exactly.
-No surviving shape contains a quad or a router; one shape at 107 and one at 108/776 contain a single.
+No surviving shape contains a quad or a router; one shape at 107 and one at 108/776 contain a single (a
+connector with one port).
 
 | $`n`$ | $`\Phi_{\min}`$ | components | shapes by budget (classes up to block relabelling) | total |
 |---|---|---|---|---|
@@ -424,8 +425,8 @@ full enumeration of their realisations returns all 36 classes (enumerate104.py, 
 `typed_slack_sat.py validate` on class 35: the graph's own port assignment is SAT
 under assumptions, SAT breaks after one port swap, the free model is SAT with a decoded BFS-verified
 4-regular diameter-4 graph and stays SAT with one unit fixed as a gadget; negative control
-(`typed_slack_sat.py control`) 15 units + cross triangle at 105 UNSAT, agreeing with sat105.py; six
-106 shapes UNSAT with every redundant clause and the tight mode switched off.
+(`typed_slack_sat.py control`): 15 units + cross triangle at 105 is UNSAT, agreeing with the skeleton method
+(sat105.py); six 106 shapes remain UNSAT with every redundant clause and the tight mode switched off.
 
 **13.5 Theorem.** Let $`G`$ be a 4-regular graph of diameter 4 on $`n`$ vertices that contains three
 vertex-disjoint subdivided $`K_{4,4}`$ blocks with saturated hubs and no port-port edge. Then $`n`$ is not
@@ -436,7 +437,7 @@ vertex-disjoint subdivided $`K_{4,4}`$ blocks with saturated hubs and no port-po
    (`sat105.py 105 all`); the typed SAT agrees on the cross-triangle shape (UNSAT).
 2. $`n = 106`$: all 54 shape classes of data/shapes106.json are UNSAT by typed SAT (27 classes, 92
    labelled shapes, satisfy condition (c) and 27 do not); the 15 two-triangle labelled shapes are
-   UNSAT a second time by `sat106.py 106 all`.
+   UNSAT a second time by the skeleton method of 13.4 (`sat106.py 106 all`).
 3. $`n = 107`$: 729 classes (data/shapes107.json). 728 are UNSAT by typed SAT (328 satisfy (c), 302
    non-unit-like and 26 unit-like, and 400 do not), and the three-cross-triangle shape (tight, all
    components virtual pairs; the typed SAT does not decide it within its cap) is UNSAT by

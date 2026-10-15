@@ -5,9 +5,9 @@ a voltage-lift search plus a local repair, work out exactly what those graphs ar
 that nothing larger exists in the same architecture.
 
 Every graph found has the same anatomy: three vertex-disjoint subdivided $`K_{4,4}`$ blocks (8 hubs
-and 16 ports each, 72 vertices) and 32 connectors in matched pairs, each pair holding two ports per
-block. The hub-to-port counting identity makes this architecture tight at 104, and a chain of
-counting lemmas, a port lemma and SAT completions turns that into theorems:
+and 16 ports each, 72 vertices in all) and 32 connectors in matched pairs, each pair holding two ports
+per block. The hub-to-port counting identity makes this architecture tight at 104 vertices, and a
+chain of counting lemmas, a port lemma and SAT completions turns that into the following theorems:
 
 - exactly 36 graphs (up to isomorphism) of degree 4 and diameter 4 on 104 vertices contain three
   subdivided $`K_{4,4}`$ blocks with no port-port edge; they are the 36 files in `classes/`;

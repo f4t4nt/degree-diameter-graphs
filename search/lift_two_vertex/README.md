@@ -7,13 +7,13 @@ automorphisms of the group and the symmetries of the base graph, and evaluate ev
 [(4,10)](../../graphs/deg4/dia10) graph; the degree-5 shape 103 (a loop at each vertex, three links, one trivial) gives
 the [(5,8)](../../graphs/deg5/dia8), [(5,9)](../../graphs/deg5/dia9) and [(5,10)](../../graphs/deg5/dia10) graphs.
 
-![Three 2-vertex base shapes, B2a, haar and 103, with their voltage slots](lift_shapes.svg)<br><sub>Voltage slots of the three named shapes: loops $`a`$ at vertex 0 and $`b`$ at vertex 1, the spanning-tree link with voltage 1, and the free links $`c`$ (B2a), $`c_1, c_2, c_3`$ (haar) or $`c_2, c_3`$ (103); the lift over $`G`$ joins $`(u, g)`$ to $`(v, g a)`$ for every dart $`u \to v`$ with voltage $`a`$ and every $`g \in G`$, so it has $`2|G|`$ vertices and the same degree as the base.</sub>
+![Three 2-vertex base shapes, B2a, haar and 103, with their voltage slots](lift_shapes.svg)<br><sub>Voltage slots of the three named shapes: loops $`a`$ at vertex 0 and $`b`$ at vertex 1 (B2a and 103), the spanning-tree link with voltage 1, and the free links $`c`$ (B2a), $`c_1, c_2, c_3`$ (haar) or $`c_2, c_3`$ (103); the lift over $`G`$ joins $`(u, g)`$ to $`(v, g a)`$ for every dart $`u \to v`$ with voltage $`a`$ and every $`g \in G`$, so it has $`2|G|`$ vertices and the same degree as the base graph.</sub>
 
 Files:
 
 - `bitlift.c`: the evaluator and prefix sweeper for any base spec (`k=2;deg=5;loop:0;link*:0,1;link:0,1;link:0,1;loop:1`
   is shape 103); the row width `NW` $`= \lceil N/64 \rceil`$ is a compile-time constant. The default BFS kernels need
-  AVX-512; add `-DKERNEL=0` for the portable scalar kernel (same results, slower).
+  AVX-512; add `-DKERNEL=0` to build the portable scalar kernel (same results, but slower).
 - `gen_prefix.py`: reduced candidate prefixes for an arbitrary base spec (sequential stabilisers of the automorphism
   group $`A`$, loop inversion, parallel-slot ordering, vertex chain rules).
 - `gen_b2.py`, `check_b2.py`: the named degree-4 and degree-5 two-vertex shapes (B2a, haar, 103, H5, L1, semi-edge
@@ -27,8 +27,9 @@ Files:
 
 Prefix lines are `v1 .. v_{f-1} lo hi` (the last free slot ranges over $`[\mathrm{lo}, \mathrm{hi})`$); voltages are
 element indices $`i + N j`$.
-Output lines: `NEAR defect=d voltages=[..]`, `FOUND diam<=D (defect 0) ... voltages=[..]`, `EXHAUSTIVE ... complete=1`.
-Verify a FOUND with `make_edges.py` and the all-pairs BFS verifier in `tools/` (or the implicit lift verifier there).
+Output lines of `bitlift`: `NEAR defect=d voltages=[..]`, `FOUND diam<=D (defect 0) ... voltages=[..]`,
+`EXHAUSTIVE ... complete=1`. Verify a FOUND line with `make_edges.py` and the all-pairs BFS verifier in `tools/` (or
+with the implicit lift verifier there).
 
 To run it yourself (the control sweeps the complete degree-4 family with a loop at each vertex and two links over
 $`\mathbb{Z}_{197} \rtimes_{16} \mathbb{Z}_{49}`$ and re-finds the (4,10) graphs on 19306 vertices, 10 assignments = 5 up
@@ -43,7 +44,7 @@ gcc -O3 -march=native -DNW=4 -o bitlift_nw4 bitlift.c -lm && ./bitlift_nw4 --met
 
 `make_edges.py 197 49 16 0 "<spec>" "[197,1971,0,2439]" 19306.edges` writes the edge list. A shape-103 sub-block sweep is
 `gen_sub.py N M r i j > pref.txt` plus the same bitlift command with `--base "k=2;deg=5;loop:0;link*:0,1;link:0,1;link:0,1;loop:1"`;
-`rank_patterns.py N M r D` ranks the sub-blocks beforehand.
+`rank_patterns.py N M r D` ranks the sub-blocks beforehand with the R1 pattern filter.
 
 ## Graphs found
 

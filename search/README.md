@@ -26,8 +26,8 @@ $`u \to v`$ with voltage $`a`$, and the lift vertex $`(v, g)`$ has index $`v\,|G
 
 ## Glossary
 
-- defect: the number of vertices at distance more than $`D`$ from the root (a Cayley graph is vertex-transitive, so one
-  BFS from the identity decides the diameter; a lift needs one BFS per base vertex). Defect 0 means diameter at most $`D`$.
+- defect: the number of vertices farther than $`D`$ from the root (a Cayley graph is vertex-transitive, so one BFS
+  decides the diameter; a lift needs one per base vertex). Defect 0 means diameter at most $`D`$.
 - level, level pattern: the level of $`x^i y^j`$ is its $`y`$-exponent $`j`$; the level pattern of a connection set or
   voltage assignment is the list of the generators' levels. The search fixes a pattern and then moves only the
   $`x`$-coordinates, because the pattern alone determines how many words of length at most $`D`$ land on each
@@ -38,9 +38,8 @@ $`u \to v`$ with voltage $`a`$, and the lift vertex $`(v, g)`$ has index $`v\,|G
   of the quotient cycle $`\mathbb{Z}_M`$ (beyond the forced commutations), so no vertices are wasted at radius 2; the
   pattern optimiser searches for such patterns with the smallest yardstick.
 - yardstick: the Poisson estimate of the defect of a random assignment with a given level pattern, the sum over layers
-  of $`L \exp(-w/L)`$ where $`L`$ is the layer size and $`w`$ the number of words of length at most $`D`$ landing in the
-  layer; the uniform yardstick is its value for a pattern with no structure. The ratio of the two says how much a
-  pattern helps.
+  of $`L \exp(-w/L)`$ where $`w`$ of the words of length at most $`D`$ land in a layer of size $`L`$; the uniform
+  yardstick is its value for a pattern with no structure. The ratio of the two says how much a pattern helps.
 - shape 103: the 2-vertex base graph of degree 5 with one loop at each vertex and three parallel links between the two
   vertices, one link carrying the trivial voltage; the lift has $`2|G|`$ vertices. Shapes of degree 4 are named B2a (a
   loop at each vertex, two links) and haar (four links).
@@ -50,10 +49,10 @@ $`u \to v`$ with voltage $`a`$, and the lift vertex $`(v, g)`$ has index $`v\,|G
   inversions.
 - unit-$`x`$: a connection set whose generators all have $`x`$-coordinates coprime to $`N`$ (or, in the weaker form,
   coprime to the number of involutions $`I`$), which keeps every generator from commuting with the involution.
-- mode F: the complete two-slot sweep of the annealer, every admissible $`x`$-value of one generator times every
-  admissible $`x`$-value of another, with the level pattern, the involution and the remaining generators fixed; started
-  from an arbitrary state with the start values included it is a complete sweep of that family, and the automorphism
-  quotient (`--quot`) evaluates one state per orbit of the automorphisms fixing the involution and the fixed slots.
+- mode F: the annealer's complete two-slot sweep, every admissible $`x`$-value of one generator times every admissible
+  $`x`$-value of another, with the level pattern, the involution and the remaining generators fixed; started from any
+  state with the start values included it is a complete sweep of that family, and the automorphism quotient (`--quot`)
+  evaluates one state per orbit of the automorphisms fixing the involution and the fixed slots.
 - frozen state: an annealing state that the annealer cannot improve (typically defect 2 with the two far vertices
   forming a pair); single-slot or $`x`$-only completion is the exact evaluation of every change of one generator (all
   values, or only its $`x`$-coordinate) of such a state, so a diameter-$`D`$ neighbour cannot be missed.
@@ -67,9 +66,7 @@ $`u \to v`$ with voltage $`a`$, and the lift vertex $`(v, g)`$ has index $`v\,|G
   and a large commutator subgroup.
 - class-count rule: prefer the group with the fewest conjugacy classes $`k(G)`$ in its window (the lowest commuting
   probability $`k(G)/|G|`$), which selects the (5,7) group.
-- two-plane bitmap annealing: the same annealing with a BFS that stores only two bits per vertex (visited, and the parity
-  of the level at which it was reached), so that graphs with up to about $`3 \times 10^{10}`$ vertices fit in 8 GB of
-  memory.
+- two-plane bitmap annealing: the same annealing with a BFS storing only two bits per vertex (visited, and the parity
+  of the level at which it was reached), so graphs of up to about $`3 \times 10^{10}`$ vertices fit in 8 GB.
 - hexagon insertion: subdividing $`m`$ flags (incidence edges) of the incidence graph of the generalized hexagon
-  $`H(q)`$ with new vertices and joining the new vertices by a graph $`F`$ so that the result is $`(q+1)`$-regular and
-  keeps diameter 6.
+  $`H(q)`$ with new vertices joined by a graph $`F`$ so the result is $`(q+1)`$-regular and keeps diameter 6.

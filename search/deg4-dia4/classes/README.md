@@ -14,14 +14,14 @@ classes with nauty: 8 + 18 + 10 = 36 classes, one file per class in this directo
 - Numbering: block $`A`$ is $`0, \ldots, 23`$, $`B`$ is $`24, \ldots, 47`$, $`C`$ is $`48, \ldots, 71`$.
   Inside a block the hubs are $`L_0, \ldots, L_3`$ at offsets $`0, \ldots, 3`$ and $`R_0, \ldots, R_3`$
   at offsets $`4, \ldots, 7`$, and the port between $`L_x`$ and $`R_y`$ is at offset $`8 + 4x + y`$
-  (so the 32 hub-port edges of a block are forced by the numbering). The connectors are
+  (so the numbering forces the 32 hub-port edges of a block). The connectors are
   $`72, \ldots, 103`$ in matched pairs: pair $`k`$ is the adjacent pair $`(72 + 2k, 73 + 2k)`$. The
-  remaining content of a class is its 96 port-connector edges.
+  rest of a class is its 96 port-connector edges.
 - `export_classes.py`: writes the files from the enumeration output of
   `../sat_closure/classify104.py` (which labels vertices as hub, port or connector) by the map above.
 - `check_classes.py`: plain BFS (order, degrees, diameter, pairs beyond 4) and pynauty certificates
-  for a set of edge files, reporting any two that are isomorphic; `--match FILE... --` also says
-  which class other edge files belong to.
+  for a set of edge files, reporting isomorphic pairs; `--match FILE... --` also names the class of
+  other edge files.
 
 Verification of these files: every file has 104 vertices, is 4-regular, simple, connected, of
 diameter 4 with 0 pairs beyond distance 4 (both the Python BFS in `check_classes.py` and the

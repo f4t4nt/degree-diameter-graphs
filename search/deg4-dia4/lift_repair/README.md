@@ -5,6 +5,8 @@ at a small defect, followed by a symmetry-breaking 2-opt repair that closes the 
 half works alone: the symmetric search never reaches defect 0 at 104, and plain local search from
 scratch walls far below 100.
 
+![The 13-vertex base pregraph of the lift search with the Z8 voltages of the saved stall: 24 links, four of them doubled, and four semi-edges](base_pregraph.svg)<br><sub>The base pregraph of the saved stall `z8_b13_defect16.ck`, read from its 28 classes: 24 links, four of them doubled ($`8 \to 9`$, $`9 \to 3`$, $`7 \to 5`$ and $`6 \to 2`$), four semi-edges (the barred stubs at 1, 4, 10 and 11) and no loops, so every base vertex has degree 4 and the lift is 4-regular on $`13 \cdot 8 = 104`$ vertices. Voltages are in $`\mathbb{Z}_8 = \langle z \rangle`$, written multiplicatively ($`z^k`$ is the element $`k`$ of the checkpoint, $`1`$ the identity): a link $`u \to v`$ with voltage $`z^k`$ joins $`(u, h)`$ to $`(v, h z^k)`$ for every $`h \in \mathbb{Z}_8`$, and a semi-edge carries the involution $`z^4`$ and joins $`(v, h)`$ to $`(v, h z^4)`$, a perfect matching on the fibre of $`v`$. With these voltages the lift has defect 16 (8 unordered pairs at distance 5, all inside one fibre), which the repair closes.</sub>
+
 - `lift.c`: voltage-lift search. A base pregraph on $`B`$ vertices with link, loop and semi-edge
   classes carries voltages in a finite group (cyclic, dihedral, dicyclic, Frobenius, products);
   the lift on $`B \cdot |G|`$ vertices is 4-regular when every base vertex has degree 4 counting a
@@ -19,8 +21,8 @@ scratch walls far below 100.
   `./repair EDGES SEED SECONDS BEST` (extra modes: `a` anneal, `g` exhaustive single-vertex
   insertion, `2` double insertion, `w` plateau walk).
 - `z8_b13_defect16.ck`: the saved stall, a $`\mathbb{Z}_8`$ lift of a 13-vertex base with 28
-  classes at defect 16 (8 unordered pairs, all inside one fibre); the repair closes it in a fraction
-  of a second, landing in class 0, 9, 10 or 11 of `../classes/`.
+  classes at defect 16 (8 unordered pairs in one fibre); the repair closes it in under a second,
+  landing in class 0, 9, 10 or 11 of `../classes/`.
 - `run_control.sh`: compiles everything, dumps the stall, repairs it and verifies the result with
   the repository's all-pairs BFS verifier, `tools/verify/verify_bfs.c`.
 

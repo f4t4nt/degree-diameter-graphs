@@ -9,9 +9,9 @@ three $`\varphi_{13}`$ representatives and all 6912 $`\varphi_{23}`$ (section 6)
 
 ## 1. Statement
 
-Let $`P`$ be the 16 cells of a $`4 \times 4`$ grid. A *star* is a row or a column; a *perfect matching* (PM)
-is a set of four cells meeting every star exactly once. A bijection $`\varphi: P \to P'`$ between two grids
-is an *OA bijection* if it maps every star of $`P`$ onto a PM of $`P'`$.
+Let $`P`$ be the set of 16 cells of a $`4 \times 4`$ grid. A *star* is a row or a column of the grid; a *perfect
+matching* (PM) is a set of four cells meeting every star exactly once. A bijection $`\varphi: P \to P'`$ between two
+such grids is an *OA bijection* if it maps every star of $`P`$ onto a PM of $`P'`$.
 
 Fix OA bijections $`\varphi_{12}: P_1 \to P_2`$, $`\varphi_{13}: P_1 \to P_3`$, $`\varphi_{23}: P_2 \to P_3`$ (all
 three port sets are copies of the grid), put $`\kappa = \varphi_{13}^{-1} \varphi_{23} \varphi_{12}`$, a permutation
@@ -29,8 +29,8 @@ $`P_1`$ and every OA matching $`M`$
 \end{array}
 ```
 
-More precisely, (A)-(D) force $`\kappa`$ to be the identity (Proposition, section 4), and $`\kappa`$ is never
-the identity for OA bijections (Lemma 3).
+More precisely, the families (A)-(D) force $`\kappa`$ to be the identity (Proposition, section 4), and $`\kappa`$
+is never the identity for OA bijections (Lemma 3, section 3).
 
 ## 2. Notation and the facts used
 
@@ -148,8 +148,8 @@ So $`\kappa(x) = x`$ for every cell $`x`$. $`\blacksquare`$
 $`\kappa = \varphi_{13}^{-1} \varphi_{23} \varphi_{12}`$ is never the identity for OA bijections by Lemma 3.
 $`\blacksquare`$
 
-The theorem holds for every triple of OA bijections, not only for the orbit representatives; no
-symmetry reduction is used.
+The theorem holds for every triple of OA bijections, not only for the orbit representatives checked in
+section 6; no symmetry reduction is used.
 
 ## 5. What the proof used, and what it did not
 
@@ -163,13 +163,13 @@ symmetry reduction is used.
   representatives) and $`\varphi_{23}`$ for which (A)+(C)+(D) is satisfiable (8, 34 and 32 of 6912); for
   representative 0 every pair of families is satisfiable for some $`\varphi_{23}`$, and (A)+(C) for all
   of them.
-- **Nothing about $`\kappa`$ except $`\kappa \ne \mathrm{id}`$.** Lemmas 1, 2 and the Proposition hold for an
-  arbitrary permutation $`\kappa`$ of $`P_1`$. The OA structure of $`\varphi_{23}`$ enters only through Lemma 3.
+- **Nothing about $`\kappa`$ except $`\kappa \ne \mathrm{id}`$.** Lemmas 1, 2 and the Proposition hold for any
+  permutation $`\kappa`$ of $`P_1`$. The OA structure of $`\varphi_{23}`$ enters only via Lemma 3.
   This is sharp: with $`\kappa = \mathrm{id}`$ the four families are satisfiable (`proof120/verify_general.py`
   prints a solution), so "$`\kappa = \mathrm{id}`$" is exactly what (A)-(D) say about $`\kappa`$. In the graph,
   $`\kappa = \mathrm{id}`$ reads $`\varphi_{13} = \varphi_{23} \varphi_{12}`$: the three OA bijections would have to form
-  a commuting triangle, and Lemma 3 says that the composite of two OA bijections always sends some
-  hub star to a set that hits a hub of the far block twice.
+  a commuting triangle, and Lemma 3 says the composite of two OA bijections always sends some
+  hub star to a set hitting a hub of the far block twice.
 - **Only the incidence facts (F0)-(F2).** The proof never uses the fifth parallel class of the affine
   plane behind $`\varphi_{12}`$ (the four common transversals of $`L_1`$ and $`L_2`$, which complete rows,
   columns, $`L_1`$, $`L_2`$ to an affine plane of order 4), nor that
@@ -178,7 +178,7 @@ symmetry reduction is used.
   property of the three $`\varphi_{13}`$ representatives (their planes are: the plane of $`\varphi_{12}`$ with
   $`L_1' = L_1`$, $`L_2' = L_2`$; the other plane through rows and columns; the plane of $`\varphi_{12}`$ with
   $`L_1' = L_1`$ and $`L_2'`$ the fifth class). Orthogonality of the two Latin squares behind $`\varphi_{12}`$ is
-  used only as $`L_1(x) \cap L_2(x) = \{x\}`$, and inside Lemma 3.
+  used only as $`L_1(x) \cap L_2(x) = \{x\}`$, and inside the proof of Lemma 3.
 - **Hub-freeness** ($`\alpha, \rho, \sigma`$ move every cell off its row and column) is (A0); (C0) is its
   twin for the OA matchings. Both are used only through the lines of the one cell $`x`$.
 
@@ -189,8 +189,8 @@ python-sat (CaDiCaL) installed; each prints its findings.
 
 - `verify_proof.py {0,1,2}`: for each $`\varphi_{13}`$ representative and all 6912 $`\varphi_{23}`$, Lemma 3
   ($`\varphi_{13} \varphi_{12}^{-1}`$ is not among the 6912 OA bijections, so $`\kappa \ne \mathrm{id}`$), and for every
-  cell $`x`$ moved by $`\kappa`$ the exact constraint set of the applicable case (a), (b) or (c) is
-  unsatisfiable by itself (103,680 moved cells per representative: 41,472 in case (a), 41,472 in (b),
+  cell $`x`$ moved by $`\kappa`$ the exact constraint set of its case (a), (b) or (c) is
+  unsatisfiable alone (103,680 moved cells per representative: 41,472 in case (a), 41,472 in (b),
   20,736 in (c)). For the 300 lowest-indexed $`\varphi_{23}`$ also Lemma 1 (the four (A)/(B) constraints
   force $`\alpha(x) = \kappa(x)`$) and Lemma 2 (the four (C)/(D) constraints force
   $`\rho^{-1}(x) = \kappa(x)`$) are checked as stated, by adding the negated conclusion.

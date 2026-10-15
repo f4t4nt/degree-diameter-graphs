@@ -12,14 +12,15 @@ a path and a loop over the one-involution group $`\mathbb{Z}_{73} \rtimes_{18} \
 Files:
 
 - `shapes.py`: the 61 connected 3-vertex degree-5 base pregraphs up to isomorphism with their automorphism group order,
-  free-slot structure and base spec (`--json` for machine use); degree-4 shapes are written by hand as specs.
+  free-slot structure and base spec (`--json` for machine use); the degree-4 shapes, such as the (4,9) base, are
+  written by hand as specs.
 - `gen_k3.py`: reduced candidate prefixes for any base spec (group automorphisms, loop inversion, permutations of
   parallel slots; shape automorphisms are not used, so the family is over-covered by at most
   $`|\mathrm{Aut}(\text{shape})|`$).
 - `check_k3.py`: brute-force validation of the reduction on a small group (group axioms, every symmetry a lift
   isomorphism, orbit coverage).
-- `make_edges_k3.py`: independent edge-list builder for a $`k`$-vertex lift (lift vertex $`(u, g)`$ has index
-  $`u\,|G| + \mathrm{index}(g)`$).
+- `make_edges_k3.py`: independent edge-list builder for a $`k`$-vertex lift from the group, base spec and voltages
+  (lift vertex $`(u, g)`$ has index $`u\,|G| + \mathrm{index}(g)`$).
 
 Base spec of the (4,9) graph: `k=3;deg=4;loop:2;link*:0,1;link*:0,2;link:1,2;link:0,1;link:0,1` (free slots in order:
 the loop at vertex 2, the link 1-2, the two further links 0-1; the starred links are the spanning tree with trivial

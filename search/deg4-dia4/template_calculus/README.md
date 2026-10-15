@@ -13,10 +13,10 @@ finite checks of `../proofs/TEMPLATE_CALCULUS.md` sections 1-8, 11b and the two-
   and per-hub compensation; `port_lemma.py` reduces them to the 21 triangle configurations.
 - `surgery.py`: pair-to-triangle surgery on the 104s (`t1`: every pair of every class);
   `unit_structure.py`: the twin structure predicted by the structure theorem, checked on all 36.
-- `unit_designs2.py`: orderly enumeration of the tight designs (three fixed-point-free involutions
+- `unit_designs2.py`: orderly enumeration of tight designs (three fixed-point-free involutions
   on 16 units with the side and label conditions) under the true label group, nauty-reduced: 54
-  skeletons (`../sat_closure/data/skeletons54.json`); `known_designs2.py` maps each of the 36
-  classes to its skeleton (50: 8 classes, 51: 18, 53: 10).
+  skeletons (`../sat_closure/data/skeletons54.json`); `known_designs2.py` maps the 36 classes to
+  their skeletons (50: 8 classes, 51: 18, 53: 10).
 - `blocks_relax.py`: the free blocks (subdivided $`K_5`$, octahedron, $`K_{4,4}`$) and the hub-reach
   relaxation over block multisets. `potential3.py table`, `check_potential_table.py`: the potential
   table of section 13.2 (every connector-edge potential is $`\le 0`$, with equality exactly for
