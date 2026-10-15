@@ -34,8 +34,8 @@
 <!-- v0_1&#45;&gt;v2_3 -->
 <g id="edge1" class="edge">
 <title>v0_1&#45;&gt;v2_3</title>
-<path fill="none" stroke="#0969da" stroke-width="2" d="M165.37,-218.36C175.19,-209.16 204.48,-181.26 226.3,-155.83 245.07,-133.94 264.8,-106.36 274.98,-91.72"/>
-<polygon fill="#0969da" stroke="#0969da" stroke-width="2" points="277.29,-93.01 279.39,-85.35 272.97,-90.03 277.29,-93.01"/>
+<path fill="none" stroke="#0969da" stroke-width="2" d="M161.3,-216.8C150.4,-138.7 241.3,-95.2 270,-85.6"/>
+<polygon fill="#0969da" stroke="#0969da" stroke-width="2" points="271.27,-87.94 277.5,-83 269.55,-82.98 271.27,-87.94"/>
 </g>
 <!-- v0_2 -->
 <g id="node4" class="node">
@@ -97,17 +97,6 @@
 <title>v1_2</title>
 <ellipse fill="#1f2328" stroke="#1f2328" stroke-width="1.6" cx="222" cy="-151.5" rx="4.5" ry="4.5"/>
 </g>
-<!-- v3_6 -->
-<g id="node41" class="node">
-<title>v3_6</title>
-<ellipse fill="#1f2328" stroke="#1f2328" stroke-width="1.6" cx="462" cy="-11.5" rx="4.5" ry="4.5"/>
-</g>
-<!-- v1_2&#45;&gt;v3_6 -->
-<g id="edge2" class="edge">
-<title>v1_2&#45;&gt;v3_6</title>
-<path fill="none" stroke="#0969da" stroke-width="2" d="M225.92,-148.81C240.46,-138.86 292.76,-103.41 337.71,-77.16 378.63,-53.27 428.97,-27.85 450.91,-16.96"/>
-<polygon fill="#0969da" stroke="#0969da" stroke-width="2" points="452.07,-19.31 457.63,-13.64 449.75,-14.61 452.07,-19.31"/>
-</g>
 <!-- v1_3 -->
 <g id="node16" class="node">
 <title>v1_3</title>
@@ -117,6 +106,17 @@
 <g id="node17" class="node">
 <title>v1_4</title>
 <ellipse fill="#1f2328" stroke="#1f2328" stroke-width="1.6" cx="342" cy="-151.5" rx="4.5" ry="4.5"/>
+</g>
+<!-- v3_7 -->
+<g id="node42" class="node">
+<title>v3_7</title>
+<ellipse fill="#1f2328" stroke="#1f2328" stroke-width="1.6" cx="522" cy="-11.5" rx="4.5" ry="4.5"/>
+</g>
+<!-- v1_4&#45;&gt;v3_7 -->
+<g id="edge2" class="edge">
+<title>v1_4&#45;&gt;v3_7</title>
+<path fill="none" stroke="#0969da" stroke-width="2" d="M342.3,-146.8C348.4,-48.3 469.3,-18.1 509.4,-13.1"/>
+<polygon fill="#0969da" stroke="#0969da" stroke-width="2" points="510.19,-15.65 517.3,-12.1 509.53,-10.44 510.19,-15.65"/>
 </g>
 <!-- v1_5 -->
 <g id="node18" class="node">
@@ -228,10 +228,10 @@
 <title>v3_5</title>
 <ellipse fill="#1f2328" stroke="#1f2328" stroke-width="1.6" cx="402" cy="-11.5" rx="4.5" ry="4.5"/>
 </g>
-<!-- v3_7 -->
-<g id="node42" class="node">
-<title>v3_7</title>
-<ellipse fill="#1f2328" stroke="#1f2328" stroke-width="1.6" cx="522" cy="-11.5" rx="4.5" ry="4.5"/>
+<!-- v3_6 -->
+<g id="node41" class="node">
+<title>v3_6</title>
+<ellipse fill="#1f2328" stroke="#1f2328" stroke-width="1.6" cx="462" cy="-11.5" rx="4.5" ry="4.5"/>
 </g>
 <!-- dots3 -->
 <g id="node43" class="node">
