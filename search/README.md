@@ -1,21 +1,21 @@
 # Search Methods
 
-This directory holds the search code that produced the graphs in `graphs/`, one subdirectory per method, each with its
-own README (what it does, how to build and run it, and one small positive control that re-finds a known graph in
+This directory holds the search code behind the graphs in `graphs/`, one subdirectory per method, each with its own
+README (what it does, how to build and use it, and one small positive control that re-finds a known graph in
 minutes). `HOW_FOUND.tsv` has one line per cell: cell, order, a one-sentence account of the search, and the method
-directory. The verifiers that checked every graph are separate programs in `tools/` and share no code with the search.
+directory. The verifiers that check every graph are separate programs in `tools/` and share no code with the search.
 
-| directory | method | cells it produced |
+| directory | method | cells it produces |
 |---|---|---|
-| `cayley_metacyclic_anneal/` | simulated annealing of Cayley connection sets on $`\mathbb{Z}_N \rtimes_r \mathbb{Z}_M`$ with level patterns, targeted moves, one movable involution for odd degree, exact completion sweeps; a two-plane variant for $`n`$ up to $`3 \times 10^{10}`$ | (7,9), (7,10), (8,7), (8,8), (8,9), (8,10), (9,7), (9,8), (9,9), (9,10), (10,7) to (10,10), (11,7) to (11,10), (12,7) to (12,10), (13,7) to (13,10), (14,8), (14,9), (14,10), (15,7) to (15,10), (16,7) to (16,10) |
-| `cayley_exhaustive/` | complete sweeps of Cayley families up to group automorphisms: the one-involution odd-degree family, level-pattern sweeps of 3-pair sets, fully reduced single-group lists, mode F with the automorphism quotient | (6,8), (6,10), (7,6), (7,8), (9,5) |
-| `lift_two_vertex/` | reduced sweeps of 2-vertex voltage lifts (degree-4 shapes, degree-5 shape 103 with $`S_3`$ reduction and sub-blocks, the R1 pattern filter) over metacyclic groups with a bit-parallel evaluator | (4,10), (5,8), (5,9), (5,10) |
-| `lift_three_vertex/` | the same for 3-vertex base shapes | (4,9) |
-| `lift_nonmetacyclic_groups/` | shape-103 lifts and one-involution Cayley graphs over groups $`K \rtimes C_M`$ built from blocks (not necessarily metacyclic), chosen by the conjugacy-class-count rule | (5,7) |
+| `cayley_metacyclic_anneal/` | simulated annealing of Cayley connection sets on $`\mathbb{Z}_N \rtimes_r \mathbb{Z}_M`$ with level patterns, targeted moves, one movable involution for odd degree, exact completion sweeps; a two-plane variant for $`n`$ up to $`3 \times 10^{10}`$ | [(7,9)](../graphs/deg7/dia9), [(7,10)](../graphs/deg7/dia10), [(8,7)](../graphs/deg8/dia7), [(8,8)](../graphs/deg8/dia8), [(8,9)](../graphs/deg8/dia9), [(8,10)](../graphs/deg8/dia10), [(9,7)](../graphs/deg9/dia7), [(9,8)](../graphs/deg9/dia8), [(9,9)](../graphs/deg9/dia9), [(9,10)](../graphs/deg9/dia10), [(10,7)](../graphs/deg10/dia7), [(10,8)](../graphs/deg10/dia8), [(10,9)](../graphs/deg10/dia9), [(10,10)](../graphs/deg10/dia10), [(11,7)](../graphs/deg11/dia7), [(11,8)](../graphs/deg11/dia8), [(11,9)](../graphs/deg11/dia9), [(11,10)](../graphs/deg11/dia10), [(12,7)](../graphs/deg12/dia7), [(12,8)](../graphs/deg12/dia8), [(12,9)](../graphs/deg12/dia9), [(12,10)](../graphs/deg12/dia10), [(13,7)](../graphs/deg13/dia7), [(13,8)](../graphs/deg13/dia8), [(13,9)](../graphs/deg13/dia9), [(13,10)](../graphs/deg13/dia10), [(14,8)](../graphs/deg14/dia8), [(14,9)](../graphs/deg14/dia9), [(14,10)](../graphs/deg14/dia10), [(15,7)](../graphs/deg15/dia7), [(15,8)](../graphs/deg15/dia8), [(15,9)](../graphs/deg15/dia9), [(15,10)](../graphs/deg15/dia10), [(16,7)](../graphs/deg16/dia7), [(16,8)](../graphs/deg16/dia8), [(16,9)](../graphs/deg16/dia9), [(16,10)](../graphs/deg16/dia10) |
+| `cayley_exhaustive/` | complete sweeps of Cayley families up to group automorphisms: the one-involution odd-degree family, level-pattern sweeps of 3-pair sets, fully reduced single-group lists, mode F with the automorphism quotient | [(6,8)](../graphs/deg6/dia8), [(6,10)](../graphs/deg6/dia10), [(7,6)](../graphs/deg7/dia6), [(7,8)](../graphs/deg7/dia8), [(9,5)](../graphs/deg9/dia5) |
+| `lift_two_vertex/` | reduced sweeps of 2-vertex voltage lifts (degree-4 shapes, degree-5 shape 103 with $`S_3`$ reduction and sub-blocks, the R1 pattern filter) over metacyclic groups with a bit-parallel evaluator | [(4,10)](../graphs/deg4/dia10), [(5,8)](../graphs/deg5/dia8), [(5,9)](../graphs/deg5/dia9), [(5,10)](../graphs/deg5/dia10) |
+| `lift_three_vertex/` | the same for 3-vertex base shapes | [(4,9)](../graphs/deg4/dia9) |
+| `lift_nonmetacyclic_groups/` | shape-103 lifts and one-involution Cayley graphs over groups $`K \rtimes C_M`$ built from blocks (not necessarily metacyclic), chosen by the conjugacy-class-count rule | [(5,7)](../graphs/deg5/dia7) |
 | `group_enumeration/` | enumeration and screening of the candidate groups: metacyclic presentations, the $`k(G)`$ closed form, random-set softness screens | supporting (feeds the sweeps above) |
-| `hexagon_insertion/` | subdivided flags of the generalized hexagon $`H(q)`$ plus an annealed graph on the new vertices; flag sets as group orbits for $`q = 3`$ | (4,6), (5,6) |
-| `cubic_lifts/` | exhaustive voltage lifts of small cubic base graphs over all groups of a given order | (3,7) |
-| `deg4-dia4/` | the (4,4) machinery: the lift-and-repair search for 104 vertices and the structural classification of its 36 classes | (4,4) |
+| `hexagon_insertion/` | subdivided flags of the generalized hexagon $`H(q)`$ plus an annealed graph on the new vertices; flag sets as group orbits for $`q = 3`$ | [(4,6)](../graphs/deg4/dia6), [(5,6)](../graphs/deg5/dia6) |
+| `cubic_lifts/` | exhaustive voltage lifts of small cubic base graphs over all groups of a given order | [(3,7)](../graphs/deg3/dia7) |
+| `deg4-dia4/` | the (4,4) machinery: the lift-and-repair search for 104 vertices and the structural classification of its 36 classes | [(4,4)](../graphs/deg4/dia4) |
 
 Conventions shared by all Cayley and lift code: the metacyclic group is
 $`\mathbb{Z}_N \rtimes_r \mathbb{Z}_M = \langle x, y \mid x^N = y^M = 1,\ y x y^{-1} = x^r \rangle`$; the element
@@ -29,8 +29,8 @@ $`u \to v`$ with voltage $`a`$, and the lift vertex $`(v, g)`$ has index $`v\,|G
 - defect: the number of vertices at distance more than $`D`$ from the root (a Cayley graph is vertex-transitive, so one
   BFS from the identity decides the diameter; a lift needs one BFS per base vertex). Defect 0 means diameter at most $`D`$.
 - level, level pattern: the level of $`x^i y^j`$ is its $`y`$-exponent $`j`$; the level pattern of a connection set or
-  voltage assignment is the list of the generators' levels. The search fixes a pattern first and then only moves the
-  $`x`$-coordinates, because the pattern alone already determines how many words of length at most $`D`$ land on each
+  voltage assignment is the list of the generators' levels. The search fixes a pattern and then moves only the
+  $`x`$-coordinates, because the pattern alone determines how many words of length at most $`D`$ land on each
   layer.
 - level-pattern block: all assignments with a given level pattern (the $`x`$-coordinates free); a complete sweep of a
   block evaluates every $`x`$-assignment of that pattern once up to the automorphisms that preserve the pattern.
@@ -66,7 +66,7 @@ $`u \to v`$ with voltage $`a`$, and the lift vertex $`(v, g)`$ has index $`v\,|G
   the cube root of the order, about $`M \approx 0.4\, n^{1/3}`$; such groups have few involutions (none for odd order)
   and a large commutator subgroup.
 - class-count rule: prefer the group with the fewest conjugacy classes $`k(G)`$ in its window (the lowest commuting
-  probability $`k(G)/|G|`$), which is what selected the (5,7) group.
+  probability $`k(G)/|G|`$), which selects the (5,7) group.
 - two-plane bitmap annealing: the same annealing with a BFS that stores only two bits per vertex (visited, and the parity
   of the level at which it was reached), so that graphs with up to about $`3 \times 10^{10}`$ vertices fit in 8 GB of
   memory.

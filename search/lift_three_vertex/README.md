@@ -4,8 +4,12 @@ I extend the two-vertex lift sweeps to 3-vertex base graphs: every connected cub
 (links with multiplicities, loops and semi-edges) is enumerated up to isomorphism, turned into a `bitlift` base spec, and
 its voltage assignments over a metacyclic group $`G(N, M, r, t)`$ are swept with the same sequential-stabiliser reduction
 and the same evaluator (`../lift_two_vertex/bitlift.c`, compiled with `-DMAXK=4`). The degree-4 base with a triple link,
-a path and a loop over the one-involution group $`\mathbb{Z}_{73} \rtimes_{18} \mathbb{Z}_{36}`$ gave the (4,9) graph on
-7884 vertices.
+a path and a loop over the one-involution group $`\mathbb{Z}_{73} \rtimes_{18} \mathbb{Z}_{36}`$ gives the
+[(4,9)](../../graphs/deg4/dia9) graph on 7884 vertices.
+
+![Three 3-vertex base shapes: the (4,9) base, and the degree-5 shapes s00 and s23 with loops, semi-edges and parallel links](lift_shapes.svg)
+
+The (4,9) base has a triple link $`0 \to 1`$ (voltages $`1, c_1, c_2`$), the tree link $`0 \to 2`$, the link $`1 \to 2`$ with voltage $`b`$ and a loop $`a`$ at vertex 2; s00 and s23 are two of the 61 degree-5 shapes of `shapes.py` (links of multiplicity 2, 2, 3 and one semi-edge; a triangle with a loop and a semi-edge at every vertex); links with voltage 1 form the spanning tree and a semi-edge voltage $`t`$ is an involution, so its lift is a perfect matching.
 
 Files:
 
@@ -40,7 +44,7 @@ python3 make_edges_k3.py 73 36 18 0 "k=3;deg=4;loop:2;link*:0,1;link*:0,2;link:1
 ```
 
 The reduced prefixes of a whole family come from `python3 gen_k3.py N M r t "SPEC" --out pref.txt` (add `--count-only`
-to size it first); `python3 shapes.py` lists the degree-5 shapes.
+to size it beforehand); `python3 shapes.py` lists the degree-5 shapes.
 
 ## Graphs found
 

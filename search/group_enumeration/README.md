@@ -3,8 +3,8 @@
 I enumerate and screen the metacyclic groups a window of orders offers before any sweep is started: every presentation
 $`G(N, M, r, t) = \langle x, y \mid x^N = 1,\ y^M = x^t,\ y x y^{-1} = x^r \rangle`$ of a given order range up to the
 known equivalences, with the size of the reduction group, an isomorphism fingerprint and a rigorous lift bound, plus the
-conjugacy-class count $`k(G)`$ in closed form (the commuting probability $`k(G)/|G|`$ is the selection rule that picked
-the (5,7) group) and a random-set softness screen of whole shape-103 families.
+conjugacy-class count $`k(G)`$ in closed form (the commuting probability $`k(G)/|G|`$ is the selection rule for the
+(5,7) group) and a random-set softness screen of whole shape-103 families.
 
 Files:
 

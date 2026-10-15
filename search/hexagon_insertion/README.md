@@ -6,8 +6,13 @@ edges) with new vertices and adding a graph $`F`$ on the new vertices (2-regular
 the result is $`(q+1)`$-regular on $`2(q^6 - 1)/(q - 1) + m`$ vertices with diameter 6; $`S`$ and $`F`$ are annealed
 against the exact number of vertex pairs at distance greater than 6, computed incrementally from the hexagon's unique
 geodesics. For $`q = 3`$ the flag set is an orbit (or a union of two orbits) of a subgroup of the hexagon's automorphism
-group and only $`F`$ is annealed (the (4,6) graph, 760 vertices); for $`q = 4`$ the cubic $`F`$ is annealed first and
-$`S`$ is found by min-conflicts relocation with $`F`$ fixed (the (5,6) graph, 2836 vertices).
+group and only $`F`$ is annealed (the [(4,6)](../../graphs/deg4/dia6) graph, 760 vertices); for $`q = 4`$ the cubic
+$`F`$ is annealed and then $`S`$ is found by min-conflicts relocation with $`F`$ fixed (the
+[(5,6)](../../graphs/deg5/dia6) graph, 2836 vertices).
+
+![Hexagon insertion for q = 4: a flag p-L subdivided by a new vertex w with its three F-edges, and an apartment gadget on a 12-cycle](hexagon_insertion.svg)
+
+A point-line incidence edge $`p - L`$ is replaced by the path $`p - w - L`$ through a new vertex $`w`$, which keeps $`p`$ and $`L`$ at degree $`q + 1 = 5`$ and gives $`w`$ degree 2, and the cubic graph $`F`$ on the new vertices supplies the other three edges of every $`w`$; an apartment gadget (`--apts`) is a 12-cycle of $`H(q)`$ whose flags at positions 0, 3, 6, 9 are subdivided, with the two antipodal pairs $`w_0 w_6`$ and $`w_3 w_9`$ joined in $`F`$, a group with no far pairs of its own (the other edges of the cycle vertices and the remaining two $`F`$-edges of each $`w_i`$ are not drawn).
 
 Files:
 
@@ -22,8 +27,8 @@ Files:
   `cubic_f_2836.txt`: the 106 flags and 159 $`F`$-edges of the (5,6) graph (an $`F`$ edge `i j` joins new vertices
   $`2730 + i`$, $`2730 + j`$).
 
-The orbit enumeration that produced `flags_760_h3.txt` (subgroup lattices of the hexagon's automorphism group, orbits
-on flags) is not staged; it depends on a precomputed library of configuration classes. The flag set is given explicitly.
+The orbit enumeration behind `flags_760_h3.txt` (subgroup lattices of the hexagon's automorphism group, orbits on
+flags) is not staged; it depends on a precomputed library of configuration classes. The flag set is given explicitly.
 
 To run it yourself (the control rebuilds $`H(3)`$, anneals a 2-factor on the (4,6) flag set and reaches a 760-vertex
 graph of diameter 6 in a few seconds; the second block re-evaluates the (5,6) graph exactly):
@@ -37,9 +42,9 @@ gcc -O3 -march=native -o hexagon_sa hexagon_sa.c -lm && ./hexagon_sa H4.edges 10
 # expected: bfs-method cost 0 (no 0 nn 0 oo 0); exact all-pairs BFS: pairs > 6 = 0, max degree 5, min degree 5, n = 2836
 ```
 
-Verify any output edge list with the all-pairs BFS verifier in `tools/`. A free run is `./hexagon_sa H4.edges 106 0
-<seed> <seconds>`; the flag set $`S`$ of the (5,6) graph came from relocation runs with `--fixF` on an $`F`$ annealed
-beforehand.
+Verify any output edge list with the all-pairs BFS verifier in `tools/`. A free search is `./hexagon_sa H4.edges 106 0
+<seed> <seconds>`; the flag set $`S`$ of the (5,6) graph comes from min-conflicts relocation with `--fixF` on an $`F`$
+annealed beforehand.
 
 ## Graphs found
 

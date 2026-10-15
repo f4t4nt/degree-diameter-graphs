@@ -11,8 +11,8 @@ Output: classNN.edges.txt with the integer numbering
         port P_xy between L_x and R_y = 24 b + 8 + 4 x + y;
     connector pair k (k = 0..15) is 72 + 2 k and 73 + 2 k.
 
-NN is the known_index of the entry (the order of the campaign's corpus of previously found
-graphs) and the next free number for entries without one.
+NN is the known_index of the entry (its number among the classes the lift-and-repair search
+finds) and the next free number for entries without one.
 
 Usage: python export_classes.py OUTDIR CLASSES.json [CLASSES.json ...]
 """

@@ -1,12 +1,12 @@
 # Lift Nonmetacyclic Groups
 
-I run the shape-103 two-vertex lift sweep and the one-involution Cayley sweep over groups $`G = K \rtimes C_M`$ whose
+I sweep the shape-103 two-vertex lift family and the one-involution Cayley family over groups $`G = K \rtimes C_M`$ whose
 odd-order kernel $`K`$ is a direct product of blocks (cyclic, elementary abelian $`\mathbb{F}_p^e`$ with a
 $`\mathrm{GL}`$ action, Frobenius $`\mathbb{F}_p^2 \rtimes C_k`$, extraspecial $`p^{1+2}_+`$,
 $`\mathbb{Z}_{p^a} \times \mathbb{Z}_{p^b}`$), not only the metacyclic ones, selecting the groups of a window by their
 conjugacy-class count $`k(G)`$ (the lower the commuting probability $`k(G)/|G|`$, the softer the family). The complete
 shape-103 sweep of $`((\mathbb{F}_{25} \rtimes C_3) \times \mathbb{Z}_5) \rtimes C_8`$, the order-3000 group with the
-lowest $`k(G)`$ of its window, gave the (5,7) graph.
+lowest $`k(G)`$ of its window, gives the [(5,7)](../../graphs/deg5/dia7) graph.
 
 Files:
 

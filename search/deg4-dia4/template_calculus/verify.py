@@ -24,8 +24,8 @@ CLASSES = HERE.parent / "classes"
 
 
 def load_corpus():
-    """The 36 isomorphism classes at 104 (classes/classNN.edges.txt) in the shape the campaign's
-    corpus file had: {"representatives": [{"edges_sorted": [[u, v], ...]}, ...]}, index = class."""
+    """The 36 isomorphism classes at 104 (classes/classNN.edges.txt) as
+    {"representatives": [{"edges_sorted": [[u, v], ...]}, ...]}, index = class."""
     reps = []
     for path in sorted(CLASSES.glob("class*.edges.txt")):
         reps.append({"name": path.stem.split(".")[0], "edges_sorted": [list(e) for e in load_edges_file(path)]})

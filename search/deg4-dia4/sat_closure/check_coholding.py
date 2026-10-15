@@ -3,7 +3,7 @@
 The tight equality matching of shapes106.py / shapes107.py (matching_ok exact=True) assumes
 (c) "two connectors co-hold at most one port". Hub-to-port exactness does not imply it (the
 second shared port is a block-j port, and the port lemma at a block-j port only concerns
-foreign blocks), so the assumption is tested here on the 35 corpus classes and the new class 36.
+foreign blocks), so the assumption is tested here on all 36 classes.
 
 Usage: check_coholding.py > runs/coholding104.json
 """

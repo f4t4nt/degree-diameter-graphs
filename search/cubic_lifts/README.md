@@ -3,7 +3,8 @@
 I sweep regular voltage lifts of small cubic base graphs (multigraphs with loops, parallel edges and semi-edges on $`k`$
 vertices) over every group of order $`n/k`$ given by an explicit multiplication table, one representative per orbit of
 the group's automorphisms, for cubic graphs of a target diameter; the sweep of the 5-vertex bases over the groups of
-order 40 gave the (3,7) graph on 200 vertices (a lift over $`\mathbb{Z}_5 \rtimes \mathbb{Z}_8`$).
+order 40 gives the [(3,7)](../../graphs/deg3/dia7) graph on 200 vertices (a lift over
+$`\mathbb{Z}_5 \rtimes \mathbb{Z}_8`$).
 
 Files:
 
@@ -14,11 +15,11 @@ Files:
   dicyclic, small permutation and matrix groups), deduplicated by a canonical form of the Cayley-table graph, with
   $`\mathrm{Aut}(G)`$ as permutations, written to `groups/order_<m>/g<i>.txt` plus an index.
 - `bases.py`: all connected cubic base pregraphs on $`k`$ vertices up to isomorphism in lift's base format
-  (`k nslots ntree`, then `u v type` lines, type 0 edge, 1 loop, 2 semi-edge; the first `ntree` slots are a spanning
+  (`k nslots ntree`, then `u v type` lines, type 0 edge, 1 loop, 2 semi-edge; the leading `ntree` slots are a spanning
   tree).
 - `cubic_bases.py`: simple cubic base graphs on $`K`$ vertices prefiltered by the non-backtracking walk condition (for
   the larger $`k`$ of the diameter-6 and diameter-8 cells).
-- `sweep.py`: the driver that runs `lift` over every (group, base) pair of the requested orders and appends JSON lines.
+- `sweep.py`: the driver that applies `lift` to every (group, base) pair of the requested orders and appends JSON lines.
 
 To run it yourself (seconds; the group and base enumerations are deterministic, so `groups/order_40/g12.txt` is
 $`\mathbb{Z}_5 \rtimes \mathbb{Z}_8`$ with $`|Z(G)| = 4`$ and `bases/b5_0026.txt` is the base with edges 0-1, 0-2, 0-3,

@@ -4,25 +4,28 @@ I anneal connection sets of Cayley graphs on metacyclic groups
 $`\mathbb{Z}_N \rtimes_r \mathbb{Z}_M = \langle x, y \mid x^N = y^M = 1,\ y x y^{-1} = x^r \rangle`$ (and voltage
 assignments of 2-vertex lifts over them) towards diameter $`D`$, with a bit-parallel BFS as the cost function, level
 patterns chosen before the $`x`$-coordinates, targeted moves aimed at unreached vertices, an optional single involution
-generator for odd degree, and exact completion sweeps around near-miss states. This family produced the graphs for 37
+generator for odd degree, and exact completion sweeps around near-miss states. This family produces the graphs for 37
 cells of degree 7 to 16 and diameter 7 to 10 (the cells listed for it in `../HOW_FOUND.tsv`).
+
+![Two level patterns on the quotient cycle Z_20: the generators' levels, the involution at level 10, and the levels reached by words of length at most 2](level_pattern.svg)
+
+A level pattern fixes, before any $`x`$-coordinate is chosen, the levels $`\pm \ell_1, \pm \ell_2`$ of the generators $`s_i = x^{x_i} y^{\ell_i}`$ (and their inverses) on the quotient cycle $`\mathbb{Z}_M`$ (filled, joined to the identity), the involution $`t = x^{t_x} y^{M/2}`$ at level $`M/2`$, and the levels $`\pm 2\ell_i`$, $`\pm \ell_1 \pm \ell_2`$, $`M/2 \pm \ell_i`$ of the reduced words of length 2 (outlined; dashed levels are not reached within radius 2): the pattern $`(1, 4)`$ on $`\mathbb{Z}_{20}`$ is coincidence-free and reaches 18 of the 20 layers, while in $`(1, 3)`$ the words $`s_1 s_1`$ and $`s_2 s_1^{-1}`$ share level 2 and their inverses share level 18, so only 16 layers are reached.
 
 Files:
 
 - `cayley_sa.c`: the engine (one program: level-pattern sampling and optimisation, simulated annealing, single-slot and
-  two-slot exact completion sweeps, the involution machinery, the automorphism quotient `--quot` of mode F). Several
-  historical variants of this program were merged here; the staged file is the final superset and its header documents
-  every option.
+  two-slot exact completion sweeps, the involution machinery, the automorphism quotient `--quot` of mode F); its header
+  documents every option.
 - `cayley_sa_twoplane.c`: the same search for orders up to about $`3 \times 10^{10}`$ vertices with a two-plane in-place
-  BFS (two bits per vertex, under 8 GB), used for the graphs from (9,10) to (16,10); fewer completion modes, same
-  conventions and output.
+  BFS (two bits per vertex, under 8 GB), the engine for the graphs from [(9,10)](../../graphs/deg9/dia10) to
+  [(16,10)](../../graphs/deg16/dia10); fewer completion modes, same conventions and output.
 - `gen_edges_inv.py`: streams the edge list of a one-involution connection set (paste the FOUND line); the even-degree
   edge-list builder is `../cayley_exhaustive/gen_edges.py`. No third-party Python packages are needed.
 
 Inputs are the group $`(N, M, r)`$, the target $`(D, k, c)`$ and options; outputs are text lines `BEST`, `NEAR`, `TIE`,
 `IMPROVED` and `FOUND N=.. M=.. r=.. D=.. : x1 y1 x2 y2 ...` (each pair is a generator $`x^{x_i} y^{y_i}`$; with
 `--invol` the last pair is the involution). Verify a FOUND line with the verifiers in `tools/` (the implicit Cayley
-verifiers take the same `N M r` and generator list) or build the edge list and run the all-pairs BFS verifier.
+verifiers take the same `N M r` and generator list) or build the edge list and check it with the all-pairs BFS verifier.
 
 To run it yourself (the control re-finds the known (6,9) Cayley graph on 331387 vertices from its level pattern in
 under a second; the second command checks the two-plane engine on the same set):
@@ -38,7 +41,7 @@ gcc -O3 -march=native -o cayley_sa_twoplane cayley_sa_twoplane.c -lm
 # expected: FOUND N=6763 M=49 r=41 D=9 k=3 c=0 degree 6 n=331387 : 3983 2 4751 18 132 24
 ```
 
-A full-size run is the same command with the group of the target cell, `--invol --tmove 10 --xunit` for odd degree, a
+A full-size search is the same command with the group of the target cell, `--invol --tmove 10 --xunit` for odd degree, a
 longer `--sa` budget and `--complete 2`; the two-slot completion of a frozen state is `--init <state> --sweep2 600 EF
 --J2 2`.
 

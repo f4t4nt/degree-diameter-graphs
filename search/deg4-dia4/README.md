@@ -1,8 +1,8 @@
 # Degree 4, Diameter 4: The 104-Vertex Graphs And Why The Architecture Stops There
 
-I found 104-vertex graphs of degree 4 and diameter 4 with a voltage-lift search plus a local
-repair, then worked out exactly what those graphs are made of and proved that nothing larger
-exists in the same architecture.
+I find 104-vertex graphs of degree 4 and diameter 4 (the [(4,4)](../../graphs/deg4/dia4) cell) with
+a voltage-lift search plus a local repair, work out exactly what those graphs are made of, and prove
+that nothing larger exists in the same architecture.
 
 Every graph found has the same anatomy: three vertex-disjoint subdivided $`K_{4,4}`$ blocks (8 hubs
 and 16 ports each, 72 vertices) and 32 connectors in matched pairs, each pair holding two ports per
@@ -16,9 +16,13 @@ counting lemmas, a port lemma and SAT completions turns that into theorems:
 - the 120-vertex all-cross-double design and the 108-vertex four-octahedron design are impossible,
   the former by a short hand proof about orthogonal Latin squares of order 4.
 
+![The 104-vertex template: three subdivided K44 blocks, each with 8 hubs and 16 ports, and one of the 16 connector pairs](template.svg)
+
+Block $`i`$ has hubs $`L_0, \ldots, L_3`$ and $`R_0, \ldots, R_3`$ and one port $`p_{lr}`$ on every hub pair (one block is drawn with its labels in `proofs/`), and each of the 16 connector pairs holds two ports of every block; the drawn pair is the pure $`(1,1,1)`$ kind, each connector adjacent to its partner and to one port of every block, and the two ports it holds in a block share no hub.
+
 Directory map:
 
-- `lift_repair/`: the search that found the 104s (voltage lift over $`\mathbb{Z}_8`$ of a 13-vertex
+- `lift_repair/`: the search that finds the 104s (voltage lift over $`\mathbb{Z}_8`$ of a 13-vertex
   base, then symmetry-breaking 2-opt repair), with the saved stall and a positive control.
 - `template_calculus/`: the counting side (reach identity, counting relaxation, port lemma, the 54
   skeletons, the two-block and octahedron relaxations) and the independent verifier.

@@ -16,7 +16,7 @@ This graph is class 29 of the 36 graphs of degree 4 and diameter 4 on 104 vertic
 
 ## How it was found
 
-Symmetric $`\mathbb{Z}_8`$ voltage lift over a 13-vertex base pregraph with defect-targeted moves and basin hopping, run until a seed stalls at a small defect, then symmetry-breaking 2-opt edge repair closes the last pairs; the 36 isomorphism classes come from enumerating every diameter-4 realisation (SAT) of the three tight three-block skeletons that admit one and sorting them by canonical form. The search code is in [search/deg4-dia4](../../../search/deg4-dia4).
+Symmetric $`\mathbb{Z}_8`$ voltage lift over a 13-vertex base pregraph with defect-targeted moves and basin hopping until the lift stalls at a small defect, then symmetry-breaking 2-opt edge repair closes the last pairs; the 36 isomorphism classes come from enumerating every diameter-4 realisation (SAT) of the three tight three-block skeletons that admit one and sorting them by canonical form. The search code is in [search/deg4-dia4](../../../search/deg4-dia4).
 
 ## Files
 

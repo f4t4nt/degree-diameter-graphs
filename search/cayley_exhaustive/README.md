@@ -4,8 +4,9 @@ I sweep complete families of Cayley graphs on metacyclic groups $`\mathbb{Z}_N \
 representative per orbit of the group's automorphisms, so that a negative result closes the family and a hit is found
 wherever it sits: the one-involution odd-degree family (every set consisting of an involution $`t`$ and $`K`$ inverse
 pairs, up to the automorphisms fixing $`t`$), the even-degree 3-pair family (level patterns, every $`x`$-assignment) and
-the fully reduced 3-pair list of a single group. These sweeps produced the graphs for (6,8), (6,10), (7,6), (7,8) and
-(9,5).
+the fully reduced 3-pair list of a single group. These sweeps produce the graphs for [(6,8)](../../graphs/deg6/dia8),
+[(6,10)](../../graphs/deg6/dia10), [(7,6)](../../graphs/deg7/dia6), [(7,8)](../../graphs/deg7/dia8) and
+[(9,5)](../../graphs/deg9/dia5).
 
 Files:
 
