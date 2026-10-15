@@ -4,22 +4,22 @@ I found 104-vertex graphs of degree 4 and diameter 4 with a voltage-lift search 
 repair, then worked out exactly what those graphs are made of and proved that nothing larger
 exists in the same architecture.
 
-Every graph found has the same anatomy: three vertex-disjoint subdivided K4,4 blocks (8 hubs and
-16 ports each, 72 vertices) and 32 connectors in matched pairs, each pair holding two ports per
+Every graph found has the same anatomy: three vertex-disjoint subdivided $`K_{4,4}`$ blocks (8 hubs
+and 16 ports each, 72 vertices) and 32 connectors in matched pairs, each pair holding two ports per
 block. The hub-to-port counting identity makes this architecture tight at 104, and a chain of
 counting lemmas, a port lemma and SAT completions turns that into theorems:
 
 - exactly 36 graphs (up to isomorphism) of degree 4 and diameter 4 on 104 vertices contain three
-  subdivided K4,4 blocks with no port-port edge; they are the 36 files in `classes/`;
-- no such graph exists on 105, 106, 107 or 108 vertices (three K4,4 blocks, saturated hubs, no
-  port-port edge, any connector structure);
+  subdivided $`K_{4,4}`$ blocks with no port-port edge; they are the 36 files in `classes/`;
+- no such graph exists on 105, 106, 107 or 108 vertices (three $`K_{4,4}`$ blocks, saturated hubs,
+  no port-port edge, any connector structure);
 - the 120-vertex all-cross-double design and the 108-vertex four-octahedron design are impossible,
   the former by a short hand proof about orthogonal Latin squares of order 4.
 
 Directory map:
 
-- `lift_repair/`: the search that found the 104s (voltage lift over Z_8 of a 13-vertex base, then
-  symmetry-breaking 2-opt repair), with the recorded stall and a positive control.
+- `lift_repair/`: the search that found the 104s (voltage lift over $`\mathbb{Z}_8`$ of a 13-vertex
+  base, then symmetry-breaking 2-opt repair), with the saved stall and a positive control.
 - `template_calculus/`: the counting side (reach identity, counting relaxation, port lemma, the 54
   skeletons, the two-block and octahedron relaxations) and the independent verifier.
 - `sat_closure/`: the SAT encodings and the shape and window enumerations behind the 105 to 108

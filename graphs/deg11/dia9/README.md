@@ -12,7 +12,7 @@ Vertex $`i + 512257 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 512257`$, 
 
 ## How it was found
 
-Simulated annealing with targeted moves and a movable involution in the one-involution Cayley family on Z_512257 x|_706 Z_160, the group chosen by the lower-quartile softness screen. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
+Simulated annealing with targeted moves and a movable involution in the one-involution Cayley family on $`\mathbb{Z}_{512257} \rtimes_{706} \mathbb{Z}_{160}`$, the group chosen by the lower-quartile softness screen. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
 
 ## Files
 

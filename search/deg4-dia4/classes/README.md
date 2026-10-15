@@ -11,12 +11,13 @@ classes with nauty: 8 + 18 + 10 = 36 classes, which this directory lists one fil
   are the two pure templates (every connector adjacent to one port per block and nothing bent);
   class 20 has order 2; the other 33 are asymmetric. The graph the campaign reported first is
   class 10, its sibling repair is class 11, the independent second seed gave class 27, and the
-  graph credited in the table (`graphs/deg4-dia4/` of this repository) is class 29.
-- Numbering: block A is 0..23, B is 24..47, C is 48..71. Inside a block the hubs are L0-L3 at
-  offsets 0-3 and R0-R3 at offsets 4-7, and the port between L_x and R_y is at offset 8 + 4x + y
-  (so the 32 hub-port edges of a block are forced by the numbering). The connectors are 72..103
-  in matched pairs: pair k is the adjacent pair (72 + 2k, 73 + 2k). The remaining content of a
-  class is its 96 port-connector edges.
+  graph in `graphs/deg4/dia4/` of this repository is class 29.
+- Numbering: block $`A`$ is $`0, \ldots, 23`$, $`B`$ is $`24, \ldots, 47`$, $`C`$ is $`48, \ldots, 71`$.
+  Inside a block the hubs are $`L_0, \ldots, L_3`$ at offsets $`0, \ldots, 3`$ and $`R_0, \ldots, R_3`$
+  at offsets $`4, \ldots, 7`$, and the port between $`L_x`$ and $`R_y`$ is at offset $`8 + 4x + y`$
+  (so the 32 hub-port edges of a block are forced by the numbering). The connectors are
+  $`72, \ldots, 103`$ in matched pairs: pair $`k`$ is the adjacent pair $`(72 + 2k, 73 + 2k)`$. The
+  remaining content of a class is its 96 port-connector edges.
 - `export_classes.py`: produced the files from the enumeration output of
   `../sat_closure/classify104.py` (which labels vertices as hub, port or connector) by the map above.
 - `check_classes.py`: plain BFS (order, degrees, diameter, pairs beyond 4) and pynauty certificates

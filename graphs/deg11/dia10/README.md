@@ -12,7 +12,7 @@ Vertex $`i + 3486401 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 3486401`$
 
 ## How it was found
 
-Two-plane bitmap simulated annealing with targeted moves and a movable involution in the one-involution Cayley family on Z_3486401 x|_1834706 Z_200. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
+Two-plane bitmap simulated annealing with targeted moves and a movable involution in the one-involution Cayley family on $`\mathbb{Z}_{3486401} \rtimes_{1834706} \mathbb{Z}_{200}`$. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
 
 ## Files
 

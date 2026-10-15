@@ -12,7 +12,7 @@ Vertex $`i + 3202 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 3202`$, $`0 
 
 ## How it was found
 
-Fully symmetry-reduced complete sweep of the 3-pair Cayley graphs of the one-involution group Z_3202 x|_1419 Z_25 (the unique diameter-8 orbit), the group chosen by the rule of few involutions and large complement order M. The search code is in [search/cayley_exhaustive](../../../search/cayley_exhaustive).
+Fully symmetry-reduced complete sweep of the 3-pair Cayley graphs of the one-involution group $`\mathbb{Z}_{3202} \rtimes_{1419} \mathbb{Z}_{25}`$ (the unique diameter-8 orbit), the group chosen by the rule of few involutions and large complement order $`M`$. The search code is in [search/cayley_exhaustive](../../../search/cayley_exhaustive).
 
 ## Files
 

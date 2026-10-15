@@ -12,7 +12,7 @@ Vertex $`i + 9491 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 9491`$, $`0 
 
 ## How it was found
 
-Odd-order group picked by a random-set screen, simulated annealing with exact single-slot completion; Cay(Z_9491 x|_86 Z_65) with five inverse pairs. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
+Odd-order group picked by a random-set screen, simulated annealing with exact single-slot completion; $`\mathrm{Cay}(\mathbb{Z}_{9491} \rtimes_{86} \mathbb{Z}_{65})`$ with five inverse pairs. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
 
 ## Files
 

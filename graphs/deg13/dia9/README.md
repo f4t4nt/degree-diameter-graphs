@@ -12,7 +12,7 @@ Vertex $`i + 1258655 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 1258655`$
 
 ## How it was found
 
-Small-complement group screen, bitmap simulated annealing with a movable involution in the one-involution Cayley family on Z_1258655 x|_263 Z_288. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
+Small-complement group screen, bitmap simulated annealing with a movable involution in the one-involution Cayley family on $`\mathbb{Z}_{1258655} \rtimes_{263} \mathbb{Z}_{288}`$. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
 
 ## Files
 

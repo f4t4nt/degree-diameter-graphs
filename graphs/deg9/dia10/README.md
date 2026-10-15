@@ -12,7 +12,7 @@ Vertex $`i + 491999 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 491999`$, 
 
 ## How it was found
 
-Two-plane bitmap simulated annealing with targeted moves and a movable involution in the one-involution Cayley family on Z_491999 x|_477175 Z_182. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
+Two-plane bitmap simulated annealing with targeted moves and a movable involution in the one-involution Cayley family on $`\mathbb{Z}_{491999} \rtimes_{477175} \mathbb{Z}_{182}`$. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
 
 ## Files
 

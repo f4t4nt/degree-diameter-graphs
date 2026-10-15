@@ -12,7 +12,7 @@ Vertices 0 to 1364 are the points of $`H(4)`$, 1365 to 2729 its lines and 2730 t
 
 ## How it was found
 
-Incidence graph of the generalized hexagon H(4) (2730 vertices) with 106 flags subdivided and a cubic graph F on the new vertices: F is built first by simulated annealing on half-edge switches minimising its exact number of pairs at distance 6 or more, then the flag set by min-conflicts relocation of flags with F fixed. The search code is in [search/hexagon_insertion](../../../search/hexagon_insertion).
+Incidence graph of the generalized hexagon $`H(4)`$ (2730 vertices) with 106 flags subdivided and a cubic graph $`F`$ on the new vertices: $`F`$ is built first by simulated annealing on half-edge switches minimising its exact number of pairs at distance 6 or more, then the flag set by min-conflicts relocation of flags with $`F`$ fixed. The search code is in [search/hexagon_insertion](../../../search/hexagon_insertion).
 
 ## Files
 

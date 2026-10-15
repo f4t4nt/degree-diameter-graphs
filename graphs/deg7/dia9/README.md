@@ -12,7 +12,7 @@ Vertex $`i + 24681 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 24681`$, $`
 
 ## How it was found
 
-Simulated annealing with a fixed level pattern, targeted moves and a movable involution in the one-involution Cayley family on Z_24681 x|_788 Z_54. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
+Simulated annealing with a fixed level pattern, targeted moves and a movable involution in the one-involution Cayley family on $`\mathbb{Z}_{24681} \rtimes_{788} \mathbb{Z}_{54}`$. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
 
 ## Files
 

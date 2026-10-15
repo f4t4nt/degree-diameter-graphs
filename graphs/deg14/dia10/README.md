@@ -12,7 +12,7 @@ Vertex $`i + 10837399 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 10837399
 
 ## How it was found
 
-Odd-order group with M about 0.37 n^(1/3), bitmap simulated annealing with targeted moves on Z_10837399 x|_3457 Z_743. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
+Odd-order group with $`M \approx 0.37\, n^{1/3}`$, bitmap simulated annealing with targeted moves on $`\mathbb{Z}_{10837399} \rtimes_{3457} \mathbb{Z}_{743}`$. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
 
 ## Files
 

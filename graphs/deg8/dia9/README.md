@@ -12,7 +12,7 @@ Vertex $`i + 66733 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 66733`$, $`
 
 ## How it was found
 
-Groups chosen by the small-complement rule (M about 0.4 n^(1/3)), simulated annealing with targeted moves on the odd-order group Z_66733 x|_1441 Z_67. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
+Groups chosen by the small-complement rule ($`M \approx 0.4\, n^{1/3}`$), simulated annealing with targeted moves on the odd-order group $`\mathbb{Z}_{66733} \rtimes_{1441} \mathbb{Z}_{67}`$. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
 
 ## Files
 

@@ -1,23 +1,25 @@
 # Cayley Exhaustive
 
-I sweep complete families of Cayley graphs on metacyclic groups Z_N x|_r Z_M, one representative per orbit of the
-group's automorphisms, so that a negative result closes the family and a hit is found wherever it sits: the
-one-involution odd-degree family (every set {t, K inverse pairs} up to the automorphisms fixing t), the even-degree
-3-pair family (level patterns, every x-assignment) and the fully reduced 3-pair list of a single group. These sweeps
-produced the (6,8), (6,10), (7,6), (7,8) and (9,5) records.
+I sweep complete families of Cayley graphs on metacyclic groups $`\mathbb{Z}_N \rtimes_r \mathbb{Z}_M`$, one
+representative per orbit of the group's automorphisms, so that a negative result closes the family and a hit is found
+wherever it sits: the one-involution odd-degree family (every set consisting of an involution $`t`$ and $`K`$ inverse
+pairs, up to the automorphisms fixing $`t`$), the even-degree 3-pair family (level patterns, every $`x`$-assignment) and
+the fully reduced 3-pair list of a single group. These sweeps produced the graphs for (6,8), (6,10), (7,6), (7,8) and
+(9,5).
 
 Files:
 
-- `sweep_odd.c`: complete sweep of Cay(G, {y^(M/2)} u {a_1^+-1, ..., a_K^+-1}) for N odd and M even, with the
-  stabiliser-chain lexicographic-minimum test, chunking (`--c0 lo hi`, `--c1 lo hi`), `--count`, a per-class softness
-  screen and brute-force `--check` on small groups.
-- `lift.c`: bit-parallel evaluator with an exhaustive prefix mode; a `Y la lb lc` line sweeps every x-assignment of a
-  level pattern of three inverse pairs (N + 2 candidates for la > 0, N for la = 0); also random, sa and completion modes.
+- `sweep_odd.c`: complete sweep of $`\mathrm{Cay}(G, \{y^{M/2}\} \cup \{a_1^{\pm 1}, \ldots, a_K^{\pm 1}\})`$ for $`N`$
+  odd and $`M`$ even, with the stabiliser-chain lexicographic-minimum test, chunking (`--c0 lo hi`, `--c1 lo hi`),
+  `--count`, a per-class softness screen and brute-force `--check` on small groups.
+- `lift.c`: bit-parallel evaluator with an exhaustive prefix mode; a `Y la lb lc` line sweeps every $`x`$-assignment of
+  a level pattern of three inverse pairs ($`N + 2`$ candidates for $`l_a > 0`$, $`N`$ for $`l_a = 0`$); also random, sa
+  and completion modes.
 - `make_ylist.py`: every admissible level pattern of a group, in chunk files with a manifest of exact candidate counts
   (the completeness certificate: lift's `EXHAUSTIVE ... candidates=` totals must equal it).
 - `gen_cay.py`, `check_cay.py`: fully symmetry-reduced `E a b L` / `T a b c` candidate lists for 3-pair Cayley graphs on
   one group (automorphisms, inversions, generator permutations) for `lift --mode exhaustive --prefix`; brute-force check.
-- `gen_edges.py`: streams the edge list of a Cayley graph or 2-vertex lift given N M r and the generators. Mode F of
+- `gen_edges.py`: streams the edge list of a Cayley graph or 2-vertex lift given `N M r` and the generators. Mode F of
   `../cayley_metacyclic_anneal/cayley_sa.c` (`--s2all --s2bound`, quotient `--quot`) is the complete sweep of a
   one-involution family with a fixed level pattern; it is built there.
 
@@ -36,5 +38,5 @@ gcc -O3 -march=native -o lift lift.c -lm && printf 'Y 2 18 24\n' > ypat.txt
 #           SWEEP2 F done: 385666 candidates, 0 ties, 1 improved ...
 ```
 
-Voltages in `lift` lines are element indices i + N j of x^i y^j; `make_ylist.py 6763 49 - ylist 2000000` writes all 2884
-patterns of that group in chunks. Compile `sweep_odd` without `-march=native` (a known slow-code interaction).
+Voltages in `lift` lines are element indices $`i + N j`$ of $`x^i y^j`$; `make_ylist.py 6763 49 - ylist 2000000` writes
+all 2884 patterns of that group in chunks. Compile `sweep_odd` without `-march=native` (a known slow-code interaction).

@@ -12,7 +12,7 @@ Vertex $`40 v + i + 5 j`$ is the pair $`(v, x^i y^j)`$: each run of 40 consecuti
 
 ## How it was found
 
-Exhaustive sweep of the voltage assignments of every 5-vertex cubic base graph (links, loops and semi-edges) over the groups of order 40; the graph is the lift of the base with edges 0-1, 0-2, 0-3, 1-4, 1-2, a semi-edge at 2 and loops at 3 and 4 over Z_5 x| Z_8. The search code is in [search/cubic_lifts](../../../search/cubic_lifts).
+Exhaustive sweep of the voltage assignments of every 5-vertex cubic base graph (links, loops and semi-edges) over the groups of order 40; the graph is the lift of the base with edges 0-1, 0-2, 0-3, 1-4, 1-2, a semi-edge at 2 and loops at 3 and 4 over $`\mathbb{Z}_5 \rtimes \mathbb{Z}_8`$. The search code is in [search/cubic_lifts](../../../search/cubic_lifts).
 
 ## Files
 

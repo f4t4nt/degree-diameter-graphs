@@ -12,7 +12,7 @@ Vertex $`i + 4577 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 4577`$, $`0 
 
 ## How it was found
 
-Simulated annealing with targeted moves in the one-involution odd-degree Cayley family on Z_4577 x|_174 Z_66. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
+Simulated annealing with targeted moves in the one-involution odd-degree Cayley family on $`\mathbb{Z}_{4577} \rtimes_{174} \mathbb{Z}_{66}`$. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
 
 ## Files
 

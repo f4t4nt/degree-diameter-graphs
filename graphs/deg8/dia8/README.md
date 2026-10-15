@@ -12,7 +12,7 @@ Vertex $`i + 13217 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 13217`$, $`
 
 ## How it was found
 
-Coincidence-free level pattern from the pattern optimiser, then simulated annealing with targeted moves on the odd-order group Z_13217 x|_8875 Z_59. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
+Coincidence-free level pattern from the pattern optimiser, then simulated annealing with targeted moves on the odd-order group $`\mathbb{Z}_{13217} \rtimes_{8875} \mathbb{Z}_{59}`$. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
 
 ## Files
 

@@ -12,7 +12,7 @@ Vertex $`i + 141391 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 141391`$, 
 
 ## How it was found
 
-Even-M group with a tiny involution class, coincidence-free level pattern, simulated annealing with targeted moves on Z_141391 x|_240 Z_190. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
+Even-$`M`$ group with a tiny involution class, coincidence-free level pattern, simulated annealing with targeted moves on $`\mathbb{Z}_{141391} \rtimes_{240} \mathbb{Z}_{190}`$. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
 
 ## Files
 

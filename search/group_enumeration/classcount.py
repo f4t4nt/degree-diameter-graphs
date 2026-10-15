@@ -31,7 +31,7 @@ or more: the acting orders o_p = ord_p(r), o_q = ord_q(r) are what moves cp at f
 `python3 classcount.py N M r` prints k(G), cp and the per-layer counts; `python3 classcount.py test` runs the brute-force
 validation (orbit enumeration of the conjugation action on all |G| elements) on small groups incl. even M, composite N,
 non-faithful r and r = 1, and the two closed formulas against each other.
-The (6,8) and (5,7) group choices used cp as the selection rule: groups with the lowest cp in a window are the softest."""
+The (5,7) group choice used cp as the selection rule: groups with the lowest cp in a window are the softest."""
 import math
 import sys
 

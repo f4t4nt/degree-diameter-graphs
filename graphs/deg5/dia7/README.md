@@ -20,7 +20,7 @@ Vertex $`3000 v + \operatorname{index}(g)`$ is the pair $`(v, g)`$, where $`g = 
 
 ## How it was found
 
-Complete sweep of all shape-103 two-vertex lift assignments (one loop and three links per base vertex, one link trivial) on the non-metacyclic group ((F_25 x| C_3) x Z_5) x| C_8 up to symmetry, the group selected by the conjugacy-class-count (commuting probability) rule. The search code is in [search/lift_nonmetacyclic_groups](../../../search/lift_nonmetacyclic_groups).
+Complete sweep of all shape-103 two-vertex lift assignments (one loop and three links per base vertex, one link trivial) on the non-metacyclic group $`((\mathbb{F}_{25} \rtimes C_3) \times \mathbb{Z}_5) \rtimes C_8`$ up to symmetry, the group selected by the conjugacy-class-count (commuting probability) rule. The search code is in [search/lift_nonmetacyclic_groups](../../../search/lift_nonmetacyclic_groups).
 
 ## Files
 

@@ -12,7 +12,7 @@ Vertex $`i + 20591 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 20591`$, $`
 
 ## How it was found
 
-Simulated annealing with level patterns, targeted moves and a movable involution in the one-involution Cayley family on Z_20591 x|_2507 Z_58. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
+Simulated annealing with level patterns, targeted moves and a movable involution in the one-involution Cayley family on $`\mathbb{Z}_{20591} \rtimes_{2507} \mathbb{Z}_{58}`$. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
 
 ## Files
 

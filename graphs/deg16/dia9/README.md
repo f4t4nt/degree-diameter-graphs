@@ -12,7 +12,7 @@ Vertex $`i + 5060591 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 5060591`$
 
 ## How it was found
 
-Odd-order group with small complement M, bitmap simulated annealing with targeted moves on Z_5060591 x|_949 Z_463. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
+Odd-order group with small complement $`M`$, bitmap simulated annealing with targeted moves on $`\mathbb{Z}_{5060591} \rtimes_{949} \mathbb{Z}_{463}`$. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
 
 ## Files
 

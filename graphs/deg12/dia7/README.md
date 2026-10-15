@@ -12,7 +12,7 @@ Vertex $`i + 19403 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 19403`$, $`
 
 ## How it was found
 
-Exact single-slot completion sweep of a frozen defect-2 annealing state of 6-pair Cayley graphs on the odd-order group Z_19403 x|_6308 Z_109. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
+Exact single-slot completion sweep of a frozen defect-2 annealing state of 6-pair Cayley graphs on the odd-order group $`\mathbb{Z}_{19403} \rtimes_{6308} \mathbb{Z}_{109}`$. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
 
 ## Files
 

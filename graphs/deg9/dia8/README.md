@@ -12,7 +12,7 @@ Vertex $`i + 21793 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 21793`$, $`
 
 ## How it was found
 
-Simulated annealing with level patterns, targeted moves and a movable involution in the one-involution Cayley family on Z_21793 x|_34 Z_90. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
+Simulated annealing with level patterns, targeted moves and a movable involution in the one-involution Cayley family on $`\mathbb{Z}_{21793} \rtimes_{34} \mathbb{Z}_{90}`$. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
 
 ## Files
 

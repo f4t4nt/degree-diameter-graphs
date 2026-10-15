@@ -12,7 +12,7 @@ Vertex $`i + 451 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 451`$, $`0 \l
 
 ## How it was found
 
-Complete chunked sweep of the one-involution Cayley family {y^10, four inverse pairs} on the groups Z_451 x|_s Z_20 up to automorphisms (two inequivalent solutions on two twists s). The search code is in [search/cayley_exhaustive](../../../search/cayley_exhaustive).
+Complete chunked sweep of the one-involution Cayley family (the involution $`y^{10}`$ and four inverse pairs) on the groups $`\mathbb{Z}_{451} \rtimes_s \mathbb{Z}_{20}`$ up to automorphisms (two inequivalent solutions on two twists $`s`$). The search code is in [search/cayley_exhaustive](../../../search/cayley_exhaustive).
 
 ## Files
 

@@ -10,7 +10,7 @@ go to `runs/`); they need `python-sat` with CaDiCaL and `pynauty` (`../requireme
   of a skeleton (`data/skeletons54.json`) over the 10 splits per unit and the 15 triangle-gadget
   options. `104 all` is SAT exactly on skeletons 50, 51, 53; `105`, `106`, `107`, `108` and `120 all`
   are UNSAT on all 54. `validate.py`: the encoder on the 36 known graphs plus a gadget control.
-- `enumerate104.py K`, `classify104.py K`: every diameter-4 realisation of skeleton K reduced to
+- `enumerate104.py K`, `classify104.py K`: every diameter-4 realisation of skeleton $`K`$ reduced to
   isomorphism classes with nauty: 8 + 18 + 10 = 36 classes, the files of `../classes/`.
 - `typed_slack_sat.py`: the typed encoder for shapes with budget slack (gadget profiles and edges
   fixed, unit types free, redundant port-lemma and exactness clauses, tight mode at budget 768), with
@@ -23,11 +23,11 @@ go to `runs/`); they need `python-sat` with CaDiCaL and `pynauty` (`../requireme
   potential), `shapes106.py`, `shapes107.py`, `shapes_fast.py`, `shapes108.py` (units plus gadget
   multisets under the budget rows and the port-lemma matching; `recheck_tight.py` drops the unsound
   assumption (c)); for 108 at budgets 772 and 768 the window pipeline `windows108.py`,
-  `export_windows.py` -> `clusters108.c` (7,702,003 clusters of cost <= 12) -> `combine108.c`,
+  `export_windows.py` -> `clusters108.c` (7,702,003 clusters of cost $`\le 12`$) -> `combine108.c`,
   `combine_groups.c`, `combine_classes.c` -> `c2jsonl.py`, `shapes_from_c.py` -> `windows108.py shapes`,
   each stage validated against the previous one and against the 106 list.
 - `design120.py`, `design120_reduced.py`: the 120-vertex all-cross-double design, UNSAT for the three
-  phi_13 representatives and in all 20,736 reduced instances (`../proofs/PROOF120.md`; checks in
+  $`\varphi_{13}`$ representatives and in all 20,736 reduced instances (`../proofs/PROOF120.md`; checks in
   `proof120/`). `oct4/`: four octahedra at 108 (potential table, ILP cross-check, holder table, typed
   SAT over the 11 skeletons, all UNSAT). `design108.py`, `design110.py`: superseded or partial
   models; `direct_sat.py`: the unstructured encoding, kept to show why every decision is structured.

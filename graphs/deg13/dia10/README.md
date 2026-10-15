@@ -12,7 +12,7 @@ Vertex $`i + 9716149 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 9716149`$
 
 ## How it was found
 
-Two-plane bitmap simulated annealing with targeted moves and a movable involution in the one-involution Cayley family on Z_9716149 x|_514348 Z_390. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
+Two-plane bitmap simulated annealing with targeted moves and a movable involution in the one-involution Cayley family on $`\mathbb{Z}_{9716149} \rtimes_{514348} \mathbb{Z}_{390}`$. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
 
 ## Files
 

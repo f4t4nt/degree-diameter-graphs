@@ -3,7 +3,7 @@
 I wrote up the theory behind the 104 classification and the 105 to 108 closures in three notes;
 the scripts they cite are in `../template_calculus/` and `../sat_closure/`.
 
-- `TEMPLATE_CALCULUS.md`: the template calculus for the three-K4,4-block family. Sections 1-10
+- `TEMPLATE_CALCULUS.md`: the template calculus for the three-$`K_{4,4}`$-block family. Sections 1-10
   derive the hub-to-port identity, the counting relaxation, the port lemma, the structure theorem
   (54 skeletons) and the completion SAT, and prove that no 105-vertex member exists. Section 11
   settles the 120-vertex all-cross-double shape, 11b the four-octahedron design at 108, and section

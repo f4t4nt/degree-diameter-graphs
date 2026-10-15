@@ -12,7 +12,7 @@ Vertex $`i + 227881 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 227881`$, 
 
 ## How it was found
 
-Even-M group with a tiny involution class, simulated annealing with targeted moves from a random start on Z_227881 x|_1562 Z_150. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
+Even-$`M`$ group with a tiny involution class, simulated annealing with targeted moves from a random start on $`\mathbb{Z}_{227881} \rtimes_{1562} \mathbb{Z}_{150}`$. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
 
 ## Files
 

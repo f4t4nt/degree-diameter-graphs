@@ -12,7 +12,7 @@ Vertex $`i + 20803481 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 20803481
 
 ## How it was found
 
-Two-plane bitmap simulated annealing with targeted moves and a movable involution in the one-involution Cayley family on Z_20803481 x|_5726682 Z_760. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
+Two-plane bitmap simulated annealing with targeted moves and a movable involution in the one-involution Cayley family on $`\mathbb{Z}_{20803481} \rtimes_{5726682} \mathbb{Z}_{760}`$. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
 
 ## Files
 

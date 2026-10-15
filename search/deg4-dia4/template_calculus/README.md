@@ -1,6 +1,6 @@
 # Template Calculus (Counting Side)
 
-I derived what a degree-4 diameter-4 graph built from three subdivided K4,4 blocks must look like,
+I derived what a degree-4 diameter-4 graph built from three subdivided $`K_{4,4}`$ blocks must look like,
 from a reach identity and a port lemma down to 54 skeletons, and these scripts carry out the
 finite checks of `../proofs/TEMPLATE_CALCULUS.md` sections 1-8, 11b and the two-block analysis.
 
@@ -17,12 +17,12 @@ finite checks of `../proofs/TEMPLATE_CALCULUS.md` sections 1-8, 11b and the two-
   on 16 units with the side and label conditions) under the true label group, nauty-reduced: 54
   skeletons (`../sat_closure/data/skeletons54.json`); `known_designs2.py` maps each of the 36
   classes to its skeleton (50: 8 classes, 51: 18, 53: 10).
-- `blocks_relax.py`: the free blocks (subdivided K5, octahedron, K4,4) and the hub-reach
+- `blocks_relax.py`: the free blocks (subdivided $`K_5`$, octahedron, $`K_{4,4}`$) and the hub-reach
   relaxation over block multisets. `potential3.py table`, `check_potential_table.py`: the potential
-  table of section 13.2 (every connector-edge potential is <= 0, with equality exactly for
+  table of section 13.2 (every connector-edge potential is $`\le 0`$, with equality exactly for
   complementary triple pairs and cross-double to same-block-double edges), with exact rationals.
-- `twoblock/`: two K4,4 blocks plus an arbitrary remainder: the two-block reach identity and
-  relaxation (`twoblock_ilp.py`, feasible up to n = 142, no budget cut), calibration on the 36
+- `twoblock/`: two $`K_{4,4}`$ blocks plus an arbitrary remainder: the two-block reach identity and
+  relaxation (`twoblock_ilp.py`, feasible up to $`n = 142`$, no budget cut), calibration on the 36
   classes (`known104_twoblock.py`), a free-remainder SAT model with controls (`twoblock_sat.py`,
   `fixedH_control.py`, `negative_control.py`, `plan_c_105.py`, `analyze_solution.py`); their
   docstrings cite sections of the original working note, whose conclusion is the one above.

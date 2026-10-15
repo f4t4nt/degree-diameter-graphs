@@ -12,7 +12,7 @@ Vertex $`i + 2761 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 2761`$, $`0 
 
 ## How it was found
 
-Even-M metacyclic group with a tiny involution class chosen by a random-set screen, simulated annealing followed by exact single-slot completion; Cay(Z_2761 x|_63 Z_50) with four inverse pairs. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
+Even-$`M`$ metacyclic group with a tiny involution class chosen by a random-set screen, simulated annealing followed by exact single-slot completion; $`\mathrm{Cay}(\mathbb{Z}_{2761} \rtimes_{63} \mathbb{Z}_{50})`$ with four inverse pairs. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
 
 ## Files
 

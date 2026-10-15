@@ -12,7 +12,7 @@ Vertex $`i + 3655849 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 3655849`$
 
 ## How it was found
 
-Odd-order group with small complement M, bitmap simulated annealing with targeted moves on Z_3655849 x|_5568 Z_463. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
+Odd-order group with small complement $`M`$, bitmap simulated annealing with targeted moves on $`\mathbb{Z}_{3655849} \rtimes_{5568} \mathbb{Z}_{463}`$. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
 
 ## Files
 

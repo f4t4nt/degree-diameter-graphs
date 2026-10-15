@@ -12,7 +12,7 @@ Vertex $`9405 v + i + 209 j`$ is the pair $`(v, x^i y^j)`$: the first 9,405 vert
 
 ## How it was found
 
-Complete S_3-reduced sub-block sweeps (fixed loop layers) of the shape-103 two-vertex lift family over the best-screened odd-order metacyclic groups; the graph lives over Z_209 x|_4 Z_45. The search code is in [search/lift_two_vertex](../../../search/lift_two_vertex).
+Complete $`S_3`$-reduced sub-block sweeps (fixed loop layers) of the shape-103 two-vertex lift family over the best-screened odd-order metacyclic groups; the graph lives over $`\mathbb{Z}_{209} \rtimes_4 \mathbb{Z}_{45}`$. The search code is in [search/lift_two_vertex](../../../search/lift_two_vertex).
 
 ## Files
 

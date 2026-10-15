@@ -2,26 +2,30 @@
 
 I extend the two-vertex lift sweeps to 3-vertex base graphs: every connected cubic-like base shape on three vertices
 (links with multiplicities, loops and semi-edges) is enumerated up to isomorphism, turned into a `bitlift` base spec, and
-its voltage assignments over a metacyclic group G(N, M, r, t) are swept with the same sequential-stabiliser reduction and
-the same evaluator (`../lift_two_vertex/bitlift.c`, compiled with `-DMAXK=4`). The degree-4 base with a triple link, a
-path and a loop over the one-involution group Z_73 x|_18 Z_36 gave the (4,9) record on 7884 vertices.
+its voltage assignments over a metacyclic group $`G(N, M, r, t)`$ are swept with the same sequential-stabiliser reduction
+and the same evaluator (`../lift_two_vertex/bitlift.c`, compiled with `-DMAXK=4`). The degree-4 base with a triple link,
+a path and a loop over the one-involution group $`\mathbb{Z}_{73} \rtimes_{18} \mathbb{Z}_{36}`$ gave the (4,9) graph on
+7884 vertices.
 
 Files:
 
 - `shapes.py`: the 61 connected 3-vertex degree-5 base pregraphs up to isomorphism with their automorphism group order,
   free-slot structure and base spec (`--json` for machine use); degree-4 shapes are written by hand as specs.
 - `gen_k3.py`: reduced candidate prefixes for any base spec (group automorphisms, loop inversion, permutations of
-  parallel slots; shape automorphisms are not used, so the family is over-covered by at most |Aut(shape)|).
+  parallel slots; shape automorphisms are not used, so the family is over-covered by at most
+  $`|\mathrm{Aut}(\text{shape})|`$).
 - `check_k3.py`: brute-force validation of the reduction on a small group (group axioms, every symmetry a lift
   isomorphism, orbit coverage).
-- `make_edges_k3.py`: independent edge-list builder for a k-vertex lift (lift vertex (u, g) has index u |G| + index(g)).
+- `make_edges_k3.py`: independent edge-list builder for a $`k`$-vertex lift (lift vertex $`(u, g)`$ has index
+  $`u\,|G| + \mathrm{index}(g)`$).
 
-Base spec of the (4,9) record: `k=3;deg=4;loop:2;link*:0,1;link*:0,2;link:1,2;link:0,1;link:0,1` (free slots in order:
+Base spec of the (4,9) graph: `k=3;deg=4;loop:2;link*:0,1;link*:0,2;link:1,2;link:0,1;link:0,1` (free slots in order:
 the loop at vertex 2, the link 1-2, the two further links 0-1; the starred links are the spanning tree with trivial
-voltage). The full family over Z_73 x|_18 Z_36 has about 1.8e9 candidates after reduction; the control below sweeps the
-sub-block with the loop fixed to y^3 (index 219) and the link 1-2 fixed to x y^6 (index 439).
+voltage). The full family over $`\mathbb{Z}_{73} \rtimes_{18} \mathbb{Z}_{36}`$ has about $`1.8 \times 10^9`$ candidates
+after reduction; the control below sweeps the sub-block with the loop fixed to $`y^3`$ (index 219) and the link 1-2
+fixed to $`x y^6`$ (index 439).
 
-To run it yourself (about half a minute with AVX-512; re-finds the record assignment):
+To run it yourself (about half a minute with AVX-512; re-finds the (4,9) assignment):
 
 ```
 pip install -r requirements.txt

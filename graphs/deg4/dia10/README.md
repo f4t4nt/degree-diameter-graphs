@@ -12,7 +12,7 @@ Vertex $`9653 v + i + 197 j`$ is the pair $`(v, x^i y^j)`$: the first 9,653 vert
 
 ## How it was found
 
-Fully symmetry-reduced exhaustive sweep of the 2-vertex base with a loop at each vertex and two parallel links over odd-order metacyclic groups Z_N x|_r Z_M; the graph lives over Z_197 x|_16 Z_49, where five inequivalent assignments reach diameter 10. The search code is in [search/lift_two_vertex](../../../search/lift_two_vertex).
+Fully symmetry-reduced exhaustive sweep of the 2-vertex base with a loop at each vertex and two parallel links over odd-order metacyclic groups $`\mathbb{Z}_N \rtimes_r \mathbb{Z}_M`$; the graph lives over $`\mathbb{Z}_{197} \rtimes_{16} \mathbb{Z}_{49}`$, where five inequivalent assignments reach diameter 10. The search code is in [search/lift_two_vertex](../../../search/lift_two_vertex).
 
 ## Files
 
