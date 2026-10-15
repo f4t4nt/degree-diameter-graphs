@@ -12,7 +12,7 @@ Vertex i + 3372071 j is the group element x^i y^j (0 <= i < 3372071, 0 <= j < 39
 
 ## How it was found
 
-Small-complement group screen, bitmap simulated annealing with a movable involution in the one-involution Cayley family on Z_3372071 x|_832 Z_390.
+Small-complement group screen, bitmap simulated annealing with a movable involution in the one-involution Cayley family on Z_3372071 x|_832 Z_390. The search code is in [search/cayley_metacyclic_anneal](../../search/cayley_metacyclic_anneal).
 
 ## Files
 

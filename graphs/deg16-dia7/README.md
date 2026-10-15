@@ -12,7 +12,7 @@ Vertex i + 83773 j is the group element x^i y^j (0 <= i < 83773, 0 <= j < 179), 
 
 ## How it was found
 
-Coincidence-free level pattern from the pattern optimiser, then simulated annealing with targeted moves on the odd-order group Z_83773 x|_72211 Z_179.
+Coincidence-free level pattern from the pattern optimiser, then simulated annealing with targeted moves on the odd-order group Z_83773 x|_72211 Z_179. The search code is in [search/cayley_metacyclic_anneal](../../search/cayley_metacyclic_anneal).
 
 ## Files
 

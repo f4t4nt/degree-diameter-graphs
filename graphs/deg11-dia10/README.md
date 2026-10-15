@@ -12,7 +12,7 @@ Vertex i + 3486401 j is the group element x^i y^j (0 <= i < 3486401, 0 <= j < 20
 
 ## How it was found
 
-Two-plane bitmap simulated annealing with targeted moves and a movable involution in the one-involution Cayley family on Z_3486401 x|_1834706 Z_200.
+Two-plane bitmap simulated annealing with targeted moves and a movable involution in the one-involution Cayley family on Z_3486401 x|_1834706 Z_200. The search code is in [search/cayley_metacyclic_anneal](../../search/cayley_metacyclic_anneal).
 
 ## Files
 

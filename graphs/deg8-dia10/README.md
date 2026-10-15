@@ -12,7 +12,7 @@ Vertex i + 141391 j is the group element x^i y^j (0 <= i < 141391, 0 <= j < 190)
 
 ## How it was found
 
-Even-M group with a tiny involution class, coincidence-free level pattern, simulated annealing with targeted moves on Z_141391 x|_240 Z_190.
+Even-M group with a tiny involution class, coincidence-free level pattern, simulated annealing with targeted moves on Z_141391 x|_240 Z_190. The search code is in [search/cayley_metacyclic_anneal](../../search/cayley_metacyclic_anneal).
 
 ## Files
 

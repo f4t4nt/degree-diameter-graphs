@@ -12,7 +12,7 @@ Vertex i + 6611 j is the group element x^i y^j (0 <= i < 6611, 0 <= j < 40), so 
 
 ## How it was found
 
-Complete mode-F sweeps of the unit-x one-involution Cayley family per (group, level pattern) with the automorphism quotient; Cay(Z_6611 x|_193 Z_40) with the involution y^20 and three inverse pairs.
+Complete mode-F sweeps of the unit-x one-involution Cayley family per (group, level pattern) with the automorphism quotient; Cay(Z_6611 x|_193 Z_40) with the involution y^20 and three inverse pairs. The search code is in [search/cayley_exhaustive](../../search/cayley_exhaustive).
 
 ## Files
 

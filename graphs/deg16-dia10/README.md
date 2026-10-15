@@ -12,7 +12,7 @@ Vertex i + 24170981 j is the group element x^i y^j (0 <= i < 24170981, 0 <= j < 
 
 ## How it was found
 
-Odd-order group with prime N and M and M about 0.40 n^(1/3), two-plane bitmap simulated annealing with targeted moves on Z_24170981 x|_16573517 Z_1237.
+Odd-order group with prime N and M and M about 0.40 n^(1/3), two-plane bitmap simulated annealing with targeted moves on Z_24170981 x|_16573517 Z_1237. The search code is in [search/cayley_metacyclic_anneal](../../search/cayley_metacyclic_anneal).
 
 ## Files
 

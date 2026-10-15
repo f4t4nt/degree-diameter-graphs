@@ -12,7 +12,7 @@ Vertex i + 703 j is the group element x^i y^j (0 <= i < 703, 0 <= j < 18), so ve
 
 ## How it was found
 
-Complete sweep of all one-involution connection sets {y^9, three inverse pairs} on Z_703 x|_85 Z_18 up to the automorphisms fixing the involution (exactly one solution).
+Complete sweep of all one-involution connection sets {y^9, three inverse pairs} on Z_703 x|_85 Z_18 up to the automorphisms fixing the involution (exactly one solution). The search code is in [search/cayley_exhaustive](../../search/cayley_exhaustive).
 
 ## Files
 

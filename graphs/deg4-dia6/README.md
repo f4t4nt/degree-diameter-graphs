@@ -12,7 +12,7 @@ Vertices 0..363 are the points of H(3), 364..727 its lines and 728..759 the 32 n
 
 ## How it was found
 
-Incidence graph of the generalized hexagon H(3) (728 vertices) with 32 flags subdivided and a 2-regular graph on the new vertices; the flag set is the union of two 16-flag orbits of a Sylow 2-subgroup of the centraliser of an involution of G2(3), and the 2-factor is found by exact-cost simulated annealing with the flag set fixed.
+Incidence graph of the generalized hexagon H(3) (728 vertices) with 32 flags subdivided and a 2-regular graph on the new vertices; the flag set is the union of two 16-flag orbits of a Sylow 2-subgroup of the centraliser of an involution of G2(3), and the 2-factor is found by exact-cost simulated annealing with the flag set fixed. The search code is in [search/hexagon_insertion](../../search/hexagon_insertion).
 
 ## Files
 

@@ -12,7 +12,7 @@ Vertex i + 783151 j is the group element x^i y^j (0 <= i < 783151, 0 <= j < 227)
 
 ## How it was found
 
-Groups chosen by the small-complement rule, bitmap simulated annealing with targeted moves on the odd-order group Z_783151 x|_1808 Z_227.
+Groups chosen by the small-complement rule, bitmap simulated annealing with targeted moves on the odd-order group Z_783151 x|_1808 Z_227. The search code is in [search/cayley_metacyclic_anneal](../../search/cayley_metacyclic_anneal).
 
 ## Files
 

@@ -12,7 +12,7 @@ Vertex i + 66733 j is the group element x^i y^j (0 <= i < 66733, 0 <= j < 67), s
 
 ## How it was found
 
-Groups chosen by the small-complement rule (M about 0.4 n^(1/3)), simulated annealing with targeted moves on the odd-order group Z_66733 x|_1441 Z_67.
+Groups chosen by the small-complement rule (M about 0.4 n^(1/3)), simulated annealing with targeted moves on the odd-order group Z_66733 x|_1441 Z_67. The search code is in [search/cayley_metacyclic_anneal](../../search/cayley_metacyclic_anneal).
 
 ## Files
 

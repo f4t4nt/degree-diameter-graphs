@@ -12,7 +12,7 @@ Vertex i + 32423 j is the group element x^i y^j (0 <= i < 32423, 0 <= j < 43), s
 
 ## How it was found
 
-Complete level-pattern sweeps (every x-assignment of every level pattern) of 3-pair Cayley graphs on odd-order metacyclic groups; the graph is Cay(Z_32423 x|_1693 Z_43; y^2, x y^13, x^4406 y^18).
+Complete level-pattern sweeps (every x-assignment of every level pattern) of 3-pair Cayley graphs on odd-order metacyclic groups; the graph is Cay(Z_32423 x|_1693 Z_43; y^2, x y^13, x^4406 y^18). The search code is in [search/cayley_exhaustive](../../search/cayley_exhaustive).
 
 ## Files
 

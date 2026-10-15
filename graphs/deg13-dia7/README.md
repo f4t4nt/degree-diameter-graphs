@@ -12,7 +12,7 @@ Vertex i + 47321 j is the group element x^i y^j (0 <= i < 47321, 0 <= j < 78), s
 
 ## How it was found
 
-Simulated annealing with targeted moves and a movable involution in the one-involution Cayley family on Z_47321 x|_3981 Z_78, the group chosen by the lower-quartile softness screen.
+Simulated annealing with targeted moves and a movable involution in the one-involution Cayley family on Z_47321 x|_3981 Z_78, the group chosen by the lower-quartile softness screen. The search code is in [search/cayley_metacyclic_anneal](../../search/cayley_metacyclic_anneal).
 
 ## Files
 

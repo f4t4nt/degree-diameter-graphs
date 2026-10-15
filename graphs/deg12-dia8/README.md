@@ -12,7 +12,7 @@ Vertex i + 90731 j is the group element x^i y^j (0 <= i < 90731, 0 <= j < 211), 
 
 ## How it was found
 
-Exact x-only completion sweep of a frozen defect-2 annealing state of 6-pair Cayley graphs on the odd-order group Z_90731 x|_61666 Z_211.
+Exact x-only completion sweep of a frozen defect-2 annealing state of 6-pair Cayley graphs on the odd-order group Z_90731 x|_61666 Z_211. The search code is in [search/cayley_metacyclic_anneal](../../search/cayley_metacyclic_anneal).
 
 ## Files
 

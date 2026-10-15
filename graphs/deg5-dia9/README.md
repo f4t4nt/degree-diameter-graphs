@@ -12,7 +12,7 @@ Vertex 30343 v + i + 1597 j is the pair (v, x^i y^j): the first 30,343 vertices 
 
 ## How it was found
 
-Complete sweep of the S_3-reduced sub-block with loop layers 2 and 4 of the shape-103 two-vertex lift family over the odd-order group Z_1597 x|_3 Z_19.
+Complete sweep of the S_3-reduced sub-block with loop layers 2 and 4 of the shape-103 two-vertex lift family over the odd-order group Z_1597 x|_3 Z_19. The search code is in [search/lift_two_vertex](../../search/lift_two_vertex).
 
 ## Files
 

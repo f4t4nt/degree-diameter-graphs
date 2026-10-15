@@ -12,7 +12,7 @@ Vertex i + 19403 j is the group element x^i y^j (0 <= i < 19403, 0 <= j < 109), 
 
 ## How it was found
 
-Exact single-slot completion sweep of a frozen defect-2 annealing state of 6-pair Cayley graphs on the odd-order group Z_19403 x|_6308 Z_109.
+Exact single-slot completion sweep of a frozen defect-2 annealing state of 6-pair Cayley graphs on the odd-order group Z_19403 x|_6308 Z_109. The search code is in [search/cayley_metacyclic_anneal](../../search/cayley_metacyclic_anneal).
 
 ## Files
 

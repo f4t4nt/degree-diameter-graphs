@@ -12,7 +12,7 @@ Vertex 2628 v + i + 73 j is the pair (v, x^i y^j): each run of 2,628 consecutive
 
 ## How it was found
 
-Complete symmetry-reduced sweep of all voltage assignments of the 3-vertex base with a triple link, a path and a loop over the one-involution metacyclic group Z_73 x|_18 Z_36.
+Complete symmetry-reduced sweep of all voltage assignments of the 3-vertex base with a triple link, a path and a loop over the one-involution metacyclic group Z_73 x|_18 Z_36. The search code is in [search/lift_three_vertex](../../search/lift_three_vertex).
 
 ## Files
 

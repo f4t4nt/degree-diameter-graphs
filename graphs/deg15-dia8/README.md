@@ -12,7 +12,7 @@ Vertex i + 423523 j is the group element x^i y^j (0 <= i < 423523, 0 <= j < 260)
 
 ## How it was found
 
-Whole-window small-complement screen, simulated annealing with involution moves in the one-involution Cayley family on Z_423523 x|_8 Z_260.
+Whole-window small-complement screen, simulated annealing with involution moves in the one-involution Cayley family on Z_423523 x|_8 Z_260. The search code is in [search/cayley_metacyclic_anneal](../../search/cayley_metacyclic_anneal).
 
 ## Files
 

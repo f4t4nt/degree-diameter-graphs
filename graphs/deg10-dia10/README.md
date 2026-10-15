@@ -12,7 +12,7 @@ Vertex i + 1111351 j is the group element x^i y^j (0 <= i < 1111351, 0 <= j < 23
 
 ## How it was found
 
-Odd-order group with small complement M, bitmap simulated annealing with targeted moves on Z_1111351 x|_8147 Z_239.
+Odd-order group with small complement M, bitmap simulated annealing with targeted moves on Z_1111351 x|_8147 Z_239. The search code is in [search/cayley_metacyclic_anneal](../../search/cayley_metacyclic_anneal).
 
 ## Files
 

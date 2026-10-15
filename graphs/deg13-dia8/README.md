@@ -12,7 +12,7 @@ Vertex i + 302293 j is the group element x^i y^j (0 <= i < 302293, 0 <= j < 120)
 
 ## How it was found
 
-Simulated annealing with targeted moves and a movable involution in the one-involution Cayley family on Z_302293 x|_7818 Z_120.
+Simulated annealing with targeted moves and a movable involution in the one-involution Cayley family on Z_302293 x|_7818 Z_120. The search code is in [search/cayley_metacyclic_anneal](../../search/cayley_metacyclic_anneal).
 
 ## Files
 

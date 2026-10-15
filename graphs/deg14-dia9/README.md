@@ -12,7 +12,7 @@ Vertex i + 2104229 j is the group element x^i y^j (0 <= i < 2104229, 0 <= j < 33
 
 ## How it was found
 
-Odd-order group with prime complement M and M about 0.38 n^(1/3), bitmap simulated annealing with targeted moves on Z_2104229 x|_864 Z_337.
+Odd-order group with prime complement M and M about 0.38 n^(1/3), bitmap simulated annealing with targeted moves on Z_2104229 x|_864 Z_337. The search code is in [search/cayley_metacyclic_anneal](../../search/cayley_metacyclic_anneal).
 
 ## Files
 

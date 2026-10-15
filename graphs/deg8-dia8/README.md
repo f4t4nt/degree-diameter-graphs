@@ -12,7 +12,7 @@ Vertex i + 13217 j is the group element x^i y^j (0 <= i < 13217, 0 <= j < 59), s
 
 ## How it was found
 
-Coincidence-free level pattern from the pattern optimiser, then simulated annealing with targeted moves on the odd-order group Z_13217 x|_8875 Z_59.
+Coincidence-free level pattern from the pattern optimiser, then simulated annealing with targeted moves on the odd-order group Z_13217 x|_8875 Z_59. The search code is in [search/cayley_metacyclic_anneal](../../search/cayley_metacyclic_anneal).
 
 ## Files
 

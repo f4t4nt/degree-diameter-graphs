@@ -12,7 +12,7 @@ Vertex i + 24681 j is the group element x^i y^j (0 <= i < 24681, 0 <= j < 54), s
 
 ## How it was found
 
-Simulated annealing with a fixed level pattern, targeted moves and a movable involution in the one-involution Cayley family on Z_24681 x|_788 Z_54.
+Simulated annealing with a fixed level pattern, targeted moves and a movable involution in the one-involution Cayley family on Z_24681 x|_788 Z_54. The search code is in [search/cayley_metacyclic_anneal](../../search/cayley_metacyclic_anneal).
 
 ## Files
 

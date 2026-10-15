@@ -12,7 +12,7 @@ Vertex i + 10837399 j is the group element x^i y^j (0 <= i < 10837399, 0 <= j < 
 
 ## How it was found
 
-Odd-order group with M about 0.37 n^(1/3), bitmap simulated annealing with targeted moves on Z_10837399 x|_3457 Z_743.
+Odd-order group with M about 0.37 n^(1/3), bitmap simulated annealing with targeted moves on Z_10837399 x|_3457 Z_743. The search code is in [search/cayley_metacyclic_anneal](../../search/cayley_metacyclic_anneal).
 
 ## Files
 

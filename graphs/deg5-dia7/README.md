@@ -14,7 +14,7 @@ Vertex 3000 v + index(g) is the pair (v, g), where g = ((a,b), c^i, z^j) y^m has
 
 ## How it was found
 
-Complete sweep of all shape-103 two-vertex lift assignments (one loop and three links per base vertex, one link trivial) on the non-metacyclic group ((F_25 x| C_3) x Z_5) x| C_8 up to symmetry, the group selected by the conjugacy-class-count (commuting probability) rule.
+Complete sweep of all shape-103 two-vertex lift assignments (one loop and three links per base vertex, one link trivial) on the non-metacyclic group ((F_25 x| C_3) x Z_5) x| C_8 up to symmetry, the group selected by the conjugacy-class-count (commuting probability) rule. The search code is in [search/lift_nonmetacyclic_groups](../../search/lift_nonmetacyclic_groups).
 
 ## Files
 

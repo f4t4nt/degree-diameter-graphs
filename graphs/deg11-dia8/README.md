@@ -12,7 +12,7 @@ Vertex i + 135269 j is the group element x^i y^j (0 <= i < 135269, 0 <= j < 72),
 
 ## How it was found
 
-Simulated annealing with targeted moves and a movable involution in the one-involution Cayley family on Z_135269 x|_8594 Z_72, group windows re-screened upward.
+Simulated annealing with targeted moves and a movable involution in the one-involution Cayley family on Z_135269 x|_8594 Z_72, group windows re-screened upward. The search code is in [search/cayley_metacyclic_anneal](../../search/cayley_metacyclic_anneal).
 
 ## Files
 

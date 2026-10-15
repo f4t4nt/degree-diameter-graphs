@@ -12,7 +12,7 @@ Vertex i + 83021 j is the group element x^i y^j (0 <= i < 83021, 0 <= j < 80), s
 
 ## How it was found
 
-Simulated annealing in the one-involution Cayley family with involution moves that conjugate the connection set towards an unreached involution, on Z_83021 x|_4400 Z_80.
+Simulated annealing in the one-involution Cayley family with involution moves that conjugate the connection set towards an unreached involution, on Z_83021 x|_4400 Z_80. The search code is in [search/cayley_metacyclic_anneal](../../search/cayley_metacyclic_anneal).
 
 ## Files
 

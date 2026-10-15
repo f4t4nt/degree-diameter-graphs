@@ -12,7 +12,7 @@ Vertex i + 185299 j is the group element x^i y^j (0 <= i < 185299, 0 <= j < 347)
 
 ## How it was found
 
-Odd-order group, coincidence-free level pattern with the lowest yardstick among the pattern-optimiser restarts, simulated annealing with targeted moves on Z_185299 x|_47110 Z_347.
+Odd-order group, coincidence-free level pattern with the lowest yardstick among the pattern-optimiser restarts, simulated annealing with targeted moves on Z_185299 x|_47110 Z_347. The search code is in [search/cayley_metacyclic_anneal](../../search/cayley_metacyclic_anneal).
 
 ## Files
 

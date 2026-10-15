@@ -12,7 +12,7 @@ Vertex i + 90361 j is the group element x^i y^j (0 <= i < 90361, 0 <= j < 108), 
 
 ## How it was found
 
-Simulated annealing with targeted moves and a movable involution in the one-involution Cayley family on Z_90361 x|_1443 Z_108, the group chosen by the lower-quartile softness screen.
+Simulated annealing with targeted moves and a movable involution in the one-involution Cayley family on Z_90361 x|_1443 Z_108, the group chosen by the lower-quartile softness screen. The search code is in [search/cayley_metacyclic_anneal](../../search/cayley_metacyclic_anneal).
 
 ## Files
 

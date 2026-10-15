@@ -82,6 +82,7 @@ memory for that search, so `check` skips cells above 10^8 vertices unless `--max
 - `graphs/`: one directory per cell.
 - `tools/ddgraph.py`: groups, constructions, edge lists and the `check` driver (see [tools/README.md](tools/README.md)).
 - `tools/verify/`: the C verifiers.
+- `search/`: the code that found the graphs.
 
 ## Notation
 

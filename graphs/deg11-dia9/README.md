@@ -12,7 +12,7 @@ Vertex i + 512257 j is the group element x^i y^j (0 <= i < 512257, 0 <= j < 160)
 
 ## How it was found
 
-Simulated annealing with targeted moves and a movable involution in the one-involution Cayley family on Z_512257 x|_706 Z_160, the group chosen by the lower-quartile softness screen.
+Simulated annealing with targeted moves and a movable involution in the one-involution Cayley family on Z_512257 x|_706 Z_160, the group chosen by the lower-quartile softness screen. The search code is in [search/cayley_metacyclic_anneal](../../search/cayley_metacyclic_anneal).
 
 ## Files
 

@@ -12,7 +12,7 @@ Vertex i + 45075 j is the group element x^i y^j (0 <= i < 45075, 0 <= j < 100), 
 
 ## How it was found
 
-Even-M group with a tiny involution class, coincidence-free level pattern, simulated annealing with targeted moves on Z_45075 x|_2 Z_100.
+Even-M group with a tiny involution class, coincidence-free level pattern, simulated annealing with targeted moves on Z_45075 x|_2 Z_100. The search code is in [search/cayley_metacyclic_anneal](../../search/cayley_metacyclic_anneal).
 
 ## Files
 

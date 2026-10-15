@@ -8,9 +8,11 @@ Three disjoint copies (blocks A, B and C) of the subdivided complete bipartite g
 
 Block A is 0..23 (L0..L3 = 0..3, R0..R3 = 4..7, port P_xy = 8 + 4x + y), block B is 24..47 and block C is 48..71 in the same pattern, and connector pair k (0..15) is 72 + 2k and 73 + 2k.
 
+This graph is class 29 of the 36 graphs of degree 4 and diameter 4 on 104 vertices built from three subdivided K_4,4 blocks with no port-port edge, one of the two classes with an automorphism group of order 32. All 36 are in [search/deg4-dia4/classes](../../search/deg4-dia4/classes), and [search/deg4-dia4](../../search/deg4-dia4) has the proofs that this architecture admits no graph on 105, 106, 107 or 108 vertices.
+
 ## How it was found
 
-Symmetric Z_8 voltage lift over a 13-vertex base pregraph with defect-targeted moves and basin hopping, run until a seed stalls at a small defect, then symmetry-breaking 2-opt edge repair closes the last pairs; the 36 isomorphism classes come from enumerating every diameter-4 realisation (SAT) of the three tight three-block skeletons that admit one and sorting them by canonical form.
+Symmetric Z_8 voltage lift over a 13-vertex base pregraph with defect-targeted moves and basin hopping, run until a seed stalls at a small defect, then symmetry-breaking 2-opt edge repair closes the last pairs; the 36 isomorphism classes come from enumerating every diameter-4 realisation (SAT) of the three tight three-block skeletons that admit one and sorting them by canonical form. The search code is in [search/deg4-dia4](../../search/deg4-dia4).
 
 ## Files
 
