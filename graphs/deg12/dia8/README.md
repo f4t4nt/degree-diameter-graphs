@@ -8,7 +8,7 @@ The Cayley graph of $`G = \mathbb{Z}_{90731} \rtimes_{61666} \mathbb{Z}_{211} = 
 
 $`G`$ has odd order, so it has no involutions, and the degree is $`2 \cdot 6 = 12`$. The graph is vertex-transitive: $`G`$ acts on it by left multiplication.
 
-Vertex $`i + 90731 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 90731`$, $`0 \le j < 211`$), so vertex 0 is the identity and the 211 runs of 90,731 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 211`$.
+Vertex $`i + 90731 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 90731`$, $`0 \le j < 211`$), so vertex 0 is the identity and the 211 runs of 90,731 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 211`$ (see [the numbering figure](../../cayley-numbering.svg)).
 
 ## How it was found
 

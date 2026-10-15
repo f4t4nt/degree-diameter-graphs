@@ -8,7 +8,7 @@ The Cayley graph of $`G = \mathbb{Z}_{769273} \rtimes_{381264} \mathbb{Z}_{241} 
 
 $`G`$ has odd order, so it has no involutions, and the degree is $`2 \cdot 8 = 16`$. The graph is vertex-transitive: $`G`$ acts on it by left multiplication.
 
-Vertex $`i + 769273 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 769273`$, $`0 \le j < 241`$), so vertex 0 is the identity and the 241 runs of 769,273 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 241`$.
+Vertex $`i + 769273 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 769273`$, $`0 \le j < 241`$), so vertex 0 is the identity and the 241 runs of 769,273 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 241`$ (see [the numbering figure](../../cayley-numbering.svg)).
 
 ## How it was found
 

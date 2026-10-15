@@ -8,7 +8,7 @@ The Cayley graph of $`G = \mathbb{Z}_{1111351} \rtimes_{8147} \mathbb{Z}_{239} =
 
 $`G`$ has odd order, so it has no involutions, and the degree is $`2 \cdot 5 = 10`$. The graph is vertex-transitive: $`G`$ acts on it by left multiplication.
 
-Vertex $`i + 1111351 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 1111351`$, $`0 \le j < 239`$), so vertex 0 is the identity and the 239 runs of 1,111,351 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 239`$.
+Vertex $`i + 1111351 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 1111351`$, $`0 \le j < 239`$), so vertex 0 is the identity and the 239 runs of 1,111,351 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 239`$ (see [the numbering figure](../../cayley-numbering.svg)).
 
 ## How it was found
 

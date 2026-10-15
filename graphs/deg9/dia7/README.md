@@ -8,7 +8,7 @@ The Cayley graph of $`G = \mathbb{Z}_{4577} \rtimes_{174} \mathbb{Z}_{66} = \lan
 
 $`y^{33}`$ is one of the 199 involutions of $`G`$, so the degree is $`1 + 2 \cdot 4 = 9`$. The graph is vertex-transitive: $`G`$ acts on it by left multiplication.
 
-Vertex $`i + 4577 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 4577`$, $`0 \le j < 66`$), so vertex 0 is the identity and the 66 runs of 4,577 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 66`$.
+Vertex $`i + 4577 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 4577`$, $`0 \le j < 66`$), so vertex 0 is the identity and the 66 runs of 4,577 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 66`$ (see [the numbering figure](../../cayley-numbering.svg)).
 
 ## How it was found
 

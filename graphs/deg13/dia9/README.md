@@ -8,7 +8,7 @@ The Cayley graph of $`G = \mathbb{Z}_{1258655} \rtimes_{263} \mathbb{Z}_{288} = 
 
 $`x^{286140} y^{144}`$ is one of the 13,249 involutions of $`G`$, so the degree is $`1 + 2 \cdot 6 = 13`$. The graph is vertex-transitive: $`G`$ acts on it by left multiplication.
 
-Vertex $`i + 1258655 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 1258655`$, $`0 \le j < 288`$), so vertex 0 is the identity and the 288 runs of 1,258,655 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 288`$.
+Vertex $`i + 1258655 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 1258655`$, $`0 \le j < 288`$), so vertex 0 is the identity and the 288 runs of 1,258,655 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 288`$ (see [the numbering figure](../../cayley-numbering.svg)).
 
 ## How it was found
 

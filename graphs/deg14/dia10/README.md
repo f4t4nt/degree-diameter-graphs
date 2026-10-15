@@ -8,7 +8,7 @@ The Cayley graph of $`G = \mathbb{Z}_{10837399} \rtimes_{3457} \mathbb{Z}_{743} 
 
 $`G`$ has odd order, so it has no involutions, and the degree is $`2 \cdot 7 = 14`$. The graph is vertex-transitive: $`G`$ acts on it by left multiplication.
 
-Vertex $`i + 10837399 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 10837399`$, $`0 \le j < 743`$), so vertex 0 is the identity and the 743 runs of 10,837,399 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 743`$.
+Vertex $`i + 10837399 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 10837399`$, $`0 \le j < 743`$), so vertex 0 is the identity and the 743 runs of 10,837,399 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 743`$ (see [the numbering figure](../../cayley-numbering.svg)).
 
 ## How it was found
 

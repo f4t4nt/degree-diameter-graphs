@@ -8,7 +8,7 @@ The Cayley graph of $`G = \mathbb{Z}_{423523} \rtimes_{8} \mathbb{Z}_{260} = \la
 
 $`x^{295274} y^{130}`$ is one of the 3,233 involutions of $`G`$, so the degree is $`1 + 2 \cdot 7 = 15`$. The graph is vertex-transitive: $`G`$ acts on it by left multiplication.
 
-Vertex $`i + 423523 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 423523`$, $`0 \le j < 260`$), so vertex 0 is the identity and the 260 runs of 423,523 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 260`$.
+Vertex $`i + 423523 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 423523`$, $`0 \le j < 260`$), so vertex 0 is the identity and the 260 runs of 423,523 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 260`$ (see [the numbering figure](../../cayley-numbering.svg)).
 
 ## How it was found
 

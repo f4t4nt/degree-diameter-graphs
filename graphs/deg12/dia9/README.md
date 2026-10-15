@@ -8,7 +8,7 @@ The Cayley graph of $`G = \mathbb{Z}_{783151} \rtimes_{1808} \mathbb{Z}_{227} = 
 
 $`G`$ has odd order, so it has no involutions, and the degree is $`2 \cdot 6 = 12`$. The graph is vertex-transitive: $`G`$ acts on it by left multiplication.
 
-Vertex $`i + 783151 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 783151`$, $`0 \le j < 227`$), so vertex 0 is the identity and the 227 runs of 783,151 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 227`$.
+Vertex $`i + 783151 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 783151`$, $`0 \le j < 227`$), so vertex 0 is the identity and the 227 runs of 783,151 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 227`$ (see [the numbering figure](../../cayley-numbering.svg)).
 
 ## How it was found
 

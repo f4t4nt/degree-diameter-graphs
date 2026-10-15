@@ -8,7 +8,7 @@ The Cayley graph of $`G = \mathbb{Z}_{141391} \rtimes_{240} \mathbb{Z}_{190} = \
 
 $`S`$ contains no involution ($`G`$ has 31 involutions), so the degree is $`2 \cdot 4 = 8`$. The graph is vertex-transitive: $`G`$ acts on it by left multiplication.
 
-Vertex $`i + 141391 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 141391`$, $`0 \le j < 190`$), so vertex 0 is the identity and the 190 runs of 141,391 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 190`$.
+Vertex $`i + 141391 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 141391`$, $`0 \le j < 190`$), so vertex 0 is the identity and the 190 runs of 141,391 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 190`$ (see [the numbering figure](../../cayley-numbering.svg)).
 
 ## How it was found
 

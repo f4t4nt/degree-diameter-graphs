@@ -8,7 +8,7 @@ The Cayley graph of $`G = \mathbb{Z}_{32423} \rtimes_{1693} \mathbb{Z}_{43} = \l
 
 $`G`$ has odd order, so it has no involutions, and the degree is $`2 \cdot 3 = 6`$. The graph is vertex-transitive: $`G`$ acts on it by left multiplication.
 
-Vertex $`i + 32423 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 32423`$, $`0 \le j < 43`$), so vertex 0 is the identity and the 43 runs of 32,423 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 43`$.
+Vertex $`i + 32423 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 32423`$, $`0 \le j < 43`$), so vertex 0 is the identity and the 43 runs of 32,423 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 43`$ (see [the numbering figure](../../cayley-numbering.svg)).
 
 ## How it was found
 

@@ -8,7 +8,7 @@ The Cayley graph of $`G = \mathbb{Z}_{66733} \rtimes_{1441} \mathbb{Z}_{67} = \l
 
 $`G`$ has odd order, so it has no involutions, and the degree is $`2 \cdot 4 = 8`$. The graph is vertex-transitive: $`G`$ acts on it by left multiplication.
 
-Vertex $`i + 66733 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 66733`$, $`0 \le j < 67`$), so vertex 0 is the identity and the 67 runs of 66,733 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 67`$.
+Vertex $`i + 66733 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 66733`$, $`0 \le j < 67`$), so vertex 0 is the identity and the 67 runs of 66,733 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 67`$ (see [the numbering figure](../../cayley-numbering.svg)).
 
 ## How it was found
 

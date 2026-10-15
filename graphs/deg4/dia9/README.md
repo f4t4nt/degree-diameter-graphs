@@ -8,6 +8,10 @@ A regular voltage lift over $`G = \mathbb{Z}_{73} \rtimes_{18} \mathbb{Z}_{36} =
 
 The lift has vertex set $`\{0, 1, 2\} \times G`$ and joins $`(u, g)`$ to $`(v, g a)`$ for every dart $`u \to v`$ with voltage $`a`$; a loop with voltage $`a`$ joins $`(v, g)`$ to $`(v, g a)`$ and $`(v, g a^{-1})`$. $`G`$ acts on each fibre $`\{v\} \times G`$ by left multiplication.
 
+![The base graph of the lift with its voltages](base-graph.svg)
+
+Arrows give the direction $`u \to v`$ of each voltage; a loop acts both ways, joining $`(v, g)`$ to $`(v, g a)`$ and $`(v, g a^{-1})`$.
+
 Vertex $`2628 v + i + 73 j`$ is the pair $`(v, x^i y^j)`$: each run of 2,628 consecutive numbers lies over one base vertex, in order, and vertex $`2628 v`$ is $`(v, e)`$.
 
 ## How it was found

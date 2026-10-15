@@ -36,7 +36,7 @@ of the stated degree before searching.
 | program | input | what it checks |
 |---|---|---|
 | `verify_bfs.c` | an edge list (lines starting with `#` are skipped, so it reads the files in `graphs/` directly) | BFS from every vertex: order, minimum and maximum degree, repeated edges, diameter, pairs farther apart than $`D`$ |
-| `verify_cayley.c` | an edge list and $`(N, M, r, S)`$ | the edge set equals the Cayley graph exactly, then BFS from the identity and 50 sampled vertices |
+| `verify_cayley.c` | an edge list and $`(N, M, r, S)`$ | the edge set equals the Cayley graph exactly, so BFS from the identity decides the diameter; 50 sampled vertices cross-check it |
 | `verify_cayley_implicit.c` | $`(N, M, r, S)`$ | BFS from the identity and sampled vertices over the implicitly defined Cayley graph, 5 bytes per vertex |
 | `verify_cayley_inv.c` | the same | the same, with one involution allowed in $`S`$ |
 | `verify_lift2_implicit.c` | a 2-vertex lift | BFS from $`(0, e)`$, $`(1, e)`$ and sampled vertices |
@@ -50,3 +50,12 @@ Why one search is enough: left multiplication by $`h`$ maps the Cayley graph to 
 every vertex has the eccentricity of the identity. In a voltage lift, left multiplication maps each fibre
 $`\{v\} \times G`$ to itself transitively, so the eccentricities of $`(0, e)`$, $`(1, e)`$, ... are all there is to
 compute.
+
+The 50 sampled vertices of `verify_cayley.c`, and the extra sources of the implicit verifiers, add no coverage to
+this argument; they cross-check the program, since a wrong group law would make their eccentricities disagree.
+
+## Figures
+
+Every diagram is an SVG drawn by Graphviz from the `.dot` file next to it:
+
+    dot -Tsvg graphs/deg5/dia8/base-graph.dot -o graphs/deg5/dia8/base-graph.svg

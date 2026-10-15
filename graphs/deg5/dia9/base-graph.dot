@@ -1,0 +1,15 @@
+digraph base_graph {
+  graph [bgcolor="white", pad=0.4, fontname="Arial", fontsize=13];
+  node [shape=circle, width=0.42, fixedsize=true, fontname="Arial", fontsize=13, color="#1f2328", penwidth=1.6];
+  edge [color="#1f2328", penwidth=1.4, arrowsize=0.75, fontname="Times New Roman", fontsize=17];
+
+  graph [layout=dot, rankdir=LR, nodesep=0.5, ranksep=2.4];
+  graph [label="60,686 vertices from a 2-vertex base graph over a group of order 30,343\n ", labelloc=t, fontsize=19, fontname="Arial", fontcolor="#1f2328"];
+  0 [label=<<b>0</b>>];
+  1 [label=<<b>1</b>>];
+  0 -> 1 [label=<1>];
+  0 -> 1 [label=<<i>xy³</i>>];
+  0 -> 1 [label=<<i>x¹⁵⁰⁰y⁹</i>>];
+  0 -> 0 [label=<<i>y²</i>>, dir=none];
+  1 -> 1 [label=<<i>x¹⁴⁴⁹y⁴</i>>, dir=none];
+}

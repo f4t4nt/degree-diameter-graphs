@@ -8,7 +8,7 @@ The Cayley graph of $`G = \mathbb{Z}_{83773} \rtimes_{72211} \mathbb{Z}_{179} = 
 
 $`G`$ has odd order, so it has no involutions, and the degree is $`2 \cdot 8 = 16`$. The graph is vertex-transitive: $`G`$ acts on it by left multiplication.
 
-Vertex $`i + 83773 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 83773`$, $`0 \le j < 179`$), so vertex 0 is the identity and the 179 runs of 83,773 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 179`$.
+Vertex $`i + 83773 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 83773`$, $`0 \le j < 179`$), so vertex 0 is the identity and the 179 runs of 83,773 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 179`$ (see [the numbering figure](../../cayley-numbering.svg)).
 
 ## How it was found
 

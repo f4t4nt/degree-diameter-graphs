@@ -8,7 +8,7 @@ The Cayley graph of $`G = \mathbb{Z}_{45075} \rtimes_{2} \mathbb{Z}_{100} = \lan
 
 $`S`$ contains no involution ($`G`$ has 25 involutions), so the degree is $`2 \cdot 5 = 10`$. The graph is vertex-transitive: $`G`$ acts on it by left multiplication.
 
-Vertex $`i + 45075 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 45075`$, $`0 \le j < 100`$), so vertex 0 is the identity and the 100 runs of 45,075 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 100`$.
+Vertex $`i + 45075 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 45075`$, $`0 \le j < 100`$), so vertex 0 is the identity and the 100 runs of 45,075 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 100`$ (see [the numbering figure](../../cayley-numbering.svg)).
 
 ## How it was found
 

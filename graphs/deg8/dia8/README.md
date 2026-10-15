@@ -8,7 +8,7 @@ The Cayley graph of $`G = \mathbb{Z}_{13217} \rtimes_{8875} \mathbb{Z}_{59} = \l
 
 $`G`$ has odd order, so it has no involutions, and the degree is $`2 \cdot 4 = 8`$. The graph is vertex-transitive: $`G`$ acts on it by left multiplication.
 
-Vertex $`i + 13217 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 13217`$, $`0 \le j < 59`$), so vertex 0 is the identity and the 59 runs of 13,217 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 59`$.
+Vertex $`i + 13217 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 13217`$, $`0 \le j < 59`$), so vertex 0 is the identity and the 59 runs of 13,217 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 59`$ (see [the numbering figure](../../cayley-numbering.svg)).
 
 ## How it was found
 

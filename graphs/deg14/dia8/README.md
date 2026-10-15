@@ -8,7 +8,7 @@ The Cayley graph of $`G = \mathbb{Z}_{185299} \rtimes_{47110} \mathbb{Z}_{347} =
 
 $`G`$ has odd order, so it has no involutions, and the degree is $`2 \cdot 7 = 14`$. The graph is vertex-transitive: $`G`$ acts on it by left multiplication.
 
-Vertex $`i + 185299 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 185299`$, $`0 \le j < 347`$), so vertex 0 is the identity and the 347 runs of 185,299 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 347`$.
+Vertex $`i + 185299 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 185299`$, $`0 \le j < 347`$), so vertex 0 is the identity and the 347 runs of 185,299 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 347`$ (see [the numbering figure](../../cayley-numbering.svg)).
 
 ## How it was found
 

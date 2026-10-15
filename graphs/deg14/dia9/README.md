@@ -8,7 +8,7 @@ The Cayley graph of $`G = \mathbb{Z}_{2104229} \rtimes_{864} \mathbb{Z}_{337} = 
 
 $`G`$ has odd order, so it has no involutions, and the degree is $`2 \cdot 7 = 14`$. The graph is vertex-transitive: $`G`$ acts on it by left multiplication.
 
-Vertex $`i + 2104229 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 2104229`$, $`0 \le j < 337`$), so vertex 0 is the identity and the 337 runs of 2,104,229 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 337`$.
+Vertex $`i + 2104229 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 2104229`$, $`0 \le j < 337`$), so vertex 0 is the identity and the 337 runs of 2,104,229 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 337`$ (see [the numbering figure](../../cayley-numbering.svg)).
 
 ## How it was found
 

@@ -8,7 +8,7 @@ The Cayley graph of $`G = \mathbb{Z}_{24170981} \rtimes_{16573517} \mathbb{Z}_{1
 
 $`G`$ has odd order, so it has no involutions, and the degree is $`2 \cdot 8 = 16`$. The graph is vertex-transitive: $`G`$ acts on it by left multiplication.
 
-Vertex $`i + 24170981 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 24170981`$, $`0 \le j < 1237`$), so vertex 0 is the identity and the 1237 runs of 24,170,981 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 1237`$.
+Vertex $`i + 24170981 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 24170981`$, $`0 \le j < 1237`$), so vertex 0 is the identity and the 1237 runs of 24,170,981 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 1237`$ (see [the numbering figure](../../cayley-numbering.svg)).
 
 ## How it was found
 

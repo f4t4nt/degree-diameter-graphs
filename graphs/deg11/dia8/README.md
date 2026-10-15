@@ -8,7 +8,7 @@ The Cayley graph of $`G = \mathbb{Z}_{135269} \rtimes_{8594} \mathbb{Z}_{72} = \
 
 $`x^{34553} y^{36}`$ is one of the 1,241 involutions of $`G`$, so the degree is $`1 + 2 \cdot 5 = 11`$. The graph is vertex-transitive: $`G`$ acts on it by left multiplication.
 
-Vertex $`i + 135269 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 135269`$, $`0 \le j < 72`$), so vertex 0 is the identity and the 72 runs of 135,269 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 72`$.
+Vertex $`i + 135269 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 135269`$, $`0 \le j < 72`$), so vertex 0 is the identity and the 72 runs of 135,269 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 72`$ (see [the numbering figure](../../cayley-numbering.svg)).
 
 ## How it was found
 

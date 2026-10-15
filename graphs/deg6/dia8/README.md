@@ -8,7 +8,7 @@ The Cayley graph of $`G = \mathbb{Z}_{3202} \rtimes_{1419} \mathbb{Z}_{25} = \la
 
 $`S`$ contains no involution ($`G`$ has one involution), so the degree is $`2 \cdot 3 = 6`$. The graph is vertex-transitive: $`G`$ acts on it by left multiplication.
 
-Vertex $`i + 3202 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 3202`$, $`0 \le j < 25`$), so vertex 0 is the identity and the 25 runs of 3,202 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 25`$.
+Vertex $`i + 3202 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 3202`$, $`0 \le j < 25`$), so vertex 0 is the identity and the 25 runs of 3,202 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 25`$ (see [the numbering figure](../../cayley-numbering.svg)).
 
 ## How it was found
 

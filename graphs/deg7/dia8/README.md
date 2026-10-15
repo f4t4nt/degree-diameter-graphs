@@ -8,7 +8,7 @@ The Cayley graph of $`G = \mathbb{Z}_{6611} \rtimes_{193} \mathbb{Z}_{40} = \lan
 
 $`y^{20}`$ is one of the 601 involutions of $`G`$, so the degree is $`1 + 2 \cdot 3 = 7`$. The graph is vertex-transitive: $`G`$ acts on it by left multiplication.
 
-Vertex $`i + 6611 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 6611`$, $`0 \le j < 40`$), so vertex 0 is the identity and the 40 runs of 6,611 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 40`$.
+Vertex $`i + 6611 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 6611`$, $`0 \le j < 40`$), so vertex 0 is the identity and the 40 runs of 6,611 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 40`$ (see [the numbering figure](../../cayley-numbering.svg)).
 
 ## How it was found
 

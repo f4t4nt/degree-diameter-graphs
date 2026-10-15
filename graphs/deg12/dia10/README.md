@@ -8,7 +8,7 @@ The Cayley graph of $`G = \mathbb{Z}_{3655849} \rtimes_{5568} \mathbb{Z}_{463} =
 
 $`G`$ has odd order, so it has no involutions, and the degree is $`2 \cdot 6 = 12`$. The graph is vertex-transitive: $`G`$ acts on it by left multiplication.
 
-Vertex $`i + 3655849 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 3655849`$, $`0 \le j < 463`$), so vertex 0 is the identity and the 463 runs of 3,655,849 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 463`$.
+Vertex $`i + 3655849 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 3655849`$, $`0 \le j < 463`$), so vertex 0 is the identity and the 463 runs of 3,655,849 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 463`$ (see [the numbering figure](../../cayley-numbering.svg)).
 
 ## How it was found
 

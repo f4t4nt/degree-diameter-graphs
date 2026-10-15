@@ -8,7 +8,7 @@ The Cayley graph of $`G = \mathbb{Z}_{302293} \rtimes_{7818} \mathbb{Z}_{120} = 
 
 $`x^{164125} y^{60}`$ is one of the 2,993 involutions of $`G`$, so the degree is $`1 + 2 \cdot 6 = 13`$. The graph is vertex-transitive: $`G`$ acts on it by left multiplication.
 
-Vertex $`i + 302293 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 302293`$, $`0 \le j < 120`$), so vertex 0 is the identity and the 120 runs of 302,293 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 120`$.
+Vertex $`i + 302293 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 302293`$, $`0 \le j < 120`$), so vertex 0 is the identity and the 120 runs of 302,293 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 120`$ (see [the numbering figure](../../cayley-numbering.svg)).
 
 ## How it was found
 

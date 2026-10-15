@@ -8,7 +8,7 @@ The Cayley graph of $`G = \mathbb{Z}_{19403} \rtimes_{6308} \mathbb{Z}_{109} = \
 
 $`G`$ has odd order, so it has no involutions, and the degree is $`2 \cdot 6 = 12`$. The graph is vertex-transitive: $`G`$ acts on it by left multiplication.
 
-Vertex $`i + 19403 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 19403`$, $`0 \le j < 109`$), so vertex 0 is the identity and the 109 runs of 19,403 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 109`$.
+Vertex $`i + 19403 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 19403`$, $`0 \le j < 109`$), so vertex 0 is the identity and the 109 runs of 19,403 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 109`$ (see [the numbering figure](../../cayley-numbering.svg)).
 
 ## How it was found
 

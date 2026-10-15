@@ -8,7 +8,7 @@ The Cayley graph of $`G = \mathbb{Z}_{3486401} \rtimes_{1834706} \mathbb{Z}_{200
 
 $`x^{397261} y^{100}`$ is one of the 5,801 involutions of $`G`$, so the degree is $`1 + 2 \cdot 5 = 11`$. The graph is vertex-transitive: $`G`$ acts on it by left multiplication.
 
-Vertex $`i + 3486401 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 3486401`$, $`0 \le j < 200`$), so vertex 0 is the identity and the 200 runs of 3,486,401 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 200`$.
+Vertex $`i + 3486401 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 3486401`$, $`0 \le j < 200`$), so vertex 0 is the identity and the 200 runs of 3,486,401 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 200`$ (see [the numbering figure](../../cayley-numbering.svg)).
 
 ## How it was found
 

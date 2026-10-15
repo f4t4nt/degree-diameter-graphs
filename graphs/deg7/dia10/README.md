@@ -8,7 +8,7 @@ The Cayley graph of $`G = \mathbb{Z}_{83021} \rtimes_{4400} \mathbb{Z}_{80} = \l
 
 $`x^{74603} y^{40}`$ is one of the 1,361 involutions of $`G`$, so the degree is $`1 + 2 \cdot 3 = 7`$. The graph is vertex-transitive: $`G`$ acts on it by left multiplication.
 
-Vertex $`i + 83021 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 83021`$, $`0 \le j < 80`$), so vertex 0 is the identity and the 80 runs of 83,021 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 80`$.
+Vertex $`i + 83021 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 83021`$, $`0 \le j < 80`$), so vertex 0 is the identity and the 80 runs of 83,021 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 80`$ (see [the numbering figure](../../cayley-numbering.svg)).
 
 ## How it was found
 

@@ -8,7 +8,7 @@ The Cayley graph of $`G = \mathbb{Z}_{47321} \rtimes_{3981} \mathbb{Z}_{78} = \l
 
 $`x^{46136} y^{39}`$ is one of the 599 involutions of $`G`$, so the degree is $`1 + 2 \cdot 6 = 13`$. The graph is vertex-transitive: $`G`$ acts on it by left multiplication.
 
-Vertex $`i + 47321 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 47321`$, $`0 \le j < 78`$), so vertex 0 is the identity and the 78 runs of 47,321 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 78`$.
+Vertex $`i + 47321 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 47321`$, $`0 \le j < 78`$), so vertex 0 is the identity and the 78 runs of 47,321 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 78`$ (see [the numbering figure](../../cayley-numbering.svg)).
 
 ## How it was found
 

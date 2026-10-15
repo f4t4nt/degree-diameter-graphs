@@ -8,7 +8,7 @@ The Cayley graph of $`G = \mathbb{Z}_{24681} \rtimes_{788} \mathbb{Z}_{54} = \la
 
 $`x^{16435} y^{27}`$ is one of the 1,299 involutions of $`G`$, so the degree is $`1 + 2 \cdot 3 = 7`$. The graph is vertex-transitive: $`G`$ acts on it by left multiplication.
 
-Vertex $`i + 24681 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 24681`$, $`0 \le j < 54`$), so vertex 0 is the identity and the 54 runs of 24,681 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 54`$.
+Vertex $`i + 24681 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 24681`$, $`0 \le j < 54`$), so vertex 0 is the identity and the 54 runs of 24,681 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 54`$ (see [the numbering figure](../../cayley-numbering.svg)).
 
 ## How it was found
 

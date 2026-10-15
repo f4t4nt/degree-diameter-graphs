@@ -8,7 +8,7 @@ The Cayley graph of $`G = \mathbb{Z}_{227881} \rtimes_{1562} \mathbb{Z}_{150} = 
 
 $`S`$ contains no involution ($`G`$ has 31 involutions), so the degree is $`2 \cdot 5 = 10`$. The graph is vertex-transitive: $`G`$ acts on it by left multiplication.
 
-Vertex $`i + 227881 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 227881`$, $`0 \le j < 150`$), so vertex 0 is the identity and the 150 runs of 227,881 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 150`$.
+Vertex $`i + 227881 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 227881`$, $`0 \le j < 150`$), so vertex 0 is the identity and the 150 runs of 227,881 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 150`$ (see [the numbering figure](../../cayley-numbering.svg)).
 
 ## How it was found
 

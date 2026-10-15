@@ -8,7 +8,7 @@ The Cayley graph of $`G = \mathbb{Z}_{20591} \rtimes_{2507} \mathbb{Z}_{58} = \l
 
 $`x^{19883} y^{29}`$ is one of the 349 involutions of $`G`$, so the degree is $`1 + 2 \cdot 5 = 11`$. The graph is vertex-transitive: $`G`$ acts on it by left multiplication.
 
-Vertex $`i + 20591 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 20591`$, $`0 \le j < 58`$), so vertex 0 is the identity and the 58 runs of 20,591 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 58`$.
+Vertex $`i + 20591 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 20591`$, $`0 \le j < 58`$), so vertex 0 is the identity and the 58 runs of 20,591 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 58`$ (see [the numbering figure](../../cayley-numbering.svg)).
 
 ## How it was found
 

@@ -8,7 +8,7 @@ The Cayley graph of $`G = \mathbb{Z}_{3372071} \rtimes_{832} \mathbb{Z}_{390} = 
 
 $`x^{959706} y^{195}`$ is one of the 25,741 involutions of $`G`$, so the degree is $`1 + 2 \cdot 7 = 15`$. The graph is vertex-transitive: $`G`$ acts on it by left multiplication.
 
-Vertex $`i + 3372071 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 3372071`$, $`0 \le j < 390`$), so vertex 0 is the identity and the 390 runs of 3,372,071 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 390`$.
+Vertex $`i + 3372071 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 3372071`$, $`0 \le j < 390`$), so vertex 0 is the identity and the 390 runs of 3,372,071 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 390`$ (see [the numbering figure](../../cayley-numbering.svg)).
 
 ## How it was found
 

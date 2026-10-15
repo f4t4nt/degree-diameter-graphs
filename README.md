@@ -10,6 +10,9 @@ Every graph here has a directory `graphs/deg<d>/dia<k>/` with a README on its co
 `construction.json`, the edge list when the graph has fewer than a million vertices, and the output of an independent
 verifier in `verification.txt`.
 
+<details>
+<summary>My 52 graphs, with links to their directories</summary>
+
 | $`(d, k)`$ | vertices | construction |
 |---|---:|---|
 | [(3, 7)](graphs/deg3/dia7) | 200 | 5-vertex lift over $`\mathbb{Z}_{5} \rtimes_{4} \mathbb{Z}_{8}`$ |
@@ -65,6 +68,8 @@ verifier in `verification.txt`.
 | [(16, 9)](graphs/deg16/dia9) | 2,343,053,633 | Cayley graph of $`\mathbb{Z}_{5060591} \rtimes_{949} \mathbb{Z}_{463}`$ |
 | [(16, 10)](graphs/deg16/dia10) | 29,899,503,497 | Cayley graph of $`\mathbb{Z}_{24170981} \rtimes_{16573517} \mathbb{Z}_{1237}`$ |
 
+</details>
+
 ## Checking the graphs
 
 Python 3 and a C compiler are all it takes:
@@ -94,3 +99,9 @@ memory for that search, so `check` skips graphs above $`10^8`$ vertices unless `
   $`s \in S`$.
 - A voltage lift of a base graph $`B`$ over $`G`$ has vertex set $`V(B) \times G`$ and joins $`(u, g)`$ to
   $`(v, g a)`$ for every dart $`u \to v`$ of $`B`$ with voltage $`a`$.
+
+![How the vertices of a Cayley graph on a metacyclic group are numbered](graphs/cayley-numbering.svg)
+
+Vertex $`i + N j`$ is $`x^i y^j`$, so run $`j`$ is the coset $`y^j \langle x \rangle`$. A generator $`x^a y^b`$
+sends $`x^i y^j`$ to $`x^{i + r^j a} y^{j + b}`$: from run $`j`$ to run $`j + b`$ (here $`b = 2`$), shifting the
+position by $`r^j a`$.

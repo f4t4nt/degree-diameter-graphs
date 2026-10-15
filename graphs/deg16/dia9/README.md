@@ -8,7 +8,7 @@ The Cayley graph of $`G = \mathbb{Z}_{5060591} \rtimes_{949} \mathbb{Z}_{463} = 
 
 $`G`$ has odd order, so it has no involutions, and the degree is $`2 \cdot 8 = 16`$. The graph is vertex-transitive: $`G`$ acts on it by left multiplication.
 
-Vertex $`i + 5060591 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 5060591`$, $`0 \le j < 463`$), so vertex 0 is the identity and the 463 runs of 5,060,591 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 463`$.
+Vertex $`i + 5060591 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 5060591`$, $`0 \le j < 463`$), so vertex 0 is the identity and the 463 runs of 5,060,591 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 463`$ (see [the numbering figure](../../cayley-numbering.svg)).
 
 ## How it was found
 
