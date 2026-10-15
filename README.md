@@ -15,7 +15,7 @@ verifier in `verification.txt`.
 <details>
 <summary>All 52 graphs and their constructions</summary>
 
-| $`(d, k)`$ | vertices | Moore bound | share of the Moore bound | construction |
+| $`(d, k)`$ | vertices | Moore bound | % of Moore bound | construction |
 |---|---:|---:|---:|---|
 | [(3, 7)](graphs/deg3/dia7) | 200 | 382 | 52.4% | 5-vertex lift over $`\mathbb{Z}_{5} \rtimes_{4} \mathbb{Z}_{8}`$ |
 | [(4, 4)](graphs/deg4/dia4) | 104 | 161 | 64.6% | three subdivided $`K_{4,4}`$ blocks and 32 connectors |
