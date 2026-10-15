@@ -53,9 +53,3 @@ compute.
 
 The 50 sampled vertices of `verify_cayley.c`, and the extra sources of the implicit verifiers, add no coverage to
 this argument; they cross-check the program, since a wrong group law would make their eccentricities disagree.
-
-## Figures
-
-Every diagram is an SVG drawn by Graphviz from the `.dot` file next to it:
-
-    dot -Tsvg graphs/deg5/dia8/base-graph.dot -o graphs/deg5/dia8/base-graph.svg
