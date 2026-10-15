@@ -10,9 +10,7 @@ group and only $`F`$ is annealed (the [(4,6)](../../graphs/deg4/dia6) graph, 760
 $`F`$ is annealed and then $`S`$ is found by min-conflicts relocation with $`F`$ fixed (the
 [(5,6)](../../graphs/deg5/dia6) graph, 2836 vertices).
 
-![Hexagon insertion for q = 4: a flag p-L subdivided by a new vertex w with its three F-edges, and an apartment gadget on a 12-cycle](hexagon_insertion.svg)
-
-A point-line incidence edge $`p - L`$ is replaced by the path $`p - w - L`$ through a new vertex $`w`$, which keeps $`p`$ and $`L`$ at degree $`q + 1 = 5`$ and gives $`w`$ degree 2, and the cubic graph $`F`$ on the new vertices supplies the other three edges of every $`w`$; an apartment gadget (`--apts`) is a 12-cycle of $`H(q)`$ whose flags at positions 0, 3, 6, 9 are subdivided, with the two antipodal pairs $`w_0 w_6`$ and $`w_3 w_9`$ joined in $`F`$, a group with no far pairs of its own (the other edges of the cycle vertices and the remaining two $`F`$-edges of each $`w_i`$ are not drawn).
+![Hexagon insertion for q = 4: a flag p-L subdivided by a new vertex w with its three F-edges, and an apartment gadget on a 12-cycle](hexagon_insertion.svg)<br><sub>A point-line incidence edge $`p - L`$ is replaced by the path $`p - w - L`$ through a new vertex $`w`$, which keeps $`p`$ and $`L`$ at degree $`q + 1 = 5`$ and gives $`w`$ degree 2, and the cubic graph $`F`$ on the new vertices supplies the other three edges of every $`w`$; an apartment gadget (`--apts`) is a 12-cycle of $`H(q)`$ whose flags at positions 0, 3, 6, 9 are subdivided, with the two antipodal pairs $`w_0 w_6`$ and $`w_3 w_9`$ joined in $`F`$, a group with no far pairs of its own (the other edges of the cycle vertices and the remaining two $`F`$-edges of each $`w_i`$ are not drawn).</sub>
 
 Files:
 

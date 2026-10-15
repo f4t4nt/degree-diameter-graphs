@@ -8,9 +8,7 @@ The incidence graph of the generalized hexagon $`H(4)`$ (1365 points and 1365 li
 
 $`F`$ was built first, minimising its number of vertex pairs at distance 6 (881 in the end; $`F`$ has diameter 6), and the 106 flags were then placed with $`F`$ fixed.
 
-![A subdivided flag of H(4)](flag-gadget.svg)
-
-The flag $`(p, L)`$ of $`H(4)`$ (point: disc, line: square, gray: their other incidences) becomes the path $`p - w - L`$, and the new vertex $`w`$ also meets its neighbours in $`F`$ (blue). So $`w`$ has degree $`2 + 3 = 5`$, and $`p`$ and $`L`$ keep degree 5.
+![A subdivided flag of H(4)](flag-gadget.svg)<br><sub>The flag $`(p, L)`$ of $`H(4)`$ (point: disc, line: square, gray: their other incidences) becomes the path $`p - w - L`$, and the new vertex $`w`$ also meets its neighbours in $`F`$ (blue). So $`w`$ has degree $`2 + 3 = 5`$, and $`p`$ and $`L`$ keep degree 5.</sub>
 
 Vertices 0 to 1364 are the points of $`H(4)`$, 1365 to 2729 its lines and 2730 to 2835 the 106 new vertices.
 

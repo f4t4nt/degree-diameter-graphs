@@ -7,9 +7,7 @@ and the same evaluator (`../lift_two_vertex/bitlift.c`, compiled with `-DMAXK=4`
 a path and a loop over the one-involution group $`\mathbb{Z}_{73} \rtimes_{18} \mathbb{Z}_{36}`$ gives the
 [(4,9)](../../graphs/deg4/dia9) graph on 7884 vertices.
 
-![Three 3-vertex base shapes: the (4,9) base, and the degree-5 shapes s00 and s23 with loops, semi-edges and parallel links](lift_shapes.svg)
-
-The (4,9) base has a triple link $`0 \to 1`$ (voltages $`1, c_1, c_2`$), the tree link $`0 \to 2`$, the link $`1 \to 2`$ with voltage $`b`$ and a loop $`a`$ at vertex 2; s00 and s23 are two of the 61 degree-5 shapes of `shapes.py` (links of multiplicity 2, 2, 3 and one semi-edge; a triangle with a loop and a semi-edge at every vertex); links with voltage 1 form the spanning tree and a semi-edge voltage $`t`$ is an involution, so its lift is a perfect matching.
+![Three 3-vertex base shapes: the (4,9) base, and the degree-5 shapes s00 and s23 with loops, semi-edges and parallel links](lift_shapes.svg)<br><sub>The (4,9) base has a triple link $`0 \to 1`$ (voltages $`1, c_1, c_2`$), the tree link $`0 \to 2`$, the link $`1 \to 2`$ with voltage $`b`$ and a loop $`a`$ at vertex 2; s00 and s23 are two of the 61 degree-5 shapes of `shapes.py` (links of multiplicity 2, 2, 3 and one semi-edge; a triangle with a loop and a semi-edge at every vertex); links with voltage 1 form the spanning tree and a semi-edge voltage $`t`$ is an involution, so its lift is a perfect matching.</sub>
 
 Files:
 

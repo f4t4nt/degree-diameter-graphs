@@ -7,9 +7,7 @@ patterns chosen before the $`x`$-coordinates, targeted moves aimed at unreached 
 generator for odd degree, and exact completion sweeps around near-miss states. This family produces the graphs for 37
 cells of degree 7 to 16 and diameter 7 to 10 (the cells listed for it in `../HOW_FOUND.tsv`).
 
-![Two level patterns on the quotient cycle Z_20: the generators' levels, the involution at level 10, and the levels reached by words of length at most 2](level_pattern.svg)
-
-A level pattern fixes, before any $`x`$-coordinate is chosen, the levels $`\pm \ell_1, \pm \ell_2`$ of the generators $`s_i = x^{x_i} y^{\ell_i}`$ (and their inverses) on the quotient cycle $`\mathbb{Z}_M`$ (filled, joined to the identity), the involution $`t = x^{t_x} y^{M/2}`$ at level $`M/2`$, and the levels $`\pm 2\ell_i`$, $`\pm \ell_1 \pm \ell_2`$, $`M/2 \pm \ell_i`$ of the reduced words of length 2 (outlined; dashed levels are not reached within radius 2): the pattern $`(1, 4)`$ on $`\mathbb{Z}_{20}`$ is coincidence-free and reaches 18 of the 20 layers, while in $`(1, 3)`$ the words $`s_1 s_1`$ and $`s_2 s_1^{-1}`$ share level 2 and their inverses share level 18, so only 16 layers are reached.
+![Two level patterns on the quotient cycle Z_20: the generators' levels, the involution at level 10, and the levels reached by words of length at most 2](level_pattern.svg)<br><sub>A level pattern fixes, before any $`x`$-coordinate is chosen, the levels $`\pm \ell_1, \pm \ell_2`$ of the generators $`s_i = x^{x_i} y^{\ell_i}`$ (and their inverses) on the quotient cycle $`\mathbb{Z}_M`$ (filled, joined to the identity), the involution $`t = x^{t_x} y^{M/2}`$ at level $`M/2`$, and the levels $`\pm 2\ell_i`$, $`\pm \ell_1 \pm \ell_2`$, $`M/2 \pm \ell_i`$ of the reduced words of length 2 (outlined; dashed levels are not reached within radius 2): the pattern $`(1, 4)`$ on $`\mathbb{Z}_{20}`$ is coincidence-free and reaches 18 of the 20 layers, while in $`(1, 3)`$ the words $`s_1 s_1`$ and $`s_2 s_1^{-1}`$ share level 2 and their inverses share level 18, so only 16 layers are reached.</sub>
 
 Files:
 

@@ -7,9 +7,7 @@ automorphisms of the group and the symmetries of the base graph, and evaluate ev
 [(4,10)](../../graphs/deg4/dia10) graph; the degree-5 shape 103 (a loop at each vertex, three links, one trivial) gives
 the [(5,8)](../../graphs/deg5/dia8), [(5,9)](../../graphs/deg5/dia9) and [(5,10)](../../graphs/deg5/dia10) graphs.
 
-![Three 2-vertex base shapes, B2a, haar and 103, with their voltage slots](lift_shapes.svg)
-
-Voltage slots of the three named shapes: loops $`a`$ at vertex 0 and $`b`$ at vertex 1, the spanning-tree link with voltage 1, and the free links $`c`$ (B2a), $`c_1, c_2, c_3`$ (haar) or $`c_2, c_3`$ (103); the lift over $`G`$ joins $`(u, g)`$ to $`(v, g a)`$ for every dart $`u \to v`$ with voltage $`a`$ and every $`g \in G`$, so it has $`2|G|`$ vertices and the same degree as the base.
+![Three 2-vertex base shapes, B2a, haar and 103, with their voltage slots](lift_shapes.svg)<br><sub>Voltage slots of the three named shapes: loops $`a`$ at vertex 0 and $`b`$ at vertex 1, the spanning-tree link with voltage 1, and the free links $`c`$ (B2a), $`c_1, c_2, c_3`$ (haar) or $`c_2, c_3`$ (103); the lift over $`G`$ joins $`(u, g)`$ to $`(v, g a)`$ for every dart $`u \to v`$ with voltage $`a`$ and every $`g \in G`$, so it has $`2|G|`$ vertices and the same degree as the base.</sub>
 
 Files:
 

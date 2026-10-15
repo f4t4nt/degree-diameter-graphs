@@ -8,9 +8,7 @@ A regular voltage lift over $`G = \mathbb{Z}_{209} \rtimes_{4} \mathbb{Z}_{45} =
 
 The lift has vertex set $`\{0, 1\} \times G`$ and joins $`(u, g)`$ to $`(v, g a)`$ for every dart $`u \to v`$ with voltage $`a`$; a loop with voltage $`a`$ joins $`(v, g)`$ to $`(v, g a)`$ and $`(v, g a^{-1})`$. $`G`$ acts on each fibre $`\{v\} \times G`$ by left multiplication.
 
-![The base graph of the lift with its voltages](base-graph.svg)
-
-Arrows give the direction $`u \to v`$ of each voltage; a loop acts both ways, joining $`(v, g)`$ to $`(v, g a)`$ and $`(v, g a^{-1})`$.
+![The base graph of the lift with its voltages](base-graph.svg)<br><sub>Arrows give the direction $`u \to v`$ of each voltage; a loop acts both ways, joining $`(v, g)`$ to $`(v, g a)`$ and $`(v, g a^{-1})`$.</sub>
 
 Vertex $`9405 v + i + 209 j`$ is the pair $`(v, x^i y^j)`$: the first 9,405 vertices lie over base vertex 0 and the other 9,405 over base vertex 1, and vertex $`9405 v`$ is $`(v, e)`$.
 

@@ -16,9 +16,7 @@ counting lemmas, a port lemma and SAT completions turns that into theorems:
 - the 120-vertex all-cross-double design and the 108-vertex four-octahedron design are impossible,
   the former by a short hand proof about orthogonal Latin squares of order 4.
 
-![The 104-vertex template: three subdivided K44 blocks, each with 8 hubs and 16 ports, and one of the 16 connector pairs](template.svg)
-
-Block $`i`$ has hubs $`L_0, \ldots, L_3`$ and $`R_0, \ldots, R_3`$ and one port $`p_{lr}`$ on every hub pair (one block is drawn with its labels in `proofs/`), and each of the 16 connector pairs holds two ports of every block; the drawn pair is the pure $`(1,1,1)`$ kind, each connector adjacent to its partner and to one port of every block, and the two ports it holds in a block share no hub.
+![The 104-vertex template: three subdivided K44 blocks, each with 8 hubs and 16 ports, and one of the 16 connector pairs](template.svg)<br><sub>Block $`i`$ has hubs $`L_0, \ldots, L_3`$ and $`R_0, \ldots, R_3`$ and one port $`p_{lr}`$ on every hub pair (one block is drawn with its labels in `proofs/`), and each of the 16 connector pairs holds two ports of every block; the drawn pair is the pure $`(1,1,1)`$ kind, each connector adjacent to its partner and to one port of every block, and the two ports it holds in a block share no hub.</sub>
 
 Directory map:
 

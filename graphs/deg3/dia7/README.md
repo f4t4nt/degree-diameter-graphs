@@ -8,9 +8,7 @@ A regular voltage lift over $`G = \mathbb{Z}_{5} \rtimes_{4} \mathbb{Z}_{8} = \l
 
 The lift has vertex set $`\{0, 1, 2, 3, 4\} \times G`$ and joins $`(u, g)`$ to $`(v, g a)`$ for every dart $`u \to v`$ with voltage $`a`$; a loop with voltage $`a`$ joins $`(v, g)`$ to $`(v, g a)`$ and $`(v, g a^{-1})`$, and a semi-edge with involution $`t`$ joins $`(v, g)`$ to $`(v, g t)`$. $`G`$ acts on each fibre $`\{v\} \times G`$ by left multiplication.
 
-![The base graph of the lift with its voltages](base-graph.svg)
-
-Arrows give the direction $`u \to v`$ of each voltage; a loop acts both ways, joining $`(v, g)`$ to $`(v, g a)`$ and $`(v, g a^{-1})`$. The bar marks a semi-edge: its voltage is an involution $`t`$, and it joins $`(v, g)`$ to $`(v, g t)`$.
+![The base graph of the lift with its voltages](base-graph.svg)<br><sub>Arrows give the direction $`u \to v`$ of each voltage; a loop acts both ways, joining $`(v, g)`$ to $`(v, g a)`$ and $`(v, g a^{-1})`$. The bar marks a semi-edge: its voltage is an involution $`t`$, and it joins $`(v, g)`$ to $`(v, g t)`$.</sub>
 
 Vertex $`40 v + i + 5 j`$ is the pair $`(v, x^i y^j)`$: each run of 40 consecutive numbers lies over one base vertex, in order, and vertex $`40 v`$ is $`(v, e)`$.
 

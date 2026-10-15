@@ -16,9 +16,7 @@ B = \begin{pmatrix} 0 & 4 \\ 1 & 4 \end{pmatrix}, \qquad A = \begin{pmatrix} 1 &
 
 $`G`$ is not metacyclic; it has trivial centre and 25 involutions. Its elements are written $`(w, c^i, z^j)\, y^m`$.
 
-![The base graph of the lift with its voltages](base-graph.svg)
-
-Arrows give the direction $`u \to v`$ of each voltage; a loop acts both ways, joining $`(v, g)`$ to $`(v, g a)`$ and $`(v, g a^{-1})`$.
+![The base graph of the lift with its voltages](base-graph.svg)<br><sub>Arrows give the direction $`u \to v`$ of each voltage; a loop acts both ways, joining $`(v, g)`$ to $`(v, g a)`$ and $`(v, g a^{-1})`$.</sub>
 
 Vertex $`3000 v + \mathrm{index}(g)`$ is the pair $`(v, g)`$, where $`g = ((a, b), c^i, z^j)\, y^m`$ has index $`(((5a + b) \cdot 3 + i) \cdot 5 + j) \cdot 8 + m`$, so vertex $`3000 v`$ is $`(v, e)`$.
 
