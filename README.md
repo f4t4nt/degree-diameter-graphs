@@ -105,4 +105,4 @@ memory for that search, so `check` skips graphs above $`10^8`$ vertices unless `
 - A voltage lift of a base graph $`B`$ over $`G`$ has vertex set $`V(B) \times G`$ and joins $`(u, g)`$ to
   $`(v, g a)`$ for every dart $`u \to v`$ of $`B`$ with voltage $`a`$.
 
-![How the vertices of a Cayley graph on a metacyclic group are numbered](graphs/cayley-numbering.svg)<br><sub>Vertex $`i + N j`$ is $`x^i y^j`$, so run $`j`$ is the coset $`y^j \langle x \rangle`$. A generator $`x^a y^b`$ sends $`x^i y^j`$ to $`x^{i + r^j a} y^{j + b}`$: from run $`j`$ to run $`j + b`$ (here $`b = 2`$), shifting the position by $`r^j a`$.</sub>
+![How the vertices of a Cayley graph on a metacyclic group are numbered](graphs/cayley-numbering.svg)<br><sub>Vertex $`i + N j`$ is $`x^i y^j`$, so run $`j`$ is the coset $`y^j \langle x \rangle`$. A generator $`x^a y^b`$ sends $`x^i y^j`$ to $`x^{i + r^j a} y^{j + b}`$: from run $`j`$ to run $`j + b`$ (here $`b = 2`$), shifted by $`r^j a`$.</sub>

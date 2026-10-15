@@ -1,10 +1,10 @@
 # Degree 5, Diameter 7
 
-A graph with 6,000 vertices, maximum degree 5 and diameter 7. The Moore bound for degree 5 and diameter 7 is 27,306.
+A graph with 6,000 vertices, maximum degree 5 and diameter 7; the Moore bound is 27,306.
 
 ## Construction
 
-A regular voltage lift over the group $`G`$ described below, of order 3,000. The base graph has vertices 0 and 1, with three parallel links $`0 \to 1`$ (voltages $`1`$, $`((0, 1), c, z)\, y^{4}`$, $`((1, 4), c, z^{4})\, y^{7}`$), a loop at 0 (voltage $`y`$) and a loop at 1 (voltage $`((0, 2), c, z^{4})\, y^{4}`$).
+A regular voltage lift over the group $`G`$ described below, of order 3,000. The base graph has three parallel links $`0 \to 1`$ (voltages $`1`$, $`((0, 1), c, z)\, y^{4}`$, $`((1, 4), c, z^{4})\, y^{7}`$), a loop at 0 (voltage $`y`$) and a loop at 1 (voltage $`((0, 2), c, z^{4})\, y^{4}`$).
 
 The lift has vertex set $`\{0, 1\} \times G`$ and joins $`(u, g)`$ to $`(v, g a)`$ for every dart $`u \to v`$ with voltage $`a`$; a loop with voltage $`a`$ joins $`(v, g)`$ to $`(v, g a)`$ and $`(v, g a^{-1})`$. $`G`$ acts on each fibre $`\{v\} \times G`$ by left multiplication.
 
@@ -26,12 +26,12 @@ Complete sweep of all shape-103 two-vertex lift assignments (one loop and three 
 
 ## Files
 
-- `deg5-dia7-n6000.edges.txt`: the 15,000 edges, one `u v` per line in the numbering above, grouped by voltage under `#` headings.
+- `deg5-dia7-n6000.edges.txt`: the 15,000 edges as `u v` lines, under a `#` heading per voltage.
 - `construction.json`: the construction in the form `tools/ddgraph.py` reads.
 - `verification.txt`: the verifier output.
 
 ## Verification
 
-A breadth-first search from every vertex (`tools/verify/verify_bfs.c`) confirms the order, the degrees, that there are no repeated edges, and the diameter; the edge list is also checked to be exactly the construction in `construction.json`.
+A breadth-first search from every vertex (`tools/verify/verify_bfs.c`) confirms the order, the degrees, that there are no repeated edges, and the diameter; the edge list is also checked against `construction.json`.
 
     python3 tools/ddgraph.py check graphs/deg5/dia7

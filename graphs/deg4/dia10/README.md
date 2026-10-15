@@ -1,10 +1,10 @@
 # Degree 4, Diameter 10
 
-A graph with 19,306 vertices, maximum degree 4 and diameter 10. The Moore bound for degree 4 and diameter 10 is 118,097.
+A graph with 19,306 vertices, maximum degree 4 and diameter 10; the Moore bound is 118,097.
 
 ## Construction
 
-A regular voltage lift over $`G = \mathbb{Z}_{197} \rtimes_{16} \mathbb{Z}_{49} = \langle x, y \mid x^{197} = y^{49} = 1,\ y x y^{-1} = x^{16} \rangle`$, of order 9,653. The base graph has vertices 0 and 1, with two parallel links $`0 \to 1`$ (voltages $`1`$, $`x y^{12}`$), a loop at 0 (voltage $`y`$) and a loop at 1 (voltage $`x^{176} y^{10}`$).
+A regular voltage lift over $`G = \mathbb{Z}_{197} \rtimes_{16} \mathbb{Z}_{49} = \langle x, y \mid x^{197} = y^{49} = 1,\ y x y^{-1} = x^{16} \rangle`$, of order 9,653. The base graph has two parallel links $`0 \to 1`$ (voltages $`1`$, $`x y^{12}`$), a loop at 0 (voltage $`y`$) and a loop at 1 (voltage $`x^{176} y^{10}`$).
 
 The lift has vertex set $`\{0, 1\} \times G`$ and joins $`(u, g)`$ to $`(v, g a)`$ for every dart $`u \to v`$ with voltage $`a`$; a loop with voltage $`a`$ joins $`(v, g)`$ to $`(v, g a)`$ and $`(v, g a^{-1})`$. $`G`$ acts on each fibre $`\{v\} \times G`$ by left multiplication.
 
@@ -18,12 +18,12 @@ Fully symmetry-reduced exhaustive sweep of the 2-vertex base with a loop at each
 
 ## Files
 
-- `deg4-dia10-n19306.edges.txt`: the 38,612 edges, one `u v` per line in the numbering above, grouped by voltage under `#` headings.
+- `deg4-dia10-n19306.edges.txt`: the 38,612 edges as `u v` lines, under a `#` heading per voltage.
 - `construction.json`: the construction in the form `tools/ddgraph.py` reads.
 - `verification.txt`: the verifier output.
 
 ## Verification
 
-A breadth-first search from every vertex (`tools/verify/verify_bfs.c`) confirms the order, the degrees, that there are no repeated edges, and the diameter; the edge list is also checked to be exactly the construction in `construction.json`.
+A breadth-first search from every vertex (`tools/verify/verify_bfs.c`) confirms the order, the degrees, that there are no repeated edges, and the diameter; the edge list is also checked against `construction.json`.
 
     python3 tools/ddgraph.py check graphs/deg4/dia10

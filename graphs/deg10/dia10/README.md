@@ -1,14 +1,14 @@
 # Degree 10, Diameter 10
 
-A graph with 265,612,889 vertices, maximum degree 10 and diameter 10. The Moore bound for degree 10 and diameter 10 is 4,358,480,501.
+A graph with 265,612,889 vertices, maximum degree 10 and diameter 10; the Moore bound is 4,358,480,501.
 
 ## Construction
 
-The Cayley graph of $`G = \mathbb{Z}_{1111351} \rtimes_{8147} \mathbb{Z}_{239} = \langle x, y \mid x^{1111351} = y^{239} = 1,\ y x y^{-1} = x^{8147} \rangle`$, of order 265,612,889 (with 1111351 prime), and connection set $`S = \{x^{648877} y^{104}, x^{1110715} y^{82}, x^{841493} y^{123}, x^{484351} y^{59}, x^{482973} y^{144}\}`$: every $`g \in G`$ is joined to $`g s`$ and $`g s^{-1}`$ for $`s \in S`$.
+The Cayley graph $`\mathrm{Cay}(G, S)`$ of $`G = \mathbb{Z}_{1111351} \rtimes_{8147} \mathbb{Z}_{239} = \langle x, y \mid x^{1111351} = y^{239} = 1,\ y x y^{-1} = x^{8147} \rangle`$, of order 265,612,889, where $`S = \{x^{648877} y^{104}, x^{1110715} y^{82}, x^{841493} y^{123}, x^{484351} y^{59}, x^{482973} y^{144}\}`$.
 
-$`G`$ has odd order, so it has no involutions, and the degree is $`2 \cdot 5 = 10`$. The graph is vertex-transitive: $`G`$ acts on it by left multiplication.
+$`G`$ has odd order, so it has no involutions, and the degree is $`2 \cdot 5 = 10`$.
 
-Vertex $`i + 1111351 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 1111351`$, $`0 \le j < 239`$), so vertex 0 is the identity and the 239 runs of 1,111,351 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 239`$ (see [the numbering figure](../../cayley-numbering.svg)).
+Vertex $`i + 1111351 j`$ is $`x^i y^j`$ for $`0 \le i < 1111351`$ and $`0 \le j < 239`$, as in [the numbering figure](../../cayley-numbering.svg).
 
 ## How it was found
 
@@ -24,6 +24,6 @@ Odd-order group with small complement $`M`$, bitmap simulated annealing with tar
 
 The graph is vertex-transitive, so the eccentricity of the identity is the diameter: a breadth-first search over the graph defined by `construction.json` decides it.
 
-`verification.txt` is the output of that search. It needs a few bits of memory per vertex, so `check` skips it unless asked:
+`verification.txt` is the output of that search, which `check` skips unless asked:
 
     python3 tools/ddgraph.py check graphs/deg10/dia10 --max-vertices 265612889

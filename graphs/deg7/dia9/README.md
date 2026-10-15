@@ -1,14 +1,14 @@
 # Degree 7, Diameter 9
 
-A graph with 1,332,774 vertices, maximum degree 7 and diameter 9. The Moore bound for degree 7 and diameter 9 is 14,108,774.
+A graph with 1,332,774 vertices, maximum degree 7 and diameter 9; the Moore bound is 14,108,774.
 
 ## Construction
 
 The Cayley graph of $`G = \mathbb{Z}_{24681} \rtimes_{788} \mathbb{Z}_{54} = \langle x, y \mid x^{24681} = y^{54} = 1,\ y x y^{-1} = x^{788} \rangle`$, of order 1,332,774 (with $`24681 = 3 \cdot 19 \cdot 433`$), and connection set $`S = \{x^{16435} y^{27}, x^{7192} y^{33}, x^{857} y^{2}, x^{4448} y^{16}\}`$: every $`g \in G`$ is joined to $`g s`$ and $`g s^{-1}`$ for $`s \in S`$.
 
-$`x^{16435} y^{27}`$ is one of the 1,299 involutions of $`G`$, so the degree is $`1 + 2 \cdot 3 = 7`$. The graph is vertex-transitive: $`G`$ acts on it by left multiplication.
+$`x^{16435} y^{27}`$ is one of the 1,299 involutions of $`G`$, so the degree is $`1 + 2 \cdot 3 = 7`$.
 
-Vertex $`i + 24681 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 24681`$, $`0 \le j < 54`$), so vertex 0 is the identity and the 54 runs of 24,681 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 54`$ (see [the numbering figure](../../cayley-numbering.svg)).
+Vertex $`i + 24681 j`$ is $`x^i y^j`$ for $`0 \le i < 24681`$ and $`0 \le j < 54`$, as in [the numbering figure](../../cayley-numbering.svg).
 
 ## How it was found
 

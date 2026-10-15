@@ -13,9 +13,9 @@ needs only the Python standard library; `check` compiles the verifiers with `cc`
 - `construction.type`:
   - `cayley`: `group` and `connection_set`, a list of group elements $`S`$. Every $`g`$ is joined to $`g s`$ and
     $`g s^{-1}`$; an involution is listed once.
-  - `lift`: `group`, `base_vertices`, and lists of `loops` ($`[v, a]`$), `links` ($`[u, v, a]`$) and `semi_edges`
-    ($`[v, t]`$). Vertex $`(u, g)`$ is joined to $`(v, g a)`$ for every dart $`u \to v`$ with voltage $`a`$; a
-    semi-edge carries an involution $`t`$ and joins $`(v, g)`$ to $`(v, g t)`$.
+  - `lift`: `group`, `base_vertices` and lists of `loops` ($`[v, a]`$), `links` ($`[u, v, a]`$) and `semi_edges`
+    ($`[v, t]`$). $`(u, g)`$ is joined to $`(v, g a)`$ for every dart $`u \to v`$ with voltage $`a`$, so a loop also
+    joins $`(v, g)`$ to $`(v, g a^{-1})`$; a semi-edge with involution $`t`$ joins $`(v, g)`$ to $`(v, g t)`$.
   - `edge_list`: the graph's edge file is the definition (the two hexagon graphs and the $`(4, 4)`$ graph).
 - `group.type`:
   - `metacyclic`: `N`, `M`, `r` for
@@ -43,8 +43,7 @@ of the stated degree before searching.
 | `verify_bits_implicit.c`, `verify_bits_inv.c` | a Cayley graph or 2-vertex lift | bitmap BFS, 3 bits per vertex, up to about $`4 \cdot 10^9`$ vertices |
 | `verify_2plane_implicit.c`, `verify_2plane_inv.c` | the same | two bit planes, 2 bits per vertex, up to about $`3 \cdot 10^{10}`$ vertices |
 
-The `_inv` variants differ from their partners only in allowing an involution in $`S`$ (it then contributes one
-neighbour instead of two).
+The `_inv` variants also allow an involution in $`S`$, which contributes one neighbour instead of two.
 
 Why one search is enough: left multiplication by $`h`$ maps the Cayley graph to itself and the identity to $`h`$, so
 every vertex has the eccentricity of the identity. In a voltage lift, left multiplication maps each fibre

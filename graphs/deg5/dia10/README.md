@@ -1,10 +1,10 @@
 # Degree 5, Diameter 10
 
-A graph with 202,550 vertices, maximum degree 5 and diameter 10. The Moore bound for degree 5 and diameter 10 is 1,747,626.
+A graph with 202,550 vertices, maximum degree 5 and diameter 10; the Moore bound is 1,747,626.
 
 ## Construction
 
-A regular voltage lift over $`G = \mathbb{Z}_{4051} \rtimes_{4} \mathbb{Z}_{25} = \langle x, y \mid x^{4051} = y^{25} = 1,\ y x y^{-1} = x^{4} \rangle`$, of order 101,275. The base graph has vertices 0 and 1, with three parallel links $`0 \to 1`$ (voltages $`1`$, $`x y^{2}`$, $`x^{2122} y^{15}`$), a loop at 0 (voltage $`y^{3}`$) and a loop at 1 (voltage $`x^{178} y^{8}`$).
+A regular voltage lift over $`G = \mathbb{Z}_{4051} \rtimes_{4} \mathbb{Z}_{25} = \langle x, y \mid x^{4051} = y^{25} = 1,\ y x y^{-1} = x^{4} \rangle`$, of order 101,275. The base graph has three parallel links $`0 \to 1`$ (voltages $`1`$, $`x y^{2}`$, $`x^{2122} y^{15}`$) and loops at 0 and 1 (voltages $`y^{3}`$ and $`x^{178} y^{8}`$).
 
 The lift has vertex set $`\{0, 1\} \times G`$ and joins $`(u, g)`$ to $`(v, g a)`$ for every dart $`u \to v`$ with voltage $`a`$; a loop with voltage $`a`$ joins $`(v, g)`$ to $`(v, g a)`$ and $`(v, g a^{-1})`$. $`G`$ acts on each fibre $`\{v\} \times G`$ by left multiplication.
 
@@ -18,12 +18,12 @@ Complete sweep of the level-pattern block (3, 8, 2, 15) of the shape-103 two-ver
 
 ## Files
 
-- `deg5-dia10-n202550.edges.txt.gz`: the 506,375 edges (gzipped), one `u v` per line in the numbering above, grouped by voltage under `#` headings.
+- `deg5-dia10-n202550.edges.txt.gz`: the 506,375 edges as `u v` lines, under a `#` heading per voltage.
 - `construction.json`: the construction in the form `tools/ddgraph.py` reads.
 - `verification.txt`: the verifier output.
 
 ## Verification
 
-The edge list is checked to be exactly the construction in `construction.json`. $`G`$ acts transitively on each fibre, so the eccentricities of $`(0, e)`$ and $`(1, e)`$ give the diameter: a breadth-first search over the graph defined by `construction.json` decides it.
+The edge list is checked against `construction.json`. $`G`$ acts transitively on each fibre, so the eccentricities of $`(0, e)`$ and $`(1, e)`$ give the diameter: a breadth-first search over the graph defined by `construction.json` decides it.
 
     python3 tools/ddgraph.py check graphs/deg5/dia10

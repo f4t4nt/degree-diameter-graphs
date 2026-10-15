@@ -1,6 +1,6 @@
 # Degree 5, Diameter 6
 
-A graph with 2,836 vertices, maximum degree 5 and diameter 6. The Moore bound for degree 5 and diameter 6 is 6,826.
+A graph with 2,836 vertices, maximum degree 5 and diameter 6; the Moore bound is 6,826.
 
 ## Construction
 
@@ -18,7 +18,7 @@ Incidence graph of the generalized hexagon $`H(4)`$ (2730 vertices) with 106 fla
 
 ## Files
 
-- `deg5-dia6-n2836.edges.txt`: the 7,090 edges, one `u v` per line in the numbering above, grouped by edge type under `#` headings.
+- `deg5-dia6-n2836.edges.txt`: the 7,090 edges as `u v` lines, under a `#` heading per edge type.
 - `construction.json`: the construction in the form `tools/ddgraph.py` reads.
 - `verification.txt`: the verifier output.
 

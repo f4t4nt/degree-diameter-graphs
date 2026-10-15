@@ -1,12 +1,12 @@
 # Degree 4, Diameter 6
 
-A graph with 760 vertices, maximum degree 4 and diameter 6. The Moore bound for degree 4 and diameter 6 is 1,457.
+A graph with 760 vertices, maximum degree 4 and diameter 6; the Moore bound is 1,457.
 
 ## Construction
 
 The incidence graph of the generalized hexagon $`H(3)`$ (364 points and 364 lines; 4-regular, bipartite, girth 12, diameter 6) with 32 flags subdivided: a new vertex is placed on each of 32 point-line incidence edges and joined to that point and that line, and the 32 new vertices carry a 2-regular graph $`F`$ with cycles of lengths 8, 8 and 16.
 
-The 32 flags are the union of two 16-flag orbits of a Sylow 2-subgroup (order 128) of $`\mathrm{Aut}(H(3)) = G_2(3){:}2`$ inside the centraliser of an involution. $`F`$ has no edge between the two orbits, so the graph is two 744-vertex solutions glued together.
+The 32 flags form two 16-flag orbits of a Sylow 2-subgroup (order 128) of $`\mathrm{Aut}(H(3)) = G_2(3){:}2`$ in the centraliser of an involution. $`F`$ has no edge between the orbits, so the graph is two 744-vertex solutions glued together.
 
 ![A subdivided flag of H(3)](flag-gadget.svg)<br><sub>The flag $`(p, L)`$ of $`H(3)`$ (point: disc, line: square, gray: their other incidences) becomes the path $`p - w - L`$, and the new vertex $`w`$ also meets its neighbours in $`F`$ (blue). So $`w`$ has degree $`2 + 2 = 4`$, and $`p`$ and $`L`$ keep degree 4.</sub>
 
@@ -18,7 +18,7 @@ Incidence graph of the generalized hexagon $`H(3)`$ (728 vertices) with 32 flags
 
 ## Files
 
-- `deg4-dia6-n760.edges.txt`: the 1,520 edges, one `u v` per line in the numbering above, grouped by edge type under `#` headings.
+- `deg4-dia6-n760.edges.txt`: the 1,520 edges as `u v` lines, under a `#` heading per edge type.
 - `construction.json`: the construction in the form `tools/ddgraph.py` reads.
 - `verification.txt`: the verifier output.
 

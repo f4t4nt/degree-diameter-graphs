@@ -1,14 +1,14 @@
 # Degree 15, Diameter 7
 
-A graph with 9,758,988 vertices, maximum degree 15 and diameter 7. The Moore bound for degree 15 and diameter 7 is 121,630,966.
+A graph with 9,758,988 vertices, maximum degree 15 and diameter 7; the Moore bound is 121,630,966.
 
 ## Construction
 
 The Cayley graph of $`G = \mathbb{Z}_{90361} \rtimes_{1443} \mathbb{Z}_{108} = \langle x, y \mid x^{90361} = y^{108} = 1,\ y x y^{-1} = x^{1443} \rangle`$, of order 9,758,988 (with $`90361 = 109 \cdot 829`$), and connection set $`S = \{x^{73139} y^{54}, x^{62125} y^{29}, x^{25137} y^{47}, x^{26271} y^{26}, x^{24758} y^{37}, x^{18988} y^{31}, x^{31} y^{11}, x^{14702} y^{70}\}`$: every $`g \in G`$ is joined to $`g s`$ and $`g s^{-1}`$ for $`s \in S`$.
 
-$`x^{73139} y^{54}`$ is one of the 829 involutions of $`G`$, so the degree is $`1 + 2 \cdot 7 = 15`$. The graph is vertex-transitive: $`G`$ acts on it by left multiplication.
+$`x^{73139} y^{54}`$ is one of the 829 involutions of $`G`$, so the degree is $`1 + 2 \cdot 7 = 15`$.
 
-Vertex $`i + 90361 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 90361`$, $`0 \le j < 108`$), so vertex 0 is the identity and the 108 runs of 90,361 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 108`$ (see [the numbering figure](../../cayley-numbering.svg)).
+Vertex $`i + 90361 j`$ is $`x^i y^j`$ for $`0 \le i < 90361`$ and $`0 \le j < 108`$, as in [the numbering figure](../../cayley-numbering.svg).
 
 ## How it was found
 

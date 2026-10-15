@@ -1,14 +1,14 @@
 # Degree 8, Diameter 9
 
-A graph with 4,471,111 vertices, maximum degree 8 and diameter 9. The Moore bound for degree 8 and diameter 9 is 53,804,809.
+A graph with 4,471,111 vertices, maximum degree 8 and diameter 9; the Moore bound is 53,804,809.
 
 ## Construction
 
-The Cayley graph of $`G = \mathbb{Z}_{66733} \rtimes_{1441} \mathbb{Z}_{67} = \langle x, y \mid x^{66733} = y^{67} = 1,\ y x y^{-1} = x^{1441} \rangle`$, of order 4,471,111 (with 66733 prime), and connection set $`S = \{x^{26424} y^{10}, x^{11037} y^{15}, x^{10559} y^{29}, x^{27701} y^{2}\}`$: every $`g \in G`$ is joined to $`g s`$ and $`g s^{-1}`$ for $`s \in S`$.
+The Cayley graph of $`G = \mathbb{Z}_{66733} \rtimes_{1441} \mathbb{Z}_{67} = \langle x, y \mid x^{66733} = y^{67} = 1,\ y x y^{-1} = x^{1441} \rangle`$, of order 4,471,111 (with 66733 prime), and connection set $`S = \{x^{26424} y^{10}, x^{11037} y^{15}, x^{10559} y^{29}, x^{27701} y^{2}\}`$: each $`g \in G`$ is joined to $`g s`$ and $`g s^{-1}`$ for each $`s \in S`$.
 
-$`G`$ has odd order, so it has no involutions, and the degree is $`2 \cdot 4 = 8`$. The graph is vertex-transitive: $`G`$ acts on it by left multiplication.
+$`G`$ has odd order, so it has no involutions, and the degree is $`2 \cdot 4 = 8`$.
 
-Vertex $`i + 66733 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 66733`$, $`0 \le j < 67`$), so vertex 0 is the identity and the 67 runs of 66,733 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 67`$ (see [the numbering figure](../../cayley-numbering.svg)).
+Vertex $`i + 66733 j`$ is $`x^i y^j`$ for $`0 \le i < 66733`$ and $`0 \le j < 67`$, as in [the numbering figure](../../cayley-numbering.svg).
 
 ## How it was found
 

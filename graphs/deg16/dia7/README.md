@@ -1,14 +1,14 @@
 # Degree 16, Diameter 7
 
-A graph with 14,995,367 vertices, maximum degree 16 and diameter 7. The Moore bound for degree 16 and diameter 7 is 195,267,857.
+A graph with 14,995,367 vertices, maximum degree 16 and diameter 7; the Moore bound is 195,267,857.
 
 ## Construction
 
 The Cayley graph of $`G = \mathbb{Z}_{83773} \rtimes_{72211} \mathbb{Z}_{179} = \langle x, y \mid x^{83773} = y^{179} = 1,\ y x y^{-1} = x^{72211} \rangle`$, of order 14,995,367 (with 83773 prime), and connection set $`S = \{x^{75326} y^{15}, x^{13594} y^{16}, x^{26869} y^{58}, x^{58304} y^{33}, x^{79357} y^{12}, x^{79527} y^{69}, x^{57754} y^{71}, x^{29027} y^{7}\}`$: every $`g \in G`$ is joined to $`g s`$ and $`g s^{-1}`$ for $`s \in S`$.
 
-$`G`$ has odd order, so it has no involutions, and the degree is $`2 \cdot 8 = 16`$. The graph is vertex-transitive: $`G`$ acts on it by left multiplication.
+$`G`$ has odd order, so it has no involutions, and the degree is $`2 \cdot 8 = 16`$.
 
-Vertex $`i + 83773 j`$ is the group element $`x^i y^j`$ ($`0 \le i < 83773`$, $`0 \le j < 179`$), so vertex 0 is the identity and the 179 runs of 83,773 consecutive numbers are the cosets of $`\langle x \rangle`$; a generator $`x^a y^b`$ joins run $`j`$ to run $`j + b \bmod 179`$ (see [the numbering figure](../../cayley-numbering.svg)).
+Vertex $`i + 83773 j`$ is $`x^i y^j`$ for $`0 \le i < 83773`$ and $`0 \le j < 179`$, as in [the numbering figure](../../cayley-numbering.svg).
 
 ## How it was found
 
