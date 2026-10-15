@@ -1,5 +1,6 @@
 // Independent plain-BFS verifier for an edge list: order, degrees, simplicity, diameter,
-// number of unordered pairs at distance > D.  Usage: verify_bfs <edges file> <D>
+// number of unordered pairs at distance > D.  Lines starting with '#' are ignored.
+// Usage: verify_bfs <edges file> <D>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -12,7 +13,10 @@ int main(int argc, char **argv) {
     size_t cap = 1 << 20, m = 0;
     int *eu = malloc(cap * sizeof(int)), *ev = malloc(cap * sizeof(int));
     int a, b, maxv = -1;
-    while (fscanf(f, "%d %d", &a, &b) == 2) {
+    char line[4096];
+    while (fgets(line, sizeof line, f)) {
+        if (line[0] == '#') continue;
+        if (sscanf(line, "%d %d", &a, &b) != 2) continue;
         if (m == cap) { cap *= 2; eu = realloc(eu, cap * sizeof(int)); ev = realloc(ev, cap * sizeof(int)); }
         if (a == b) { printf("LOOP at %d\n", a); return 1; }
         eu[m] = a; ev[m] = b; m++;

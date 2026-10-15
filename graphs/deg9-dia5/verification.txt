@@ -1,7 +1,7 @@
 == deg9-dia5: degree 9, diameter 5, 9020 vertices
 deg9-dia5-n9020.edges.txt lists exactly the edges of the construction in construction.json: True (40590 edges)
-$ tools/verify/verify_bfs /dev/stdin 5 < the edge list
-file: /dev/stdin
+$ tools/verify/verify_bfs graphs/deg9-dia5/deg9-dia5-n9020.edges.txt 5
+file: graphs/deg9-dia5/deg9-dia5-n9020.edges.txt
 order: 9020
 edges: 40590
 min degree: 9

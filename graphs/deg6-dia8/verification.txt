@@ -1,7 +1,7 @@
 == deg6-dia8: degree 6, diameter 8, 80050 vertices
 deg6-dia8-n80050.edges.txt lists exactly the edges of the construction in construction.json: True (240150 edges)
-$ tools/verify/verify_bfs /dev/stdin 8 < the edge list
-file: /dev/stdin
+$ tools/verify/verify_bfs graphs/deg6-dia8/deg6-dia8-n80050.edges.txt 8
+file: graphs/deg6-dia8/deg6-dia8-n80050.edges.txt
 order: 80050
 edges: 240150
 min degree: 6

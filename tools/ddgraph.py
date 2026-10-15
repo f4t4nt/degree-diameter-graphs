@@ -271,15 +271,24 @@ def compiled(name):
 
 
 def run_verifier(name, args, stdin=None):
-    """Run a compiled verifier, echo its command and output, and report whether it passed."""
+    """Run a compiled verifier from the repository root and echo its command and output.
+
+    Returns the output if the verifier passed, else None.
+    """
     shown = " ".join([f"tools/verify/{name}"] + [str(a) for a in args])
     print(f"$ {shown}" + (" < the edge list" if stdin is not None else ""))
     sys.stdout.flush()
     proc = subprocess.run(
-        [str(compiled(name))] + [str(a) for a in args], input=stdin, stdout=subprocess.PIPE, text=True, check=False
+        [str(compiled(name))] + [str(a) for a in args],
+        input=stdin,
+        stdout=subprocess.PIPE,
+        text=True,
+        check=False,
+        cwd=ROOT,
     )
     print(proc.stdout.rstrip())
-    return proc.returncode == 0 and "FAIL" not in proc.stdout and "EXCEEDS" not in proc.stdout
+    passed = proc.returncode == 0 and "FAIL" not in proc.stdout and "EXCEEDS" not in proc.stdout
+    return proc.stdout if passed else None
 
 
 def element_ij(group, text):
@@ -340,9 +349,17 @@ def check(cell, max_vertices):
         else:
             lines = sum(1 for _ in edge_pairs(path))
         if n * lines <= ALL_PAIRS_LIMIT:
-            text = "".join(f"{u} {v}\n" for u, v in edge_pairs(path))
-            ok = run_verifier("verify_bfs", ["/dev/stdin", D], text) and ok
-            return "ok" if ok else "FAILED"
+            if path.suffix == ".gz":
+                text = "".join(f"{u} {v}\n" for u, v in edge_pairs(path))
+                out = run_verifier("verify_bfs", ["/dev/stdin", D], text)
+            else:
+                where = path.resolve()
+                out = run_verifier("verify_bfs", [where.relative_to(ROOT) if where.is_relative_to(ROOT) else where, D])
+            read = re.search(r"^edges: (\d+)$", out or "", re.MULTILINE)
+            if read is None or int(read.group(1)) != lines:
+                print(f"FAIL: verify_bfs read {read.group(1) if read else 'no'} edges, the file has {lines}")
+                out = None
+            return "ok" if ok and out is not None else "FAILED"
     implicit = implicit_args(spec)
     if implicit is None:
         print("no verifier applies to this cell")
@@ -351,7 +368,7 @@ def check(cell, max_vertices):
         print(f"skipped here (n > --max-vertices {max_vertices}); to run it:")
         print("$ tools/verify/" + " ".join(str(a) for a in [implicit[0]] + implicit[1]))
         return "skipped" if ok else "FAILED"
-    ok = run_verifier(*implicit) and ok
+    ok = run_verifier(*implicit) is not None and ok
     return "ok" if ok else "FAILED"
 
 

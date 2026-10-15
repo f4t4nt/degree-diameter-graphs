@@ -1,7 +1,7 @@
 == deg4-dia10: degree 4, diameter 10, 19306 vertices
 deg4-dia10-n19306.edges.txt lists exactly the edges of the construction in construction.json: True (38612 edges)
-$ tools/verify/verify_bfs /dev/stdin 10 < the edge list
-file: /dev/stdin
+$ tools/verify/verify_bfs graphs/deg4-dia10/deg4-dia10-n19306.edges.txt 10
+file: graphs/deg4-dia10/deg4-dia10-n19306.edges.txt
 order: 19306
 edges: 38612
 min degree: 4

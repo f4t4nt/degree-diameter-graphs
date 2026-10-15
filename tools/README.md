@@ -33,7 +33,7 @@ stated degree before searching.
 
 | program | input | what it checks |
 |---|---|---|
-| `verify_bfs.c` | an edge list | BFS from every vertex: order, minimum and maximum degree, repeated edges, diameter, pairs farther apart than D |
+| `verify_bfs.c` | an edge list (lines starting with `#` are skipped, so it reads the files in `graphs/` directly) | BFS from every vertex: order, minimum and maximum degree, repeated edges, diameter, pairs farther apart than D |
 | `verify_cayley.c` | an edge list and (N, M, r, S) | the edge set equals the Cayley graph exactly, then BFS from the identity and 50 sampled vertices |
 | `verify_cayley_implicit.c` | (N, M, r, S) | BFS from the identity and sampled vertices over the implicitly defined Cayley graph, 5 bytes per vertex |
 | `verify_cayley_inv.c` | the same | the same, with one involution allowed in S |

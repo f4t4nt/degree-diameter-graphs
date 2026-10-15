@@ -1,6 +1,6 @@
 == deg4-dia4: degree 4, diameter 4, 104 vertices
-$ tools/verify/verify_bfs /dev/stdin 4 < the edge list
-file: /dev/stdin
+$ tools/verify/verify_bfs graphs/deg4-dia4/deg4-dia4-n104.edges.txt 4
+file: graphs/deg4-dia4/deg4-dia4-n104.edges.txt
 order: 104
 edges: 208
 min degree: 4
