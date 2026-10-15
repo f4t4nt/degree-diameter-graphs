@@ -10,9 +10,10 @@ Every graph here has a directory `graphs/deg<d>/dia<k>/` with a README on its co
 `construction.json`, the edge list when the graph has fewer than a million vertices, and the output of an independent
 verifier in `verification.txt`.
 
-![The degree-diameter table with my graphs in bold italics, each cell shaded by its fraction of the Moore bound](graphs/table.svg)
-
-Values as of 2026-10-14.
+<p align="center">
+<img src="graphs/table.svg" alt="The degree-diameter table with my graphs in bold italics, each cell shaded by its fraction of the Moore bound"><br>
+<sub>Values as of 2026-10-14</sub>
+</p>
 
 <details>
 <summary>All 52 graphs and their constructions</summary>
