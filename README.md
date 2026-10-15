@@ -12,6 +12,8 @@ verifier in `verification.txt`.
 
 ![The degree-diameter table with my graphs in bold italics, each cell shaded by its fraction of the Moore bound](graphs/table.svg)
 
+Values as of 2026-10-14.
+
 <details>
 <summary>All 52 graphs and their constructions</summary>
 
