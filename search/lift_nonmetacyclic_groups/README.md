@@ -45,3 +45,7 @@ python3 gf.py build '{"M":4,"blocks":[{"t":"vec","p":3,"A":[[0,1],[2,0]]}]}' g36
 The complete (5,7) sweep is `python3 aut_k.py '<the spec above>' g3000.aut` followed by `./table_sweep g3000.grp --aut
 g3000.aut --family lift --D 7 --mode exhaustive --chunk i 15 --near 4` for $`i = 0, \ldots, 14`$ (about
 $`1.9 \times 10^8`$ candidates in total).
+
+## Graphs found
+
+- [(5, 7)](../../graphs/deg5/dia7): 6,000 vertices

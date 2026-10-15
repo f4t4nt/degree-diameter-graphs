@@ -38,3 +38,7 @@ Group elements are numbered by `groups.py` (element 0 is the identity; the (3,7)
 $`a^i x^h \mapsto 8 i + h`$ of $`\mathbb{Z}_5 \rtimes \mathbb{Z}_8`$). A whole-order sweep is `python3 sweep.py --D 7
 --n 200 --kmax 8 --groups groups --bases bases`, which needs the groups of every order dividing 200 and the bases for
 every $`k`$.
+
+## Graphs found
+
+- [(3, 7)](../../graphs/deg3/dia7): 200 vertices

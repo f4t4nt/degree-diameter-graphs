@@ -41,3 +41,7 @@ python3 make_edges_k3.py 73 36 18 0 "k=3;deg=4;loop:2;link*:0,1;link*:0,2;link:1
 
 The reduced prefixes of a whole family come from `python3 gen_k3.py N M r t "SPEC" --out pref.txt` (add `--count-only`
 to size it first); `python3 shapes.py` lists the degree-5 shapes.
+
+## Graphs found
+
+- [(4, 9)](../../graphs/deg4/dia9): 7,884 vertices

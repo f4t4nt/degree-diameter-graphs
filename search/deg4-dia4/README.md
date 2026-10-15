@@ -37,3 +37,7 @@ cd ../template_calculus && python verify.py corpus       # decomposition and rea
 cd ../sat_closure && python sat105.py 104 50 && python sat105.py 105 all   # one SAT 104, then 54 x UNSAT
 python typed_sat_shapes.py data/shapes106.json --out=runs/t106.json --cap=600 && python design120.py
 ```
+
+## Graphs found
+
+- [(4, 4)](../../graphs/deg4/dia4): 104 vertices

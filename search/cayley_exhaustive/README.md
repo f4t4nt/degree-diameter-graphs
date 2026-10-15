@@ -40,3 +40,11 @@ gcc -O3 -march=native -o lift lift.c -lm && printf 'Y 2 18 24\n' > ypat.txt
 
 Voltages in `lift` lines are element indices $`i + N j`$ of $`x^i y^j`$; `make_ylist.py 6763 49 - ylist 2000000` writes
 all 2884 patterns of that group in chunks. Compile `sweep_odd` without `-march=native` (a known slow-code interaction).
+
+## Graphs found
+
+- [(6, 8)](../../graphs/deg6/dia8): 80,050 vertices
+- [(6, 10)](../../graphs/deg6/dia10): 1,394,189 vertices
+- [(7, 6)](../../graphs/deg7/dia6): 12,654 vertices
+- [(7, 8)](../../graphs/deg7/dia8): 264,440 vertices
+- [(9, 5)](../../graphs/deg9/dia5): 9,020 vertices

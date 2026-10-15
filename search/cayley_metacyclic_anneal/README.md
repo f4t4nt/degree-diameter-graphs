@@ -41,3 +41,43 @@ gcc -O3 -march=native -o cayley_sa_twoplane cayley_sa_twoplane.c -lm
 A full-size run is the same command with the group of the target cell, `--invol --tmove 10 --xunit` for odd degree, a
 longer `--sa` budget and `--complete 2`; the two-slot completion of a frozen state is `--init <state> --sweep2 600 EF
 --J2 2`.
+
+## Graphs found
+
+- [(7, 9)](../../graphs/deg7/dia9): 1,332,774 vertices
+- [(7, 10)](../../graphs/deg7/dia10): 6,641,680 vertices
+- [(8, 7)](../../graphs/deg8/dia7): 138,050 vertices
+- [(8, 8)](../../graphs/deg8/dia8): 779,803 vertices
+- [(8, 9)](../../graphs/deg8/dia9): 4,471,111 vertices
+- [(8, 10)](../../graphs/deg8/dia10): 26,864,290 vertices
+- [(9, 7)](../../graphs/deg9/dia7): 302,082 vertices
+- [(9, 8)](../../graphs/deg9/dia8): 1,961,370 vertices
+- [(9, 9)](../../graphs/deg9/dia9): 13,219,318 vertices
+- [(9, 10)](../../graphs/deg9/dia10): 89,543,818 vertices
+- [(10, 7)](../../graphs/deg10/dia7): 616,915 vertices
+- [(10, 8)](../../graphs/deg10/dia8): 4,507,500 vertices
+- [(10, 9)](../../graphs/deg10/dia9): 34,182,150 vertices
+- [(10, 10)](../../graphs/deg10/dia10): 265,612,889 vertices
+- [(11, 7)](../../graphs/deg11/dia7): 1,194,278 vertices
+- [(11, 8)](../../graphs/deg11/dia8): 9,739,368 vertices
+- [(11, 9)](../../graphs/deg11/dia9): 81,961,120 vertices
+- [(11, 10)](../../graphs/deg11/dia10): 697,280,200 vertices
+- [(12, 7)](../../graphs/deg12/dia7): 2,114,927 vertices
+- [(12, 8)](../../graphs/deg12/dia8): 19,144,241 vertices
+- [(12, 9)](../../graphs/deg12/dia9): 177,775,277 vertices
+- [(12, 10)](../../graphs/deg12/dia10): 1,692,658,087 vertices
+- [(13, 7)](../../graphs/deg13/dia7): 3,691,038 vertices
+- [(13, 8)](../../graphs/deg13/dia8): 36,275,160 vertices
+- [(13, 9)](../../graphs/deg13/dia9): 362,492,640 vertices
+- [(13, 10)](../../graphs/deg13/dia10): 3,789,298,110 vertices
+- [(14, 8)](../../graphs/deg14/dia8): 64,298,753 vertices
+- [(14, 9)](../../graphs/deg14/dia9): 709,125,173 vertices
+- [(14, 10)](../../graphs/deg14/dia10): 8,052,187,457 vertices
+- [(15, 7)](../../graphs/deg15/dia7): 9,758,988 vertices
+- [(15, 8)](../../graphs/deg15/dia8): 110,115,980 vertices
+- [(15, 9)](../../graphs/deg15/dia9): 1,315,107,690 vertices
+- [(15, 10)](../../graphs/deg15/dia10): 15,810,645,560 vertices
+- [(16, 7)](../../graphs/deg16/dia7): 14,995,367 vertices
+- [(16, 8)](../../graphs/deg16/dia8): 185,394,793 vertices
+- [(16, 9)](../../graphs/deg16/dia9): 2,343,053,633 vertices
+- [(16, 10)](../../graphs/deg16/dia10): 29,899,503,497 vertices

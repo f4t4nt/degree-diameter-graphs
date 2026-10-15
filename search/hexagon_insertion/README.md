@@ -40,3 +40,8 @@ gcc -O3 -march=native -o hexagon_sa hexagon_sa.c -lm && ./hexagon_sa H4.edges 10
 Verify any output edge list with the all-pairs BFS verifier in `tools/`. A free run is `./hexagon_sa H4.edges 106 0
 <seed> <seconds>`; the flag set $`S`$ of the (5,6) graph came from relocation runs with `--fixF` on an $`F`$ annealed
 beforehand.
+
+## Graphs found
+
+- [(4, 6)](../../graphs/deg4/dia6): 760 vertices
+- [(5, 6)](../../graphs/deg5/dia6): 2,836 vertices

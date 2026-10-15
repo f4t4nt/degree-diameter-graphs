@@ -41,3 +41,10 @@ gcc -O3 -march=native -DNW=4 -o bitlift_nw4 bitlift.c -lm && ./bitlift_nw4 --met
 `make_edges.py 197 49 16 0 "<spec>" "[197,1971,0,2439]" 19306.edges` writes the edge list. A shape-103 sub-block sweep is
 `gen_sub.py N M r i j > pref.txt` plus the same bitlift command with `--base "k=2;deg=5;loop:0;link*:0,1;link:0,1;link:0,1;loop:1"`;
 `rank_patterns.py N M r D` ranks the sub-blocks first.
+
+## Graphs found
+
+- [(4, 10)](../../graphs/deg4/dia10): 19,306 vertices
+- [(5, 8)](../../graphs/deg5/dia8): 18,810 vertices
+- [(5, 9)](../../graphs/deg5/dia9): 60,686 vertices
+- [(5, 10)](../../graphs/deg5/dia10): 202,550 vertices
