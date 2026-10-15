@@ -11,7 +11,7 @@ Every graph here has a directory `graphs/deg<d>/dia<k>/` with a README on its co
 verifier in `verification.txt`.
 
 <details>
-<summary>My 52 graphs, with links to their directories</summary>
+<summary>All 52 graphs</summary>
 
 | $`(d, k)`$ | vertices | construction |
 |---|---:|---|
