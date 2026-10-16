@@ -4,7 +4,8 @@ I sweep regular voltage lifts of small cubic base graphs (multigraphs with loops
 vertices) over every group of order $`n/k`$ given by an explicit multiplication table, one representative per orbit of
 the group's automorphisms, for cubic graphs of a target diameter; the sweep of the 5-vertex bases over the groups of
 order 40 gives the [(3,7)](../../graphs/deg3/dia7) graph on 200 vertices (a lift over
-$`\mathbb{Z}_5 \rtimes \mathbb{Z}_8`$).
+$`\mathbb{Z}_5 \rtimes \mathbb{Z}_8`$); read as a graph rather than as a lift, it is five subdivided Wagner graphs
+joined by four 20-cycles of connectors, drawn on its page.
 
 ![The 5-vertex cubic base graph of the (3,7) lift with its voltages over Z5 x| Z8: a spanning tree, one free link, a semi-edge at 2 and loops at 3 and 4](../../graphs/deg3/dia7/base-graph.svg)<br><sub>The base of the (3,7) graph: the links $`0 \to 1`$, $`0 \to 2`$, $`0 \to 3`$ and $`1 \to 4`$ carry the trivial voltage (the spanning tree), the link $`1 \to 2`$ carries $`y`$, the semi-edge at 2 the involution $`y^4`$, and the loops at 3 and 4 carry $`x y^2`$ and $`x^2 y^2`$, in $`G = \mathbb{Z}_5 \rtimes_4 \mathbb{Z}_8 = \langle x, y \mid x^5 = y^8 = 1,\ y x y^{-1} = x^4 \rangle`$ of order 40; the lift joins $`(u, g)`$ to $`(v, g a)`$ for every dart $`u \to v`$ with voltage $`a`$, a loop acts both ways and the semi-edge joins $`(v, g)`$ to $`(v, g y^4)`$, so the lift is cubic on $`5 \cdot 40 = 200`$ vertices. In the element numbering of `groups.py` below, $`x^i y^h \mapsto 8 i + h`$, these four voltages are the `1 4 10 18` of the `BEST` line.</sub>
 
