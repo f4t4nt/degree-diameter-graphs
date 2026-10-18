@@ -1,0 +1,13 @@
+== deg3/dia8: degree 3, diameter 8, 360 vertices
+deg3-dia8-n360.edges.txt lists exactly the edges of the construction in construction.json: True (540 edges)
+$ tools/verify/verify_bfs graphs/deg3/dia8/deg3-dia8-n360.edges.txt 8
+file: graphs/deg3/dia8/deg3-dia8-n360.edges.txt
+order: 360
+edges: 540
+min degree: 3
+max degree: 3
+isolated: 0
+duplicate edges: 0
+diameter: 8
+unreachable pairs: 0
+unordered pairs at distance > 8: 0
