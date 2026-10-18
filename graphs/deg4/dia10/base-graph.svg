@@ -48,26 +48,26 @@
 <!-- link0 -->
 <g id="node3" class="node">
 <title>link0</title>
-<text text-anchor="middle" x="229.7" y="-9.4" font-family="Times New Roman" font-size="17.00">1</text>
+<text text-anchor="middle" x="229.7" y="-9.4" font-family="Times New Roman" font-size="17.00" fill="#1f2328">1</text>
 </g>
 <!-- link1 -->
 <g id="node4" class="node">
 <title>link1</title>
-<text text-anchor="start" x="212.7" y="-91.6" font-family="Times New Roman" font-style="italic" font-size="17.00">xy¹²</text>
+<text text-anchor="start" x="212.7" y="-91.6" font-family="Times New Roman" font-style="italic" font-size="17.00" fill="#1f2328">xy¹²</text>
 </g>
 <!-- loopa0 -->
 <!-- loopb0 -->
 <!-- loopl0 -->
 <g id="node7" class="node">
 <title>loopl0</title>
-<text text-anchor="start" x="8" y="-51" font-family="Times New Roman" font-style="italic" font-size="17.00">y</text>
+<text text-anchor="start" x="8" y="-51" font-family="Times New Roman" font-style="italic" font-size="17.00" fill="#1f2328">y</text>
 </g>
 <!-- loopa1 -->
 <!-- loopb1 -->
 <!-- loopl1 -->
 <g id="node10" class="node">
 <title>loopl1</title>
-<text text-anchor="start" x="446.7" y="-51" font-family="Times New Roman" font-style="italic" font-size="17.00">x¹⁷⁶y¹⁰</text>
+<text text-anchor="start" x="446.7" y="-51" font-family="Times New Roman" font-style="italic" font-size="17.00" fill="#1f2328">x¹⁷⁶y¹⁰</text>
 </g>
 </g>
 </svg>
