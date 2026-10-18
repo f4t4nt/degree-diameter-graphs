@@ -16,11 +16,12 @@ verifier in `verification.txt`.
 </p>
 
 <details>
-<summary>All 58 graphs and their constructions</summary>
+<summary>All 59 graphs and their constructions</summary>
 
 | $`(d, k)`$ | vertices | % of Moore bound | construction |
 |---|---:|---:|---|
 | [(3, 7)](graphs/deg3/dia7) | 200 | 52.4% | 5-vertex lift over $`\mathbb{Z}_{5} \rtimes_{4} \mathbb{Z}_{8}`$ |
+| [(3, 8)](graphs/deg3/dia8) | 360 | 47.0% | 5-vertex lift over $`\mathbb{F}_3^2 \rtimes Q_8`$ (a tie with the table's graph) |
 | [(4, 4)](graphs/deg4/dia4) | 104 | 64.6% | three subdivided $`K_{4,4}`$ blocks and 32 connectors |
 | [(4, 6)](graphs/deg4/dia6) | 760 | 52.2% | generalized hexagon $`H(3)`$ with 32 flags subdivided |
 | [(4, 9)](graphs/deg4/dia9) | 7,884 | 20.0% | 3-vertex lift over $`\mathbb{Z}_{73} \rtimes_{18} \mathbb{Z}_{36}`$ |
