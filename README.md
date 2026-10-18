@@ -12,11 +12,11 @@ verifier in `verification.txt`.
 
 <p align="center">
 <img src="graphs/table.svg" alt="The degree-diameter table with my graphs in bold italics, each cell shaded by its fraction of the Moore bound"><br>
-<sub>Values as of 2026-10-14.</sub>
+<sub>Values as of 2026-10-18.</sub>
 </p>
 
 <details>
-<summary>All 52 graphs and their constructions</summary>
+<summary>All 58 graphs and their constructions</summary>
 
 | $`(d, k)`$ | vertices | % of Moore bound | construction |
 |---|---:|---:|---|
@@ -49,21 +49,27 @@ verifier in `verification.txt`.
 | [(10, 8)](graphs/deg10/dia8) | 4,507,500 | 8.4% | Cayley graph of $`\mathbb{Z}_{45075} \rtimes_{2} \mathbb{Z}_{100}`$ |
 | [(10, 9)](graphs/deg10/dia9) | 34,182,150 | 7.1% | Cayley graph of $`\mathbb{Z}_{227881} \rtimes_{1562} \mathbb{Z}_{150}`$ |
 | [(10, 10)](graphs/deg10/dia10) | 265,612,889 | 6.1% | Cayley graph of $`\mathbb{Z}_{1111351} \rtimes_{8147} \mathbb{Z}_{239}`$ |
+| [(11, 4)](graphs/deg11/dia4) | 3,645 | 29.8% | the double of $`W(9)`$ with 201 vertices inserted |
 | [(11, 7)](graphs/deg11/dia7) | 1,194,278 | 9.8% | Cayley graph of $`\mathbb{Z}_{20591} \rtimes_{2507} \mathbb{Z}_{58}`$ |
 | [(11, 8)](graphs/deg11/dia8) | 9,739,368 | 8.0% | Cayley graph of $`\mathbb{Z}_{135269} \rtimes_{8594} \mathbb{Z}_{72}`$ |
 | [(11, 9)](graphs/deg11/dia9) | 81,961,120 | 6.7% | Cayley graph of $`\mathbb{Z}_{512257} \rtimes_{706} \mathbb{Z}_{160}`$ |
 | [(11, 10)](graphs/deg11/dia10) | 697,280,200 | 5.7% | Cayley graph of $`\mathbb{Z}_{3486401} \rtimes_{1834706} \mathbb{Z}_{200}`$ |
+| [(12, 4)](graphs/deg12/dia4) | 6,156 | 35.0% | route-chart lift over a 76-vertex $`\mathbb{Z}_{19}`$-lift controller |
 | [(12, 7)](graphs/deg12/dia7) | 2,114,927 | 9.0% | Cayley graph of $`\mathbb{Z}_{19403} \rtimes_{6308} \mathbb{Z}_{109}`$ |
 | [(12, 8)](graphs/deg12/dia8) | 19,144,241 | 7.4% | Cayley graph of $`\mathbb{Z}_{90731} \rtimes_{61666} \mathbb{Z}_{211}`$ |
 | [(12, 9)](graphs/deg12/dia9) | 177,775,277 | 6.3% | Cayley graph of $`\mathbb{Z}_{783151} \rtimes_{1808} \mathbb{Z}_{227}`$ |
 | [(12, 10)](graphs/deg12/dia10) | 1,692,658,087 | 5.4% | Cayley graph of $`\mathbb{Z}_{3655849} \rtimes_{5568} \mathbb{Z}_{463}`$ |
+| [(13, 4)](graphs/deg13/dia4) | 6,804 | 27.8% | route-chart lift over the Cayley graph of $`\mathbb{Z}_7 \rtimes_2 \mathbb{Z}_{12}`$ |
 | [(13, 7)](graphs/deg13/dia7) | 3,691,038 | 8.7% | Cayley graph of $`\mathbb{Z}_{47321} \rtimes_{3981} \mathbb{Z}_{78}`$ |
 | [(13, 8)](graphs/deg13/dia8) | 36,275,160 | 7.1% | Cayley graph of $`\mathbb{Z}_{302293} \rtimes_{7818} \mathbb{Z}_{120}`$ |
 | [(13, 9)](graphs/deg13/dia9) | 362,492,640 | 5.9% | Cayley graph of $`\mathbb{Z}_{1258655} \rtimes_{263} \mathbb{Z}_{288}`$ |
 | [(13, 10)](graphs/deg13/dia10) | 3,789,298,110 | 5.2% | Cayley graph of $`\mathbb{Z}_{9716149} \rtimes_{514348} \mathbb{Z}_{390}`$ |
+| [(14, 4)](graphs/deg14/dia4) | 9,720 | 29.2% | route-chart lift over the Cayley graph of $`SL(2,3) \times \mathbb{Z}_5`$ |
 | [(14, 8)](graphs/deg14/dia8) | 64,298,753 | 6.8% | Cayley graph of $`\mathbb{Z}_{185299} \rtimes_{47110} \mathbb{Z}_{347}`$ |
 | [(14, 9)](graphs/deg14/dia9) | 709,125,173 | 5.7% | Cayley graph of $`\mathbb{Z}_{2104229} \rtimes_{864} \mathbb{Z}_{337}`$ |
 | [(14, 10)](graphs/deg14/dia10) | 8,052,187,457 | 5.0% | Cayley graph of $`\mathbb{Z}_{10837399} \rtimes_{3457} \mathbb{Z}_{743}`$ |
+| [(15, 3)](graphs/deg15/dia3) | 1,620 | 51.2% | route-chart lift over a 60-vertex $`\mathbb{Z}_{20}`$-lift controller |
+| [(15, 4)](graphs/deg15/dia4) | 13,608 | 30.7% | route-chart lift over a 168-vertex $`\mathbb{Z}_{42}`$-lift controller |
 | [(15, 7)](graphs/deg15/dia7) | 9,758,988 | 8.0% | Cayley graph of $`\mathbb{Z}_{90361} \rtimes_{1443} \mathbb{Z}_{108}`$ |
 | [(15, 8)](graphs/deg15/dia8) | 110,115,980 | 6.5% | Cayley graph of $`\mathbb{Z}_{423523} \rtimes_{8} \mathbb{Z}_{260}`$ |
 | [(15, 9)](graphs/deg15/dia9) | 1,315,107,690 | 5.5% | Cayley graph of $`\mathbb{Z}_{3372071} \rtimes_{832} \mathbb{Z}_{390}`$ |
