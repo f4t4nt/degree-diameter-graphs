@@ -34,6 +34,12 @@ The charts of $`a^{-1}`$ and $`b^{-1}`$ describe the same edges as those of $`a`
 
 Vertex $`81 v + x_0 + 3 x_1 + 9 x_2 + 27 x_3`$ is the pair $`(v, x)`$ with $`v = 5 k + i`$ the group element $`(X_k, i)`$, where $`X_0 = I`$ and $`X_1, \dots, X_{23}`$ are the other matrices of determinant 1 in lexicographic order of their entries $`(a, b, c, d)`$, and $`x = (x_0, x_1, x_2, x_3)`$; the fibre over $`v`$ is the run of 81 numbers from $`81 v`$.
 
+## Structure
+
+The 120 cells $`\{g\} \times \mathbb{F}_3^4`$ are independent sets; the cells $`g`$ and $`g a^{\pm 1}`$, $`g b^{\pm 1}`$ are joined by $`243 = 3 \times 81`$ edges, three at every vertex, and the cells $`g`$ and $`g p^{\pm 1}`$ by perfect matchings of 81 edges, so the graph collapsed to its cells is the 6-regular Cayley graph of $`G = \mathrm{SL}(2,3) \times \mathbb{Z}_5`$. The automorphism group has order 120 and is exactly the left regular action $`(g, x) \mapsto (h g, x)`$ of $`G`$ on the cells: its 81 orbits are the fibre points $`x`$, one vertex in every cell, and there is nothing beyond the lift. Every vertex has distance profile 1, 14, 166, 1786, 7753, and the girth is 4.
+
+The central involution $`-I`$ of $`\mathrm{SL}(2,3)`$ and the three cyclic subgroups of order 4 of its quaternion subgroup give simple quotients, so the graph is a 2-fold regular cover of a 14-regular graph on 4860 vertices and a 4-fold cover of three on 2430 vertices, all of diameter at most 4; the subgroups of order 3 give double edges, the central $`\mathbb{Z}_5`$ of the plain pair gives loops, and the quotient by all of $`G`$ is the multigraph on the 81 points of $`\mathbb{F}_3^4`$ with 7 loops, 56 double edges and 6 triple edges among its 567 edges, multiplicities counted.
+
 ## How it was found
 
 Mixed route-chart lift over $`\mathbb{F}_3^4`$ with four line symbols and a plain central pair $`p^{\pm 1}`$ of order 5 (chart $`M_p = -I`$) over $`\mathrm{Cay}(SL(2,3) \times \mathbb{Z}_5;\ a^{\pm 1}, b^{\pm 1}, p^{\pm 1})`$ (120 vertices); the controller was selected by the chart-independent hard-deficit screen of the catalogue groups of orders 103 to 193 (two groups reach deficit 0, of orders 105 and 120) and the chart by exact-lift annealing. The search code is in [search/route_chart_lifts](../../../search/route_chart_lifts).

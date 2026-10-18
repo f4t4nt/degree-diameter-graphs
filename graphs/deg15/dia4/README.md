@@ -30,6 +30,12 @@ The charts of $`a^{-1}`$ and $`b^{-1}`$ describe the same edges as those of $`a`
 
 Vertex $`81 v + x_0 + 3 x_1 + 9 x_2 + 27 x_3`$ is the pair $`(v, x)`$ with $`v = 42 c + g`$ the controller vertex $`(c, g)`$ and $`x = (x_0, x_1, x_2, x_3)`$; the fibre over $`v`$ is the run of 81 numbers from $`81 v`$.
 
+## Structure
+
+The 168 cells $`\{v\} \times \mathbb{F}_3^4`$ are independent sets, and two cells are joined exactly when the controller joins them, by $`243 = 3 \times 81`$ edges, three at every vertex, so the graph collapsed to its cells is the 5-regular controller. The automorphism group is $`\mathbb{Z}_{42} \times \mathbb{Z}_2`$ of order 84: the deck group $`\mathbb{Z}_{42}`$ of the controller, which carries each cell to the cells over the same base vertex, and one involution $`(v, x) \mapsto (v, c - x)`$ that fixes every cell and acts on each as the same point reflection of $`\mathbb{F}_3^4`$, with one fixed vertex per cell. There are 164 vertex orbits, four of size 42 and 160 of size 84, and nothing beyond the lift. The distance profile is 1, 15, 190, 2301, 11101 from the cells over one base vertex and 1, 15, 188 followed by 2273, 11131 or 2282, 11122 or 2271, 11133 from the cells over the other three; the 1134 triangles lift the controller's triangles and pass through a quarter of the vertices.
+
+The deck subgroups of orders 2, 3, 6, 7, 14 and 21 give simple quotients, so the graph is a regular cover of 15-regular graphs of diameter at most 4 on 6804, 4536, 2268, 1944, 972 and 648 vertices; the quotient by the whole deck group is a multigraph on $`4 \times 81 = 324`$ vertices, determined by the base graph and the five charts alone, with 2358 simple and 36 double edges. The involution has fixed points and so do the subgroups containing it.
+
 ## How it was found
 
 Route-chart lift over $`\mathbb{F}_3^4`$ with the five-symbol alphabet $`a^{\pm 1}, b^{\pm 1}, s`$ ($`M_s^2 = I`$, $`M_s d_s = d_s`$) over the regular $`\mathbb{Z}_{42}`$-lift of the 4-vertex base $`\alpha_0 = \beta_0 = (0\,1\,2\,3)`$, $`\sigma_0 = (0\,2)(1\,3)`$ with voltages $`v_a = (0,9,12,0)`$, $`v_b = (19,38,7,41)`$, $`v_s = 21`$ on the link $`1 - 3`$ (168 vertices, 5-regular); chart and controller co-designed: a pool of sampled controllers in which every pair at distance 1, 3 or 4 has a non-backtracking 4-walk, then chart annealing against the pool until one controller has a controllable word for every such pair and the chart-only conditions at distance 0 and 2 hold. The search code is in [search/route_chart_lifts](../../../search/route_chart_lifts).

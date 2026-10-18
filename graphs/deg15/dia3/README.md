@@ -14,6 +14,12 @@ Each dart $`v \to w`$ carries its own matrix $`M \in GL(3, 3)`$ and direction $`
 
 Vertex $`27 v + x_0 + 3 x_1 + 9 x_2`$ is the pair $`(v, x)`$ with $`v = 20 c + g`$ the controller vertex $`(c, g)`$ and $`x = (x_0, x_1, x_2)`$; the cell over $`v`$ is the run of 27 numbers from $`27 v`$.
 
+## Structure
+
+The 60 cells $`\{v\} \times \mathbb{F}_3^3`$ are independent sets, and two cells are joined exactly when the controller joins them, by $`81 = 3 \times 27`$ edges, three at every vertex, so the graph collapsed to its cells is the 5-regular controller of diameter 3. Every vertex lies on exactly one triangle, a lift of a triangle of the controller, and has distance profile 1, 15, 188, 1416.
+
+The charts are assigned dart by dart rather than symbol by symbol, and the $`\mathbb{Z}_{20}`$ deck group of the controller does not act on the lift. The automorphism group has order 2: one involution $`(v, x) \mapsto (v, c - x)`$ that fixes every cell and acts on each as the same point reflection of $`\mathbb{F}_3^3`$, with one fixed vertex per cell, so there are 840 vertex orbits, 60 of size 1 and 780 of size 2. No automorphism is fixed-point-free, so the graph is a regular cover of no smaller graph; there is nothing beyond the lift, and less symmetry than the controller has.
+
 ## How it was found
 
 Route-chart lift with 27-point cells $`\mathbb{F}_3^3`$ over the 5-regular 60-vertex controller that is the regular $`\mathbb{Z}_{20}`$-lift of the 3-vertex base $`\alpha_0 = (1\,2)`$, $`\beta_0 = (0\,1\,2)`$, $`\sigma_0 = (0\,1)`$ with voltages $`v_a = (6,3,12)`$, $`v_b = (0,0,0)`$, $`v_s = 1`$ on the link and 10 on the semi-edge (the one lift class with $`A^3 + A > 0`$ found among the 3-vertex bases over the groups of orders 20 to 28); the per-dart charts are in the coplanar configuration, chosen by a type SAT and realised in $`GL(3,3)`$. The search code is in [search/route_chart_lifts](../../../search/route_chart_lifts).

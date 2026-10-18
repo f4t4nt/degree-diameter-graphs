@@ -28,6 +28,12 @@ The charts of $`a^{-1}`$ and $`b^{-1}`$ describe the same edges as those of $`a`
 
 Vertex $`81 v + x_0 + 3 x_1 + 9 x_2 + 27 x_3`$ is the pair $`(v, x)`$ with $`v = i + 7 j`$ the group element $`x^i y^j`$ and $`x = (x_0, x_1, x_2, x_3)`$; the fibre over $`v`$ is the run of 81 numbers from $`81 v`$.
 
+## Structure
+
+The 84 cells $`\{g\} \times \mathbb{F}_3^4`$ are independent sets; the cells $`g`$ and $`g a^{\pm 1}`$, $`g b^{\pm 1}`$ are joined by $`243 = 3 \times 81`$ edges, three at every vertex, and the cells $`g`$ and $`g z`$ by a perfect matching of 81 edges, so the graph collapsed to its cells is the 5-regular Cayley graph of $`G = \mathbb{Z}_7 \rtimes_2 \mathbb{Z}_{12}`$. The automorphism group has order 84 and is exactly the left regular action $`(g, x) \mapsto (h g, x)`$ of $`G`$ on the cells: its 81 orbits are the fibre points $`x`$, one vertex in every cell, and nothing beyond the lift exists, not even the point reflection of the cells that the lifts with line symbols only possess. Every vertex has distance profile 1, 13, 138, 1400, 5252; there are 756 triangles, through one third of the vertices.
+
+The quotient by the normal subgroup $`\mathbb{Z}_7`$ of $`G`$ is a simple 13-regular graph on $`12 \times 81 = 972`$ vertices of diameter at most 4, so the graph is its 7-fold regular cover; every other subgroup of $`G`$ gives loops (the plain symbol closes up) or double edges, and the quotient by all of $`G`$ is the multigraph on the 81 points of $`\mathbb{F}_3^4`$ with the edges $`x - A_t x + \lambda d_t`$ and $`x - (c_z - x)`$, which has 6 loops and 28 double edges.
+
 ## How it was found
 
 Mixed route-chart lift over $`\mathbb{F}_3^4`$ with four line symbols and one plain central involution $`z`$ (chart $`M_z = -I`$, one neighbour) over the Cayley graph $`\mathrm{Cay}(\mathbb{Z}_7 \rtimes_2 \mathbb{Z}_{12};\ a^{\pm 1}, b^{\pm 1}, z)`$ with $`a = (1,1)`$, $`b = (0,4)`$, $`z = (0,6)`$ (84 vertices); the group and its involution were the only admissible pair (hard deficit 0: every needed fibre has a controllable line 4-word or a tiling) among the catalogue groups of orders 82 to 157, and the chart came from exact-lift annealing. The search code is in [search/route_chart_lifts](../../../search/route_chart_lifts).

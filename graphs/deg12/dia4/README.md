@@ -26,6 +26,12 @@ The charts of $`a^{-1}`$ and $`b^{-1}`$ describe the same edges as those of $`a`
 
 Vertex $`81 v + x_0 + 3 x_1 + 9 x_2 + 27 x_3`$ is the pair $`(v, x)`$ with $`v = 19 c + g`$ the controller vertex $`(c, g)`$ and $`x = (x_0, x_1, x_2, x_3)`$; the fibre over $`v`$ is the run of 81 numbers from $`81 v`$.
 
+## Structure
+
+The 76 cells $`\{v\} \times \mathbb{F}_3^4`$ are independent sets, and two cells are joined exactly when the controller joins them, by $`243 = 3 \times 81`$ edges, three at every vertex, so the graph collapsed to its cells is the controller. The automorphism group has order 38: the deck group $`\mathbb{Z}_{19}`$ of the controller, which carries each cell to the cells over the same base vertex, and one involution $`(v, x) \mapsto (v, c - x)`$ that fixes every cell and acts on each as the same point reflection of $`\mathbb{F}_3^4`$, with one fixed vertex per cell. There are 164 vertex orbits, four of size 19 and 160 of size 38, and nothing beyond the lift: no symmetry mixes cells over different base vertices, and the only symmetry inside a cell is the central one.
+
+The quotient by the deck group is a 12-regular multigraph on $`4 \times 81 = 324`$ vertices, the vertices $`(b, x)`$ with $`b`$ a base vertex and $`x \in \mathbb{F}_3^4`$ joined by $`(b, x) - (t(b), M_t x + \lambda d_t)`$, with 1908 simple and 18 double edges; it depends on the base graph and the chart alone, and it is the same multigraph whose $`\mathbb{Z}_{18}`$ lift is the 5832-vertex graph of Mizuno. The involution has fixed points, so the deck group is the only semiregular subgroup of the automorphism group, and the graph regularly covers no simple graph.
+
 ## How it was found
 
 Route-chart lift over $`\mathbb{F}_3^4`$ of the regular $`\mathbb{Z}_{19}`$-lift of the 4-vertex Schreier base $`\alpha_0 = (0\,1\,2\,3)`$, $`\beta_0 = (0\,1\,3\,2)`$ with voltages $`v_a = (0,12,4,0)`$, $`v_b = (17,0,0,1)`$ (76 vertices) and the four charts of the published 5832-vertex route-chart lift in this cell; the controller came from an exhaustive sweep of all voltage assignments of this base over the groups of orders 19 to 27 with the controllability word filter (72 pass over $`\mathbb{Z}_{19}`$, none over orders 20 to 27). The search code is in [search/route_chart_lifts](../../../search/route_chart_lifts).
