@@ -1,0 +1,7 @@
+# mixlift unc=0 deg=13 N=84 n=6804 plain=inv:42
+A 0 1 0 1 2 0 2 0 2 1 1 1 1 0 1 2 d 0 0 1 1
+A 2 1 1 0 1 1 0 1 1 1 2 0 0 2 0 2 d 1 1 2 2
+A 0 0 2 0 2 1 2 2 2 1 2 0 0 1 2 2 d 1 2 2 2
+A 0 2 0 1 2 2 1 1 2 0 0 0 0 2 1 0 d 0 1 2 0
+P 2 0 0 0 0 2 0 0 0 0 2 0 0 0 0 2 c 0 0 1 0
+controller base=0/0 va=8 vb=28 plain=inv:42 Mp=-1 group=groups/84_Z7:2:Z12.tbl

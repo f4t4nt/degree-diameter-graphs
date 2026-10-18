@@ -1,0 +1,12 @@
+== deg11/dia4: degree 11, diameter 4, 3645 vertices
+$ tools/verify/verify_bfs graphs/deg11/dia4/deg11-dia4-n3645.edges.txt 4
+file: graphs/deg11/dia4/deg11-dia4-n3645.edges.txt
+order: 3645
+edges: 20044
+min degree: 10
+max degree: 11
+isolated: 0
+duplicate edges: 0
+diameter: 4
+unreachable pairs: 0
+unordered pairs at distance > 4: 0

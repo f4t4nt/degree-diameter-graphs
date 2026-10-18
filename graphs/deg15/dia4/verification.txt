@@ -1,0 +1,13 @@
+== deg15/dia4: degree 15, diameter 4, 13608 vertices
+deg15-dia4-n13608.edges.txt lists exactly the edges of the construction in construction.json: True (102060 edges)
+$ tools/verify/verify_bfs graphs/deg15/dia4/deg15-dia4-n13608.edges.txt 4
+file: graphs/deg15/dia4/deg15-dia4-n13608.edges.txt
+order: 13608
+edges: 102060
+min degree: 15
+max degree: 15
+isolated: 0
+duplicate edges: 0
+diameter: 4
+unreachable pairs: 0
+unordered pairs at distance > 4: 0

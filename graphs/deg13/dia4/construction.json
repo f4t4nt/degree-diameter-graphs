@@ -1,0 +1,96 @@
+{
+  "degree": 13,
+  "diameter": 4,
+  "order": 6804,
+  "construction": {
+    "type": "route_chart_lift",
+    "fibre": {
+      "p": 3,
+      "dim": 4
+    },
+    "controller": {
+      "type": "cayley",
+      "group": {
+        "type": "metacyclic",
+        "N": 7,
+        "M": 12,
+        "r": 2
+      },
+      "symbols": [
+        {
+          "name": "a",
+          "element": "x y"
+        },
+        {
+          "name": "b",
+          "element": "y^4"
+        },
+        {
+          "name": "z",
+          "element": "y^6",
+          "involution": true
+        }
+      ]
+    },
+    "charts": [
+      {
+        "symbol": "a",
+        "kind": "line",
+        "M": [
+          [0, 1, 0, 1],
+          [2, 0, 2, 0],
+          [2, 1, 1, 1],
+          [1, 0, 1, 2]
+        ],
+        "d": [0, 0, 1, 1]
+      },
+      {
+        "symbol": "a^-1",
+        "kind": "line",
+        "M": [
+          [2, 1, 1, 0],
+          [1, 1, 0, 1],
+          [1, 1, 2, 0],
+          [0, 2, 0, 2]
+        ],
+        "d": [1, 1, 2, 2],
+        "inverse_of": "a"
+      },
+      {
+        "symbol": "b",
+        "kind": "line",
+        "M": [
+          [0, 0, 2, 0],
+          [2, 1, 2, 2],
+          [2, 1, 2, 0],
+          [0, 1, 2, 2]
+        ],
+        "d": [1, 2, 2, 2]
+      },
+      {
+        "symbol": "b^-1",
+        "kind": "line",
+        "M": [
+          [0, 2, 0, 1],
+          [2, 2, 1, 1],
+          [2, 0, 0, 0],
+          [0, 2, 1, 0]
+        ],
+        "d": [0, 1, 2, 0],
+        "inverse_of": "b"
+      },
+      {
+        "symbol": "z",
+        "kind": "plain",
+        "involution": true,
+        "M": [
+          [2, 0, 0, 0],
+          [0, 2, 0, 0],
+          [0, 0, 2, 0],
+          [0, 0, 0, 2]
+        ],
+        "d": [0, 0, 1, 0]
+      }
+    ]
+  }
+}
