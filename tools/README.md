@@ -16,7 +16,19 @@ needs only the Python standard library; `check` compiles the verifiers with `cc`
   - `lift`: `group`, `base_vertices` and lists of `loops` ($`[v, a]`$), `links` ($`[u, v, a]`$) and `semi_edges`
     ($`[v, t]`$). $`(u, g)`$ is joined to $`(v, g a)`$ for every dart $`u \to v`$ with voltage $`a`$, so a loop also
     joins $`(v, g)`$ to $`(v, g a^{-1})`$; a semi-edge with involution $`t`$ joins $`(v, g)`$ to $`(v, g t)`$.
-  - `edge_list`: the graph's edge file is the definition (the two hexagon graphs and the $`(4, 4)`$ graph).
+  - `route_chart_lift`: `fibre` ($`p`$ and `dim` $`m`$: the fibre $`\mathbb{F}_p^m`$ over every controller vertex, its
+    point $`x`$ having index $`\sum_i x_i p^i`$), `controller` and `charts`. A `schreier_lift` controller has
+    `base_vertices` $`k`$, a cyclic group order `N` and `symbols`, each a permutation `perm` of the base vertices with
+    `voltages`: the symbol sends $`(c, g)`$, the vertex $`N c + g`$, to $`(\mathrm{perm}[c],\ g + v[c])`$; an
+    `involution` symbol is its own inverse (its darts from the higher base vertex subtract the voltage, and a fixed
+    base vertex is a semi-edge). A `cayley` controller has a `group` and `symbols` with an `element` each, sending
+    $`g`$ to $`g s`$. Every chart names its `symbol`, its `kind` (`line`: $`(v, x)`$ is joined to
+    $`(t(v), M x + \lambda d)`$ for all $`\lambda \in \mathbb{F}_p`$; `plain`: to $`(t(v), M x + d)`$ only) and
+    its matrix `M` (rows) and direction `d`; a chart marked `inverse_of` repeats the data of an inverse symbol, an
+    `involution` chart's edges are listed once, and `darts` replaces `M` and `d` by one chart per dart `from`, `to`.
+    The edges of an inverse symbol are those of its partner, so each pair is listed once.
+  - `edge_list`: the graph's edge file is the definition (the two hexagon graphs, the $`(4, 4)`$ graph and the
+    $`(11, 4)`$ graph, whose `insertions.txt` lists how it grows out of its base).
 - `group.type`:
   - `metacyclic`: `N`, `M`, `r` for
     $`\mathbb{Z}_N \rtimes_r \mathbb{Z}_M = \langle x, y \mid x^N = y^M = 1,\ y x y^{-1} = x^r \rangle`$. Elements are
@@ -24,8 +36,13 @@ needs only the Python standard library; `check` compiles the verifiers with `cc`
   - `kernel_by_cyclic`: the non-metacyclic group of the $`(5, 7)`$ graph,
     $`((\mathbb{F}_p^2 \rtimes_B \langle c \rangle) \times \langle z \rangle) \rtimes_A \langle y \rangle`$, with
     elements written `v(a,b) c^i z^j y^m`.
+  - `sl2_by_cyclic`: $`SL(2, q) \times \mathbb{Z}_M`$ (`q`, `M`), the controller group of the $`(14, 4)`$ graph; elements
+    are written `m(a,b,c,d) z^i` for the matrix $`\begin{pmatrix} a & b \\ c & d \end{pmatrix}`$ of determinant 1, and
+    $`(X, i)`$ has index $`M \cdot \mathrm{index}(X) + i`$ with the identity first and the other matrices in lexicographic
+    order of $`(a, b, c, d)`$.
 
-Vertex numbers are group indices: $`g`$ in a Cayley graph, $`v \cdot |G| + \mathrm{index}(g)`$ in a lift.
+Vertex numbers are group indices: $`g`$ in a Cayley graph, $`v \cdot |G| + \mathrm{index}(g)`$ in a lift, and
+$`p^m v + \mathrm{index}(x)`$ for the point $`x`$ of the fibre over controller vertex $`v`$ in a route-chart lift.
 
 ## Verifiers
 
