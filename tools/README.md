@@ -36,6 +36,9 @@ needs only the Python standard library; `check` compiles the verifiers with `cc`
   - `kernel_by_cyclic`: the non-metacyclic group of the $`(5, 7)`$ graph,
     $`((\mathbb{F}_p^2 \rtimes_B \langle c \rangle) \times \langle z \rangle) \rtimes_A \langle y \rangle`$, with
     elements written `v(a,b) c^i z^j y^m`.
+  - `affine`: $`\mathbb{F}_p^2 \rtimes H`$ for a group $`H`$ of matrices listed in `matrices` with a name each in `names`
+    (the $`(3, 8)`$ graph: $`p = 3`$, $`H = Q_8`$); the element $`(v;\, q)`$, the map $`x \mapsto q x + v`$, is written
+    `v(a,b) name^k` and has index $`p^2 h + p v_1 + v_2`$ with $`h`$ the position of $`q`$ in the list.
   - `sl2_by_cyclic`: $`SL(2, q) \times \mathbb{Z}_M`$ (`q`, `M`), the controller group of the $`(14, 4)`$ graph; elements
     are written `m(a,b,c,d) z^i` for the matrix $`\begin{pmatrix} a & b \\ c & d \end{pmatrix}`$ of determinant 1, and
     $`(X, i)`$ has index $`M \cdot \mathrm{index}(X) + i`$ with the identity first and the other matrices in lexicographic

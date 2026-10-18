@@ -175,6 +175,48 @@ class SL2ByCyclic:
         return (a, b, c, d, 0)
 
 
+class AffinePlane:
+    """G = F_p^2 x| H for a group H of 2 x 2 matrices over F_p, listed explicitly with a name each.
+
+    The element (v; q), the affine map x -> q x + v, is the tuple (v1, v2, h) with h the position of q in the
+    list, and has index p^2 h + p v1 + v2; (v; q)(w; r) = (v + q w; q r). Words are "v(a,b)" for the translation
+    by (a, b) and a matrix name with an optional power, as in "v(0,1) j^3".
+    """
+
+    def __init__(self, p, matrices, names):
+        self.p, self.names = p, names
+        self.mats = [tuple(tuple(r) for r in m) for m in matrices]
+        self.order = p * p * len(self.mats)
+        self.identity = (0, 0, self.mats.index(((1, 0), (0, 1))))
+        at = {m: i for i, m in enumerate(self.mats)}
+        self.table = [[at[tuple(tuple(x) for x in _mat_mul(a, b, p))] for b in self.mats] for a in self.mats]
+
+    def mul(self, a, b):
+        p, q = self.p, self.mats[a[2]]
+        return ((a[0] + q[0][0] * b[0] + q[0][1] * b[1]) % p, (a[1] + q[1][0] * b[0] + q[1][1] * b[1]) % p,
+                self.table[a[2]][b[2]])
+
+    def index(self, a):
+        return self.p * self.p * a[2] + self.p * a[0] + a[1]
+
+    def elements(self):
+        for h in range(len(self.mats)):
+            for v1 in range(self.p):
+                for v2 in range(self.p):
+                    yield (v1, v2, h)
+
+    def translation(self, a, b):
+        return (a % self.p, b % self.p, self.identity[2])
+
+    def generator_power(self, name, k):
+        if name not in self.names:
+            raise ValueError(f"unknown matrix {name!r}; this group names {self.names}")
+        out, step = self.identity, (0, 0, self.names.index(name))
+        for _ in range(k % (4 * len(self.mats))):
+            out = self.mul(out, step)
+        return out
+
+
 TOKEN = re.compile(r"v\((\d+),(\d+)\)|m\((\d+),(\d+),(\d+),(\d+)\)|([a-z])(?:\^(-?\d+))?|1")
 
 
@@ -191,7 +233,8 @@ def parse_element(group, text):
         if not m:
             raise ValueError(f"cannot parse group element {text!r}")
         if m.group(1) is not None:
-            factor = (int(m.group(1)), int(m.group(2)), 0, 0, 0)
+            a, b = int(m.group(1)), int(m.group(2))
+            factor = group.translation(a, b) if hasattr(group, "translation") else (a, b, 0, 0, 0)
         elif m.group(3) is not None:
             factor = group.matrix(*(int(m.group(k)) for k in range(3, 7)))
         elif m.group(7) is not None:
@@ -226,6 +269,8 @@ def make_group(spec):
         )
     if spec["type"] == "sl2_by_cyclic":
         return SL2ByCyclic(spec["q"], spec["M"])
+    if spec["type"] == "affine":
+        return AffinePlane(spec["p"], spec["matrices"], spec["names"])
     raise ValueError(f"unknown group type {spec['type']!r}")
 
 
