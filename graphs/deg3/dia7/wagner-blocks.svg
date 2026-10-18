@@ -452,82 +452,82 @@
 <!-- T0_0 -->
 <g id="node28" class="node">
 <title>T0_0</title>
-<text text-anchor="start" x="295.5" y="-463.9" font-family="Arial" font-size="11.00" fill="#8c959f">W+1</text>
+<text text-anchor="start" x="301" y="-463.9" font-family="Arial" font-size="11.00" fill="#8c959f">+1</text>
 </g>
 <!-- T1_0 -->
 <g id="node30" class="node">
 <title>T1_0</title>
-<text text-anchor="start" x="350.5" y="-441.2" font-family="Arial" font-size="11.00" fill="#8c959f">W+2</text>
+<text text-anchor="start" x="356" y="-441.2" font-family="Arial" font-size="11.00" fill="#8c959f">+2</text>
 </g>
 <!-- T0_1 -->
 <g id="node32" class="node">
 <title>T0_1</title>
-<text text-anchor="start" x="435.5" y="-357.7" font-family="Arial" font-size="11.00" fill="#8c959f">W&#45;1</text>
+<text text-anchor="start" x="439.5" y="-357.7" font-family="Arial" font-size="11.00" fill="#8c959f">−1</text>
 </g>
 <!-- T1_1 -->
 <g id="node34" class="node">
 <title>T1_1</title>
-<text text-anchor="start" x="458.2" y="-302.7" font-family="Arial" font-size="11.00" fill="#8c959f">W&#45;2</text>
+<text text-anchor="start" x="462.2" y="-302.7" font-family="Arial" font-size="11.00" fill="#8c959f">−2</text>
 </g>
 <!-- T0_2 -->
 <g id="node36" class="node">
 <title>T0_2</title>
-<text text-anchor="start" x="456.7" y="-184.7" font-family="Arial" font-size="11.00" fill="#8c959f">W+1</text>
+<text text-anchor="start" x="462.2" y="-184.7" font-family="Arial" font-size="11.00" fill="#8c959f">+1</text>
 </g>
 <!-- T1_2 -->
 <g id="node38" class="node">
 <title>T1_2</title>
-<text text-anchor="start" x="434" y="-129.7" font-family="Arial" font-size="11.00" fill="#8c959f">W+2</text>
+<text text-anchor="start" x="439.5" y="-129.7" font-family="Arial" font-size="11.00" fill="#8c959f">+2</text>
 </g>
 <!-- T0_3 -->
 <g id="node40" class="node">
 <title>T0_3</title>
-<text text-anchor="start" x="352" y="-46.2" font-family="Arial" font-size="11.00" fill="#8c959f">W&#45;1</text>
+<text text-anchor="start" x="356" y="-46.2" font-family="Arial" font-size="11.00" fill="#8c959f">−1</text>
 </g>
 <!-- T1_3 -->
 <g id="node42" class="node">
 <title>T1_3</title>
-<text text-anchor="start" x="297" y="-23.5" font-family="Arial" font-size="11.00" fill="#8c959f">W&#45;2</text>
+<text text-anchor="start" x="301" y="-23.5" font-family="Arial" font-size="11.00" fill="#8c959f">−2</text>
 </g>
 <!-- T0_4 -->
 <g id="node44" class="node">
 <title>T0_4</title>
-<text text-anchor="start" x="177.5" y="-23.5" font-family="Arial" font-size="11.00" fill="#8c959f">W+1</text>
+<text text-anchor="start" x="183" y="-23.5" font-family="Arial" font-size="11.00" fill="#8c959f">+1</text>
 </g>
 <!-- T1_4 -->
 <g id="node46" class="node">
 <title>T1_4</title>
-<text text-anchor="start" x="122.5" y="-46.2" font-family="Arial" font-size="11.00" fill="#8c959f">W+2</text>
+<text text-anchor="start" x="128" y="-46.2" font-family="Arial" font-size="11.00" fill="#8c959f">+2</text>
 </g>
 <!-- T0_5 -->
 <g id="node48" class="node">
 <title>T0_5</title>
-<text text-anchor="start" x="40.5" y="-129.7" font-family="Arial" font-size="11.00" fill="#8c959f">W&#45;1</text>
+<text text-anchor="start" x="44.5" y="-129.7" font-family="Arial" font-size="11.00" fill="#8c959f">−1</text>
 </g>
 <!-- T1_5 -->
 <g id="node50" class="node">
 <title>T1_5</title>
-<text text-anchor="start" x="17.8" y="-184.7" font-family="Arial" font-size="11.00" fill="#8c959f">W&#45;2</text>
+<text text-anchor="start" x="21.8" y="-184.7" font-family="Arial" font-size="11.00" fill="#8c959f">−2</text>
 </g>
 <!-- T0_6 -->
 <g id="node52" class="node">
 <title>T0_6</title>
-<text text-anchor="start" x="16.3" y="-302.7" font-family="Arial" font-size="11.00" fill="#8c959f">W+1</text>
+<text text-anchor="start" x="21.8" y="-302.7" font-family="Arial" font-size="11.00" fill="#8c959f">+1</text>
 </g>
 <!-- T1_6 -->
 <g id="node54" class="node">
 <title>T1_6</title>
-<text text-anchor="start" x="39" y="-357.7" font-family="Arial" font-size="11.00" fill="#8c959f">W+2</text>
+<text text-anchor="start" x="44.5" y="-357.7" font-family="Arial" font-size="11.00" fill="#8c959f">+2</text>
 </g>
 <!-- T0_7 -->
 <g id="node56" class="node">
 <title>T0_7</title>
-<text text-anchor="start" x="124" y="-441.2" font-family="Arial" font-size="11.00" fill="#8c959f">W&#45;1</text>
+<text text-anchor="start" x="128" y="-441.2" font-family="Arial" font-size="11.00" fill="#8c959f">−1</text>
 </g>
 <!-- T1_7 -->
 <g id="node58" class="node">
 <title>T1_7</title>
-<text text-anchor="start" x="179" y="-463.9" font-family="Arial" font-size="11.00" fill="#8c959f">W&#45;2</text>
+<text text-anchor="start" x="183" y="-463.9" font-family="Arial" font-size="11.00" fill="#8c959f">−2</text>
 </g>
 <!-- titleK -->
 <g id="node59" class="node">
@@ -549,7 +549,7 @@
 <!-- W0&#45;&#45;W1 -->
 <g id="edge45" class="edge">
 <title>W0&#45;&#45;W1</title>
-<path fill="none" stroke="#1f2328" stroke-width="1.6" d="M838.41,-374.78C862.77,-357.1 896.98,-332.26 921.32,-314.59"/>
+<path fill="none" stroke="#1f2328" stroke-width="1.6" d="M836.3,-376.3C865.3,-355.2 894.4,-334.2 923.4,-313.1"/>
 </g>
 <!-- W2 -->
 <g id="node62" class="node">
@@ -560,12 +560,12 @@
 <!-- W0&#45;&#45;W2 -->
 <g id="edge46" class="edge">
 <title>W0&#45;&#45;W2</title>
-<path fill="none" stroke="#0969da" stroke-width="1.6" d="M815.57,-374.75C832.08,-323.93 873.05,-197.87 889.6,-146.95"/>
+<path fill="none" stroke="#0969da" stroke-width="1.6" d="M815.5,-374.9C840.2,-298.8 865,-222.8 889.7,-146.7"/>
 </g>
 <!-- W1&#45;&#45;W2 -->
 <g id="edge47" class="edge">
 <title>W1&#45;&#45;W2</title>
-<path fill="none" stroke="#1f2328" stroke-width="1.6" d="M944.19,-271.31C933.72,-239.09 914.14,-178.78 903.69,-146.61"/>
+<path fill="none" stroke="#1f2328" stroke-width="1.6" d="M944.2,-271.3C930.7,-229.8 917.2,-188.2 903.7,-146.7"/>
 </g>
 <!-- W3 -->
 <g id="node63" class="node">
@@ -576,12 +576,12 @@
 <!-- W1&#45;&#45;W3 -->
 <g id="edge48" class="edge">
 <title>W1&#45;&#45;W3</title>
-<path fill="none" stroke="#0969da" stroke-width="1.6" d="M921.49,-271.31C877.15,-239.09 794.17,-178.78 749.9,-146.61"/>
+<path fill="none" stroke="#0969da" stroke-width="1.6" d="M923.4,-272.7C865,-230.2 806.5,-187.8 748.1,-145.3"/>
 </g>
 <!-- W2&#45;&#45;W3 -->
 <g id="edge49" class="edge">
 <title>W2&#45;&#45;W3</title>
-<path fill="none" stroke="#1f2328" stroke-width="1.6" d="M862.69,-125.1C831.55,-125.1 785.71,-125.1 754.51,-125.1"/>
+<path fill="none" stroke="#1f2328" stroke-width="1.6" d="M862.5,-125.1C826.5,-125.1 790.5,-125.1 754.5,-125.1"/>
 </g>
 <!-- W4 -->
 <g id="node64" class="node">
@@ -592,27 +592,27 @@
 <!-- W2&#45;&#45;W4 -->
 <g id="edge50" class="edge">
 <title>W2&#45;&#45;W4</title>
-<path fill="none" stroke="#0969da" stroke-width="1.6" d="M866.99,-146.69C822.65,-178.91 739.67,-239.22 695.4,-271.39"/>
+<path fill="none" stroke="#0969da" stroke-width="1.6" d="M868.9,-145.3C810.5,-187.8 752,-230.2 693.6,-272.7"/>
 </g>
 <!-- W3&#45;&#45;W0 -->
 <g id="edge52" class="edge">
 <title>W3&#45;&#45;W0</title>
-<path fill="none" stroke="#0969da" stroke-width="1.6" d="M727.37,-146.85C743.88,-197.67 784.85,-323.73 801.4,-374.65"/>
+<path fill="none" stroke="#0969da" stroke-width="1.6" d="M727.3,-146.7C752,-222.8 776.8,-298.8 801.5,-374.9"/>
 </g>
 <!-- W3&#45;&#45;W4 -->
 <g id="edge51" class="edge">
 <title>W3&#45;&#45;W4</title>
-<path fill="none" stroke="#1f2328" stroke-width="1.6" d="M713.29,-146.69C702.82,-178.91 683.24,-239.22 672.79,-271.39"/>
+<path fill="none" stroke="#1f2328" stroke-width="1.6" d="M713.3,-146.7C699.8,-188.2 686.3,-229.8 672.8,-271.3"/>
 </g>
 <!-- W4&#45;&#45;W0 -->
 <g id="edge53" class="edge">
 <title>W4&#45;&#45;W0</title>
-<path fill="none" stroke="#1f2328" stroke-width="1.6" d="M695.71,-314.62C720.07,-332.3 754.28,-357.14 778.62,-374.81"/>
+<path fill="none" stroke="#1f2328" stroke-width="1.6" d="M693.6,-313.1C722.6,-334.2 751.7,-355.2 780.7,-376.3"/>
 </g>
 <!-- W4&#45;&#45;W1 -->
 <g id="edge54" class="edge">
 <title>W4&#45;&#45;W1</title>
-<path fill="none" stroke="#0969da" stroke-width="1.6" d="M699.94,-292.9C754.83,-292.9 862.1,-292.9 917.02,-292.9"/>
+<path fill="none" stroke="#0969da" stroke-width="1.6" d="M700,-292.9C772.3,-292.9 844.7,-292.9 917,-292.9"/>
 </g>
 <!-- sidesTag -->
 <g id="node65" class="node">
