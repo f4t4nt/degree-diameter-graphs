@@ -594,7 +594,7 @@ L 477 264
 L 477 285 
 L 400.5 285 
 z
-" style="fill: #b4d1f6"/>
+" style="fill: #b3d1f6"/>
    </g>
    <g id="patch_73">
     <path d="M 478.5 264 
@@ -602,7 +602,7 @@ L 564 264
 L 564 285 
 L 478.5 285 
 z
-" style="fill: #bad5f7"/>
+" style="fill: #b9d4f6"/>
    </g>
    <g id="patch_74">
     <path d="M 565.5 264 
@@ -2330,13 +2330,13 @@ z
     <text style="font-size: 10.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #1f2328" x="318" y="278.259" transform="rotate(-0 318 278.259)">137,180</text>
    </g>
    <g id="text_96">
-    <text style="font-size: 10.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #1f2328" x="390" y="278.259" transform="rotate(-0 390 278.259)">616,980</text>
+    <text style="font-style: italic; font-weight: 700; font-size: 10.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #1f2328" x="390" y="278.259" transform="rotate(-0 390 278.259)">624,690</text>
    </g>
    <g id="text_97">
-    <text style="font-size: 10.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #1f2328" x="468" y="278.259" transform="rotate(-0 468 278.259)">4,513,493</text>
+    <text style="font-style: italic; font-weight: 700; font-size: 10.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #1f2328" x="468" y="278.259" transform="rotate(-0 468 278.259)">4,522,590</text>
    </g>
    <g id="text_98">
-    <text style="font-size: 10.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #1f2328" x="555" y="278.259" transform="rotate(-0 555 278.259)">34,219,967</text>
+    <text style="font-style: italic; font-weight: 700; font-size: 10.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #1f2328" x="555" y="278.259" transform="rotate(-0 555 278.259)">34,913,494</text>
    </g>
    <g id="text_99">
     <text style="font-style: italic; font-weight: 700; font-size: 10.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #1f2328" x="647.25" y="278.259" transform="rotate(-0 647.25 278.259)">265,612,889</text>
@@ -2396,7 +2396,7 @@ z
     <text style="font-style: italic; font-weight: 700; font-size: 10.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #1f2328" x="468" y="323.259" transform="rotate(-0 468 323.259)">19,144,241</text>
    </g>
    <g id="text_118">
-    <text style="font-size: 10.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #1f2328" x="555" y="323.259" transform="rotate(-0 555 323.259)">178,084,211</text>
+    <text style="font-style: italic; font-weight: 700; font-size: 10.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #1f2328" x="555" y="323.259" transform="rotate(-0 555 323.259)">179,227,730</text>
    </g>
    <g id="text_119">
     <text style="font-style: italic; font-weight: 700; font-size: 10.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #1f2328" x="647.25" y="323.259" transform="rotate(-0 647.25 323.259)">1,692,658,087</text>

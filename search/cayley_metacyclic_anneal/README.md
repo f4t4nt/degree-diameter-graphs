@@ -55,9 +55,9 @@ longer `--sa` budget and `--complete 2`; the two-slot completion of a frozen sta
 - [(9, 8)](../../graphs/deg9/dia8): 1,961,370 vertices
 - [(9, 9)](../../graphs/deg9/dia9): 13,219,318 vertices
 - [(9, 10)](../../graphs/deg9/dia10): 89,543,818 vertices
-- [(10, 7)](../../graphs/deg10/dia7): 616,915 vertices
-- [(10, 8)](../../graphs/deg10/dia8): 4,507,500 vertices
-- [(10, 9)](../../graphs/deg10/dia9): 34,182,150 vertices
+- [(10, 7)](../../graphs/deg10/dia7): 624,690 vertices
+- [(10, 8)](../../graphs/deg10/dia8): 4,522,590 vertices
+- [(10, 9)](../../graphs/deg10/dia9): 34,913,494 vertices
 - [(10, 10)](../../graphs/deg10/dia10): 265,612,889 vertices
 - [(11, 7)](../../graphs/deg11/dia7): 1,197,748 vertices
 - [(11, 8)](../../graphs/deg11/dia8): 9,739,368 vertices
@@ -65,7 +65,7 @@ longer `--sa` budget and `--complete 2`; the two-slot completion of a frozen sta
 - [(11, 10)](../../graphs/deg11/dia10): 697,280,200 vertices
 - [(12, 7)](../../graphs/deg12/dia7): 2,114,927 vertices
 - [(12, 8)](../../graphs/deg12/dia8): 19,144,241 vertices
-- [(12, 9)](../../graphs/deg12/dia9): 177,775,277 vertices
+- [(12, 9)](../../graphs/deg12/dia9): 179,227,730 vertices
 - [(12, 10)](../../graphs/deg12/dia10): 1,692,658,087 vertices
 - [(13, 7)](../../graphs/deg13/dia7): 3,691,038 vertices
 - [(13, 8)](../../graphs/deg13/dia8): 36,275,160 vertices

@@ -1,8 +1,7 @@
-== deg12/dia9: degree 12, diameter 9, 177775277 vertices
-Output of the original run of tools/verify/verify_cayley_implicit.c (not repeated for this repository):
-$ tools/verify/verify_cayley_implicit 9 783151 227 1808 3 262378 29 52438 90 51027 186 163372 33 6796 10 575187 193
-G = Z_783151 x|_1808 Z_227 (order 177775277), 6 generators, S u S^-1 has 12 distinct elements: simple 12-regular Cayley graph
-source 0: reached 177775277 of 177775277, eccentricity 9, profile: 1 12 132 1452 15972 175654 1921566 19815350 114053572 41791566
-source 560234: reached 177775277 of 177775277, eccentricity 9, profile: 1 12 132 1452 15972 175654 1921566 19815350 114053572 41791566
-source 13562786: reached 177775277 of 177775277, eccentricity 9, profile: 1 12 132 1452 15972 175654 1921566 19815350 114053572 41791566
-Cayley graph (vertex-transitive): diameter 9 on 177775277 vertices, degree 12: satisfies D = 9
+== deg12/dia9: degree 12, diameter 9, 179227730 vertices
+$ tools/verify/verify_cayley_inv 9 779251 230 1183 3 424056 63 624662 15 429226 31 2928 88 523926 122 660361 164
+G = Z_779251 x|_1183 Z_230 (order 179227730), 6 generators, S u S^-1 has 12 distinct elements: simple 12-regular Cayley graph
+source 0: reached 179227730 of 179227730, eccentricity 9, profile: 1 12 132 1452 15972 175592 1920548 19809889 114603240 42700892
+source 138550379: reached 179227730 of 179227730, eccentricity 9, profile: 1 12 132 1452 15972 175592 1920548 19809889 114603240 42700892
+source 78183204: reached 179227730 of 179227730, eccentricity 9, profile: 1 12 132 1452 15972 175592 1920548 19809889 114603240 42700892
+Cayley graph (vertex-transitive): diameter 9 on 179227730 vertices, degree 12: satisfies D = 9
