@@ -1,8 +1,8 @@
-== deg8/dia7: degree 8, diameter 7, 138050 vertices
-deg8-dia7-n138050.edges.txt.gz lists exactly the edges of the construction in construction.json: True (552200 edges)
-$ tools/verify/verify_cayley_inv 7 2761 50 63 3 290 14 971 43 457 6 1728 16
-G = Z_2761 x|_63 Z_50 (order 138050), 4 generators, S u S^-1 has 8 distinct elements: simple 8-regular Cayley graph
-source 0: reached 138050 of 138050, eccentricity 7, profile: 1 8 56 392 2736 17770 74516 42571
-source 134189: reached 138050 of 138050, eccentricity 7, profile: 1 8 56 392 2736 17770 74516 42571
-source 38874: reached 138050 of 138050, eccentricity 7, profile: 1 8 56 392 2736 17770 74516 42571
-Cayley graph (vertex-transitive): diameter 7 on 138050 vertices, degree 8: satisfies D = 7
+== deg8/dia7: degree 8, diameter 7, 139679 vertices
+deg8-dia7-n139679.edges.txt.gz lists exactly the edges of the construction in construction.json: True (558716 edges)
+$ tools/verify/verify_cayley_inv 7 6073 23 2685 3 5228 2 5308 16 987 14 5277 17
+G = Z_6073 x|_2685 Z_23 (order 139679), 4 generators, S u S^-1 has 8 distinct elements: simple 8-regular Cayley graph
+source 0: reached 139679 of 139679, eccentricity 7, profile: 1 8 56 392 2744 18034 75420 43024
+source 109423: reached 139679 of 139679, eccentricity 7, profile: 1 8 56 392 2744 18034 75420 43024
+source 90200: reached 139679 of 139679, eccentricity 7, profile: 1 8 56 392 2744 18034 75420 43024
+Cayley graph (vertex-transitive): diameter 7 on 139679 vertices, degree 8: satisfies D = 7

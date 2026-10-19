@@ -1,22 +1,22 @@
 # Degree 8, Diameter 7
 
-A graph with 138,050 vertices, maximum degree 8 and diameter 7; the Moore bound is 1,098,057.
+A graph with 139,679 vertices, maximum degree 8 and diameter 7; the Moore bound is 1,098,057.
 
 ## Construction
 
-The Cayley graph of $`G = \mathbb{Z}_{2761} \rtimes_{63} \mathbb{Z}_{50} = \langle x, y \mid x^{2761} = y^{50} = 1,\ y x y^{-1} = x^{63} \rangle`$, of order 138,050 (with $`2761 = 11 \cdot 251`$), and connection set $`S = \{x^{290} y^{14}, x^{971} y^{43}, x^{457} y^{6}, x^{1728} y^{16}\}`$: each $`g \in G`$ is joined to $`g s`$ and $`g s^{-1}`$ for each $`s \in S`$.
+The Cayley graph of the group $`G = \mathbb{Z}_{6073} \rtimes_{2685} \mathbb{Z}_{23} = \langle x, y \mid x^{6073} = y^{23} = 1,\ y x y^{-1} = x^{2685} \rangle`$, of order 139,679 (with 6073 prime), and connection set $`S = \{x^{5228} y^{2}, x^{5308} y^{16}, x^{987} y^{14}, x^{5277} y^{17}\}`$: each $`g \in G`$ is joined to $`g s`$ and $`g s^{-1}`$ for each $`s \in S`$.
 
-$`S`$ contains no involution ($`G`$ has 11 involutions), so the degree is $`2 \cdot 4 = 8`$.
+$`G`$ has odd order, so it has no involutions, and the degree is $`2 \cdot 4 = 8`$.
 
-Vertex $`i + 2761 j`$ is $`x^i y^j`$ for $`0 \le i < 2761`$ and $`0 \le j < 50`$, as in [the numbering figure](../../cayley-numbering.svg).
+Vertex $`i + 6073 j`$ is $`x^i y^j`$ for $`0 \le i < 6073`$ and $`0 \le j < 23`$, as in [the numbering figure](../../cayley-numbering.svg).
 
 ## How it was found
 
-Even-$`M`$ metacyclic group with a tiny involution class chosen by a random-set screen, simulated annealing followed by exact single-slot completion; $`\mathrm{Cay}(\mathbb{Z}_{2761} \rtimes_{63} \mathbb{Z}_{50})`$ with four inverse pairs. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
+Odd-order group chosen by a random-set softness screen of a window of group orders, the pattern optimiser's level pattern, simulated annealing with targeted moves on $`\mathbb{Z}_{6073} \rtimes_{2685} \mathbb{Z}_{23}`$. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
 
 ## Files
 
-- `deg8-dia7-n138050.edges.txt.gz`: the 552,200 edges as `u v` lines, under a `#` heading per generator.
+- `deg8-dia7-n139679.edges.txt.gz`: the 558,716 edges as `u v` lines, under a `#` heading per generator.
 - `construction.json`: the construction in the form `tools/ddgraph.py` reads.
 - `verification.txt`: the verifier output.
 

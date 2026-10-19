@@ -47,7 +47,7 @@ longer `--sa` budget and `--complete 2`; the two-slot completion of a frozen sta
 
 - [(7, 9)](../../graphs/deg7/dia9): 1,332,774 vertices
 - [(7, 10)](../../graphs/deg7/dia10): 6,641,680 vertices
-- [(8, 7)](../../graphs/deg8/dia7): 138,050 vertices
+- [(8, 7)](../../graphs/deg8/dia7): 139,679 vertices
 - [(8, 8)](../../graphs/deg8/dia8): 779,803 vertices
 - [(8, 9)](../../graphs/deg8/dia9): 4,471,111 vertices
 - [(8, 10)](../../graphs/deg8/dia10): 26,864,290 vertices
