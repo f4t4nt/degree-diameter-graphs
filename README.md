@@ -51,7 +51,7 @@ verifier in `verification.txt`.
 | [(10, 9)](graphs/deg10/dia9) | 34,182,150 | 7.1% | Cayley graph of $`\mathbb{Z}_{227881} \rtimes_{1562} \mathbb{Z}_{150}`$ |
 | [(10, 10)](graphs/deg10/dia10) | 265,612,889 | 6.1% | Cayley graph of $`\mathbb{Z}_{1111351} \rtimes_{8147} \mathbb{Z}_{239}`$ |
 | [(11, 4)](graphs/deg11/dia4) | 3,645 | 29.8% | the double of $`W(9)`$ with 201 vertices inserted |
-| [(11, 7)](graphs/deg11/dia7) | 1,194,278 | 9.8% | Cayley graph of $`\mathbb{Z}_{20591} \rtimes_{2507} \mathbb{Z}_{58}`$ |
+| [(11, 7)](graphs/deg11/dia7) | 1,197,748 | 9.8% | Cayley graph of $`\mathbb{Z}_{13019} \rtimes_{770} \mathbb{Z}_{92}`$ |
 | [(11, 8)](graphs/deg11/dia8) | 9,739,368 | 8.0% | Cayley graph of $`\mathbb{Z}_{135269} \rtimes_{8594} \mathbb{Z}_{72}`$ |
 | [(11, 9)](graphs/deg11/dia9) | 81,961,120 | 6.7% | Cayley graph of $`\mathbb{Z}_{512257} \rtimes_{706} \mathbb{Z}_{160}`$ |
 | [(11, 10)](graphs/deg11/dia10) | 697,280,200 | 5.7% | Cayley graph of $`\mathbb{Z}_{3486401} \rtimes_{1834706} \mathbb{Z}_{200}`$ |

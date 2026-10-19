@@ -1,7 +1,7 @@
-== deg11/dia7: degree 11, diameter 7, 1194278 vertices
-$ tools/verify/verify_cayley_inv 7 20591 58 2507 3 19883 29 11052 10 2968 3 1044 2 3615 43 13568 37
-G = Z_20591 x|_2507 Z_58 (order 1194278), 6 generators, S u S^-1 has 11 distinct elements: simple 11-regular Cayley graph
-source 0: reached 1194278 of 1194278, eccentricity 7, profile: 1 11 110 1100 10964 104406 650650 427036
-source 439741: reached 1194278 of 1194278, eccentricity 7, profile: 1 11 110 1100 10964 104406 650650 427036
-source 978896: reached 1194278 of 1194278, eccentricity 7, profile: 1 11 110 1100 10964 104406 650650 427036
-Cayley graph (vertex-transitive): diameter 7 on 1194278 vertices, degree 11: satisfies D = 7
+== deg11/dia7: degree 11, diameter 7, 1197748 vertices
+$ tools/verify/verify_cayley_inv 7 13019 92 770 3 7614 46 4646 8 12909 15 7519 6 4020 18 5180 57
+G = Z_13019 x|_770 Z_92 (order 1197748), 6 generators, S u S^-1 has 11 distinct elements: simple 11-regular Cayley graph
+source 0: reached 1197748 of 1197748, eccentricity 7, profile: 1 11 110 1100 10976 104803 654388 426359
+source 28141: reached 1197748 of 1197748, eccentricity 7, profile: 1 11 110 1100 10976 104803 654388 426359
+source 1084214: reached 1197748 of 1197748, eccentricity 7, profile: 1 11 110 1100 10976 104803 654388 426359
+Cayley graph (vertex-transitive): diameter 7 on 1197748 vertices, degree 11: satisfies D = 7
