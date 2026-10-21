@@ -104,8 +104,8 @@
 <!-- 7&#45;&gt;11 -->
 <g id="edge14" class="edge">
 <title>7&#45;&gt;11</title>
-<path fill="none" stroke="#0969da" stroke-width="2.2" d="M259,-66.3C211.7,-68.8 148.3,-72.2 109,-74.2"/>
-<polygon fill="#0969da" stroke="#0969da" stroke-width="2.2" points="108.32,-71.61 101,-74.7 108.65,-76.85 108.32,-71.61"/>
+<path fill="none" stroke="#0969da" stroke-width="2" d="M259,-66.3C211.7,-68.8 148.3,-72.2 109,-74.2"/>
+<polygon fill="#0969da" stroke="#0969da" stroke-width="2" points="108.32,-71.61 101,-74.7 108.65,-76.85 108.32,-71.61"/>
 </g>
 <!-- 8&#45;&gt;9 -->
 <g id="edge4" class="edge">
@@ -122,8 +122,8 @@
 <!-- 8&#45;&gt;11 -->
 <g id="edge19" class="edge">
 <title>8&#45;&gt;11</title>
-<path fill="none" stroke="#0969da" stroke-width="2.2" d="M17.5,-494.7C38.3,-365.5 61.7,-220.5 81.2,-99.2"/>
-<polygon fill="#0969da" stroke="#0969da" stroke-width="2.2" points="83.87,-99.13 82.5,-91.3 78.69,-98.27 83.87,-99.13"/>
+<path fill="none" stroke="#0969da" stroke-width="2" d="M17.5,-494.7C38.3,-365.5 61.7,-220.5 81.2,-99.2"/>
+<polygon fill="#0969da" stroke="#0969da" stroke-width="2" points="83.87,-99.13 82.5,-91.3 78.69,-98.27 83.87,-99.13"/>
 </g>
 <!-- 9&#45;&gt;3 -->
 <g id="edge10" class="edge">
@@ -152,8 +152,8 @@
 <!-- 11&#45;&gt;12 -->
 <g id="edge9" class="edge">
 <title>11&#45;&gt;12</title>
-<path fill="none" stroke="#0969da" stroke-width="2.2" d="M90.8,-90.4C105,-127.2 125,-178.8 136.3,-208.1"/>
-<polygon fill="#0969da" stroke="#0969da" stroke-width="2.2" points="134.05,-209.55 139.2,-215.6 138.94,-207.66 134.05,-209.55"/>
+<path fill="none" stroke="#0969da" stroke-width="2" d="M90.8,-90.4C105,-127.2 125,-178.8 136.3,-208.1"/>
+<polygon fill="#0969da" stroke="#0969da" stroke-width="2" points="134.05,-209.55 139.2,-215.6 138.94,-207.66 134.05,-209.55"/>
 </g>
 <!-- semia4&#45;&gt;semib4 -->
 <g id="edge25" class="edge">
@@ -203,12 +203,12 @@
 <!-- v62&#45;&gt;v92 -->
 <g id="edge35" class="edge">
 <title>v62&#45;&gt;v92</title>
-<path fill="none" stroke="#0969da" stroke-width="2.2" d="M705,-365.5C745,-325.5 785,-285.5 825,-245.5"/>
+<path fill="none" stroke="#0969da" stroke-width="2" d="M705,-365.5C745,-325.5 785,-285.5 825,-245.5"/>
 </g>
 <!-- v67&#45;&gt;v88 -->
 <g id="edge36" class="edge">
 <title>v67&#45;&gt;v88</title>
-<path fill="none" stroke="#0969da" stroke-width="2.2" d="M705,-245.5C745,-285.5 785,-325.5 825,-365.5"/>
+<path fill="none" stroke="#0969da" stroke-width="2" d="M705,-245.5C745,-285.5 785,-325.5 825,-365.5"/>
 </g>
 <!-- v67&#45;&gt;v92 -->
 <g id="edge34" class="edge">
@@ -223,12 +223,12 @@
 <!-- v65&#45;&gt;v94 -->
 <g id="edge39" class="edge">
 <title>v65&#45;&gt;v94</title>
-<path fill="none" stroke="#0969da" stroke-width="2.2" d="M895,-365.5C935,-325.5 975,-285.5 1015,-245.5"/>
+<path fill="none" stroke="#0969da" stroke-width="2" d="M895,-365.5C935,-325.5 975,-285.5 1015,-245.5"/>
 </g>
 <!-- v100&#45;&gt;v90 -->
 <g id="edge40" class="edge">
 <title>v100&#45;&gt;v90</title>
-<path fill="none" stroke="#0969da" stroke-width="2.2" d="M895,-245.5C935,-285.5 975,-325.5 1015,-365.5"/>
+<path fill="none" stroke="#0969da" stroke-width="2" d="M895,-245.5C935,-285.5 975,-325.5 1015,-365.5"/>
 </g>
 <!-- v100&#45;&gt;v94 -->
 <g id="edge38" class="edge">
@@ -525,12 +525,12 @@
 <!-- insetTag -->
 <g id="node67" class="node">
 <title>insetTag</title>
-<text text-anchor="middle" x="825" y="-412.1" font-family="Arial" font-size="13.00" fill="#1f2328">the fibre of 11 (vertices 88 to 95): two swaps</text>
+<text text-anchor="middle" x="825" y="-162.1" font-family="Arial" font-size="13.00" fill="#1f2328">the fibre of 11 (vertices 88 to 95): two swaps</text>
 </g>
 <!-- insetSub -->
 <g id="node68" class="node">
 <title>insetSub</title>
-<text text-anchor="middle" x="825" y="-162.4" font-family="Arial" font-size="12.00" fill="#1f2328">dashed: edge of the lift, removed &#160;&#160;&#160;&#160;&#160;blue: edge added</text>
+<text text-anchor="middle" x="825" y="-140.4" font-family="Arial" font-size="12.00" fill="#1f2328">dashed: edge of the lift, removed &#160;&#160;&#160;&#160;&#160;blue: edge added</text>
 </g>
 </g>
 </svg>

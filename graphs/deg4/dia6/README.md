@@ -6,9 +6,7 @@ A graph with 760 vertices, maximum degree 4 and diameter 6; the Moore bound is 1
 
 The incidence graph of the generalized hexagon $`H(3)`$ (364 points and 364 lines; 4-regular, bipartite, girth 12, diameter 6) with 32 flags subdivided: a new vertex is placed on each of 32 point-line incidence edges and joined to that point and that line, and the 32 new vertices carry a 2-regular graph $`F`$ with cycles of lengths 8, 8 and 16.
 
-The 32 flags form two 16-flag orbits of a Sylow 2-subgroup (order 128) of $`\mathrm{Aut}(H(3)) = G_2(3){:}2`$ in the centraliser of an involution. $`F`$ has no edge between the orbits, so the graph is two 744-vertex solutions glued together. The 32 flags are pairwise non-incident, and every edge of $`F`$ joins two flags whose points are opposite in $`H(3)`$, at distance 6.
-
-![A subdivided flag of H(3)](flag-gadget.svg)<br><sub>The flag $`(p, L)`$ of $`H(3)`$ (point: disc, line: square, gray: their other incidences) becomes the path $`p - w - L`$, and the new vertex $`w`$ also meets its neighbours in $`F`$ (blue). So $`w`$ has degree $`2 + 2 = 4`$, and $`p`$ and $`L`$ keep degree 4.</sub>
+![A subdivided flag of H(3)](flag-gadget.svg)<br><sub>The flag $`(p, L)`$ of $`H(3)`$ (point: disc, line: square, grey: their other incidences) becomes the path $`p - w - L`$, and the new vertex $`w`$ also meets its neighbours in $`F`$ (blue). So $`w`$ has degree $`2 + 2 = 4`$, and $`p`$ and $`L`$ keep degree 4.</sub>
 
 Vertices 0 to 363 are the points of $`H(3)`$, 364 to 727 its lines and 728 to 759 the 32 new vertices.
 

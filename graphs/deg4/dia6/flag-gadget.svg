@@ -37,12 +37,12 @@
 <!-- w -->
 <g id="node9" class="node">
 <title>w</title>
-<ellipse fill="none" stroke="#0969da" stroke-width="2.4" cx="275.36" cy="-41" rx="13" ry="13"/>
+<ellipse fill="none" stroke="#0969da" stroke-width="2.2" cx="275.36" cy="-41" rx="13" ry="13"/>
 </g>
 <!-- p&#45;&#45;w -->
 <g id="edge7" class="edge">
 <title>p&#45;&#45;w</title>
-<path fill="none" stroke="#1f2328" stroke-width="2" d="M88.48,-41C124.72,-41 225.89,-41 262.19,-41"/>
+<path fill="none" stroke="#1f2328" stroke-width="1.4" d="M88.48,-41C124.72,-41 225.89,-41 262.19,-41"/>
 </g>
 <!-- Lstub0 -->
 <!-- L -->
@@ -70,12 +70,12 @@
 <!-- w&#45;&#45;L -->
 <g id="edge8" class="edge">
 <title>w&#45;&#45;L</title>
-<path fill="none" stroke="#1f2328" stroke-width="2" d="M288.48,-41C325.07,-41 427.84,-41 463.22,-41"/>
+<path fill="none" stroke="#1f2328" stroke-width="1.4" d="M288.48,-41C325.07,-41 427.84,-41 463.22,-41"/>
 </g>
 <!-- f0 -->
 <g id="node10" class="node">
 <title>f0</title>
-<ellipse fill="none" stroke="#0969da" stroke-width="2" cx="185.36" cy="-161" rx="11" ry="11"/>
+<ellipse fill="none" stroke="#0969da" stroke-width="2.2" cx="185.36" cy="-161" rx="11" ry="11"/>
 </g>
 <!-- w&#45;&#45;f0 -->
 <g id="edge9" class="edge">
@@ -85,7 +85,7 @@
 <!-- f1 -->
 <g id="node11" class="node">
 <title>f1</title>
-<ellipse fill="none" stroke="#0969da" stroke-width="2" cx="365.36" cy="-161" rx="11" ry="11"/>
+<ellipse fill="none" stroke="#0969da" stroke-width="2.2" cx="365.36" cy="-161" rx="11" ry="11"/>
 </g>
 <!-- w&#45;&#45;f1 -->
 <g id="edge10" class="edge">

@@ -110,22 +110,22 @@
 <!-- link0 -->
 <g id="node6" class="node">
 <title>link0</title>
-<text text-anchor="start" x="43.8" y="-322.8" font-family="Times New Roman" font-style="italic" font-size="17.00" fill="#1f2328">(0; 1)</text>
+<text text-anchor="middle" x="77.2" y="-312.1" font-family="Times New Roman" font-size="17.00" fill="#1f2328">1</text>
 </g>
 <!-- link1 -->
 <g id="node7" class="node">
 <title>link1</title>
-<text text-anchor="start" x="64.8" y="-244.9" font-family="Times New Roman" font-style="italic" font-size="17.00" fill="#1f2328">(0; 1)</text>
+<text text-anchor="middle" x="87.9" y="-242.6" font-family="Times New Roman" font-size="17.00" fill="#1f2328">1</text>
 </g>
 <!-- link2 -->
 <g id="node8" class="node">
 <title>link2</title>
-<text text-anchor="start" x="44.7" y="-126.5" font-family="Times New Roman" font-style="italic" font-size="17.00" fill="#1f2328">(0; 1)</text>
+<text text-anchor="middle" x="77.4" y="-135.2" font-family="Times New Roman" font-size="17.00" fill="#1f2328">1</text>
 </g>
 <!-- link3 -->
 <g id="node9" class="node">
 <title>link3</title>
-<text text-anchor="start" x="239.3" y="-126.5" font-family="Times New Roman" font-style="italic" font-size="17.00" fill="#1f2328">(0; 1)</text>
+<text text-anchor="middle" x="252.6" y="-135.2" font-family="Times New Roman" font-size="17.00" fill="#1f2328">1</text>
 </g>
 <!-- link4 -->
 <g id="node10" class="node">
