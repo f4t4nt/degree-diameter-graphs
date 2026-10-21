@@ -12,6 +12,10 @@ The lift has vertex set $`\{0, 1\} \times G`$ and joins $`(u, g)`$ to $`(v, g a)
 
 Vertex $`101275 v + i + 4051 j`$ is the pair $`(v, x^i y^j)`$: the first 101,275 vertices lie over base vertex 0 and the other 101,275 over base vertex 1, and vertex $`101275 v`$ is $`(v, e)`$.
 
+## Structure
+
+The automorphism group is the lifting group $`G`$ itself, of order 101,275, acting regularly on each of the two fibres, which are its orbits, so the graph is not vertex-transitive.
+
 ## How it was found
 
 Complete sweep of the level-pattern block (3, 8, 2, 15) of the shape-103 two-vertex lift family over the odd-order group $`\mathbb{Z}_{4051} \rtimes_4 \mathbb{Z}_{25}`$ after a pattern screen. The search code is in [search/lift_two_vertex](../../../search/lift_two_vertex).

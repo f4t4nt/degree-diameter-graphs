@@ -10,7 +10,11 @@ Three disjoint copies (blocks A, B and C) of the subdivided complete bipartite g
 
 Block A is vertices 0 to 23 ($`L_0, \dots, L_3`$ are 0 to 3, $`R_0, \dots, R_3`$ are 4 to 7, and port $`P_{xy}`$ is $`8 + 4x + y`$), block B is 24 to 47 and block C is 48 to 71 in the same pattern, and connector pair $`k`$ ($`0 \le k \le 15`$) is $`72 + 2k`$ and $`73 + 2k`$.
 
+## Structure
+
 This graph is class 29 of the 36 degree-4, diameter-4 graphs on 104 vertices built from three subdivided $`K_{4,4}`$ blocks with no port-port edge, one of the two classes with an automorphism group of order 32. It is one of the two pure templates: every connector meets one port in each block, so the figure is the whole construction; in each of the other 34 classes two or three connector pairs meet two ports of one block and none of another. All 36 are in [search/deg4-dia4/classes](../../../search/deg4-dia4/classes), and [search/deg4-dia4](../../../search/deg4-dia4) proves that this architecture admits no graph on 105 to 108 vertices.
+
+The automorphism group has seven orbits on the vertices: the 32 connectors, the 16 ports of block B, the 4 hubs on each side of block B, the 16 hubs of blocks A and C, and two orbits of 16 ports of blocks A and C; every automorphism fixes block B, and the group exchanges blocks A and C.
 
 ## How it was found
 

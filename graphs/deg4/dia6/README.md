@@ -10,6 +10,10 @@ The incidence graph of the generalized hexagon $`H(3)`$ (364 points and 364 line
 
 Vertices 0 to 363 are the points of $`H(3)`$, 364 to 727 its lines and 728 to 759 the 32 new vertices.
 
+## Structure
+
+The 32 flags form two 16-flag orbits of a Sylow 2-subgroup (order 128) of $`\mathrm{Aut}(H(3)) = G_2(3){:}2`$ in the centraliser of an involution. $`F`$ has no edge between the orbits, so the graph is two 744-vertex solutions glued together. The 32 flags are pairwise non-incident, and every edge of $`F`$ joins two flags whose points are opposite in $`H(3)`$, at distance 6. The automorphism group of the graph is trivial.
+
 ## How it was found
 
 Incidence graph of the generalized hexagon $`H(3)`$ (728 vertices) with 32 flags subdivided and a 2-regular graph on the new vertices; the flag set is the union of two 16-flag orbits of a Sylow 2-subgroup of the centraliser of an involution of $`G_2(3)`$, and the 2-factor is found by exact-cost simulated annealing with the flag set fixed. The search code is in [search/hexagon_insertion](../../../search/hexagon_insertion).

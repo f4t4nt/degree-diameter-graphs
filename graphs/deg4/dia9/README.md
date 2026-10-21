@@ -12,6 +12,10 @@ The lift has vertex set $`\{0, 1, 2\} \times G`$ and joins $`(u, g)`$ to $`(v, g
 
 Vertex $`2628 v + i + 73 j`$ is the pair $`(v, x^i y^j)`$: each run of 2,628 consecutive numbers lies over one base vertex, in order, and vertex $`2628 v`$ is $`(v, e)`$.
 
+## Structure
+
+The automorphism group is the lifting group $`G`$ itself, of order 2,628, acting regularly on each of the three fibres, which are its orbits, so the graph is not vertex-transitive.
+
 ## How it was found
 
 Complete symmetry-reduced sweep of all voltage assignments of the 3-vertex base with a triple link, a path and a loop over the one-involution metacyclic group $`\mathbb{Z}_{73} \rtimes_{18} \mathbb{Z}_{36}`$. The search code is in [search/lift_three_vertex](../../../search/lift_three_vertex).

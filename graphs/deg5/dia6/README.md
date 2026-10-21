@@ -10,6 +10,10 @@ The incidence graph of the generalized hexagon $`H(4)`$ (1365 points and 1365 li
 
 Vertices 0 to 1364 are the points of $`H(4)`$, 1365 to 2729 its lines and 2730 to 2835 the 106 new vertices.
 
+## Structure
+
+$`F`$ has diameter 6, with 881 of its vertex pairs at distance 6. The automorphism group of the graph is trivial, and so are the stabiliser of the flag set in $`\mathrm{Aut}(H(4))`$ and the automorphism group of $`F`$ alone.
+
 ## How it was found
 
 Incidence graph of the generalized hexagon $`H(4)`$ (2730 vertices) with 106 flags subdivided and a cubic graph $`F`$ on the new vertices: $`F`$ is built by simulated annealing on half-edge switches minimising its exact number of pairs at distance 6 or more, then the flag set by min-conflicts relocation of flags with $`F`$ fixed. The search code is in [search/hexagon_insertion](../../../search/hexagon_insertion).

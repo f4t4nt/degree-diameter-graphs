@@ -12,6 +12,10 @@ The lift has vertex set $`\{0, 1\} \times G`$ and joins $`(u, g)`$ to $`(v, g a)
 
 Vertex $`30343 v + i + 1597 j`$ is the pair $`(v, x^i y^j)`$: the first 30,343 vertices lie over base vertex 0 and the other 30,343 over base vertex 1, and vertex $`30343 v`$ is $`(v, e)`$.
 
+## Structure
+
+The automorphism group is the lifting group $`G`$ itself, of order 30,343, acting regularly on each of the two fibres, which are its orbits, so the graph is not vertex-transitive.
+
 ## How it was found
 
 Complete sweep of the $`S_3`$-reduced sub-block with loop layers 2 and 4 of the shape-103 two-vertex lift family over the odd-order group $`\mathbb{Z}_{1597} \rtimes_3 \mathbb{Z}_{19}`$. The search code is in [search/lift_two_vertex](../../../search/lift_two_vertex).

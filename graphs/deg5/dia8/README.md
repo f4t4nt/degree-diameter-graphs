@@ -12,6 +12,10 @@ The lift has vertex set $`\{0, 1\} \times G`$ and joins $`(u, g)`$ to $`(v, g a)
 
 Vertex $`9405 v + i + 209 j`$ is the pair $`(v, x^i y^j)`$: the first 9,405 vertices lie over base vertex 0 and the other 9,405 over base vertex 1, and vertex $`9405 v`$ is $`(v, e)`$.
 
+## Structure
+
+The automorphism group is the lifting group $`G`$ itself, of order 9,405, acting regularly on each of the two fibres, which are its orbits, so the graph is not vertex-transitive.
+
 ## How it was found
 
 Complete $`S_3`$-reduced sub-block sweeps (fixed loop layers) of the shape-103 two-vertex lift family over the best-screened odd-order metacyclic groups; the group is $`\mathbb{Z}_{209} \rtimes_4 \mathbb{Z}_{45}`$. The search code is in [search/lift_two_vertex](../../../search/lift_two_vertex).

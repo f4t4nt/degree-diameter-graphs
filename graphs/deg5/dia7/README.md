@@ -20,6 +20,10 @@ The lift has vertex set $`\{0, 1\} \times G`$ and joins $`(u, g)`$ to $`(v, g a)
 
 Vertex $`3000 v + \mathrm{index}(g)`$ is the pair $`(v, g)`$, where $`g = ((a, b), c^i, z^j)\, y^m`$ has index $`(((5a + b) \cdot 3 + i) \cdot 5 + j) \cdot 8 + m`$, so vertex $`3000 v`$ is $`(v, e)`$.
 
+## Structure
+
+The automorphism group is the lifting group $`G`$ itself, of order 3,000, acting regularly on each of the two fibres, which are its orbits, so the graph is not vertex-transitive.
+
 ## How it was found
 
 Complete sweep of all shape-103 two-vertex lift assignments (one loop and three links per base vertex, one link trivial) on the non-metacyclic group $`((\mathbb{F}_{25} \rtimes C_3) \times \mathbb{Z}_5) \rtimes C_8`$ up to symmetry, the group selected by the conjugacy-class-count (commuting probability) rule. The search code is in [search/lift_nonmetacyclic_groups](../../../search/lift_nonmetacyclic_groups).

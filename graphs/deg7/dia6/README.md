@@ -10,6 +10,10 @@ $`y^{9}`$ is one of the 37 involutions of $`G`$, so the degree is $`1 + 2 \cdot 
 
 Vertex $`i + 703 j`$ is $`x^i y^j`$ for $`0 \le i < 703`$ and $`0 \le j < 18`$, as in [the numbering figure](../../cayley-numbering.svg).
 
+## Structure
+
+The automorphism group is $`G`$ acting by left multiplication: the graph is a graphical regular representation of $`G`$.
+
 ## How it was found
 
 Complete sweep of all one-involution connection sets (the involution $`y^9`$ and three inverse pairs) on $`\mathbb{Z}_{703} \rtimes_{85} \mathbb{Z}_{18}`$ up to the automorphisms fixing the involution (exactly one solution). The search code is in [search/cayley_exhaustive](../../../search/cayley_exhaustive).

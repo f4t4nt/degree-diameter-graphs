@@ -10,6 +10,10 @@ $`S`$ contains no involution ($`G`$ has one involution), so the degree is $`2 \c
 
 Vertex $`i + 3202 j`$ is $`x^i y^j`$ for $`0 \le i < 3202`$ and $`0 \le j < 25`$, as in [the numbering figure](../../cayley-numbering.svg).
 
+## Structure
+
+The automorphism group is $`G`$ acting by left multiplication: the graph is a graphical regular representation of $`G`$.
+
 ## How it was found
 
 Fully symmetry-reduced complete sweep of the 3-pair Cayley graphs of the one-involution group $`\mathbb{Z}_{3202} \rtimes_{1419} \mathbb{Z}_{25}`$ (the unique diameter-8 orbit), the group chosen by the rule of few involutions and large complement order $`M`$. The search code is in [search/cayley_exhaustive](../../../search/cayley_exhaustive).

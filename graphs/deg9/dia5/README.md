@@ -10,6 +10,10 @@ $`y^{10}`$ is one of the 41 involutions of $`G`$, so the degree is $`1 + 2 \cdot
 
 Vertex $`i + 451 j`$ is $`x^i y^j`$ for $`0 \le i < 451`$ and $`0 \le j < 20`$, as in [the numbering figure](../../cayley-numbering.svg).
 
+## Structure
+
+The automorphism group is $`G`$ acting by left multiplication: the graph is a graphical regular representation of $`G`$.
+
 ## How it was found
 
 Complete chunked sweep of the one-involution Cayley family (the involution $`y^{10}`$ and four inverse pairs) on the groups $`\mathbb{Z}_{451} \rtimes_s \mathbb{Z}_{20}`$ up to automorphisms (two inequivalent solutions on two twists $`s`$). The search code is in [search/cayley_exhaustive](../../../search/cayley_exhaustive).

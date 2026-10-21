@@ -10,6 +10,10 @@ $`y^{33}`$ is one of the 199 involutions of $`G`$, so the degree is $`1 + 2 \cdo
 
 Vertex $`i + 4577 j`$ is $`x^i y^j`$ for $`0 \le i < 4577`$ and $`0 \le j < 66`$, as in [the numbering figure](../../cayley-numbering.svg).
 
+## Structure
+
+The automorphism group is $`G`$ acting by left multiplication: the graph is a graphical regular representation of $`G`$.
+
 ## How it was found
 
 Simulated annealing with targeted moves in the one-involution odd-degree Cayley family on $`\mathbb{Z}_{4577} \rtimes_{174} \mathbb{Z}_{66}`$. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
