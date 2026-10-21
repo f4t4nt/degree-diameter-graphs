@@ -12,7 +12,7 @@ verifier in `verification.txt`.
 
 <p align="center">
 <img src="graphs/table.svg" alt="The degree-diameter table with my graphs in bold italics, each cell shaded by its fraction of the Moore bound"><br>
-<sub>Values as of 2026-10-21. Bold italics are my graphs, whether or not the table lists them yet; a plain cell with a page here is a tie with another graph or an entry that has overtaken mine.</sub>
+<sub>Values as of 2026-10-21.</sub>
 </p>
 
 <details>
@@ -112,7 +112,5 @@ memory for that search, so `check` skips graphs above $`10^8`$ vertices unless `
 - A voltage lift of a base graph $`B`$ over $`G`$ has vertex set $`V(B) \times G`$ and joins $`(u, g)`$ to
   $`(v, g a)`$ for every dart $`u \to v`$ of $`B`$ with voltage $`a`$.
 
-In the figures, black draws the structure, blue the part the caption singles out and grey the context the figure
-needs but does not discuss; a dashed grey edge is one that is removed.
 
 ![How the vertices of a Cayley graph on a metacyclic group are numbered](graphs/cayley-numbering.svg)<br><sub>Vertex $`i + N j`$ is $`x^i y^j`$, so run $`j`$ is the coset $`y^j \langle x \rangle`$. A generator $`x^a y^b`$ sends $`x^i y^j`$ to $`x^{i + r^j a} y^{j + b}`$: from run $`j`$ to run $`j + b`$ (here $`b = 2`$), shifted by $`r^j a`$.</sub>
