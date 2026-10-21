@@ -4,6 +4,8 @@ I derive what a degree-4 diameter-4 graph built from three subdivided $`K_{4,4}`
 from a reach identity and a port lemma down to 54 skeletons, and these scripts carry out the
 finite checks of `../proofs/TEMPLATE_CALCULUS.md` sections 1-8, 11b and the two-block analysis.
 
+Files:
+
 - `verify.py`: independent all-pairs BFS verifier plus the three-block decomposition of a graph,
   its connector profiles and the hub-to-port reach identity (`verify.py corpus` applies it to the 36
   classes; `verify.py edges FILE...` to any edge list). Other scripts import it.
@@ -32,9 +34,14 @@ Work from this directory; the scripts print JSON or write to `runs/` (`counting_
 `shapes105.py` and `blocks_relax.py` need scipy, the rest pynauty, networkx and numpy). To run it yourself:
 
 ```
-python verify.py corpus > verify36.json            # 36 graphs: diameter 4, identity 768 = 768
-python counting_ilp.py                             # relaxation: max budget 768 at n = 105
-mkdir -p runs && python shapes105.py > runs/shapes105_v3.json && python port_lemma.py   # 84 -> 21
-python unit_designs2.py > skeletons.json           # 54 skeletons
-python known_designs2.py                           # classes -> skeletons 50, 51, 53
+python verify.py corpus > verify36.json
+# expected: 36 graphs of diameter 4, each with the identity 768 = 768
+python counting_ilp.py
+# expected: the relaxation's maximum budget, 768 at n = 105
+mkdir -p runs && python shapes105.py > runs/shapes105_v3.json && python port_lemma.py
+# expected: 84 configurations, reduced to 21
+python unit_designs2.py > skeletons.json
+# expected: 54 skeletons
+python known_designs2.py
+# expected: the classes mapped to skeletons 50, 51 and 53
 ```

@@ -25,6 +25,9 @@ Files:
   `../cayley_metacyclic_anneal/cayley_sa.c` (`--s2all --s2bound`, quotient `--quot`) is the complete sweep of a
   one-involution family with a fixed level pattern; it is built there.
 
+Voltages in `lift` lines are element indices $`i + N j`$ of $`x^i y^j`$; `make_ylist.py 6763 49 - ylist 2000000` writes
+all 2884 patterns of that group in chunks. Compile `sweep_odd` without `-march=native` (a known slowdown).
+
 To run it yourself (the controls re-find the (7,6) graph on 12654 vertices, the unique solution of its group, in about
 20 seconds; the known (6,9) graph on 331387 vertices from its level pattern; the known (7,7) graph on 56952 vertices
 with the mode-F quotient in a few seconds):
@@ -39,9 +42,6 @@ gcc -O3 -march=native -o lift lift.c -lm && printf 'Y 2 18 24\n' > ypat.txt
 # expected: FOUND N=2373 M=24 r=44 D=7 k=3 c=0 degree 7 n=56952 + involution (last pair) : 1 1 120 2 728 7 0 12
 #           SWEEP2 F done: 385666 candidates, 0 ties, 1 improved ...
 ```
-
-Voltages in `lift` lines are element indices $`i + N j`$ of $`x^i y^j`$; `make_ylist.py 6763 49 - ylist 2000000` writes
-all 2884 patterns of that group in chunks. Compile `sweep_odd` without `-march=native` (a known slowdown).
 
 ## Graphs found
 

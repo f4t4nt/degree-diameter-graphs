@@ -28,6 +28,9 @@ Files:
   the larger $`k`$ of the diameter-6 and diameter-8 cells).
 - `sweep.py`: applies `lift` to every (group, base) pair of the requested orders and appends JSON lines.
 
+Group elements are numbered by `groups.py` (element 0 is the identity; the (3,7) graph uses the index
+$`x^i y^h \mapsto 8 i + h`$ of $`\mathbb{Z}_5 \rtimes \mathbb{Z}_8 = \langle x, y \rangle`$).
+
 To run it yourself (seconds; the group and base enumerations are deterministic, so `groups/order_40/g12.txt` is
 $`\mathbb{Z}_5 \rtimes \mathbb{Z}_8`$ with $`|Z(G)| = 4`$ and `bases/b5_0026.txt` is the base with edges 0-1, 0-2, 0-3,
 1-4, 1-2, a semi-edge at vertex 2 and loops at vertices 3 and 4; `groups/order_72/g41.txt` is $`\mathbb{F}_3^2 \rtimes Q_8`$ and `bases/b5_0016.txt`
@@ -46,10 +49,8 @@ python3 groups.py groups 72 && ./lift groups/order_72/g41.txt bases/b5_0016.txt 
 #           BEST defect=0 voltages: 1 12 50 58 18      (sol8_1.edges .. sol8_4.edges: 360 vertices, cubic, diameter 8, one graph)
 ```
 
-Group elements are numbered by `groups.py` (element 0 is the identity; the (3,7) graph uses the index
-$`x^i y^h \mapsto 8 i + h`$ of $`\mathbb{Z}_5 \rtimes \mathbb{Z}_8 = \langle x, y \rangle`$). A whole-order sweep is
-`python3 sweep.py --D 7 --n 200 --kmax 8 --groups groups --bases bases`, which needs the groups of all orders dividing
-200 and the bases for every $`k`$.
+A whole-order sweep is `python3 sweep.py --D 7 --n 200 --kmax 8 --groups groups --bases bases`, which needs the
+groups of all orders dividing 200 and the bases for every $`k`$.
 
 ## Graphs found
 

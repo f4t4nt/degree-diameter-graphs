@@ -70,17 +70,22 @@ for n in 6156 6804 9720 13608 1620; do python3 build_$n.py lift_$n.edges; done
 # expected: vertices 6156 edges 36936 / 6804 44226 / 9720 68040 / 13608 102060 / 1620 12150
 for c in rclift ctrl_lift ctrl5 cdsa exlift mixctrl mixlift ctrl3 univ; do gcc -O2 -o $c $c.c -lm; done && pip install -r requirements.txt
 for n in 19 20 42 84 120; do python3 groups.py write $n groups; done
-./ctrl_lift 4 1,2,3,0 1,3,0,2 groups/19_Z19.tbl badwords_6156.txt --maxout 80       # expected: HIT chart=0 va=0,12,4,0 vb=17,0,0,1 ... hits=72
+./ctrl_lift 4 1,2,3,0 1,3,0,2 groups/19_Z19.tbl badwords_6156.txt --maxout 80
+# expected: HIT chart=0 va=0,12,4,0 vb=17,0,0,1 ... hits=72
 python3 ctrl.py groups/19_Z19.tbl 4 1,2,3,0 1,3,0,2 - 0,12,4,0 17,0,0,1 - c76.ctrl && ./exlift c76.ctrl --m 4 --eval --init chart_6156.txt --edges ex_6156.edges
 # expected: objective 0 ... n 6156 deg 12; ex_6156.edges equals lift_6156.edges
 ./ctrl5 4 1,2,3,0 1,2,3,0 2,3,0,1 groups/42_Z42.tbl --only 9,12,19,38,7,41,21 --dump one.dump && ./cdsa one.dump 0 1 --init chart_13608.txt --out cd.txt
 # expected: HIT ... va=0,9,12,0 vb=19,38,7,41 vs=0,21,0,0   and   RESULT unc=0 c0=0 c2=0
-python3 chartio.py verify cd.txt 4 1,2,3,0 1,2,3,0 2,3,0,1 groups/42_Z42.tbl                 # expected: ... written verify_13608.edges (equal to lift_13608.edges)
-./mixctrl 1 0 0 groups/84_Z7:2:Z12.tbl --plain inv 42                                       # expected: OK va=8 vb=28 ... first; mixedOK=84 best_deficit=0
-./mixlift groups/84_Z7:2:Z12.tbl 1 0 0 "va=8 vb=28" --plain inv 42 0 1 --init chart_6804.txt --eval   # expected: unc=0 far_ordered=0
+python3 chartio.py verify cd.txt 4 1,2,3,0 1,2,3,0 2,3,0,1 groups/42_Z42.tbl
+# expected: ... written verify_13608.edges (equal to lift_13608.edges)
+./mixctrl 1 0 0 groups/84_Z7:2:Z12.tbl --plain inv 42
+# expected: OK va=8 vb=28 ... first; mixedOK=84 best_deficit=0
+./mixlift groups/84_Z7:2:Z12.tbl 1 0 0 "va=8 vb=28" --plain inv 42 0 1 --init chart_6804.txt --eval
+# expected: unc=0 far_ordered=0
 ./ctrl3 3 0,2,1 1,2,0 1,0,2 groups/20_Z20.tbl --maxout 1 --ctrl z20 && python3 typesat3.py z20_0.ctrl --out ts_1620.edges
 # expected: PASS ... va=6,3,12 vb=0,0,0 vs=1,0,10 ... pass=192; LIFT_OK n=1620 deg=15 D=3 (ts_1620.edges equals lift_1620.edges)
-./univ 2 1 40000 3                                                                          # expected: best bad words 0 in each restart
+./univ 2 1 40000 3
+# expected: best bad words 0 in each restart
 ```
 
 Verify any edge list with the all-pairs BFS verifier in `tools/`. A full-size (15,4) search is `ctrl5 ... --sample S

@@ -18,7 +18,7 @@ chain of counting lemmas, a port lemma and SAT completions turns that into the f
 
 ![The 104-vertex template: three subdivided K44 blocks, each with 8 hubs and 16 ports, and one of the 16 connector pairs](template.svg)<br><sub>Block $`i`$ has hubs $`L_0, \ldots, L_3`$ and $`R_0, \ldots, R_3`$ and one port $`p_{lr}`$ on every hub pair (one block is drawn with its labels in `proofs/`), and each of the 16 connector pairs holds two ports of every block; the drawn pair is the pure $`(1,1,1)`$ kind, each connector adjacent to its partner and to one port of every block, and the two ports it holds in a block share no hub.</sub>
 
-Directory map:
+Files:
 
 - `lift_repair/`: the search that finds the 104s (voltage lift over $`\mathbb{Z}_8`$ of a 13-vertex
   base, then symmetry-breaking 2-opt repair), with the saved stall and a positive control.
@@ -33,11 +33,16 @@ Directory map:
 To run it yourself (Python 3 with `pip install -r requirements.txt`, a C compiler):
 
 ```
-cd lift_repair && sh run_control.sh && cd ..            # stall at defect 16 -> repaired 104, BFS verified
-cd classes && python check_classes.py class*.edges.txt   # 36 files, diameter 4, 36 distinct certificates
-cd ../template_calculus && python verify.py corpus       # decomposition and reach identity of all 36
-cd ../sat_closure && python sat105.py 104 50 && python sat105.py 105 all   # one SAT 104, then 54 x UNSAT
+cd lift_repair && sh run_control.sh && cd ..
+# expected: the stall at defect 16, the repaired 104-vertex graph, and its BFS verification
+cd classes && python check_classes.py class*.edges.txt
+# expected: 36 files, diameter 4, 36 distinct certificates
+cd ../template_calculus && python verify.py corpus
+# expected: the decomposition and the reach identity of all 36 classes
+cd ../sat_closure && python sat105.py 104 50 && python sat105.py 105 all
+# expected: one SAT at 104, then 54 x UNSAT
 python typed_sat_shapes.py data/shapes106.json --out=runs/t106.json --cap=600 && python design120.py
+# expected: 54 x UNSAT, then UNSAT
 ```
 
 ## Graphs found

@@ -6,6 +6,8 @@ own wiring, SAT breaking after one port swap) and on negative controls; the stat
 `../proofs/TEMPLATE_CALCULUS.md`, sections 9 to 13. Work from this directory (outputs go to
 `runs/`); the scripts need `python-sat` with CaDiCaL and `pynauty` (`../requirements.txt`).
 
+Files:
+
 - `sat105.py MODE [SKELETONS]` (modes `104`, `105`, `120`; `sat106.py` adds `106`..`119`): completion
   of a skeleton (`data/skeletons54.json`) over the 10 splits per unit and the 15 triangle-gadget
   options. `104 all` is SAT exactly on skeletons 50, 51, 53; `105`, `106`, `107`, `108` and `120 all`
@@ -34,10 +36,15 @@ own wiring, SAT breaking after one port swap) and on negative controls; the stat
   model of the four-octahedron design at 108 and a structured model of an octahedron plus two
   $`K_{4,4}`$ blocks at 110, neither part of a proof chain; `direct_sat.py`: the unstructured
   encoding, included to show why every decision is structured. `check_coholding.py`: none of the 36
-  classes has a connector pair co-holding two ports. To run it yourself:
+  classes has a connector pair co-holding two ports.
+
+To run it yourself:
 
 ```
-python sat105.py 104 50,51,53 && python sat105.py 105 all && python validate.py   # SAT x3, UNSAT x54, 36 controls
-python typed_sat_shapes.py data/shapes106.json --out=runs/typed106.json --cap=900   # 54 x UNSAT
-python design120.py && python design120_reduced.py && (cd oct4 && python typed_sat.py oct4 all)   # all UNSAT
+python sat105.py 104 50,51,53 && python sat105.py 105 all && python validate.py
+# expected: SAT x3, UNSAT x54, then the 36 controls
+python typed_sat_shapes.py data/shapes106.json --out=runs/typed106.json --cap=900
+# expected: 54 x UNSAT
+python design120.py && python design120_reduced.py && (cd oct4 && python typed_sat.py oct4 all)
+# expected: UNSAT throughout
 ```

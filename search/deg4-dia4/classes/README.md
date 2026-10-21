@@ -4,6 +4,8 @@ I enumerate every diameter-4 realisation of the three tight three-block skeleton
 (see `../proofs/TEMPLATE_CALCULUS.md`, sections 8 and 9) and sort the results into isomorphism
 classes with nauty: 8 + 18 + 10 = 36 classes, one file per class in this directory.
 
+Files:
+
 - `class00.edges.txt` to `class35.edges.txt`: one representative per class, 104 vertices, 208 edges,
   one `u v` pair per line, `#` comment lines grouping the edges by type. The lift-and-repair search
   (`../lift_repair/`) finds classes 0 to 34; class 35 appears only in the enumeration. Classes 29
@@ -32,6 +34,8 @@ To run it yourself:
 
 ```
 python check_classes.py class*.edges.txt
+# expected: 36 files, diameter 4, 36 distinct certificates
 cc -O2 -o verify_bfs ../../../tools/verify/verify_bfs.c && for f in class*.edges.txt; do ./verify_bfs $f 4 | tail -1; done
-python check_classes.py --match some_other_104.edges -- class*.edges.txt   # which class is it?
+# expected: 36 lines ending in "unordered pairs at distance > 4: 0"
+python check_classes.py --match some_other_104.edges -- class*.edges.txt     # which class is it?
 ```

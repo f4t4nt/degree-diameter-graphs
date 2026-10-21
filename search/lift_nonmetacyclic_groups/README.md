@@ -37,7 +37,7 @@ completeness of the reduction on a small group; all in seconds):
 
 ```
 pip install -r requirements.txt && python3 gf.py build '{"M":8,"blocks":[{"t":"frob","p":5,"B":[[0,4],[1,4]],"A":[[1,1],[2,4]],"e":2},{"t":"cyc","q":5,"u":2}]}' g3000.grp
-# expected last line: {"n": 3000, "nK": 375, "M": 8, "Z": 1, "inv": 25, "ord_alpha": 8}
+# expected (last line): {"n": 3000, "nK": 375, "M": 8, "Z": 1, "inv": 25, "ord_alpha": 8}
 gcc -O3 -march=native -o table_sweep table_sweep.c -lm && ./table_sweep g3000.grp --family lift --D 7 --mode eval --set 1 316 172 1159
 # expected: EVAL family=lift set=[1,316,172,1159] D=7 root0 defect=0 profile=1 5 20 80 319 1215 2885 1475 | root1 defect=0 profile=1 5 20 80 320 1212 2900 1462 | total defect=0
 python3 gf.py build '{"M":4,"blocks":[{"t":"vec","p":3,"A":[[0,1],[2,0]]}]}' g36.grp && ./table_sweep g36.grp --family lift --D 4 --mode cover

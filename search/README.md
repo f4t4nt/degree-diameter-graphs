@@ -1,9 +1,11 @@
 # Search Methods
 
 This directory holds the search code behind the graphs in `graphs/`, one subdirectory per method, each with its own
-README (what it does, how to build and use it, and one small positive control that re-finds a known graph in
-minutes). `HOW_FOUND.tsv` has one line per cell: cell, order, a one-sentence account of the search, and the method
-directory. The verifiers that check every graph are separate programs in `tools/` and share no code with the search.
+README in the same order: what the method does and which cells it produced, its files, how to build and run it with
+one small positive control that re-finds a known graph in minutes (the commands in one block, each expected output
+on a `# expected:` line below its command), and the graphs found. `HOW_FOUND.tsv` has one line per cell: cell, order,
+a one-sentence account of the search, and the method directory. The verifiers that check every graph are separate
+programs in `tools/` and share no code with the search.
 
 | directory | method | cells it produces |
 |---|---|---|

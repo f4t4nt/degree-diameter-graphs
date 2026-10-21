@@ -9,6 +9,8 @@ scripts they cite are in `../template_calculus/` and `../sat_closure/`.
 
 ![The port lemma: a port q of block j, its two holders and their twins, and the four block-i ports they carry, one on every hub of block i](port_lemma.svg)<br><sub>The only routes from a hub $`a`$ of block $`i`$ to a port $`q`$ of block $`j`$ (section 7) are $`a - p - c - q`$ and $`a - p - c - c' - q`$ through the two holders $`c`$ of $`q`$ and their connector neighbours $`c'`$, so in a tight member the block-$`i`$ ports of these four connectors are four distinct ports forming a perfect matching of $`K_{4,4}(i)`$, one route to $`q`$ from every hub (grey stubs: the edges to the third block and the twins' own block-$`j`$ ports).</sub>
 
+Files:
+
 - `TEMPLATE_CALCULUS.md`: the template calculus for the three-$`K_{4,4}`$-block family. Sections 1-10
   derive the hub-to-port identity, the counting relaxation, the port lemma, the structure theorem
   (54 skeletons) and the completion SAT, and prove that no 105-vertex member exists. Section 11

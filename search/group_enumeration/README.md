@@ -22,11 +22,11 @@ To run it yourself (seconds each):
 ```
 pip install -r requirements.txt
 python3 classcount.py 703 18 85
-# expected first line: G = Z_703 x|_85 Z_18, |G| = 12654, ord r = 18, k(G) = 76, cp = 0.00600601
+# expected (first line): G = Z_703 x|_85 Z_18, |G| = 12654, ord r = 18, k(G) = 76, cp = 0.00600601
 python3 classcount.py test
-# expected last line: 46 of 46 brute-force cases agree (formula = Burnside = brute-force orbits = commuting pairs / |G|); closed forms (prime N, dihedral, abelian) OK
+# expected (last line): 46 of 46 brute-force cases agree (formula = Burnside = brute-force orbits = commuting pairs / |G|); closed forms (prime N, dihedral, abelian) OK
 python3 groups_meta.py 9600 9700 10 odd | head -3
-# expected first line: # odd-order metacyclic groups G(N, M, r, t) with |G| in [9600, 9700], D = 10, lift bound M c <= L3(D) = 1561: 85 presentations, 77 pass the bound, 46 distinct fingerprints; ...
+# expected (first line): # odd-order metacyclic groups G(N, M, r, t) with |G| in [9600, 9700], D = 10, lift bound M c <= L3(D) = 1561: 85 presentations, 77 pass the bound, 46 distinct fingerprints; ...
 ```
 
 The group of the (7,6) graph above, $`\mathbb{Z}_{703} \rtimes_{85} \mathbb{Z}_{18}`$, has the lowest $`k(G)`$ of its
