@@ -4,7 +4,7 @@ A graph with 179,227,730 vertices, maximum degree 12 and diameter 9; the Moore b
 
 ## Construction
 
-The Cayley graph $`\mathrm{Cay}(G, S)`$ of $`G = \mathbb{Z}_{779251} \rtimes_{1183} \mathbb{Z}_{230} = \langle x, y \mid x^{779251} = y^{230} = 1,\ y x y^{-1} = x^{1183} \rangle`$, of order 179,227,730 (with $`779251 = 11 \cdot 70841`$), where $`S = \{x^{424056} y^{63}, x^{624662} y^{15}, x^{429226} y^{31}, x^{2928} y^{88}, x^{523926} y^{122}, x^{660361} y^{164}\}`$.
+The Cayley graph of $`G = \mathbb{Z}_{779251} \rtimes_{1183} \mathbb{Z}_{230} = \langle x, y \mid x^{779251} = y^{230} = 1,\ y x y^{-1} = x^{1183} \rangle`$, of order 179,227,730 (with $`779251 = 11 \cdot 70841`$), and connection set $`S = \{x^{424056} y^{63}, x^{624662} y^{15}, x^{429226} y^{31}, x^{2928} y^{88}, x^{523926} y^{122}, x^{660361} y^{164}\}`$: every $`g \in G`$ is adjacent to $`g s`$ and $`g s^{-1}`$ for every $`s \in S`$.
 
 $`S`$ contains no involution ($`G`$ has 11 involutions), so the degree is $`2 \cdot 6 = 12`$.
 

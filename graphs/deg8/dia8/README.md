@@ -4,7 +4,7 @@ A graph with 779,803 vertices, maximum degree 8 and diameter 8; the Moore bound 
 
 ## Construction
 
-The Cayley graph of $`G = \mathbb{Z}_{13217} \rtimes_{8875} \mathbb{Z}_{59} = \langle x, y \mid x^{13217} = y^{59} = 1,\ y x y^{-1} = x^{8875} \rangle`$, of order 779,803 (with 13217 prime), and the connection set $`S = \{x^{761} y, x^{3375} y^{12}, x^{11838} y^{37}, x^{5435} y^{28}\}`$: each $`g \in G`$ is joined to $`g s`$ and $`g s^{-1}`$ for each $`s \in S`$.
+The Cayley graph of $`G = \mathbb{Z}_{13217} \rtimes_{8875} \mathbb{Z}_{59} = \langle x, y \mid x^{13217} = y^{59} = 1,\ y x y^{-1} = x^{8875} \rangle`$, of order 779,803 (with 13217 prime), and connection set $`S = \{x^{761} y, x^{3375} y^{12}, x^{11838} y^{37}, x^{5435} y^{28}\}`$: every $`g \in G`$ is adjacent to $`g s`$ and $`g s^{-1}`$ for every $`s \in S`$.
 
 $`G`$ has odd order, so it has no involutions, and the degree is $`2 \cdot 4 = 8`$.
 

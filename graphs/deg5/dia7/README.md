@@ -6,8 +6,6 @@ A graph with 6,000 vertices, maximum degree 5 and diameter 7; the Moore bound is
 
 A regular voltage lift over the group $`G`$ described below, of order 3,000. The base graph has three parallel links $`0 \to 1`$ (voltages $`1`$, $`((0, 1), c, z)\, y^{4}`$, $`((1, 4), c, z^{4})\, y^{7}`$), a loop at 0 (voltage $`y`$) and a loop at 1 (voltage $`((0, 2), c, z^{4})\, y^{4}`$).
 
-The lift has vertex set $`\{0, 1\} \times G`$ and joins $`(u, g)`$ to $`(v, g a)`$ for every dart $`u \to v`$ with voltage $`a`$; a loop with voltage $`a`$ joins $`(v, g)`$ to $`(v, g a)`$ and $`(v, g a^{-1})`$. $`G`$ acts on each fibre $`\{v\} \times G`$ by left multiplication.
-
 The group is $`G = ((\mathbb{F}_{25} \rtimes \langle c \rangle) \times \langle z \rangle) \rtimes \langle y \rangle`$ of order 3000: $`\mathbb{F}_{25} = \mathbb{F}_5^2`$ as column vectors, $`c`$ of order 3 acting on $`\mathbb{F}_{25}`$ by $`B`$ (so $`\mathbb{F}_{25} \rtimes \langle c \rangle`$ is a Frobenius group of order 75), $`z`$ central of order 5 in $`K = (\mathbb{F}_{25} \rtimes \langle c \rangle) \times \langle z \rangle`$, and $`y`$ of order 8 acting on $`K`$ by $`(w, c^i, z^j) \mapsto (A w, c^{2i}, z^{2j})`$, where
 
 ```math
@@ -15,6 +13,8 @@ B = \begin{pmatrix} 0 & 4 \\ 1 & 4 \end{pmatrix}, \qquad A = \begin{pmatrix} 1 &
 ```
 
 $`G`$ is not metacyclic; it has trivial centre and 25 involutions. Its elements are written $`(w, c^i, z^j)\, y^m`$.
+
+The lift has vertex set $`\{0, 1\} \times G`$ and joins $`(u, g)`$ to $`(v, g a)`$ for every dart $`u \to v`$ with voltage $`a`$; a loop with voltage $`a`$ joins $`(v, g)`$ to $`(v, g a)`$ and $`(v, g a^{-1})`$. $`G`$ acts on each fibre $`\{v\} \times G`$ by left multiplication.
 
 ![The base graph of the lift with its voltages](base-graph.svg)<br><sub>Arrows give the direction $`u \to v`$ of each voltage; a loop acts both ways, joining $`(v, g)`$ to $`(v, g a)`$ and $`(v, g a^{-1})`$.</sub>
 

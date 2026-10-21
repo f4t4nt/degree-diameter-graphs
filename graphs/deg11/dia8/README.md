@@ -4,7 +4,7 @@ A graph with 9,739,368 vertices, maximum degree 11 and diameter 8; the Moore bou
 
 ## Construction
 
-The Cayley graph $`\mathrm{Cay}(G, S)`$ of $`G = \mathbb{Z}_{135269} \rtimes_{8594} \mathbb{Z}_{72} = \langle x, y \mid x^{135269} = y^{72} = 1,\ y x y^{-1} = x^{8594} \rangle`$, of order 9,739,368 (with $`135269 = 17 \cdot 73 \cdot 109`$), where $`S = \{x^{34553} y^{36}, x^{125066} y^{35}, x^{6101} y^{58}, x^{46480} y^{6}, x^{47196} y^{26}, x^{113742} y^{19}\}`$.
+The Cayley graph of $`G = \mathbb{Z}_{135269} \rtimes_{8594} \mathbb{Z}_{72} = \langle x, y \mid x^{135269} = y^{72} = 1,\ y x y^{-1} = x^{8594} \rangle`$, of order 9,739,368 (with $`135269 = 17 \cdot 73 \cdot 109`$), and connection set $`S = \{x^{34553} y^{36}, x^{125066} y^{35}, x^{6101} y^{58}, x^{46480} y^{6}, x^{47196} y^{26}, x^{113742} y^{19}\}`$: every $`g \in G`$ is joined to $`g s`$ and $`g s^{-1}`$ for each generator $`s \in S`$.
 
 $`x^{34553} y^{36}`$ is one of the 1,241 involutions of $`G`$, so the degree is $`1 + 2 \cdot 5 = 11`$.
 

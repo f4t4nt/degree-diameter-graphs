@@ -4,7 +4,7 @@ A graph with 9,020 vertices, maximum degree 9 and diameter 5; the Moore bound is
 
 ## Construction
 
-The Cayley graph $`\mathrm{Cay}(G, S)`$ of $`G = \mathbb{Z}_{451} \rtimes_{46} \mathbb{Z}_{20} = \langle x, y \mid x^{451} = y^{20} = 1,\ y x y^{-1} = x^{46} \rangle`$, of order 9,020 (with $`451 = 11 \cdot 41`$), where $`S = \{y^{10}, x y, x^{316} y^{6}, x^{13} y^{7}, x^{426} y^{9}\}`$.
+The Cayley graph of $`G = \mathbb{Z}_{451} \rtimes_{46} \mathbb{Z}_{20} = \langle x, y \mid x^{451} = y^{20} = 1,\ y x y^{-1} = x^{46} \rangle`$, of order 9,020 (with $`451 = 11 \cdot 41`$), and the connection set $`S = \{y^{10}, x y, x^{316} y^{6}, x^{13} y^{7}, x^{426} y^{9}\}`$: every $`g \in G`$ is adjacent to $`g s`$ and $`g s^{-1}`$ for every $`s \in S`$.
 
 $`y^{10}`$ is one of the 41 involutions of $`G`$, so the degree is $`1 + 2 \cdot 4 = 9`$.
 

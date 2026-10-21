@@ -4,7 +4,7 @@ A graph with 265,612,889 vertices, maximum degree 10 and diameter 10; the Moore 
 
 ## Construction
 
-The Cayley graph $`\mathrm{Cay}(G, S)`$ of $`G = \mathbb{Z}_{1111351} \rtimes_{8147} \mathbb{Z}_{239} = \langle x, y \mid x^{1111351} = y^{239} = 1,\ y x y^{-1} = x^{8147} \rangle`$, of order 265,612,889, where $`S = \{x^{648877} y^{104}, x^{1110715} y^{82}, x^{841493} y^{123}, x^{484351} y^{59}, x^{482973} y^{144}\}`$.
+The Cayley graph $`\mathrm{Cay}(G, S)`$ of the group $`G = \mathbb{Z}_{1111351} \rtimes_{8147} \mathbb{Z}_{239} = \langle x, y \mid x^{1111351} = y^{239} = 1,\ y x y^{-1} = x^{8147} \rangle`$, of order 265,612,889 (with 1111351 prime), and connection set $`S = \{x^{648877} y^{104}, x^{1110715} y^{82}, x^{841493} y^{123}, x^{484351} y^{59}, x^{482973} y^{144}\}`$: every $`g \in G`$ is joined to $`g s`$ and $`g s^{-1}`$ for $`s \in S`$.
 
 $`G`$ has odd order, so it has no involutions, and the degree is $`2 \cdot 5 = 10`$.
 

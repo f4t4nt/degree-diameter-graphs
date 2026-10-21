@@ -4,7 +4,7 @@ A graph with 264,440 vertices, maximum degree 7 and diameter 8; the Moore bound 
 
 ## Construction
 
-The Cayley graph of the group $`G = \mathbb{Z}_{6611} \rtimes_{193} \mathbb{Z}_{40} = \langle x, y \mid x^{6611} = y^{40} = 1,\ y x y^{-1} = x^{193} \rangle`$, of order 264,440 (with $`6611 = 11 \cdot 601`$), and the connection set $`S = \{y^{20}, x y^{4}, x^{4755} y^{9}, x^{2638} y^{6}\}`$: each $`g \in G`$ is joined to $`g s`$ and $`g s^{-1}`$ for each $`s \in S`$.
+The Cayley graph of the group $`G = \mathbb{Z}_{6611} \rtimes_{193} \mathbb{Z}_{40} = \langle x, y \mid x^{6611} = y^{40} = 1,\ y x y^{-1} = x^{193} \rangle`$, of order 264,440 (with $`6611 = 11 \cdot 601`$), and connection set $`S = \{y^{20}, x y^{4}, x^{4755} y^{9}, x^{2638} y^{6}\}`$: every $`g \in G`$ is adjacent to $`g s`$ and $`g s^{-1}`$ for every $`s \in S`$.
 
 $`y^{20}`$ is one of the 601 involutions of $`G`$, so the degree is $`1 + 2 \cdot 3 = 7`$.
 
