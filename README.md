@@ -12,7 +12,7 @@ verifier in `verification.txt`.
 
 <p align="center">
 <img src="graphs/table.svg" alt="The degree-diameter table with my graphs in bold italics, each cell shaded by its fraction of the Moore bound"><br>
-<sub>Values as of 2026-10-20.</sub>
+<sub>Values as of 2026-10-21.</sub>
 </p>
 
 <details>

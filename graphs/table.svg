@@ -490,7 +490,7 @@ L 203.25 241.5
 L 203.25 262.5 
 L 153 262.5 
 z
-" style="fill: #81b3ee"/>
+" style="fill: #7fb2ee"/>
    </g>
    <g id="patch_60">
     <path d="M 204.75 241.5 
@@ -2291,7 +2291,7 @@ z
     <text style="font-size: 10.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #1f2328" x="142.5" y="255.759" transform="rotate(-0 142.5 255.759)">585</text>
    </g>
    <g id="text_83">
-    <text style="font-size: 10.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #1f2328" x="194.25" y="255.759" transform="rotate(-0 194.25 255.759)">1,640</text>
+    <text style="font-size: 10.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #1f2328" x="194.25" y="255.759" transform="rotate(-0 194.25 255.759)">1,759</text>
    </g>
    <g id="text_84">
     <text style="font-style: italic; font-weight: 700; font-size: 10.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #1f2328" x="252" y="255.759" transform="rotate(-0 252 255.759)">9,020</text>
