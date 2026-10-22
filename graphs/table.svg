@@ -490,7 +490,7 @@ L 210.75 219
 L 210.75 237 
 L 160.5 237 
 z
-" style="fill: #7fb2ee"/>
+" style="fill: #7eb1ee"/>
    </g>
    <g id="patch_60">
     <path d="M 212.25 219 
@@ -770,7 +770,7 @@ L 159 297
 L 159 315 
 L 114.75 315 
 z
-" style="fill: #75aced"/>
+" style="fill: #71aaed"/>
    </g>
    <g id="patch_95">
     <path d="M 160.5 297 
@@ -2291,7 +2291,7 @@ z
     <text style="font-size: 10.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #1f2328" x="150" y="231.759" transform="rotate(-0 150 231.759)">585</text>
    </g>
    <g id="text_83">
-    <text style="font-size: 10.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #1f2328" x="201.75" y="231.759" transform="rotate(-0 201.75 231.759)">1,759</text>
+    <text style="font-size: 10.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #1f2328" x="201.75" y="231.759" transform="rotate(-0 201.75 231.759)">1,767</text>
    </g>
    <g id="text_84">
     <text style="font-style: italic; font-weight: 700; font-size: 10.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #1f2328" x="259.5" y="231.759" transform="rotate(-0 259.5 231.759)">9,020</text>
@@ -2408,7 +2408,7 @@ z
     <text style="font-size: 10.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #1f2328" x="104.25" y="309.759" transform="rotate(-0 104.25 309.759)">162</text>
    </g>
    <g id="text_122">
-    <text style="font-size: 10.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #1f2328" x="150" y="309.759" transform="rotate(-0 150 309.759)">873</text>
+    <text style="font-size: 10.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #1f2328" x="150" y="309.759" transform="rotate(-0 150 309.759)">952</text>
    </g>
    <g id="text_123">
     <text style="font-style: italic; font-weight: 700; font-size: 10.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #1f2328" x="201.75" y="309.759" transform="rotate(-0 201.75 309.759)">6,804</text>
