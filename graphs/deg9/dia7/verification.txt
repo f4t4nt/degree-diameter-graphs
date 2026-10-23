@@ -1,8 +1,8 @@
-== deg9/dia7: degree 9, diameter 7, 306852 vertices
-deg9-dia7-n306852.edges.txt.gz lists exactly the edges of the construction in construction.json: True (1380834 edges)
-$ tools/verify/verify_cayley_inv 7 3653 84 2006 3 2561 42 957 6 979 41 1991 62 2138 17
-G = Z_3653 x|_2006 Z_84 (order 306852), 5 generators, S u S^-1 has 9 distinct elements: simple 9-regular Cayley graph
-source 0: reached 306852 of 306852, eccentricity 7, profile: 1 9 72 576 4598 34759 167955 98882
-source 243969: reached 306852 of 306852, eccentricity 7, profile: 1 9 72 576 4598 34759 167955 98882
-source 161886: reached 306852 of 306852, eccentricity 7, profile: 1 9 72 576 4598 34759 167955 98882
-Cayley graph (vertex-transitive): diameter 7 on 306852 vertices, degree 9: satisfies D = 7
+== deg9/dia7: degree 9, diameter 7, 309510 vertices
+deg9-dia7-n309510.edges.txt.gz lists exactly the edges of the construction in construction.json: True (1392795 edges)
+$ tools/verify/verify_cayley_inv 7 3439 90 366 3 1140 45 490 67 1579 24 2818 5 539 32
+G = Z_3439 x|_366 Z_90 (order 309510), 5 generators, S u S^-1 has 9 distinct elements: simple 9-regular Cayley graph
+source 0: reached 309510 of 309510, eccentricity 7, profile: 1 9 72 576 4580 34700 168632 100940
+source 267609: reached 309510 of 309510, eccentricity 7, profile: 1 9 72 576 4580 34700 168632 100940
+source 245484: reached 309510 of 309510, eccentricity 7, profile: 1 9 72 576 4580 34700 168632 100940
+Cayley graph (vertex-transitive): diameter 7 on 309510 vertices, degree 9: satisfies D = 7

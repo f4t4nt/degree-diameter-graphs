@@ -1,7 +1,7 @@
-== deg8/dia9: degree 8, diameter 9, 4516807 vertices
-$ tools/verify/verify_cayley_inv 9 63617 71 317 3 56818 30 57247 28 27552 16 8832 34
-G = Z_63617 x|_317 Z_71 (order 4516807), 4 generators, S u S^-1 has 8 distinct elements: simple 8-regular Cayley graph
-source 0: reached 4516807 of 4516807, eccentricity 9, profile: 1 8 56 392 2744 19198 132454 825800 2723164 812990
-source 1440998: reached 4516807 of 4516807, eccentricity 9, profile: 1 8 56 392 2744 19198 132454 825800 2723164 812990
-source 1462620: reached 4516807 of 4516807, eccentricity 9, profile: 1 8 56 392 2744 19198 132454 825800 2723164 812990
-Cayley graph (vertex-transitive): diameter 9 on 4516807 vertices, degree 8: satisfies D = 9
+== deg8/dia9: degree 8, diameter 9, 4588283 vertices
+$ tools/verify/verify_cayley_inv 9 38557 119 31367 3 24639 47 27760 18 11940 4 16694 5
+G = Z_38557 x|_31367 Z_119 (order 4588283), 4 generators, S u S^-1 has 8 distinct elements: simple 8-regular Cayley graph
+source 0: reached 4588283 of 4588283, eccentricity 9, profile: 1 8 56 392 2744 19178 132224 825042 2756428 852210
+source 2040806: reached 4588283 of 4588283, eccentricity 9, profile: 1 8 56 392 2744 19178 132224 825042 2756428 852210
+source 2832813: reached 4588283 of 4588283, eccentricity 9, profile: 1 8 56 392 2744 19178 132224 825042 2756428 852210
+Cayley graph (vertex-transitive): diameter 9 on 4588283 vertices, degree 8: satisfies D = 9

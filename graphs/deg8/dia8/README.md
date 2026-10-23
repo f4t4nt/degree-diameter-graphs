@@ -1,14 +1,14 @@
 # Degree 8, Diameter 8
 
-A graph with 782,838 vertices, maximum degree 8 and diameter 8; the Moore bound is 7,686,401.
+A graph with 802,890 vertices, maximum degree 8 and diameter 8; the Moore bound is 7,686,401.
 
 ## Construction
 
-The Cayley graph of $`G = \mathbb{Z}_{14497} \rtimes_{157} \mathbb{Z}_{54} = \langle x, y \mid x^{14497} = y^{54} = 1,\ y x y^{-1} = x^{157} \rangle`$, of order 782,838 (with $`14497 = 7 \cdot 19 \cdot 109`$), and connection set $`S = \{x^{12598} y, x^{12925} y^{11}, x^{9961} y^{50}, x^{8964} y^{24}\}`$: every $`g \in G`$ is joined to $`g s`$ and $`g s^{-1}`$ for $`s \in S`$.
+The Cayley graph of $`G = \mathbb{Z}_{8921} \rtimes_{237} \mathbb{Z}_{90} = \langle x, y \mid x^{8921} = y^{90} = 1,\ y x y^{-1} = x^{237} \rangle`$, of order 802,890 (with $`8921 = 11 \cdot 811`$), and connection set $`S = \{x^{7422} y^{31}, x^{8137} y^{44}, x^{2812} y^{10}, x^{2784} y^{19}\}`$: each $`g \in G`$ is joined to $`g s`$ and $`g s^{-1}`$ for each $`s \in S`$.
 
-$`S`$ contains no involution ($`G`$ has 7 involutions), so the degree is $`2 \cdot 4 = 8`$.
+$`S`$ contains no involution ($`G`$ has 11 involutions), so the degree is $`2 \cdot 4 = 8`$.
 
-Vertex $`i + 14497 j`$ is $`x^i y^j`$ for $`0 \le i < 14497`$ and $`0 \le j < 54`$, as in [the numbering figure](../../cayley-numbering.svg).
+Vertex $`i + 8921 j`$ is $`x^i y^j`$ for $`0 \le i < 8921`$ and $`0 \le j < 90`$, as in [the numbering figure](../../cayley-numbering.svg).
 
 ## Structure
 
@@ -16,11 +16,11 @@ The automorphism group is $`G`$ acting by left multiplication: the graph is a gr
 
 ## How it was found
 
-Even-$`M`$ group with a tiny involution class chosen by a random-set softness screen of a window of group orders, coincidence-free level pattern, simulated annealing with targeted moves on $`\mathbb{Z}_{14497} \rtimes_{157} \mathbb{Z}_{54}`$. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
+Even-$`M`$ group with a tiny involution class chosen by a random-set softness screen of a window of group orders, coincidence-free level pattern, simulated annealing with targeted moves on $`\mathbb{Z}_{8921} \rtimes_{237} \mathbb{Z}_{90}`$. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
 
 ## Files
 
-- `deg8-dia8-n782838.edges.txt.gz`: the 3,131,352 edges as `u v` lines, under a `#` heading per generator.
+- `deg8-dia8-n802890.edges.txt.gz`: the 3,211,560 edges as `u v` lines, under a `#` heading per generator.
 - `construction.json`: the construction in the form `tools/ddgraph.py` reads.
 - `verification.txt`: the verifier output.
 

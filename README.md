@@ -38,11 +38,11 @@ verifier in `verification.txt`.
 | [(7, 9)](graphs/deg7/dia9) | 1,332,774 | 9.4% | Cayley graph of $`\mathbb{Z}_{24681} \rtimes_{788} \mathbb{Z}_{54}`$ |
 | [(7, 10)](graphs/deg7/dia10) | 6,641,680 | 7.8% | Cayley graph of $`\mathbb{Z}_{83021} \rtimes_{4400} \mathbb{Z}_{80}`$ |
 | [(8, 7)](graphs/deg8/dia7) | 139,679 | 12.7% | Cayley graph of $`\mathbb{Z}_{6073} \rtimes_{2685} \mathbb{Z}_{23}`$ |
-| [(8, 8)](graphs/deg8/dia8) | 782,838 | 10.2% | Cayley graph of $`\mathbb{Z}_{14497} \rtimes_{157} \mathbb{Z}_{54}`$ |
-| [(8, 9)](graphs/deg8/dia9) | 4,516,807 | 8.4% | Cayley graph of $`\mathbb{Z}_{63617} \rtimes_{317} \mathbb{Z}_{71}`$ |
+| [(8, 8)](graphs/deg8/dia8) | 802,890 | 10.4% | Cayley graph of $`\mathbb{Z}_{8921} \rtimes_{237} \mathbb{Z}_{90}`$ |
+| [(8, 9)](graphs/deg8/dia9) | 4,588,283 | 8.5% | Cayley graph of $`\mathbb{Z}_{38557} \rtimes_{31367} \mathbb{Z}_{119}`$ |
 | [(8, 10)](graphs/deg8/dia10) | 26,864,290 | 7.1% | Cayley graph of $`\mathbb{Z}_{141391} \rtimes_{240} \mathbb{Z}_{190}`$ |
 | [(9, 5)](graphs/deg9/dia5) | 9,020 | 21.4% | Cayley graph of $`\mathbb{Z}_{451} \rtimes_{46} \mathbb{Z}_{20}`$ |
-| [(9, 7)](graphs/deg9/dia7) | 306,852 | 11.4% | Cayley graph of $`\mathbb{Z}_{3653} \rtimes_{2006} \mathbb{Z}_{84}`$ |
+| [(9, 7)](graphs/deg9/dia7) | 309,510 | 11.5% | Cayley graph of $`\mathbb{Z}_{3439} \rtimes_{366} \mathbb{Z}_{90}`$ |
 | [(9, 8)](graphs/deg9/dia8) | 1,961,370 | 9.1% | Cayley graph of $`\mathbb{Z}_{21793} \rtimes_{34} \mathbb{Z}_{90}`$ |
 | [(9, 9)](graphs/deg9/dia9) | 13,219,318 | 7.7% | Cayley graph of $`\mathbb{Z}_{134891} \rtimes_{4746} \mathbb{Z}_{98}`$ |
 | [(9, 10)](graphs/deg9/dia10) | 89,543,818 | 6.5% | Cayley graph of $`\mathbb{Z}_{491999} \rtimes_{477175} \mathbb{Z}_{182}`$ |
