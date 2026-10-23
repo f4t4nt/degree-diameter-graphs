@@ -1,14 +1,14 @@
 # Degree 9, Diameter 7
 
-A graph with 302,082 vertices, maximum degree 9 and diameter 7; the Moore bound is 2,696,338.
+A graph with 306,852 vertices, maximum degree 9 and diameter 7; the Moore bound is 2,696,338.
 
 ## Construction
 
-The Cayley graph of $`G = \mathbb{Z}_{4577} \rtimes_{174} \mathbb{Z}_{66} = \langle x, y \mid x^{4577} = y^{66} = 1,\ y x y^{-1} = x^{174} \rangle`$, of order 302,082 (with $`4577 = 23 \cdot 199`$), and connection set $`S = \{y^{33}, x^{804} y, x^{3376} y^{6}, x^{2519} y^{51}, x^{2123} y^{23}\}`$: every $`g \in G`$ is joined to $`g s`$ and $`g s^{-1}`$ for $`s \in S`$.
+The Cayley graph of $`G = \mathbb{Z}_{3653} \rtimes_{2006} \mathbb{Z}_{84} = \langle x, y \mid x^{3653} = y^{84} = 1,\ y x y^{-1} = x^{2006} \rangle`$, of order 306,852 (with $`3653 = 13 \cdot 281`$), and connection set $`S = \{x^{2561} y^{42}, x^{957} y^{6}, x^{979} y^{41}, x^{1991} y^{62}, x^{2138} y^{17}\}`$: every $`g \in G`$ is joined to $`g s`$ and $`g s^{-1}`$ for $`s \in S`$.
 
-$`y^{33}`$ is one of the 199 involutions of $`G`$, so the degree is $`1 + 2 \cdot 4 = 9`$.
+$`x^{2561} y^{42}`$ is one of the 281 involutions of $`G`$, so the degree is $`1 + 2 \cdot 4 = 9`$.
 
-Vertex $`i + 4577 j`$ is $`x^i y^j`$ for $`0 \le i < 4577`$ and $`0 \le j < 66`$, as in [the numbering figure](../../cayley-numbering.svg).
+Vertex $`i + 3653 j`$ is $`x^i y^j`$ for $`0 \le i < 3653`$ and $`0 \le j < 84`$, as in [the numbering figure](../../cayley-numbering.svg).
 
 ## Structure
 
@@ -16,11 +16,11 @@ The automorphism group is $`G`$ acting by left multiplication: the graph is a gr
 
 ## How it was found
 
-Simulated annealing with targeted moves in the one-involution odd-degree Cayley family on $`\mathbb{Z}_{4577} \rtimes_{174} \mathbb{Z}_{66}`$. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
+Group chosen by a random-set softness screen of a window of group orders, simulated annealing with a fixed level pattern, targeted moves and a movable involution in the one-involution odd-degree Cayley family on $`\mathbb{Z}_{3653} \rtimes_{2006} \mathbb{Z}_{84}`$. The search code is in [search/cayley_metacyclic_anneal](../../../search/cayley_metacyclic_anneal).
 
 ## Files
 
-- `deg9-dia7-n302082.edges.txt.gz`: the 1,359,369 edges as `u v` lines, under a `#` heading per generator.
+- `deg9-dia7-n306852.edges.txt.gz`: the 1,380,834 edges as `u v` lines, under a `#` heading per generator.
 - `construction.json`: the construction in the form `tools/ddgraph.py` reads.
 - `verification.txt`: the verifier output.
 
